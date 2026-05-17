@@ -1395,6 +1395,51 @@ a.filter-type-btn--link {
   min-height: 200px;
 }
 
+.map-page__marker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 6px;
+  max-width: min(240px, 78vw);
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(45, 31, 29, 0.08);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.map-page__marker--link {
+  cursor: pointer;
+}
+
+.map-page__marker:focus {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+.map-page__marker-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fef6ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-page__marker-label {
+  font-family: var(--font-heading), "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 a.btn-map {
   text-align: center;
   box-sizing: border-box;
@@ -2365,11 +2410,39 @@ a.btn-map {
 }
 
 .nb-obj21__cta-avatar {
+  position: relative;
   width: 81px;
   height: 81px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #fef6ee, #e8e4df);
+  background: #e8e4df;
   flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* «Дозаполнение» круга тем же снимком (размытый слой под чётким contain) */
+.nb-obj21__cta-avatar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 50%;
+  background-image: url("../images/realtor-personal-avatar.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(12px);
+  transform: scale(1.1);
+}
+
+.nb-obj21__cta-avatar img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .nb-obj21__cta-lines {

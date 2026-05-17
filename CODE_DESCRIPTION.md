@@ -30,6 +30,8 @@
 | `images/orbi-beach-tower-3001/` | Фото квартиры **`apt-orbi-beach-tower-3001`** (30 этаж) |
 | `images/stay-rent/` | Презентационные PNG для **Stay&Rent** (`nb-stay-rent`) |
 | `images/new-bilding-one/` | Материалы **ЖК ONE** (`new-bilding-one`, карточка вместо бывшего Orbi Sea Towers) |
+| `images/realtor-personal-avatar.png` | Фото в блоке «Ваш персональный риелтор» на страницах объекта (`nb-realtor-cta`) |
+| `images/ramada-one-development/` | Материалы **RAMADA by One Development** (`nb-ramada-one-development`), страница **`new-building-2.html`** |
 
 ---
 
@@ -96,7 +98,7 @@
 
 #### Шаг 4. Страницы объекта (новостройка / квартира) — `data-nb-catalog-id` или `data-apt-catalog-id`
 
-1. На **`main`** задан **`data-nb-catalog-id`** (шаблоны новостроек) или **`data-apt-catalog-id`** (`apartment.html`) — значение по умолчанию, если в URL нет **`?id=`**). В адресе допускается **`?id=…`** — тогда **`initCatalogDetailPage()`** загружает объект с этим **`id`** из каталога (как при клике с карточки). Примеры новостроек: **`new-bilding-one`** для `new-building.html`, **`nb-porta-batumi`** для `new-building-2.html`, **`nb-stay-rent`** для `new-building-stay-rent.html`. Квартиры: **`apt-orbi-beach-tower-2912`**, **`apt-orbi-beach-tower-3001`** и др. для **`apartment.html`**.
+1. На **`main`** задан **`data-nb-catalog-id`** (шаблоны новостроек) или **`data-apt-catalog-id`** (`apartment.html`) — значение по умолчанию, если в URL нет **`?id=`**). В адресе допускается **`?id=…`** — тогда **`initCatalogDetailPage()`** загружает объект с этим **`id`** из каталога (как при клике с карточки). Примеры новостроек: **`new-bilding-one`** для `new-building.html`, **`nb-ramada-one-development`** для `new-building-2.html`, **`nb-stay-rent`** для `new-building-stay-rent.html`. Квартиры: **`apt-orbi-beach-tower-2912`**, **`apt-orbi-beach-tower-3001`** и др. для **`apartment.html`**.
 2. **`initCatalogDetailPage()`** ищет объект через **`findObjectById`** (приоритет **`?id=`**, иначе атрибут **`main`**). Герой заполняется **`initCatalogDetailHero`** из **`photoItemsFromObject(obj)`** (те же снимки, что в превью карточки).
 3. Блок цен **`.nb-price__main`** и **`.nb-price__per`** (включая **`.nb-obj21__price-*`**): выставляются атрибуты **`data-nb-price`** и **`data-nb-price-kind`** из каталога **до** запуска **`initNewBuildingCurrencyToggle`** в **`main.js`**, чтобы переключатель USD/GEL перерисовал цифры. Для **`per`** без **`priceFromTotalGel`** вторая строка скрывается. Для **`fixed`** при **`areaM2`** в **`data-nb-price`** второй строки передаётся расчёт цены за м² в лари.
 4. Строка адреса с **`.nb-meta__pin`**: текст после иконки — **`geo.address`**. Строка с **`.nb-meta__icon--build`** — название объекта (**`title`**). Блок **`.nb-location__address`** — **`geo.address`**. Секция **`.nb-location__map`**: при валидных **`geo.lat` / `geo.lng`** и подключённых **`map-config.js`** + Mapbox GL инициализируется карта (**`initCatalogLocationMap`**) с маркером в точке объекта; при **`geo.mapsUrl`** под картой добавляется ссылка «Открыть в Google Картах». Если токена нет или координат нет — превью-картинка и при необходимости обёртка **`mapsUrl`**, как раньше. Герой **`.nb-hero` / `.nb-obj21__hero`**: при **≥ 2** фото — листание всех снимков каталога (стрелки, счётчик **«n / m»**, свайп; на Object-2.1 — штатные кнопки навигации и полоски-индикаторы); при одном фото — только первый кадр. Ячейки **`.nb-stat__text`**: 1 — **`areaM2`** (м²), 2 — **`rooms`**, при непустых строках в каталоге — 3 — **`floorsText`**, 4 — **`completionText`** (на **`new-building-2.html`** только три блока — четвёртая подстановка не выполняется). Заголовок вкладки **`document.title`** — **`title`**.
@@ -115,6 +117,16 @@
 ## Журнал изменений
 
 Формат записи: **`ГГГГ-ММ-ДД` — краткий заголовок** → файлы, суть.
+
+### 2026-05-14 — Блок «персональный риелтор» на всех страницах объекта
+
+- **Файлы:** `new-building.html`, `new-building-stay-rent.html`, `apartment.html`, `new-building-2.html`, `CODE_DESCRIPTION.md`
+- **Суть:** в **`nb-shell`** после блока «Описание» добавлена карточка **`nb-realtor-cta`** (те же классы **`nb-obj21__cta-*`**, фото **`images/realtor-personal-avatar.png`**, WhatsApp и звонок), что и в сайдбаре **`new-building-2.html`**.
+
+### 2026-05-14 — Новостройки: RAMADA вместо Porta Batumi
+
+- **Файлы:** `js/objects-catalog.js`, `images/ramada-one-development/ramada-01.png` … `ramada-11.png`, `new-building-2.html`, `js/property-descriptions.js`, `CODE_DESCRIPTION.md`
+- **Суть:** объект **`nb-porta-batumi`** заменён на **`nb-ramada-one-development`** («RAMADA by One Development», Ramada Residences by Wyndham Batumi); на **`new-building-2.html`** задан **`data-nb-catalog-id="nb-ramada-one-development"`**; из **`rawDetailHrefFor`** убрана избыточная ветка для старого id (у объекта задан **`detailHref`**).
 
 ### 2026-05-14 — Новостройки: ЖК ONE вместо Orbi Sea Towers
 

@@ -92,7 +92,6 @@
     if (!obj) return "";
     if (obj.detailHref) return obj.detailHref;
     if (obj.id && String(obj.id).indexOf("nb-") === 0) {
-      if (obj.id === "nb-porta-batumi") return "new-building-2.html";
       if (obj.id === "nb-stay-rent") return "new-building-stay-rent.html";
       return "new-building.html";
     }
