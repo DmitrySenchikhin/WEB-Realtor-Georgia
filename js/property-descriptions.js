@@ -77,9 +77,74 @@
     return out;
   }
 
-  function listForGroup(groupKey, count, leadId) {
+  /** Все объекты каталога в порядке групп (новые добавляйте в конец массива группы). */
+  function flattenCatalogObjects() {
+    var cat = getCatalog();
+    var keys = ["new-building", "apartments", "house"];
+    var out = [];
+    for (var i = 0; i < keys.length; i++) {
+      var list = cat[keys[i]] || [];
+      for (var j = 0; j < list.length; j++) {
+        if (list[j]) out.push(list[j]);
+      }
+    }
+    return out;
+  }
+
+  /**
+   * Смешанный список: сначала lead (если задан), затем последние autoNewSlots объектов каталога,
+   * остальные слоты — чередование mixedObjectsList без дубликатов.
+   */
+  function mixedWithAutoNew(count, autoNewSlots, leadId) {
+    var out = [];
+    var used = {};
+
+    function pushUnique(obj) {
+      if (!obj || !obj.id || used[obj.id] || out.length >= count) return;
+      used[obj.id] = true;
+      out.push(obj);
+    }
+
+    if (leadId) {
+      pushUnique(findObjectById(leadId));
+    }
+
+    if (autoNewSlots > 0) {
+      var all = flattenCatalogObjects();
+      var newest = all.slice(-autoNewSlots).reverse();
+      for (var n = 0; n < newest.length; n++) {
+        pushUnique(newest[n]);
+      }
+    }
+
+    var guard = 0;
+    while (out.length < count && guard < count * 8) {
+      guard++;
+      var mixed = mixedObjectsList(count);
+      for (var m = 0; m < mixed.length; m++) {
+        pushUnique(mixed[m]);
+        if (out.length >= count) break;
+      }
+      if (!mixed.length) break;
+    }
+
+    return out.slice(0, count);
+  }
+
+  function parseAutoNewSlots(section) {
+    if (!section || !section.hasAttribute("data-property-card-auto-new")) return 0;
+    var raw = section.getAttribute("data-property-card-auto-new");
+    if (raw === "" || raw === "true") return 3;
+    var n = parseInt(raw, 10);
+    return Number.isFinite(n) && n > 0 ? n : 0;
+  }
+
+  function listForGroup(groupKey, count, leadId, autoNewSlots) {
     var out;
-    if (groupKey === "mixed") {
+    var slots = autoNewSlots || 0;
+    if (groupKey === "mixed" && (slots > 0 || leadId)) {
+      out = mixedWithAutoNew(count, slots, leadId || null);
+    } else if (groupKey === "mixed") {
       out = mixedObjectsList(count);
     } else {
       var list = getCatalog()[groupKey] || [];
@@ -89,7 +154,7 @@
         out.push(list[i % list.length]);
       }
     }
-    if (!leadId) return out;
+    if (groupKey === "mixed" || !leadId) return out;
     var lead = findObjectById(leadId);
     if (!lead) return out;
     out = out.filter(function (o) {
@@ -630,8 +695,139 @@
     else card.removeAttribute("data-desc-href");
   }
 
+  var CARD_META_ICONS =
+    '<span class="card__meta-item">' +
+    '<svg class="icon" viewBox="0 0 15 15" width="15" height="15" aria-hidden="true">' +
+    '<rect width="15" height="15" rx="2" fill="#fef6ee" />' +
+    '<path fill="#e05d2e" d="M8 2h4v5H8V2z" />' +
+    '<path fill="none" stroke="#2d1f1d" stroke-width="1.2" d="M3 6h6v6H3z" />' +
+    "</svg> 4 комнаты</span>" +
+    '<span class="card__meta-item">' +
+    '<svg class="icon" viewBox="0 0 15 15" width="15" height="15" aria-hidden="true">' +
+    '<rect width="15" height="15" rx="2" fill="#fef6ee" />' +
+    '<path stroke="#e05d2e" stroke-width="1.5" fill="none" d="M4 11V5M11 4v6" />' +
+    '<circle cx="7.5" cy="7.5" r="2" fill="#e05d2e" />' +
+    "</svg> 40 м<sup>2</sup></span>";
+
+  function createSearchResultCard(obj) {
+    var href = detailHrefFor(obj);
+    var card = document.createElement("article");
+    card.className = "card card--linkable";
+
+    var photo = document.createElement("div");
+    photo.className = "card__photo";
+    var img = document.createElement("img");
+    img.alt = obj.title || "Объект";
+    photo.appendChild(img);
+    var overlay = document.createElement("a");
+    overlay.className = "card__photo-overlay";
+    overlay.href = href;
+    overlay.setAttribute("aria-label", "Открыть: " + (obj.title || "объект"));
+    photo.appendChild(overlay);
+    card.appendChild(photo);
+
+    var bodyLink = document.createElement("a");
+    bodyLink.className = "card__body-link";
+    bodyLink.href = href;
+
+    var body = document.createElement("div");
+    body.className = "card__body";
+    body.innerHTML =
+      '<div class="card__loc"><img src="images/pin.svg" alt="" width="13" height="15" /><span>Батуми</span></div>' +
+      '<div class="card__meta">' +
+      CARD_META_ICONS +
+      "</div>" +
+      '<div class="card__price"><p class="card__price-main">$0</p><p class="card__price-sub"></p></div>';
+
+    bodyLink.appendChild(body);
+    card.appendChild(bodyLink);
+
+    injectCardPhotos(card, obj);
+    injectCardPrices(card, obj);
+    injectCardMeta(card, obj);
+    injectCatalogCardLinks(card, obj);
+    injectCardDescription(card, obj);
+
+    return card;
+  }
+
+  function formatResultsCount(n) {
+    var mod10 = n % 10;
+    var mod100 = n % 100;
+    var word = "объектов";
+    if (mod100 >= 11 && mod100 <= 14) word = "объектов";
+    else if (mod10 === 1) word = "объект";
+    else if (mod10 >= 2 && mod10 <= 4) word = "объекта";
+    return n + " " + word;
+  }
+
+  function renderSearchResults(groupKey) {
+    var grid = document.querySelector("[data-search-results-grid]");
+    if (!grid) return;
+
+    var list = getCatalog()[groupKey] || [];
+    grid.innerHTML = "";
+
+    list.forEach(function (obj) {
+      if (obj) grid.appendChild(createSearchResultCard(obj));
+    });
+
+    var countEl = document.querySelector(".search-toolbar__count");
+    if (countEl) {
+      countEl.textContent = formatResultsCount(list.length);
+    }
+
+    var pagination = document.querySelector("[data-search-pagination]");
+    if (pagination) {
+      pagination.hidden = list.length > 0;
+    }
+  }
+
+  function setSearchFilterActive(groupKey) {
+    document.querySelectorAll("[data-search-filter]").forEach(function (btn) {
+      var active = btn.getAttribute("data-search-filter") === groupKey;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+  }
+
+  function initSearchPage() {
+    var page = document.querySelector(".page--search");
+    if (!page || !document.querySelector("[data-search-results-grid]")) return;
+
+    var filters = document.querySelectorAll("[data-search-filter]");
+    if (!filters.length) return;
+
+    var initial = "new-building";
+    try {
+      var qp = new URLSearchParams(window.location.search).get("type");
+      if (qp && getCatalog()[qp]) initial = qp;
+    } catch (eQ) {}
+
+    function applyFilter(groupKey) {
+      setSearchFilterActive(groupKey);
+      renderSearchResults(groupKey);
+      try {
+        var url = new URL(window.location.href);
+        url.searchParams.set("type", groupKey);
+        window.history.replaceState(null, "", url.pathname + "?" + url.searchParams.toString());
+      } catch (eU) {}
+    }
+
+    filters.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var key = btn.getAttribute("data-search-filter");
+        if (!key) return;
+        applyFilter(key);
+      });
+    });
+
+    applyFilter(initial);
+  }
+
   function initCatalogSections() {
     document.querySelectorAll("[data-property-card-group]").forEach(function (section) {
+      if (section.hasAttribute("data-search-results")) return;
       var key = section.getAttribute("data-property-card-group");
       if (!key) return;
       var track =
@@ -641,7 +837,8 @@
         section;
       var cards = track.querySelectorAll(":scope > .card, :scope > article.card");
       var leadId = section.getAttribute("data-property-card-lead") || "";
-      var list = listForGroup(key, cards.length, leadId || null);
+      var autoNewSlots = parseAutoNewSlots(section);
+      var list = listForGroup(key, cards.length, leadId || null, autoNewSlots);
       cards.forEach(function (card, idx) {
         var obj = list[idx];
         if (obj) injectCardPrices(card, obj);
@@ -887,6 +1084,140 @@
     }
   }
 
+  function similarRoomsLabel(obj) {
+    if (!obj || !obj.rooms) return "";
+    var r = String(obj.rooms).trim();
+    var sep = r.indexOf(" — ");
+    if (sep >= 0) r = r.slice(0, sep).trim();
+    sep = r.indexOf(" - ");
+    if (sep >= 0) r = r.slice(0, sep).trim();
+    return r;
+  }
+
+  function configureSimilarPriceEl(el, obj) {
+    if (!el || !obj || obj.priceGel == null || !Number.isFinite(Number(obj.priceGel))) return;
+    var gel = Number(obj.priceGel);
+    var pk = obj.priceKind || "fixed";
+    var gelFromTotal =
+      obj.priceFromTotalGel != null && Number.isFinite(Number(obj.priceFromTotalGel))
+        ? Number(obj.priceFromTotalGel)
+        : NaN;
+    if (pk === "per" && Number.isFinite(gelFromTotal)) {
+      el.setAttribute("data-nb-price", String(gelFromTotal));
+      el.setAttribute("data-nb-price-kind", "from");
+      el.innerHTML = formatCardPriceLine(gelFromTotal, "usd", "from");
+    } else if (pk === "per") {
+      el.setAttribute("data-nb-price", String(gel));
+      el.setAttribute("data-nb-price-kind", "per");
+      el.innerHTML = formatCardPriceLine(gel, "usd", "per");
+    } else if (pk === "from") {
+      el.setAttribute("data-nb-price", String(gel));
+      el.setAttribute("data-nb-price-kind", "from");
+      el.innerHTML = formatCardPriceLine(gel, "usd", "from");
+    } else {
+      el.setAttribute("data-nb-price", String(gel));
+      el.setAttribute("data-nb-price-kind", "fixed");
+      el.innerHTML = formatCardPriceLine(gel, "usd", "fixed");
+    }
+  }
+
+  function buildSimilarMiniItem(obj, isObj21) {
+    var li = document.createElement("li");
+    li.className = isObj21 ? "nb-mini nb-obj21__mini" : "nb-mini";
+
+    var link = document.createElement("a");
+    link.className = "nb-mini__link";
+    link.href = detailHrefFor(obj);
+
+    var photos = photoItemsFromObject(obj);
+    var img = document.createElement("img");
+    img.className = "nb-mini__img";
+    img.src = photos.length ? photos[0].src : "images/property-1.png";
+    img.alt = obj.title || "Новостройка";
+    if (isObj21) {
+      img.width = 270;
+      img.height = 257;
+    } else {
+      img.width = 160;
+      img.height = 140;
+    }
+    link.appendChild(img);
+
+    var info = document.createElement("div");
+    info.className = "nb-mini__info";
+
+    var titleEl = document.createElement("p");
+    titleEl.className = "nb-mini__title";
+    titleEl.textContent = obj.title || "Объект";
+    info.appendChild(titleEl);
+
+    var priceEl = document.createElement("p");
+    priceEl.className = isObj21 ? "nb-mini__price nb-obj21__mini-price" : "nb-mini__price";
+    configureSimilarPriceEl(priceEl, obj);
+    info.appendChild(priceEl);
+
+    if (obj.areaM2 != null && Number.isFinite(Number(obj.areaM2))) {
+      var areaLine = document.createElement("p");
+      areaLine.className = "nb-mini__line";
+      areaLine.innerHTML =
+        '<span class="nb-mini__ic">м²</span> ' + Math.round(Number(obj.areaM2)) + " м<sup>2</sup>";
+      info.appendChild(areaLine);
+    }
+
+    var rooms = similarRoomsLabel(obj);
+    if (rooms) {
+      var roomLine = document.createElement("p");
+      roomLine.className = "nb-mini__line";
+      roomLine.innerHTML = '<span class="nb-mini__ic">◇</span> ' + rooms;
+      info.appendChild(roomLine);
+    }
+
+    link.appendChild(info);
+    li.appendChild(link);
+    return li;
+  }
+
+  /** Похожие новостройки: превью других объектов из каталога (без табов студия/1+1/2+1). */
+  function initSimilarNewBuildings(currentId) {
+    if (!document.querySelector("main[data-nb-catalog-id]")) return;
+
+    document.querySelectorAll(".nb-similar__tabs, .nb-obj21__tabs").forEach(function (el) {
+      el.remove();
+    });
+    document.querySelectorAll(".nb-obj21__pagination").forEach(function (el) {
+      el.remove();
+    });
+
+    var listEl =
+      document.querySelector("[data-nb-similar-list]") ||
+      document.querySelector(".nb-obj21__grid") ||
+      document.querySelector(".nb-similar__list");
+    if (!listEl) return;
+
+    var isObj21 = listEl.classList.contains("nb-obj21__grid");
+    var others = (getCatalog()["new-building"] || []).filter(function (o) {
+      return o && o.id !== currentId;
+    });
+
+    listEl.innerHTML = "";
+
+    var section =
+      listEl.closest("[data-nb-similar-section]") ||
+      listEl.closest(".nb-similar") ||
+      listEl.closest(".nb-obj21__similar-wrap");
+
+    if (!others.length) {
+      if (section) section.hidden = true;
+      return;
+    }
+
+    if (section) section.hidden = false;
+
+    others.forEach(function (obj) {
+      listEl.appendChild(buildSimilarMiniItem(obj, isObj21));
+    });
+  }
+
   function initCatalogDetailPage() {
     var root =
       document.querySelector("main[data-nb-catalog-id]") ||
@@ -988,6 +1319,8 @@
 
     initCatalogDetailHero(root, obj);
 
+    initSimilarNewBuildings(id);
+
     var statTexts = root.querySelectorAll(".nb-stat .nb-stat__text");
     if (statTexts[0] && obj.areaM2 != null && Number.isFinite(Number(obj.areaM2))) {
       statTexts[0].innerHTML = Math.round(Number(obj.areaM2)) + " м<sup>2</sup>";
@@ -1039,5 +1372,6 @@
     initCatalogSections();
     initCardInteractions();
     initCatalogDetailPage();
+    initSearchPage();
   });
 })();

@@ -240,27 +240,11 @@
     });
   }
 
-  function initObj21Tabs() {
-    document.querySelectorAll(".nb-obj21__tabs").forEach(function (wrap) {
-      wrap.querySelectorAll(".nb-obj21__tab").forEach(function (tab) {
-        tab.addEventListener("click", function () {
-          wrap.querySelectorAll(".nb-obj21__tab").forEach(function (t) {
-            t.classList.remove("is-active");
-            t.setAttribute("aria-selected", "false");
-          });
-          tab.classList.add("is-active");
-          tab.setAttribute("aria-selected", "true");
-        });
-      });
-    });
-  }
-
   document.addEventListener("DOMContentLoaded", function () {
     initCarousels();
     initSearchForms();
     initLeadForm();
     initCurrencyToggle();
     initNewBuildingCurrencyToggle();
-    initObj21Tabs();
   });
 })();

@@ -853,9 +853,17 @@ a.card__loc--maplink:hover {
   background: var(--color-white);
   color: var(--color-black);
   font-size: 16px;
+  font-family: inherit;
   box-shadow: var(--shadow-btn);
   border: 1px solid transparent;
   transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+button.filter-type-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter-type-btn:hover {
@@ -1975,13 +1983,38 @@ a.btn-map {
 }
 
 .nb-mini {
+  display: block;
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-btn);
+  overflow: hidden;
+}
+
+.nb-mini__link {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  background: var(--color-white);
-  border-radius: var(--radius-card);
+  width: 100%;
   padding: clamp(14px, 2vw, 16px);
-  box-shadow: var(--shadow-btn);
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nb-mini__link:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+.nb-mini__title {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .nb-mini__img {
