@@ -460,6 +460,18 @@ a {
   object-fit: cover;
 }
 
+.card__photo--fit-contain {
+  height: min(400px, 72vw);
+  max-height: 420px;
+  background: #e8e4df;
+}
+
+.card__photo img.property-photo--contain,
+.card__photo-gallery__live.property-photo--contain {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
 .card__photo--stack .card__img-layer {
   position: absolute;
   inset: 0;
@@ -1430,11 +1442,17 @@ a.filter-type-btn--link {
   flex-shrink: 0;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  background: #fef6ee;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.map-page__marker-icon img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  object-fit: contain;
 }
 
 .map-page__marker-label {
@@ -1581,6 +1599,21 @@ a.btn-map {
   max-height: none;
   aspect-ratio: unset;
   object-fit: cover;
+}
+
+.nb-hero__img.property-photo--contain,
+.nb-hero.nb-hero--gallery .nb-hero__img.property-photo--contain,
+.nb-hero.nb-hero--fit-contain .nb-hero__img {
+  aspect-ratio: unset;
+  max-height: min(72vw, 560px);
+  height: auto;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.nb-hero.nb-hero--fit-contain,
+.nb-hero.nb-hero--gallery.nb-hero--fit-contain {
+  background: #e8e4df;
 }
 
 .nb-obj21__hero-lines--many {

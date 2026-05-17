@@ -68,17 +68,25 @@
     });
   }
 
+  function buildMarkerLogoIcon() {
+    var iconWrap = document.createElement("span");
+    iconWrap.className = "map-page__marker-icon";
+    iconWrap.setAttribute("aria-hidden", "true");
+    var img = document.createElement("img");
+    img.src = "images/logo-mark.svg";
+    img.alt = "";
+    img.width = 30;
+    img.height = 30;
+    img.decoding = "async";
+    iconWrap.appendChild(img);
+    return iconWrap;
+  }
+
   function buildMarkerElement(obj) {
     var wrap = document.createElement("div");
     wrap.className = "map-page__marker";
 
-    var iconWrap = document.createElement("span");
-    iconWrap.className = "map-page__marker-icon";
-    iconWrap.setAttribute("aria-hidden", "true");
-    iconWrap.innerHTML =
-      '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" focusable="false">' +
-      '<path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-7h-7v7H5a1 1 0 0 1-1-1v-7.5Z" fill="#e05d2e" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>' +
-      "</svg>";
+    var iconWrap = buildMarkerLogoIcon();
 
     var label = document.createElement("span");
     label.className = "map-page__marker-label";
@@ -135,7 +143,9 @@
   var items = jitterDuplicateCoords(rawItems);
 
   if (items.length === 0) {
-    new mapboxgl.Marker({ color: "#e05d2e" }).setLngLat(BATUMI_CENTER).addTo(map);
+    new mapboxgl.Marker({ element: buildMarkerLogoIcon(), anchor: "center" })
+      .setLngLat(BATUMI_CENTER)
+      .addTo(map);
   } else {
     var bounds = new mapboxgl.LngLatBounds();
     items.forEach(function (item) {

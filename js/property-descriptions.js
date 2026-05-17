@@ -345,7 +345,12 @@
       if (typeof p === "string") return { src: p, name: "" };
       var src = p.src != null ? String(p.src).trim() : "";
       if (!src) return null;
-      return { src: src, name: p.name != null ? String(p.name).trim() : "" };
+      var fit = p.fit === "contain" ? "contain" : "";
+      return {
+        src: src,
+        name: p.name != null ? String(p.name).trim() : "",
+        fit: fit,
+      };
     }
 
     var items = [];
@@ -354,6 +359,22 @@
       if (ent) items.push(ent);
     }
     return items;
+  }
+
+  function applyPhotoDisplay(img, item, container) {
+    if (!img) return;
+    var contain = item && item.fit === "contain";
+    img.classList.toggle("property-photo--contain", contain);
+    if (!container) return;
+    if (container.classList.contains("card__photo")) {
+      container.classList.toggle("card__photo--fit-contain", contain);
+    }
+    if (
+      container.classList.contains("nb-hero") ||
+      container.classList.contains("nb-obj21__hero")
+    ) {
+      container.classList.toggle("nb-hero--fit-contain", contain);
+    }
   }
 
   /**
@@ -379,6 +400,7 @@
       var it = items[idx];
       imgEl.setAttribute("src", it.src);
       imgEl.setAttribute("alt", it.name || altBase);
+      applyPhotoDisplay(imgEl, it, heroMount);
       if (counter) counter.textContent = idx + 1 + " / " + items.length;
       for (var di = 0; di < dotSpans.length; di++) {
         dotSpans[di].classList.toggle("is-active", di === idx);
@@ -498,6 +520,7 @@
 
     imgEl.setAttribute("src", items[0].src);
     imgEl.setAttribute("alt", items[0].name || altBase);
+    applyPhotoDisplay(imgEl, items[0], heroMount);
 
     if (items.length >= 2) {
       setupDetailPagePhotoGallery(heroMount, imgEl, items, altBase);
@@ -546,6 +569,7 @@
       var it = items[idx];
       liveImg.src = it.src;
       liveImg.alt = it.name || altBase;
+      applyPhotoDisplay(liveImg, it, box);
       counter.textContent = idx + 1 + " / " + items.length;
     }
 
@@ -638,6 +662,7 @@
       liveImg.style.display = "";
       liveImg.src = first.src;
       liveImg.alt = first.name || altBase;
+      applyPhotoDisplay(liveImg, first, box);
       setupCardPhotoGallery(card, box, items, altBase, liveImg);
       card.setAttribute("data-catalog-photos", "1");
       return;
@@ -646,8 +671,10 @@
     if (layers.length >= 2) {
       layers[0].src = first.src;
       layers[0].alt = first.name || altBase;
+      applyPhotoDisplay(layers[0], first, box);
       layers[1].src = second.src;
       layers[1].alt = second.name || altBase;
+      applyPhotoDisplay(layers[1], second, box);
       card.setAttribute("data-catalog-photos", "1");
       return;
     }
@@ -656,6 +683,7 @@
     if (img) {
       img.src = first.src;
       img.alt = first.name || altBase;
+      applyPhotoDisplay(img, first, box);
       card.setAttribute("data-catalog-photos", "1");
     }
   }
