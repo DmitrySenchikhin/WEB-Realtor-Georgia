@@ -77,15 +77,26 @@
     return out;
   }
 
-  function listForGroup(groupKey, count) {
-    if (groupKey === "mixed") return mixedObjectsList(count);
-    var list = getCatalog()[groupKey] || [];
-    var out = [];
-    if (!list.length) return out;
-    for (var i = 0; i < count; i++) {
-      out.push(list[i % list.length]);
+  function listForGroup(groupKey, count, leadId) {
+    var out;
+    if (groupKey === "mixed") {
+      out = mixedObjectsList(count);
+    } else {
+      var list = getCatalog()[groupKey] || [];
+      out = [];
+      if (!list.length) return out;
+      for (var i = 0; i < count; i++) {
+        out.push(list[i % list.length]);
+      }
     }
-    return out;
+    if (!leadId) return out;
+    var lead = findObjectById(leadId);
+    if (!lead) return out;
+    out = out.filter(function (o) {
+      return o && o.id !== leadId;
+    });
+    out.unshift(lead);
+    return out.slice(0, count);
   }
 
   function rawDetailHrefFor(obj) {
@@ -629,7 +640,8 @@
         section.querySelector(".search-results__grid") ||
         section;
       var cards = track.querySelectorAll(":scope > .card, :scope > article.card");
-      var list = listForGroup(key, cards.length);
+      var leadId = section.getAttribute("data-property-card-lead") || "";
+      var list = listForGroup(key, cards.length, leadId || null);
       cards.forEach(function (card, idx) {
         var obj = list[idx];
         if (obj) injectCardPrices(card, obj);
