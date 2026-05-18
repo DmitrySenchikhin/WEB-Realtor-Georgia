@@ -147,12 +147,19 @@
     } else if (groupKey === "mixed") {
       out = mixedObjectsList(count);
     } else {
-      var list = getCatalog()[groupKey] || [];
-      out = [];
-      if (!list.length) return out;
-      for (var i = 0; i < count; i++) {
-        out.push(list[i % list.length]);
+      var groupList = getCatalog()[groupKey] || [];
+      out = groupList.slice();
+      if (!out.length) return out;
+      if (leadId) {
+        var leadObj = findObjectById(leadId);
+        if (leadObj) {
+          out = out.filter(function (o) {
+            return o && o.id !== leadId;
+          });
+          out.unshift(leadObj);
+        }
       }
+      return out;
     }
     if (groupKey === "mixed" || !leadId) return out;
     var lead = findObjectById(leadId);
@@ -162,6 +169,23 @@
     });
     out.unshift(lead);
     return out.slice(0, count);
+  }
+
+  function syncSectionCardSlots(track, list) {
+    var cardSelector = ":scope > .card, :scope > article.card";
+    var cards = track.querySelectorAll(cardSelector);
+    if (!cards.length) return cards;
+    var template = cards[0];
+    while (track.querySelectorAll(cardSelector).length < list.length) {
+      track.appendChild(template.cloneNode(true));
+    }
+    cards = track.querySelectorAll(cardSelector);
+    for (var i = 0; i < cards.length; i++) {
+      var show = i < list.length;
+      cards[i].hidden = !show;
+      cards[i].style.display = show ? "" : "none";
+    }
+    return track.querySelectorAll(cardSelector);
   }
 
   function rawDetailHrefFor(obj) {
@@ -697,6 +721,47 @@
     });
   }
 
+  function ensureApartmentCardLinks(card, obj) {
+    if (!obj || String(obj.id).indexOf("apt-") !== 0) return;
+    var href = detailHrefFor(obj);
+    if (!href) return;
+
+    var photo = card.querySelector(".card__photo");
+    var body = card.querySelector(":scope > .card__body");
+    if (!photo || !body) return;
+
+    card.classList.add("card--linkable");
+
+    if (!photo.querySelector(".card__photo-overlay")) {
+      var overlay = document.createElement("a");
+      overlay.className = "card__photo-overlay";
+      overlay.href = href;
+      overlay.setAttribute("aria-label", "Открыть: " + (obj.title || "квартира"));
+      photo.appendChild(overlay);
+    }
+
+    if (!card.querySelector("a.card__body-link")) {
+      var bodyLink = document.createElement("a");
+      bodyLink.className = "card__body-link";
+      bodyLink.href = href;
+      card.insertBefore(bodyLink, body);
+      bodyLink.appendChild(body);
+    }
+
+    injectCatalogCardLinks(card, obj);
+  }
+
+  function renderCatalogGrid(track, list) {
+    track.innerHTML = "";
+    list.forEach(function (obj) {
+      if (obj) track.appendChild(createSearchResultCard(obj));
+    });
+    var countEl = document.querySelector(".search-toolbar__count");
+    if (countEl && track.closest("[data-property-card-group='apartments']")) {
+      countEl.textContent = formatResultsCount(list.length);
+    }
+  }
+
   function injectCardDescription(card, obj) {
     if (!obj || !obj.description) return;
     var text = String(obj.description).trim();
@@ -867,12 +932,26 @@
       var leadId = section.getAttribute("data-property-card-lead") || "";
       var autoNewSlots = parseAutoNewSlots(section);
       var list = listForGroup(key, cards.length, leadId || null, autoNewSlots);
+      var isCatalogGrid =
+        track.classList.contains("search-results__grid") && !section.hasAttribute("data-search-results");
+
+      if (isCatalogGrid) {
+        renderCatalogGrid(track, list);
+        return;
+      }
+
+      if (key !== "mixed") {
+        cards = syncSectionCardSlots(track, list);
+      }
       cards.forEach(function (card, idx) {
         var obj = list[idx];
         if (obj) injectCardPrices(card, obj);
         if (obj) injectCardMeta(card, obj);
         if (obj) injectCardPhotos(card, obj);
-        if (obj) injectCatalogCardLinks(card, obj);
+        if (obj) {
+          ensureApartmentCardLinks(card, obj);
+          if (String(obj.id).indexOf("apt-") !== 0) injectCatalogCardLinks(card, obj);
+        }
         injectCardDescription(card, obj);
       });
     });

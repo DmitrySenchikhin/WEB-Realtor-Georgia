@@ -18,8 +18,8 @@
  * description: полный текст описания (на карточке показывается превью в несколько строк)
  * detailHref: опционально — ссылка «Перейти к объекту» в модальном окне
  *
- * Лучшие предложения на главной: добавляйте запись в конец нужной группы — последние 3 автоматически
- * попадут в блок «Лучшие предложения» (data-property-card-auto-new).
+ * На главной блоки «Лучшие предложения» и «Квартиры в Батуми» (data-property-card-group="apartments")
+ * показывают все объекты группы apartments; lead — data-property-card-lead.
  */
 (function (global) {
   "use strict";
@@ -149,6 +149,35 @@
 
     apartments: [
       {
+        id: "apt-orbi-beach-tower-2201",
+        title: "ORBI BEACH TOWER 2201",
+        detailHref: "apartment.html",
+        description:
+          "ORBI BEACH TOWER — 1+1 панорама. Батуми, ул. Шерифа Химшиашвили, 57. 14 этаж, 50 м². Первая линия моря, прямой вид на море, гарантированная панорама. Отлично подходит для жизни и для сдачи в аренду. Квартира со свежим ремонтом, ранее не сдавалась: панорамные окна, светлые комнаты, высокий арендный спрос. В доме — ресепция, лифты, охрана. Развитая инфраструктура: торговый центр, сетевые магазины, SPA и фитнес, парк имени Лех и Марии Качиньских, набережная, кафе и рестораны, прогулочная зона. Цена $125 000 — уточняйте актуальность и условия сделки у менеджера.",
+        priceGel: 337_500,
+        priceKind: "fixed",
+        geo: {
+          address: "Батуми, ул. Шерифа Химшиашвили, 57",
+          lat: 41.630308,
+          lng: 41.602256,
+          mapsUrl: "https://www.google.com/maps?q=41.630308,41.602256",
+        },
+        rooms: "1+1",
+        areaM2: 50,
+        floorsText: "14 этаж",
+        completionText: "свежий ремонт",
+        photos: [
+          { name: "Гостиная с панорамными окнами", src: "images/orbi-beach-tower-2201/orbi-2201-02.png" },
+          { name: "Панорама: первая линия, море и набережная", src: "images/orbi-beach-tower-2201/orbi-2201-01.png" },
+          { name: "Столовая зона, вид на море", src: "images/orbi-beach-tower-2201/orbi-2201-03.png" },
+          { name: "Кухня и гостиная", src: "images/orbi-beach-tower-2201/orbi-2201-04.png" },
+          { name: "Кухня", src: "images/orbi-beach-tower-2201/orbi-2201-05.png" },
+          { name: "Спальня, вид на море", src: "images/orbi-beach-tower-2201/orbi-2201-06.png" },
+          { name: "Санузел", src: "images/orbi-beach-tower-2201/orbi-2201-07.png" },
+          { name: "Лобби ORBI Beach Tower, рецепция", src: "images/orbi-beach-tower-2201/orbi-2201-08.png" },
+        ],
+      },
+      {
         id: "apt-orbi-beach-tower-2912",
         title: "ORBI BEACH TOWER — 1+1 с видом на парк и море",
         detailHref: "apartment.html",
@@ -186,35 +215,6 @@
           { name: "Спальня, акцентная стена", src: "images/orbi-beach-tower-2912/orbi-beach-17.png" },
           { name: "Спальня с видом на город", src: "images/orbi-beach-tower-2912/orbi-beach-18.png" },
           { name: "Кухня, прихожая и книжный шкаф", src: "images/orbi-beach-tower-2912/orbi-beach-19.png" },
-        ],
-      },
-      {
-        id: "apt-orbi-beach-tower-3001",
-        title: "ORBI BEACH TOWER 1+1 панорама",
-        detailHref: "apartment.html",
-        description:
-          "ORBI BEACH TOWER — 1+1 панорама. Батуми, ул. Шерифа Химшиашвили, 57. 14 этаж, 50 м². Первая линия моря, прямой вид на море, гарантированная панорама. Отлично подходит для жизни и для сдачи в аренду. Квартира со свежим ремонтом, ранее не сдавалась: панорамные окна, светлые комнаты, высокий арендный спрос. В доме — рецепция, лифты, охрана. Развитая инфраструктура: торговый центр, сетевые магазины, SPA и фитнес, парк имени Лех и Марии Качиньских, набережная, кафе и рестораны, прогулочная зона. Цена $125 000 — уточняйте актуальность и условия сделки у менеджера.",
-        priceGel: 337_500,
-        priceKind: "fixed",
-        geo: {
-          address: "Батуми, ул. Шерифа Химшиашвили, 57",
-          lat: 41.630308,
-          lng: 41.602256,
-          mapsUrl: "https://www.google.com/maps?q=41.630308,41.602256",
-        },
-        rooms: "1+1",
-        areaM2: 50,
-        floorsText: "14 этаж",
-        completionText: "свежий ремонт",
-        photos: [
-          { name: "Гостиная с панорамными окнами", src: "images/orbi-beach-tower-3001/orbi-3001-02.png" },
-          { name: "Панорама: первая линия, море и набережная", src: "images/orbi-beach-tower-3001/orbi-3001-01.png" },
-          { name: "Столовая зона, вид на море", src: "images/orbi-beach-tower-3001/orbi-3001-03.png" },
-          { name: "Кухня и гостиная", src: "images/orbi-beach-tower-3001/orbi-3001-04.png" },
-          { name: "Кухня", src: "images/orbi-beach-tower-3001/orbi-3001-05.png" },
-          { name: "Спальня, вид на море", src: "images/orbi-beach-tower-3001/orbi-3001-06.png" },
-          { name: "Санузел", src: "images/orbi-beach-tower-3001/orbi-3001-07.png" },
-          { name: "Лобби ORBI Beach Tower, рецепция", src: "images/orbi-beach-tower-3001/orbi-3001-08.png" },
         ],
       },
       {
@@ -306,6 +306,58 @@
           { name: "Прихожая", src: "images/alliance-privilege/alliance-09.png" },
         ],
       },
+      {
+        id: "apt-marina-club-1p1",
+        title: "Marina Club 1+1",
+        detailHref: "apartment.html",
+        description:
+          "Апартаменты 1+1 в Marina Club Block C. Адрес: Батуми, ул. Лех и Марии Качиньских, 19/1. 9 этаж, 47,3 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City, магазины, аптеки, кафе, рестораны, казино, аэропорт. Премиальный жилой комплекс — благоустроенная зелёная территория, открытый и закрытый бассейны, кинотеатр, общая терраса на крыше, ресторан, кафе, бар, SPA и фитнес-центр, лифты Kone, детская и спортивная площадки, круглосуточная охрана и видеонаблюдение, управляющая компания, вестибюль, ресепшн, консьерж, коммерческие и офисные помещения. Первая береговая линия от моря. Сдача — IV квартал 2025. Подходит для жизни и для сдачи в аренду. Квартира в белом каркасе, панорамные окна, качественная отделка, вид на горы и город. Цена $58 000 — уточняйте актуальность и условия сделки у менеджера.",
+        priceGel: 156_600,
+        priceKind: "fixed",
+        geo: {
+          address: "Батуми, ул. Лех и Марии Качиньских, 19/1 (Marina Club Block C)",
+          lat: 41.621_463,
+          lng: 41.590_898,
+          mapsUrl: "https://www.google.com/maps?q=41.621463,41.590898",
+        },
+        rooms: "1+1",
+        areaM2: 47.3,
+        floorsText: "9 этаж",
+        completionText: "белый каркас, IV кв. 2025",
+        photos: [
+          { name: "Marina Club Block C — фасад комплекса", src: "images/marina-club/marina-01.png" },
+          { name: "Marina Club — вид на стройку и море", src: "images/marina-club/marina-02.png" },
+          { name: "Первая линия: вид на море", src: "images/marina-club/marina-03.png" },
+          { name: "Планировка 1+1, 47,3 м²", src: "images/marina-club/marina-04.png" },
+        ],
+      },
+      {
+        id: "apt-batumi-view-studio",
+        title: "Batumi View студия",
+        detailHref: "apartment.html",
+        description:
+          "Просторная студия в жилом комплексе Batumi View, block B. Адрес: Батуми, ул. Лех и Марии Качиньских, 8. 4 этаж, 36 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс премиум-класса — ресепшн и круглосуточная охрана, закрытая территория, коммерческие объекты, магазины, рестораны, спортивный зал, игровые площадки. До моря около 50 м, скоростные лифты, подземный и наземный паркинг. Подходит для проживания и для сдачи в аренду. Студия с качественным ремонтом, мебелью и техникой, вид на море. Цена $105 000 — уточняйте актуальность и условия сделки у менеджера.",
+        priceGel: 283_500,
+        priceKind: "fixed",
+        geo: {
+          address: "Батуми, ул. Лех и Марии Качиньских, 8 (Batumi View, block B)",
+          lat: 41.623_179,
+          lng: 41.593_071,
+          mapsUrl: "https://www.google.com/maps?q=41.623179,41.593071",
+        },
+        rooms: "студия",
+        areaM2: 36,
+        floorsText: "4 этаж",
+        completionText: "ремонт с мебелью",
+        photos: [
+          { name: "Вид на море с балкона", src: "images/batumi-view/batumi-view-01.png" },
+          { name: "Спальная зона", src: "images/batumi-view/batumi-view-02.png" },
+          { name: "Студия: прихожая и спальня", src: "images/batumi-view/batumi-view-03.png" },
+          { name: "Кухня и прихожая", src: "images/batumi-view/batumi-view-04.png" },
+          { name: "Кухонная зона", src: "images/batumi-view/batumi-view-05.png" },
+          { name: "Гардероб и зона стирки", src: "images/batumi-view/batumi-view-06.png" },
+        ],
+      },
     ],
 
     house: [],
@@ -313,6 +365,32 @@
 
   function cloneDefaultArray(items) {
     return JSON.parse(JSON.stringify(items));
+  }
+
+  /** Дополняет сохранённый массив объектами из каталога по умолчанию (по id). */
+  function mergeCatalogArray(existing, defaults) {
+    if (!Array.isArray(existing)) return cloneDefaultArray(defaults);
+    if (!Array.isArray(defaults) || !defaults.length) return existing.slice();
+
+    var existingById = {};
+    existing.forEach(function (item) {
+      if (item && item.id) existingById[item.id] = item;
+    });
+
+    var merged = defaults.map(function (def) {
+      if (def && def.id && existingById[def.id]) return existingById[def.id];
+      return cloneDefaultArray([def])[0];
+    });
+
+    existing.forEach(function (item) {
+      if (!item || !item.id) return;
+      var inDefaults = defaults.some(function (d) {
+        return d && d.id === item.id;
+      });
+      if (!inDefaults) merged.push(item);
+    });
+
+    return merged;
   }
 
   /**
@@ -328,7 +406,7 @@
       var preset = hasExisting && Object.prototype.hasOwnProperty.call(existing, key);
       var val = preset ? existing[key] : null;
       if (preset && Array.isArray(val)) {
-        out[key] = val;
+        out[key] = mergeCatalogArray(val, defaults[key]);
       } else {
         out[key] = cloneDefaultArray(defaults[key]);
       }
