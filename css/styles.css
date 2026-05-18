@@ -2961,6 +2961,10 @@ body.property-desc-modal-open {
     margin-top: 32px;
   }
 
+  .page--home .hero__search-wrap {
+    margin-top: 132px;
+  }
+
   .search-row--hero,
   .search-row--bottom {
     flex-wrap: wrap;
