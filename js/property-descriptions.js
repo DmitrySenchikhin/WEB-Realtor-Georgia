@@ -826,7 +826,7 @@
     var filters = document.querySelectorAll("[data-search-filter]");
     if (!filters.length) return;
 
-    var initial = "new-building";
+    var initial = "apartments";
     try {
       var qp = new URLSearchParams(window.location.search).get("type");
       if (qp && getCatalog()[qp]) initial = qp;

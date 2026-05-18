@@ -40,18 +40,10 @@
 
       <section class="search-filters container" aria-label="Параметры поиска">
         <div class="search-filters__row search-filters__row--top">
-          <label class="search-filters__city-wrap">
-            <span class="visually-hidden">Город</span>
-            <input class="search-filters__city" type="text" name="city" value="Батуми" autocomplete="address-level2" />
-          </label>
           <div class="search-filters__types" role="group" aria-label="Тип объекта">
-            <button type="button" class="filter-type-btn is-active" data-search-filter="new-building">Новостройки</button>
-            <button type="button" class="filter-type-btn" data-search-filter="apartments">Квартира</button>
+            <button type="button" class="filter-type-btn" data-search-filter="new-building">Новостройки</button>
+            <button type="button" class="filter-type-btn is-active" data-search-filter="apartments">Квартира</button>
             <button type="button" class="filter-type-btn" data-search-filter="house">Дом</button>
-          </div>
-          <div class="search-filters__recent">
-            <span class="search-filters__recent-label">Добавленные недавно</span>
-            <button type="button" class="search-filters__recent-toggle" aria-label="Только недавно добавленные" aria-pressed="false"></button>
           </div>
         </div>
 
@@ -90,7 +82,6 @@
               <button type="button" class="filter-chip is-active">1+1</button>
               <button type="button" class="filter-chip is-active">2+1</button>
               <button type="button" class="filter-chip">3+1</button>
-              <button type="button" class="filter-chip">Другое</button>
             </div>
           </div>
 
@@ -115,7 +106,6 @@
 
         <div class="search-filters__row search-filters__row--actions">
           <form class="search-filters__actions" action="search.html" method="get">
-            <input type="hidden" name="q" value="Батуми" />
             <button class="btn-search" type="submit">
               <img src="images/icon-search.svg" alt="" width="24" height="24" />
               Поиск

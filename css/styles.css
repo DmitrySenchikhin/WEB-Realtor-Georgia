@@ -819,9 +819,8 @@ a.card__loc--maplink:hover {
 }
 
 .search-filters__row--top {
-  display: grid;
-  grid-template-columns: minmax(200px, 364px) minmax(280px, 1fr) minmax(200px, 273px);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
 }
