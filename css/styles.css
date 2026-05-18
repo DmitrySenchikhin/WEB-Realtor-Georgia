@@ -216,7 +216,11 @@ a {
 }
 
 .search-bar--glass--hero {
-  padding: 39px 40px 40px;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 /* —— Search row (hero + bottom) —— */
@@ -2969,7 +2973,7 @@ body.property-desc-modal-open {
   }
 
   .search-bar--glass--hero {
-    padding: 24px 20px;
+    padding: 24px;
   }
 
   .listings__stack {
