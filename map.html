@@ -14,7 +14,7 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
   </head>
-  <body>
+  <body data-i18n-title="page.map">
     <main class="page page--map">
       <a class="map-page__back" href="index.html" aria-label="Вернуться на главную">
         <span class="map-page__back-circle" aria-hidden="true">
@@ -23,7 +23,7 @@
       </a>
 
       <header class="search-top container map-page__header">
-        <a class="search-top__logo" href="index.html" aria-label="REALTOR GEORGIA — на главную">
+        <a class="search-top__logo" href="index.html" data-i18n-aria="aria.home" aria-label="REALTOR GEORGIA — на главную">
           <img src="images/logo.svg" alt="REALTOR GEORGIA" width="153" height="47" />
         </a>
         <div class="search-top__contacts">
@@ -33,6 +33,7 @@
             href="https://wa.me/995598309038"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n-aria="aria.whatsapp"
             aria-label="Написать в WhatsApp"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
@@ -64,6 +65,7 @@
       <div id="map-view" class="map-page__canvas" role="application" aria-label="Карта: Батуми, Грузия"></div>
     </main>
 
+    <script src="js/i18n.js" defer></script>
     <script src="js/map-config.js"></script>
     <script src="js/objects-catalog.js" defer></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js" defer></script>

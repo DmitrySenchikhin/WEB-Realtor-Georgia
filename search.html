@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
   </head>
-  <body>
+  <body data-i18n-title="page.search">
     <main class="page page--search">
       <header class="search-top container">
-        <a class="search-top__logo" href="index.html" aria-label="REALTOR GEORGIA — на главную">
+        <a class="search-top__logo" href="index.html" data-i18n-aria="aria.home" aria-label="REALTOR GEORGIA — на главную">
           <img src="images/logo.svg" alt="REALTOR GEORGIA" width="153" height="47" />
         </a>
         <div class="search-top__contacts">
@@ -26,6 +26,7 @@
             href="https://wa.me/995598309038"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n-aria="aria.whatsapp"
             aria-label="Написать в WhatsApp"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
@@ -38,19 +39,19 @@
         </div>
       </header>
 
-      <section class="search-filters container" aria-label="Параметры поиска">
+      <section class="search-filters container" data-i18n-aria="aria.searchParams" aria-label="Параметры поиска">
         <div class="search-filters__row search-filters__row--top">
-          <div class="search-filters__types" role="group" aria-label="Тип объекта">
-            <button type="button" class="filter-type-btn" data-search-filter="new-building">Новостройки</button>
-            <button type="button" class="filter-type-btn is-active" data-search-filter="apartments">Квартира</button>
-            <button type="button" class="filter-type-btn" data-search-filter="house">Дом</button>
+          <div class="search-filters__types" role="group" data-i18n-aria="aria.objectType" aria-label="Тип объекта">
+            <button type="button" class="filter-type-btn" data-search-filter="new-building" data-i18n="filter.newBuilding">Новостройки</button>
+            <button type="button" class="filter-type-btn is-active" data-search-filter="apartments" data-i18n="filter.apartment">Квартира</button>
+            <button type="button" class="filter-type-btn" data-search-filter="house" data-i18n="filter.house">Дом</button>
           </div>
         </div>
 
         <div class="search-filters__row search-filters__row--cards">
           <div class="filter-card">
             <div class="filter-card__head">
-              <span class="filter-card__title">Ценовой диапазон</span>
+              <span class="filter-card__title" data-i18n="filter.priceRange">Ценовой диапазон</span>
               <button type="button" class="currency-toggle is-usd" aria-label="Валюта: доллар" aria-pressed="false">
                 <span class="currency-toggle__inner">
                   <span class="currency-toggle__sign currency-toggle__sign--usd" aria-hidden="true">$</span>
@@ -75,10 +76,10 @@
 
           <div class="filter-card">
             <div class="filter-card__head filter-card__head--simple">
-              <span class="filter-card__title">Количество комнат</span>
+              <span class="filter-card__title" data-i18n="filter.rooms">Количество комнат</span>
             </div>
-            <div class="filter-chips" role="group" aria-label="Комнаты">
-              <button type="button" class="filter-chip is-active">Студия</button>
+            <div class="filter-chips" role="group" data-i18n-aria="aria.rooms" aria-label="Комнаты">
+              <button type="button" class="filter-chip is-active" data-i18n="filter.studio">Студия</button>
               <button type="button" class="filter-chip is-active">1+1</button>
               <button type="button" class="filter-chip is-active">2+1</button>
             </div>
@@ -86,12 +87,12 @@
 
           <div class="filter-card">
             <div class="filter-card__head filter-card__head--simple">
-              <span class="filter-card__title">Общая площадь</span>
+              <span class="filter-card__title" data-i18n="filter.area">Общая площадь</span>
             </div>
             <div class="filter-card__fields filter-card__fields--2">
               <label class="filter-field">
                 <span class="visually-hidden">От</span>
-                <input type="text" class="filter-input filter-input--muted" placeholder="от" />
+                <input type="text" class="filter-input filter-input--muted" data-i18n-placeholder="filter.from" placeholder="от" />
                 <span class="filter-input__suffix filter-input__suffix--m2" aria-hidden="true">м<sup>2</sup></span>
               </label>
               <label class="filter-field">
@@ -107,25 +108,25 @@
           <form class="search-filters__actions" action="search.html" method="get">
             <button class="btn-search" type="submit">
               <img src="images/icon-search.svg" alt="" width="24" height="24" />
-              Поиск
+              <span data-i18n="btn.search">Поиск</span>
             </button>
             <a class="btn-map" href="map.html">
               <img src="images/icon-map.svg" alt="" width="20" height="20" />
-              Смотреть на карте
+              <span data-i18n="btn.map">Смотреть на карте</span>
             </a>
           </form>
         </div>
       </section>
 
-      <section class="search-toolbar container" aria-label="Сортировка и счётчик">
+      <section class="search-toolbar container" data-i18n-aria="aria.sort" aria-label="Сортировка и счётчик">
         <button type="button" class="search-sort">
           <img class="search-sort__icon" src="images/icon-sort-arrows.svg" alt="" width="20" height="24" />
-          <span class="search-sort__text">Рекомендуемые</span>
+          <span class="search-sort__text" data-i18n="sort.recommended">Рекомендуемые</span>
         </button>
         <p class="search-toolbar__count">2000 объявлений</p>
       </section>
 
-      <section class="search-results container" aria-label="Результаты поиска" data-search-results>
+      <section class="search-results container" data-i18n-aria="aria.results" aria-label="Результаты поиска" data-search-results>
         <div class="search-results__grid" data-search-results-grid></div>
       </section>
 
@@ -141,6 +142,8 @@
     </main>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="js/catalog-i18n.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js/objects-catalog.js" defer></script>
     <script src="js/property-descriptions.js" defer></script>
     <script src="js/main.js" defer></script>

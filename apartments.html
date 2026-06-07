@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
   </head>
-  <body>
+  <body data-i18n-title="page.apartments">
     <main class="page page--search">
       <header class="search-top container">
-        <a class="search-top__logo" href="index.html" aria-label="REALTOR GEORGIA — на главную">
+        <a class="search-top__logo" href="index.html" data-i18n-aria="aria.home" aria-label="REALTOR GEORGIA — на главную">
           <img src="images/logo.svg" alt="REALTOR GEORGIA" width="153" height="47" />
         </a>
         <div class="search-top__contacts">
@@ -26,6 +26,7 @@
             href="https://wa.me/995598309038"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n-aria="aria.whatsapp"
             aria-label="Написать в WhatsApp"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
@@ -118,11 +119,11 @@
             <input type="hidden" name="q" value="Батуми" />
             <button class="btn-search" type="submit">
               <img src="images/icon-search.svg" alt="" width="24" height="24" />
-              Поиск
+              <span data-i18n="btn.search">Поиск</span>
             </button>
             <a class="btn-map" href="map.html">
               <img src="images/icon-map.svg" alt="" width="20" height="20" />
-              Смотреть на карте
+              <span data-i18n="btn.map">Смотреть на карте</span>
             </a>
           </form>
         </div>
@@ -165,6 +166,7 @@
     </main>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="js/i18n.js" defer></script>
     <script src="js/objects-catalog.js" defer></script>
     <script src="js/main.js" defer></script>
   </body>

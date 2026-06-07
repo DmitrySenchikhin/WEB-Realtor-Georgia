@@ -3,6 +3,15 @@
 
   var GEL_PER_USD = 2.7;
 
+  /** Тексты объектов каталога — всегда на русском; язык меняет только UI сайта. */
+  function cat(obj, field) {
+    if (!obj) return "";
+    if (field === "address") {
+      return obj.geo && obj.geo.address ? String(obj.geo.address) : "";
+    }
+    return obj[field] != null ? String(obj[field]) : "";
+  }
+
   function formatAmount(value) {
     return Math.round(value).toLocaleString("ru-RU");
   }
@@ -316,23 +325,23 @@
             link.href = murl;
             link.target = "_blank";
             link.rel = "noopener noreferrer";
-            link.setAttribute("aria-label", "Открыть на карте: " + (obj.title || "объект"));
+            link.setAttribute("aria-label", "Открыть на карте: " + (cat(obj, "title") || "объект"));
             while (locEl.firstChild) link.appendChild(locEl.firstChild);
             locEl.parentNode.replaceChild(link, locEl);
           }
         }
       }
       var locSpan = body.querySelector(".card__loc span");
-      if (locSpan && obj.geo && obj.geo.address) {
-        locSpan.textContent = obj.geo.address;
+      if (locSpan && cat(obj, "address")) {
+        locSpan.textContent = cat(obj, "address");
       }
       var items = body.querySelectorAll(".card__meta .card__meta-item");
-      if (items[0] && obj.rooms != null && String(obj.rooms).trim()) {
+      if (items[0] && cat(obj, "rooms")) {
         var svg0 = items[0].querySelector("svg");
         items[0].textContent = "";
         if (svg0) items[0].appendChild(svg0);
         items[0].appendChild(
-          document.createTextNode(" " + String(obj.rooms).trim().replace(/-/g, "–"))
+          document.createTextNode(" " + String(cat(obj, "rooms")).trim().replace(/-/g, "–"))
         );
       }
       if (items[1] && obj.areaM2 != null && Number.isFinite(Number(obj.areaM2))) {
@@ -538,7 +547,7 @@
     if (!heroMount || !imgEl || !obj) return;
 
     var items = photoItemsFromObject(obj);
-    var altBase = obj.title || "Фото объекта";
+    var altBase = cat(obj, "title") || "Фото объекта";
 
     if (!items.length) return;
 
@@ -661,7 +670,7 @@
 
     var first = items[0];
     var second = items[1] || first;
-    var altBase = obj.title || "Фото объекта";
+    var altBase = cat(obj, "title") || "Фото объекта";
     var layers = box.querySelectorAll("img.card__img-layer");
 
     if (items.length >= 2) {
@@ -736,7 +745,7 @@
       var overlay = document.createElement("a");
       overlay.className = "card__photo-overlay";
       overlay.href = href;
-      overlay.setAttribute("aria-label", "Открыть: " + (obj.title || "квартира"));
+      overlay.setAttribute("aria-label", "Открыть: " + (cat(obj, "title") || "квартира"));
       photo.appendChild(overlay);
     }
 
@@ -763,23 +772,25 @@
   }
 
   function injectCardDescription(card, obj) {
-    if (!obj || !obj.description) return;
-    var text = String(obj.description).trim();
+    if (!obj) return;
+    var text = String(cat(obj, "description")).trim();
     if (!text) return;
 
     var bodies = getCardBodies(card);
     if (!bodies.length) return;
 
     var detailHref = detailHrefFor(obj);
-    var title = obj.title || "Объект";
+    var title = cat(obj, "title") || "Объект";
 
     bodies.forEach(function (body) {
-      if (body.querySelector(".card__desc")) return;
-      body.classList.add("card__body--with-desc");
-      var p = document.createElement("p");
-      p.className = "card__desc card__desc--preview";
+      var p = body.querySelector(".card__desc");
+      if (!p) {
+        body.classList.add("card__body--with-desc");
+        p = document.createElement("p");
+        p.className = "card__desc card__desc--preview";
+        body.appendChild(p);
+      }
       p.textContent = text;
-      body.appendChild(p);
     });
 
     card.setAttribute("data-desc-title", title);
@@ -810,12 +821,12 @@
     var photo = document.createElement("div");
     photo.className = "card__photo";
     var img = document.createElement("img");
-    img.alt = obj.title || "Объект";
+    img.alt = cat(obj, "title") || "Объект";
     photo.appendChild(img);
     var overlay = document.createElement("a");
     overlay.className = "card__photo-overlay";
     overlay.href = href;
-    overlay.setAttribute("aria-label", "Открыть: " + (obj.title || "объект"));
+    overlay.setAttribute("aria-label", "Открыть: " + (cat(obj, "title") || "объект"));
     photo.appendChild(overlay);
     card.appendChild(photo);
 
@@ -1112,7 +1123,7 @@
         mapA.href = mapsUrlTrim;
         mapA.target = "_blank";
         mapA.rel = "noopener noreferrer";
-        mapA.setAttribute("aria-label", "Открыть объект на карте: " + (obj.title || ""));
+        mapA.setAttribute("aria-label", "Открыть объект на карте: " + (cat(obj, "title") || ""));
         mapA.appendChild(frag);
         mapWrap.appendChild(mapA);
       }
@@ -1126,7 +1137,7 @@
       mount.className = "nb-location__mapbox";
       mount.setAttribute(
         "aria-label",
-        "Карта: " + (obj.geo.address || obj.title || "объект")
+        "Карта: " + (cat(obj, "address") || cat(obj, "title") || "объект")
       );
       mapWrap.appendChild(mount);
 
@@ -1184,7 +1195,7 @@
         mapA2.href = mapsUrlTrim;
         mapA2.target = "_blank";
         mapA2.rel = "noopener noreferrer";
-        mapA2.setAttribute("aria-label", "Открыть объект на карте: " + (obj.title || ""));
+        mapA2.setAttribute("aria-label", "Открыть объект на карте: " + (cat(obj, "title") || ""));
         mapA2.appendChild(frag2);
         mapWrap.appendChild(mapA2);
       }
@@ -1192,8 +1203,8 @@
   }
 
   function similarRoomsLabel(obj) {
-    if (!obj || !obj.rooms) return "";
-    var r = String(obj.rooms).trim();
+    if (!obj || !cat(obj, "rooms")) return "";
+    var r = String(cat(obj, "rooms")).trim();
     var sep = r.indexOf(" — ");
     if (sep >= 0) r = r.slice(0, sep).trim();
     sep = r.indexOf(" - ");
@@ -1240,7 +1251,7 @@
     var img = document.createElement("img");
     img.className = "nb-mini__img";
     img.src = photos.length ? photos[0].src : "images/property-1.png";
-    img.alt = obj.title || "Новостройка";
+    img.alt = cat(obj, "title") || "Новостройка";
     if (isObj21) {
       img.width = 270;
       img.height = 257;
@@ -1255,7 +1266,7 @@
 
     var titleEl = document.createElement("p");
     titleEl.className = "nb-mini__title";
-    titleEl.textContent = obj.title || "Объект";
+    titleEl.textContent = cat(obj, "title") || "Объект";
     info.appendChild(titleEl);
 
     var priceEl = document.createElement("p");
@@ -1344,8 +1355,10 @@
     var obj = findObjectById(id);
     if (!obj) return;
 
-    if (obj.title) {
-      document.title = obj.title + " — Батуми — REALTOR GEORGIA";
+    root.setAttribute("data-current-catalog-id", id);
+
+    if (cat(obj, "title")) {
+      document.title = cat(obj, "title") + " — Батуми — REALTOR GEORGIA";
     }
 
     var mainPrice = root.querySelector(".nb-price__main, .nb-obj21__price-main");
@@ -1395,31 +1408,31 @@
     }
 
     var metaPinRow = root.querySelector(".nb-meta__pin");
-    if (metaPinRow && obj.geo && obj.geo.address) {
+    if (metaPinRow && cat(obj, "address")) {
       var row = metaPinRow.closest(".nb-meta__row");
       if (row) {
         var nodes = Array.prototype.slice.call(row.childNodes);
         nodes.forEach(function (n) {
           if (n !== metaPinRow) row.removeChild(n);
         });
-        row.appendChild(document.createTextNode(" " + obj.geo.address));
+        row.appendChild(document.createTextNode(" " + cat(obj, "address")));
       }
     }
 
     var buildIcon = root.querySelector(".nb-meta__icon--build");
-    if (buildIcon && obj.title) {
+    if (buildIcon && cat(obj, "title")) {
       var brow = buildIcon.closest(".nb-meta__row");
       if (brow) {
         Array.prototype.slice.call(brow.childNodes).forEach(function (n) {
           if (n !== buildIcon) brow.removeChild(n);
         });
-        brow.appendChild(document.createTextNode(" " + obj.title));
+        brow.appendChild(document.createTextNode(" " + cat(obj, "title")));
       }
     }
 
     var locAddr = root.querySelector(".nb-location__address");
-    if (locAddr && obj.geo && obj.geo.address) {
-      locAddr.textContent = obj.geo.address;
+    if (locAddr && cat(obj, "address")) {
+      locAddr.textContent = cat(obj, "address");
     }
 
     initCatalogLocationMap(root, obj);
@@ -1432,23 +1445,21 @@
     if (statTexts[0] && obj.areaM2 != null && Number.isFinite(Number(obj.areaM2))) {
       statTexts[0].innerHTML = Math.round(Number(obj.areaM2)) + " м<sup>2</sup>";
     }
-    if (statTexts[1] && obj.rooms != null && String(obj.rooms).trim()) {
-      statTexts[1].textContent = String(obj.rooms).trim().replace(/-/g, "–");
+    if (statTexts[1] && cat(obj, "rooms")) {
+      statTexts[1].textContent = String(cat(obj, "rooms")).trim().replace(/-/g, "–");
     }
-    if (statTexts[2] && obj.floorsText != null && String(obj.floorsText).trim()) {
-      statTexts[2].textContent = String(obj.floorsText).trim().replace(/-/g, "–");
+    if (statTexts[2] && cat(obj, "floorsText")) {
+      statTexts[2].textContent = String(cat(obj, "floorsText")).trim().replace(/-/g, "–");
     }
-    if (statTexts[3] && obj.completionText != null && String(obj.completionText).trim()) {
-      statTexts[3].textContent = String(obj.completionText).trim().replace(/-/g, "–");
+    if (statTexts[3] && cat(obj, "completionText")) {
+      statTexts[3].textContent = String(cat(obj, "completionText")).trim().replace(/-/g, "–");
     }
 
-    if (!obj.description) return;
-
-    var text = String(obj.description).trim();
-    var title = obj.title || "Описание";
+    var text = String(cat(obj, "description")).trim();
+    var title = cat(obj, "title") || "Описание";
 
     var textEl = root.querySelector(".nb-desc__text");
-    if (textEl) {
+    if (textEl && text) {
       textEl.textContent = text;
       textEl.classList.add("nb-desc__text--clamp");
       textEl.setAttribute("tabindex", "0");
@@ -1457,21 +1468,32 @@
     }
 
     var toolbarTitle = root.querySelector(".nb-obj21__toolbar-title");
-    if (toolbarTitle && obj.title) toolbarTitle.textContent = obj.title;
+    if (toolbarTitle && cat(obj, "title")) toolbarTitle.textContent = cat(obj, "title");
 
-    function openNbModal(e) {
-      if (e) {
-        e.preventDefault();
+    if (!root.hasAttribute("data-nb-modal-bound")) {
+      root.setAttribute("data-nb-modal-bound", "1");
+
+      function openNbModal(e) {
+        if (e) {
+          e.preventDefault();
+        }
+        var currentId = root.getAttribute("data-current-catalog-id") || "";
+        var current = findObjectById(currentId);
+        if (!current) return;
+        openModal(
+          cat(current, "title") || "Описание",
+          String(cat(current, "description")).trim(),
+          detailHrefFor(current)
+        );
       }
-      openModal(title, text, detailHrefFor(obj));
-    }
 
-    var moreBtn = root.querySelector(".nb-desc__more");
-    if (moreBtn) {
-      moreBtn.addEventListener("click", openNbModal);
-    }
-    if (textEl) {
-      textEl.addEventListener("click", openNbModal);
+      var moreBtn = root.querySelector(".nb-desc__more");
+      if (moreBtn) {
+        moreBtn.addEventListener("click", openNbModal);
+      }
+      if (textEl) {
+        textEl.addEventListener("click", openNbModal);
+      }
     }
   }
 

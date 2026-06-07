@@ -96,14 +96,14 @@
       var n = name && name.value.trim();
       var p = phone && phone.value.trim();
       if (!n || !p) {
-        showToast("Заполните имя и телефон");
+        showToast(window.RealtorI18n ? window.RealtorI18n.t("toast.fillForm") : "Заполните имя и телефон");
         return;
       }
       var text =
         "Заявка на консультацию с сайта RealtorGeorgia.com\n\nИмя: " + n + "\nТелефон: " + p;
       var url = waBase + "?text=" + encodeURIComponent(text);
       window.open(url, "_blank", "noopener,noreferrer");
-      showToast("Открывается WhatsApp — отправьте сообщение с заявкой.");
+      showToast(window.RealtorI18n ? window.RealtorI18n.t("toast.waOpen") : "Открывается WhatsApp — отправьте сообщение с заявкой.");
       form.reset();
     });
   }

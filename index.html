@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
   </head>
-  <body>
+  <body data-i18n-title="page.home">
     <main class="page page--home">
       <section class="hero" aria-label="Главный экран">
         <div class="hero__media" aria-hidden="true">
@@ -29,7 +29,7 @@
 
         <div class="hero__stage">
           <header class="hero__top">
-            <a class="hero__logo" href="index.html" aria-label="REALTOR GEORGIA — на главную">
+            <a class="hero__logo" href="index.html" data-i18n-aria="aria.home" aria-label="REALTOR GEORGIA — на главную">
               <img
                 src="images/logo.svg"
                 alt="REALTOR GEORGIA"
@@ -44,6 +44,7 @@
                 href="https://wa.me/995598309038"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-i18n-aria="aria.whatsapp"
                 aria-label="Написать в WhatsApp"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
@@ -56,7 +57,7 @@
             </div>
           </header>
 
-          <h1 class="hero__title">Поиск недвижимости в Грузии</h1>
+          <h1 class="hero__title" data-i18n="hero.title">Поиск недвижимости в Грузии</h1>
 
           <div class="hero__search-wrap">
             <div class="search-bar--glass search-bar--glass--hero">
@@ -68,7 +69,7 @@
                     width="24"
                     height="24"
                   />
-                  Поиск
+                  <span data-i18n="btn.search">Поиск</span>
                 </button>
                 <a class="btn-map" href="map.html">
                   <img
@@ -77,7 +78,7 @@
                     width="20"
                     height="20"
                   />
-                  Смотреть на карте
+                  <span data-i18n="btn.map">Смотреть на карте</span>
                 </a>
               </form>
             </div>
@@ -96,12 +97,12 @@
             data-property-card-lead="apt-orbi-beach-tower-2201"
           >
             <div class="section-block__head">
-              <h2 id="sec-best" class="section-block__title section-block__title--mixed">Лучшие предложения</h2>
+              <h2 id="sec-best" class="section-block__title section-block__title--mixed" data-i18n="section.best">Лучшие предложения</h2>
               <div class="carousel__arrows">
-                <button type="button" class="carousel__arrow" data-carousel-prev aria-label="Назад">
+                <button type="button" class="carousel__arrow" data-carousel-prev data-i18n-aria="aria.prev" aria-label="Назад">
                   <img src="images/arrow-left.svg" alt="" width="34" height="34" />
                 </button>
-                <button type="button" class="carousel__arrow" data-carousel-next aria-label="Вперёд">
+                <button type="button" class="carousel__arrow" data-carousel-next data-i18n-aria="aria.next" aria-label="Вперёд">
                   <img src="images/arrow-right.svg" alt="" width="34" height="34" />
                 </button>
               </div>
@@ -122,10 +123,10 @@
           <!-- НОВОСТРОЙКИ -->
           <section class="section-block" aria-labelledby="sec-newb" data-property-card-group="new-building">
             <div class="section-block__head">
-              <h2 id="sec-newb" class="section-block__title">Новостройки в Батуми</h2>
+              <h2 id="sec-newb" class="section-block__title" data-i18n="section.newb">Новостройки в Батуми</h2>
               <div class="carousel__arrows">
-                <button type="button" class="carousel__arrow" data-carousel-prev aria-label="Назад"><img src="images/arrow-left.svg" alt="" width="34" height="34" /></button>
-                <button type="button" class="carousel__arrow" data-carousel-next aria-label="Вперёд"><img src="images/arrow-right.svg" alt="" width="34" height="34" /></button>
+                <button type="button" class="carousel__arrow" data-carousel-prev data-i18n-aria="aria.prev" aria-label="Назад"><img src="images/arrow-left.svg" alt="" width="34" height="34" /></button>
+                <button type="button" class="carousel__arrow" data-carousel-next data-i18n-aria="aria.next" aria-label="Вперёд"><img src="images/arrow-right.svg" alt="" width="34" height="34" /></button>
               </div>
             </div>
             <div class="carousel">
@@ -148,10 +149,10 @@
             data-property-card-lead="apt-orbi-beach-tower-2201"
           >
             <div class="section-block__head">
-              <h2 id="sec-apt" class="section-block__title">Квартиры в Батуми</h2>
+              <h2 id="sec-apt" class="section-block__title" data-i18n="section.apt">Квартиры в Батуми</h2>
               <div class="carousel__arrows">
-                <button type="button" class="carousel__arrow" data-carousel-prev aria-label="Назад"><img src="images/arrow-left.svg" alt="" width="34" height="34" /></button>
-                <button type="button" class="carousel__arrow" data-carousel-next aria-label="Вперёд"><img src="images/arrow-right.svg" alt="" width="34" height="34" /></button>
+                <button type="button" class="carousel__arrow" data-carousel-prev data-i18n-aria="aria.prev" aria-label="Назад"><img src="images/arrow-left.svg" alt="" width="34" height="34" /></button>
+                <button type="button" class="carousel__arrow" data-carousel-next data-i18n-aria="aria.next" aria-label="Вперёд"><img src="images/arrow-right.svg" alt="" width="34" height="34" /></button>
               </div>
             </div>
             <div class="carousel">
@@ -168,12 +169,12 @@
 
           <!-- Консультация -->
           <section class="cta" aria-labelledby="cta-title">
-            <h2 id="cta-title" class="cta__title">Получите консультацию у лучших специалистов</h2>
-            <p class="cta__subtitle">Мы свяжемся с вами в течение 24 часов</p>
+            <h2 id="cta-title" class="cta__title" data-i18n="cta.title">Получите консультацию у лучших специалистов</h2>
+            <p class="cta__subtitle" data-i18n="cta.subtitle">Мы свяжемся с вами в течение 24 часов</p>
             <form id="lead-form" class="cta__form" novalidate>
-              <input class="cta__input" type="text" name="name" placeholder="Ваше имя" autocomplete="name" aria-label="Ваше имя" />
-              <input class="cta__input" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" aria-label="Телефон" />
-              <button class="cta__submit" type="submit">Оставить заявку</button>
+              <input class="cta__input" type="text" name="name" data-i18n-placeholder="cta.name" placeholder="Ваше имя" autocomplete="name" data-i18n-aria="cta.name" aria-label="Ваше имя" />
+              <input class="cta__input" type="tel" name="phone" data-i18n-placeholder="cta.phone" placeholder="Телефон" autocomplete="tel" data-i18n-aria="cta.phone" aria-label="Телефон" />
+              <button class="cta__submit" type="submit" data-i18n="cta.submit">Оставить заявку</button>
             </form>
           </section>
         </div>
@@ -184,11 +185,11 @@
           <form class="search-row search-row--bottom" data-search-form action="search.html" method="get">
             <button class="btn-search" type="submit">
               <img src="images/icon-search.svg" alt="" width="24" height="24" />
-              Поиск
+              <span data-i18n="btn.search">Поиск</span>
             </button>
             <a class="btn-map" href="map.html">
               <img src="images/icon-map.svg" alt="" width="20" height="20" />
-              Смотреть на карте
+              <span data-i18n="btn.map">Смотреть на карте</span>
             </a>
           </form>
         </div>
@@ -210,6 +211,8 @@
     </main>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="js/catalog-i18n.js" defer></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js/objects-catalog.js" defer></script>
     <script src="js/property-descriptions.js" defer></script>
     <script src="js/main.js" defer></script>
