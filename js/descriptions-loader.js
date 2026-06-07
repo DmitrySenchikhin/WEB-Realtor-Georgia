@@ -44,6 +44,8 @@
     });
   }
 
+  var descriptionsPromise = loadDescriptions();
+
   function langToStoreKey(lang) {
     if (lang === "ka") return "geo";
     return lang;
@@ -59,17 +61,13 @@
       return "";
     },
     whenReady: function (fn) {
-      if (global.REALTOR_DESCRIPTIONS_READY) {
-        fn();
-        return;
-      }
-      if (typeof document === "undefined") return;
-      document.addEventListener("realtor:descriptionsready", fn, { once: true });
+      descriptionsPromise.then(fn);
     },
+    readyPromise: descriptionsPromise,
   };
 
   if (typeof document !== "undefined") {
-    loadDescriptions();
+    /* loadDescriptions started above */
   } else {
     loadDescriptions();
   }

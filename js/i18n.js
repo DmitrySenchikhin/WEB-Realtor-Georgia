@@ -363,7 +363,7 @@
   function catalogField(obj, field) {
     if (!obj || !obj.id) return "";
     var langKey = currentLang;
-    var store = global.REALTOR_DESCRIPTIONS && global.REALTOR_DESCRIPTIONS[obj.id];
+    var store = window.REALTOR_DESCRIPTIONS && window.REALTOR_DESCRIPTIONS[obj.id];
 
     if (store) {
       if (store[langKey] && store[langKey][field] != null) return String(store[langKey][field]);

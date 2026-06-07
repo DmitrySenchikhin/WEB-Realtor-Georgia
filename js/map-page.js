@@ -82,13 +82,32 @@
     return iconWrap;
   }
 
+  var markerRefs = [];
+
   function objectTitle(obj) {
     if (!obj) return "Объект";
+    var lang =
+      window.RealtorI18n && window.RealtorI18n.getLang ? window.RealtorI18n.getLang() : "ru";
+    if (window.RealtorDescriptions && obj.id) {
+      var localized = window.RealtorDescriptions.get(obj.id, lang, "title");
+      if (localized) return localized;
+    }
     if (window.RealtorI18n && window.RealtorI18n.catalog) {
-      var title = window.RealtorI18n.catalog(obj, "title");
-      if (title) return title;
+      var fromCatalog = window.RealtorI18n.catalog(obj, "title");
+      if (fromCatalog) return fromCatalog;
     }
     return obj.id || "Объект";
+  }
+
+  function refreshMarkerLabels() {
+    markerRefs.forEach(function (ref) {
+      var title = objectTitle(ref.obj);
+      ref.label.textContent = title;
+      if (ref.wrap.classList.contains("map-page__marker--link")) {
+        ref.wrap.setAttribute("title", "Открыть: " + title);
+        ref.wrap.setAttribute("aria-label", title);
+      }
+    });
   }
 
   function buildMarkerElement(obj) {
@@ -110,6 +129,7 @@
       wrap.setAttribute("role", "link");
       wrap.setAttribute("tabindex", "0");
       wrap.setAttribute("title", "Открыть: " + objectTitle(obj));
+      wrap.setAttribute("aria-label", objectTitle(obj));
       wrap.addEventListener("click", function () {
         window.location.href = url;
       });
@@ -162,6 +182,11 @@
         var ll = [item.lng, item.lat];
         bounds.extend(ll);
         var el = buildMarkerElement(item.obj);
+        markerRefs.push({
+          wrap: el,
+          label: el.querySelector(".map-page__marker-label"),
+          obj: item.obj,
+        });
         new mapboxgl.Marker({ element: el, anchor: "center" }).setLngLat(ll).addTo(map);
       });
 
@@ -175,9 +200,25 @@
     if (warnEl) warnEl.hidden = true;
   }
 
-  if (window.RealtorDescriptions && window.RealtorDescriptions.whenReady) {
-    window.RealtorDescriptions.whenReady(initMap);
-  } else {
+  function bootMap() {
+    var ready =
+      window.RealtorDescriptions &&
+      window.RealtorDescriptions.readyPromise;
+    if (ready && typeof ready.then === "function") {
+      ready.then(initMap);
+      return;
+    }
+    if (window.RealtorDescriptions && window.RealtorDescriptions.whenReady) {
+      window.RealtorDescriptions.whenReady(initMap);
+      return;
+    }
     initMap();
   }
+
+  bootMap();
+
+  document.addEventListener("realtor:descriptionsready", function () {
+    if (markerRefs.length) refreshMarkerLabels();
+  });
+  document.addEventListener("realtor:languagechange", refreshMarkerLabels);
 })();
