@@ -39,7 +39,7 @@
         </div>
       </header>
 
-      <section class="search-filters container" aria-label="Параметры поиска">
+      <section class="search-filters container" data-apartment-filters aria-label="Параметры поиска">
         <div class="search-filters__row search-filters__row--top">
           <label class="search-filters__city-wrap">
             <span class="visually-hidden">Город</span>
@@ -71,12 +71,12 @@
             <div class="filter-card__fields filter-card__fields--2">
               <label class="filter-field">
                 <span class="visually-hidden">От</span>
-                <input type="text" class="filter-input" value="40 000" inputmode="numeric" />
+                <input type="text" class="filter-input filter-input--muted" data-filter-price="min" value="20 000" placeholder="от" inputmode="numeric" />
                 <span class="filter-input__suffix" data-currency-suffix aria-hidden="true">$</span>
               </label>
               <label class="filter-field">
                 <span class="visually-hidden">До</span>
-                <input type="text" class="filter-input filter-input--muted" placeholder="до" />
+                <input type="text" class="filter-input filter-input--muted" data-filter-price="max" placeholder="до" />
                 <span class="filter-input__suffix" data-currency-suffix aria-hidden="true">$</span>
               </label>
             </div>
@@ -87,11 +87,10 @@
               <span class="filter-card__title">Количество комнат</span>
             </div>
             <div class="filter-chips" role="group" aria-label="Комнаты">
-              <button type="button" class="filter-chip is-active">Студия</button>
-              <button type="button" class="filter-chip is-active">1+1</button>
-              <button type="button" class="filter-chip is-active">2+1</button>
-              <button type="button" class="filter-chip">3+1</button>
-              <button type="button" class="filter-chip">Другое</button>
+              <button type="button" class="filter-chip is-active" data-filter-room="studio">Студия</button>
+              <button type="button" class="filter-chip is-active" data-filter-room="1+1">1+1</button>
+              <button type="button" class="filter-chip is-active" data-filter-room="2+1">2+1</button>
+              <button type="button" class="filter-chip" data-filter-room="other">Другое</button>
             </div>
           </div>
 
@@ -102,12 +101,12 @@
             <div class="filter-card__fields filter-card__fields--2">
               <label class="filter-field">
                 <span class="visually-hidden">От</span>
-                <input type="text" class="filter-input filter-input--muted" placeholder="от" />
+                <input type="text" class="filter-input filter-input--muted" data-filter-area="min" placeholder="от" />
                 <span class="filter-input__suffix filter-input__suffix--m2" aria-hidden="true">м<sup>2</sup></span>
               </label>
               <label class="filter-field">
                 <span class="visually-hidden">До</span>
-                <input type="text" class="filter-input" value="60" inputmode="numeric" />
+                <input type="text" class="filter-input filter-input--muted" data-filter-area="max" placeholder="до" inputmode="numeric" />
                 <span class="filter-input__suffix filter-input__suffix--m2" aria-hidden="true">м<sup>2</sup></span>
               </label>
             </div>
@@ -115,8 +114,7 @@
         </div>
 
         <div class="search-filters__row search-filters__row--actions">
-          <form class="search-filters__actions" action="apartments.html" method="get">
-            <input type="hidden" name="q" value="Батуми" />
+          <form class="search-filters__actions" data-apartment-search-form action="apartments.html" method="get">
             <button class="btn-search" type="submit">
               <img src="images/icon-search.svg" alt="" width="24" height="24" />
               <span data-i18n="btn.search">Поиск</span>
@@ -146,7 +144,7 @@
         <div class="search-results__grid"></div>
       </section>
 
-      <nav class="pagination container" aria-label="Страницы результатов">
+      <nav class="pagination container" aria-label="Страницы результатов" data-apartment-pagination hidden>
         <a class="pagination__btn is-active" href="apartments.html" aria-current="page">1</a>
         <a class="pagination__btn" href="#">2</a>
         <a class="pagination__btn" href="#">3</a>
@@ -166,8 +164,11 @@
     </main>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="js/description-ids.js" defer></script>
     <script src="js/i18n.js" defer></script>
     <script src="js/objects-catalog.js" defer></script>
+    <script src="js/descriptions-loader.js" defer></script>
+    <script src="js/property-descriptions.js" defer></script>
     <script src="js/main.js" defer></script>
   </body>
 </html>

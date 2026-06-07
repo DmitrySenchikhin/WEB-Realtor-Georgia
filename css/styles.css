@@ -1292,6 +1292,16 @@ a.filter-type-btn--link {
   width: 100%;
 }
 
+.search-results__empty {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 32px 16px;
+  text-align: center;
+  color: var(--color-text-muted, #6b5f5d);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .pagination {
   display: flex;
   flex-wrap: wrap;

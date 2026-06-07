@@ -361,19 +361,15 @@
   }
 
   function catalogField(obj, field) {
-    if (!obj) return "";
-    var lang = currentLang;
-    if (lang === "ru") {
-      if (field === "address") {
-        return obj.geo && obj.geo.address ? String(obj.geo.address) : "";
-      }
-      return obj[field] != null ? String(obj[field]) : "";
+    if (!obj || !obj.id) return "";
+    var langKey = currentLang;
+    var store = global.REALTOR_DESCRIPTIONS && global.REALTOR_DESCRIPTIONS[obj.id];
+
+    if (store) {
+      if (store[langKey] && store[langKey][field] != null) return String(store[langKey][field]);
+      if (store.ru && store.ru[field] != null) return String(store.ru[field]);
     }
-    var pack =
-      global.REALTOR_CATALOG_I18N && obj.id ? global.REALTOR_CATALOG_I18N[obj.id] : null;
-    if (pack && pack[lang] && pack[lang][field]) {
-      return String(pack[lang][field]);
-    }
+
     if (field === "address") {
       return obj.geo && obj.geo.address ? String(obj.geo.address) : "";
     }

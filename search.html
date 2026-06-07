@@ -39,7 +39,7 @@
         </div>
       </header>
 
-      <section class="search-filters container" data-i18n-aria="aria.searchParams" aria-label="Параметры поиска">
+      <section class="search-filters container" data-apartment-filters data-i18n-aria="aria.searchParams" aria-label="Параметры поиска">
         <div class="search-filters__row search-filters__row--top">
           <div class="search-filters__types" role="group" data-i18n-aria="aria.objectType" aria-label="Тип объекта">
             <button type="button" class="filter-type-btn" data-search-filter="new-building" data-i18n="filter.newBuilding">Новостройки</button>
@@ -63,12 +63,12 @@
             <div class="filter-card__fields filter-card__fields--2">
               <label class="filter-field">
                 <span class="visually-hidden">От</span>
-                <input type="text" class="filter-input" value="40 000" inputmode="numeric" />
+                <input type="text" class="filter-input filter-input--muted" data-filter-price="min" value="20 000" data-i18n-placeholder="filter.from" placeholder="от" inputmode="numeric" />
                 <span class="filter-input__suffix" data-currency-suffix aria-hidden="true">$</span>
               </label>
               <label class="filter-field">
                 <span class="visually-hidden">До</span>
-                <input type="text" class="filter-input filter-input--muted" placeholder="до" />
+                <input type="text" class="filter-input filter-input--muted" data-filter-price="max" data-i18n-placeholder="filter.to" placeholder="до" />
                 <span class="filter-input__suffix" data-currency-suffix aria-hidden="true">$</span>
               </label>
             </div>
@@ -79,9 +79,9 @@
               <span class="filter-card__title" data-i18n="filter.rooms">Количество комнат</span>
             </div>
             <div class="filter-chips" role="group" data-i18n-aria="aria.rooms" aria-label="Комнаты">
-              <button type="button" class="filter-chip is-active" data-i18n="filter.studio">Студия</button>
-              <button type="button" class="filter-chip is-active">1+1</button>
-              <button type="button" class="filter-chip is-active">2+1</button>
+              <button type="button" class="filter-chip is-active" data-filter-room="studio" data-i18n="filter.studio">Студия</button>
+              <button type="button" class="filter-chip is-active" data-filter-room="1+1">1+1</button>
+              <button type="button" class="filter-chip is-active" data-filter-room="2+1">2+1</button>
             </div>
           </div>
 
@@ -92,12 +92,12 @@
             <div class="filter-card__fields filter-card__fields--2">
               <label class="filter-field">
                 <span class="visually-hidden">От</span>
-                <input type="text" class="filter-input filter-input--muted" data-i18n-placeholder="filter.from" placeholder="от" />
+                <input type="text" class="filter-input filter-input--muted" data-filter-area="min" data-i18n-placeholder="filter.from" placeholder="от" />
                 <span class="filter-input__suffix filter-input__suffix--m2" aria-hidden="true">м<sup>2</sup></span>
               </label>
               <label class="filter-field">
                 <span class="visually-hidden">До</span>
-                <input type="text" class="filter-input" value="60" inputmode="numeric" />
+                <input type="text" class="filter-input filter-input--muted" data-filter-area="max" data-i18n-placeholder="filter.to" placeholder="до" inputmode="numeric" />
                 <span class="filter-input__suffix filter-input__suffix--m2" aria-hidden="true">м<sup>2</sup></span>
               </label>
             </div>
@@ -105,7 +105,8 @@
         </div>
 
         <div class="search-filters__row search-filters__row--actions">
-          <form class="search-filters__actions" action="search.html" method="get">
+          <form class="search-filters__actions" data-apartment-search-form action="search.html" method="get">
+            <input type="hidden" name="type" value="apartments" />
             <button class="btn-search" type="submit">
               <img src="images/icon-search.svg" alt="" width="24" height="24" />
               <span data-i18n="btn.search">Поиск</span>
@@ -142,9 +143,10 @@
     </main>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script src="js/catalog-i18n.js" defer></script>
+    <script src="js/description-ids.js" defer></script>
     <script src="js/i18n.js" defer></script>
     <script src="js/objects-catalog.js" defer></script>
+    <script src="js/descriptions-loader.js" defer></script>
     <script src="js/property-descriptions.js" defer></script>
     <script src="js/main.js" defer></script>
   </body>

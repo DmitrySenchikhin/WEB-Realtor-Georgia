@@ -120,9 +120,10 @@
     }
 
     function parseAmount(value) {
-      var cleaned = String(value || "")
-        .replace(/[^\d.,]/g, "")
-        .replace(/,/g, ".");
+      var raw = String(value || "").trim();
+      if (!raw) return null;
+      var cleaned = raw.replace(/[^\d.,]/g, "").replace(/,/g, ".");
+      if (!cleaned) return null;
       var parsed = Number(cleaned);
       return Number.isFinite(parsed) ? parsed : null;
     }
@@ -198,6 +199,14 @@
     }
 
     setCurrency("usd", "usd");
+
+    try {
+      if (new URLSearchParams(window.location.search).get("currency") === "gel") {
+        setCurrency("gel", "usd");
+      }
+    } catch (_urlCurrency) {
+      /* ignore */
+    }
 
     toggle.addEventListener("click", function () {
       var current = toggle.classList.contains("is-usd") ? "usd" : "gel";

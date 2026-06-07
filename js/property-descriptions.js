@@ -2,10 +2,22 @@
   "use strict";
 
   var GEL_PER_USD = 2.7;
+  var DEFAULT_APARTMENT_PRICE_MIN_USD = 20000;
 
-  /** Тексты объектов каталога — всегда на русском; язык меняет только UI сайта. */
   function cat(obj, field) {
     if (!obj) return "";
+    var lang = "ru";
+    if (typeof window !== "undefined" && window.RealtorI18n && window.RealtorI18n.getLang) {
+      lang = window.RealtorI18n.getLang();
+    }
+    if (typeof window !== "undefined" && window.RealtorDescriptions && obj.id) {
+      var localized = window.RealtorDescriptions.get(obj.id, lang, field);
+      if (localized) return localized;
+    }
+    if (typeof window !== "undefined" && window.RealtorI18n && window.RealtorI18n.catalog) {
+      var fromCatalog = window.RealtorI18n.catalog(obj, field);
+      if (fromCatalog) return fromCatalog;
+    }
     if (field === "address") {
       return obj.geo && obj.geo.address ? String(obj.geo.address) : "";
     }
@@ -765,10 +777,8 @@
     list.forEach(function (obj) {
       if (obj) track.appendChild(createSearchResultCard(obj));
     });
-    var countEl = document.querySelector(".search-toolbar__count");
-    if (countEl && track.closest("[data-property-card-group='apartments']")) {
-      countEl.textContent = formatResultsCount(list.length);
-    }
+    var apartmentsPage = !!track.closest("[data-property-card-group='apartments']");
+    updateApartmentResultsCount(list.length, apartmentsPage);
   }
 
   function injectCardDescription(card, obj) {
@@ -805,13 +815,13 @@
     '<rect width="15" height="15" rx="2" fill="#fef6ee" />' +
     '<path fill="#e05d2e" d="M8 2h4v5H8V2z" />' +
     '<path fill="none" stroke="#2d1f1d" stroke-width="1.2" d="M3 6h6v6H3z" />' +
-    "</svg> 4 комнаты</span>" +
+    "</svg></span>" +
     '<span class="card__meta-item">' +
     '<svg class="icon" viewBox="0 0 15 15" width="15" height="15" aria-hidden="true">' +
     '<rect width="15" height="15" rx="2" fill="#fef6ee" />' +
     '<path stroke="#e05d2e" stroke-width="1.5" fill="none" d="M4 11V5M11 4v6" />' +
     '<circle cx="7.5" cy="7.5" r="2" fill="#e05d2e" />' +
-    "</svg> 40 м<sup>2</sup></span>";
+    "</svg></span>";
 
   function createSearchResultCard(obj) {
     var href = detailHrefFor(obj);
@@ -865,21 +875,311 @@
     return n + " " + word;
   }
 
+  function formatApartmentResultsCount(n) {
+    var mod10 = n % 10;
+    var mod100 = n % 100;
+    var word = "квартир";
+    if (mod100 >= 11 && mod100 <= 14) word = "квартир";
+    else if (mod10 === 1) word = "квартира";
+    else if (mod10 >= 2 && mod10 <= 4) word = "квартиры";
+    return n + " " + word;
+  }
+
+  function parseFilterNumber(value) {
+    var raw = String(value || "").trim();
+    if (!raw) return null;
+    var cleaned = raw.replace(/[^\d.,]/g, "").replace(/,/g, ".");
+    if (!cleaned) return null;
+    var parsed = Number(cleaned);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+
+  function getFilterCurrency() {
+    var toggle = document.querySelector(".currency-toggle");
+    if (!toggle) return "usd";
+    return toggle.classList.contains("is-gel") ? "gel" : "usd";
+  }
+
+  function setFilterCurrency(currency) {
+    var toggle = document.querySelector(".currency-toggle");
+    if (!toggle) return;
+    var isUsd = currency === "usd";
+    var symbol = isUsd ? "$" : "₾";
+    toggle.classList.toggle("is-usd", isUsd);
+    toggle.classList.toggle("is-gel", !isUsd);
+    toggle.setAttribute("aria-pressed", String(!isUsd));
+    toggle.setAttribute("aria-label", isUsd ? "Валюта: доллар" : "Валюта: лари");
+    var knob = toggle.querySelector(".currency-toggle__knob");
+    if (knob) knob.textContent = symbol;
+    document.querySelectorAll("[data-currency-suffix]").forEach(function (suffix) {
+      suffix.textContent = symbol;
+    });
+  }
+
+  function amountToGel(amount, currency) {
+    if (amount == null) return null;
+    return currency === "usd" ? amount * GEL_PER_USD : amount;
+  }
+
+  function roomBucketForObject(obj) {
+    if (obj && obj.roomsKey) return obj.roomsKey;
+    var r = String(cat(obj, "rooms") || "")
+      .trim()
+      .toLowerCase()
+      .replace(/–/g, "-");
+    if (r === "студия" || r === "studio") return "studio";
+    if (r === "1+1") return "1+1";
+    if (r === "2+1") return "2+1";
+    if (r === "3+1") return "3+1";
+    return "other";
+  }
+
+  function effectivePriceGel(obj) {
+    if (!obj || obj.priceGel == null || !Number.isFinite(Number(obj.priceGel))) return null;
+    var gel = Number(obj.priceGel);
+    var pk = obj.priceKind || "fixed";
+    if (pk === "per" && obj.priceFromTotalGel != null && Number.isFinite(Number(obj.priceFromTotalGel))) {
+      return Number(obj.priceFromTotalGel);
+    }
+    return gel;
+  }
+
+  function getApartmentFilterSection() {
+    return document.querySelector("[data-apartment-filters]");
+  }
+
+  function readApartmentFilterState() {
+    var section = getApartmentFilterSection();
+    if (!section) return null;
+
+    var currency = getFilterCurrency();
+    var priceMinInput = section.querySelector('[data-filter-price="min"]');
+    var priceMaxInput = section.querySelector('[data-filter-price="max"]');
+    var areaMinInput = section.querySelector('[data-filter-area="min"]');
+    var areaMaxInput = section.querySelector('[data-filter-area="max"]');
+    var roomChips = section.querySelectorAll("[data-filter-room]");
+
+    var rooms = [];
+    roomChips.forEach(function (chip) {
+      if (chip.classList.contains("is-active")) {
+        rooms.push(chip.getAttribute("data-filter-room"));
+      }
+    });
+
+    return {
+      currency: currency,
+      priceMinGel: amountToGel(parseFilterNumber(priceMinInput && priceMinInput.value), currency),
+      priceMaxGel: amountToGel(parseFilterNumber(priceMaxInput && priceMaxInput.value), currency),
+      areaMin: parseFilterNumber(areaMinInput && areaMinInput.value),
+      areaMax: parseFilterNumber(areaMaxInput && areaMaxInput.value),
+      rooms: rooms,
+    };
+  }
+
+  function applyApartmentFilterStateToDom(state) {
+    var section = getApartmentFilterSection();
+    if (!section || !state) return;
+
+    var currency = state.currency === "gel" ? "gel" : "usd";
+    setFilterCurrency(currency);
+
+    function gelToInputValue(gel) {
+      if (gel == null) return "";
+      var value = currency === "usd" ? gelToUsd(gel) : Math.round(gel);
+      return formatAmount(value);
+    }
+
+    var priceMinInput = section.querySelector('[data-filter-price="min"]');
+    var priceMaxInput = section.querySelector('[data-filter-price="max"]');
+    var areaMinInput = section.querySelector('[data-filter-area="min"]');
+    var areaMaxInput = section.querySelector('[data-filter-area="max"]');
+
+    if (priceMinInput) priceMinInput.value = state.priceMinGel != null ? gelToInputValue(state.priceMinGel) : "";
+    if (priceMaxInput) priceMaxInput.value = state.priceMaxGel != null ? gelToInputValue(state.priceMaxGel) : "";
+    if (areaMinInput) areaMinInput.value = state.areaMin != null ? String(state.areaMin) : "";
+    if (areaMaxInput) areaMaxInput.value = state.areaMax != null ? String(state.areaMax) : "";
+
+    section.querySelectorAll("[data-filter-room]").forEach(function (chip) {
+      var key = chip.getAttribute("data-filter-room");
+      if (state.rooms && state.rooms.length) {
+        var active = state.rooms.indexOf(key) >= 0;
+        chip.classList.toggle("is-active", active);
+        chip.setAttribute("aria-pressed", active ? "true" : "false");
+      } else if (hasPriceFilter(state) || hasAreaFilter(state)) {
+        chip.classList.remove("is-active");
+        chip.setAttribute("aria-pressed", "false");
+      }
+    });
+  }
+
+  function hasPriceFilter(state) {
+    return !!(state && (state.priceMinGel != null || state.priceMaxGel != null));
+  }
+
+  function hasAreaFilter(state) {
+    return !!(state && (state.areaMin != null || state.areaMax != null));
+  }
+
+  function hasRoomFilter(state) {
+    return !!(state && state.rooms && state.rooms.length);
+  }
+
+  function hasAnyApartmentFilter(state) {
+    return hasPriceFilter(state) || hasAreaFilter(state) || hasRoomFilter(state);
+  }
+
+  function apartmentFilterStateFromUrl() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+    } catch (eP) {
+      return null;
+    }
+
+    var hasFilterParams =
+      params.has("priceMin") ||
+      params.has("priceMax") ||
+      params.has("areaMin") ||
+      params.has("areaMax") ||
+      params.has("rooms") ||
+      params.get("currency") === "gel";
+
+    if (!hasFilterParams) return null;
+
+    var currency = params.get("currency") === "gel" ? "gel" : "usd";
+    var roomsParam = params.get("rooms");
+    var rooms = roomsParam ? roomsParam.split(",").filter(Boolean) : null;
+
+    return {
+      currency: currency,
+      priceMinGel: amountToGel(parseFilterNumber(params.get("priceMin")), currency),
+      priceMaxGel: amountToGel(parseFilterNumber(params.get("priceMax")), currency),
+      areaMin: parseFilterNumber(params.get("areaMin")),
+      areaMax: parseFilterNumber(params.get("areaMax")),
+      rooms: rooms,
+    };
+  }
+
+  function syncApartmentFiltersToUrl(groupKey) {
+    try {
+      var url = new URL(window.location.href);
+      if (groupKey) url.searchParams.set("type", groupKey);
+
+      ["priceMin", "priceMax", "areaMin", "areaMax", "rooms", "currency"].forEach(function (key) {
+        url.searchParams.delete(key);
+      });
+
+      if (!apartmentFiltersApplied) {
+        window.history.replaceState(null, "", url.pathname + "?" + url.searchParams.toString());
+        return;
+      }
+
+      var state = readApartmentFilterState();
+      if (!state) return;
+
+      var currency = state.currency === "gel" ? "gel" : "usd";
+      if (currency !== "usd") url.searchParams.set("currency", currency);
+
+      if (state.priceMinGel != null) {
+        url.searchParams.set(
+          "priceMin",
+          String(currency === "usd" ? gelToUsd(state.priceMinGel) : Math.round(state.priceMinGel))
+        );
+      }
+      if (state.priceMaxGel != null) {
+        url.searchParams.set(
+          "priceMax",
+          String(currency === "usd" ? gelToUsd(state.priceMaxGel) : Math.round(state.priceMaxGel))
+        );
+      }
+      if (state.areaMin != null) url.searchParams.set("areaMin", String(state.areaMin));
+      if (state.areaMax != null) url.searchParams.set("areaMax", String(state.areaMax));
+      if (hasRoomFilter(state)) url.searchParams.set("rooms", state.rooms.join(","));
+
+      window.history.replaceState(null, "", url.pathname + "?" + url.searchParams.toString());
+    } catch (eU) {
+      /* ignore */
+    }
+  }
+
+  function objectMatchesApartmentFilters(obj, state) {
+    if (!obj || !state) return true;
+
+    if (hasRoomFilter(state) && state.rooms.indexOf(roomBucketForObject(obj)) < 0) {
+      return false;
+    }
+
+    if (hasPriceFilter(state)) {
+      var priceGel = effectivePriceGel(obj);
+      if (priceGel != null) {
+        if (state.priceMinGel != null && priceGel < state.priceMinGel) return false;
+        if (state.priceMaxGel != null && priceGel > state.priceMaxGel) return false;
+      }
+    }
+
+    if (hasAreaFilter(state) && obj.areaM2 != null && Number.isFinite(Number(obj.areaM2))) {
+      var area = Number(obj.areaM2);
+      if (state.areaMin != null && area < state.areaMin) return false;
+      if (state.areaMax != null && area > state.areaMax) return false;
+    }
+
+    return true;
+  }
+
+  function filterApartmentList(list, state) {
+    if (!state) return list.slice();
+    return list.filter(function (obj) {
+      return objectMatchesApartmentFilters(obj, state);
+    });
+  }
+
+  var apartmentFiltersApplied = false;
+
+  function shouldApplyApartmentFilters() {
+    if (apartmentFilterStateFromUrl() !== null) return true;
+    return apartmentFiltersApplied;
+  }
+
+  function getActiveApartmentFilterState() {
+    if (!shouldApplyApartmentFilters()) return null;
+    var state = readApartmentFilterState();
+    if (!state || !hasAnyApartmentFilter(state)) return null;
+    return state;
+  }
+
+  function updateApartmentResultsCount(n, apartmentsPage) {
+    var countEl = document.querySelector(".search-toolbar__count");
+    if (!countEl) return;
+    countEl.textContent = apartmentsPage ? formatApartmentResultsCount(n) : formatResultsCount(n);
+  }
+
+  function renderApartmentSearchGrid(grid, list, apartmentsPage) {
+    grid.innerHTML = "";
+    if (!list.length) {
+      var empty = document.createElement("p");
+      empty.className = "search-results__empty";
+      empty.textContent = "По вашему запросу квартир не найдено. Измените параметры фильтра.";
+      grid.appendChild(empty);
+    } else {
+      list.forEach(function (obj) {
+        if (obj) grid.appendChild(createSearchResultCard(obj));
+      });
+    }
+    updateApartmentResultsCount(list.length, apartmentsPage);
+
+    var pagination = document.querySelector("[data-apartment-pagination]");
+    if (pagination) pagination.hidden = true;
+  }
+
   function renderSearchResults(groupKey) {
     var grid = document.querySelector("[data-search-results-grid]");
     if (!grid) return;
 
     var list = getCatalog()[groupKey] || [];
-    grid.innerHTML = "";
-
-    list.forEach(function (obj) {
-      if (obj) grid.appendChild(createSearchResultCard(obj));
-    });
-
-    var countEl = document.querySelector(".search-toolbar__count");
-    if (countEl) {
-      countEl.textContent = formatResultsCount(list.length);
+    if (groupKey === "apartments") {
+      list = filterApartmentList(list, getActiveApartmentFilterState());
     }
+
+    renderApartmentSearchGrid(grid, list, false);
 
     var pagination = document.querySelector("[data-search-pagination]");
     if (pagination) {
@@ -893,6 +1193,71 @@
       btn.classList.toggle("is-active", active);
       btn.setAttribute("aria-pressed", active ? "true" : "false");
     });
+  }
+
+  function applyApartmentPageResults() {
+    var section = document.querySelector('[data-property-card-group="apartments"]');
+    if (!section) return;
+    var grid = section.querySelector(".search-results__grid");
+    if (!grid) return;
+
+    var list = filterApartmentList(getCatalog().apartments || [], getActiveApartmentFilterState());
+    renderApartmentSearchGrid(grid, list, true);
+  }
+
+  function applyDefaultApartmentFilterValues() {
+    var section = getApartmentFilterSection();
+    if (!section) return;
+
+    var priceMinInput = section.querySelector('[data-filter-price="min"]');
+    if (!priceMinInput || priceMinInput.value.trim()) return;
+
+    var currency = getFilterCurrency();
+    var amount =
+      currency === "usd"
+        ? DEFAULT_APARTMENT_PRICE_MIN_USD
+        : Math.round(DEFAULT_APARTMENT_PRICE_MIN_USD * GEL_PER_USD);
+    priceMinInput.value = formatAmount(amount);
+  }
+
+  function initApartmentFilters(options) {
+    options = options || {};
+    var section = getApartmentFilterSection();
+    if (!section) return;
+
+    var urlState = apartmentFilterStateFromUrl();
+    if (urlState) {
+      apartmentFiltersApplied = true;
+      applyApartmentFilterStateToDom(urlState);
+    }
+    applyDefaultApartmentFilterValues();
+
+    section.querySelectorAll("[data-filter-room]").forEach(function (chip) {
+      if (!chip.hasAttribute("aria-pressed")) {
+        chip.setAttribute("aria-pressed", chip.classList.contains("is-active") ? "true" : "false");
+      }
+      chip.addEventListener("click", function () {
+        var active = !chip.classList.contains("is-active");
+        chip.classList.toggle("is-active", active);
+        chip.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+    });
+
+    document.querySelectorAll("[data-apartment-search-form]").forEach(function (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var state = readApartmentFilterState();
+        apartmentFiltersApplied = hasAnyApartmentFilter(state);
+        if (options.onSubmit) options.onSubmit();
+        else applyApartmentPageResults();
+        syncApartmentFiltersToUrl(options.groupKey || null);
+      });
+    });
+
+    if (urlState) {
+      if (options.onInit) options.onInit();
+      else applyApartmentPageResults();
+    }
   }
 
   function initSearchPage() {
@@ -911,11 +1276,17 @@
     function applyFilter(groupKey) {
       setSearchFilterActive(groupKey);
       renderSearchResults(groupKey);
-      try {
-        var url = new URL(window.location.href);
-        url.searchParams.set("type", groupKey);
-        window.history.replaceState(null, "", url.pathname + "?" + url.searchParams.toString());
-      } catch (eU) {}
+      if (groupKey === "apartments") syncApartmentFiltersToUrl(groupKey);
+      else {
+        try {
+          var url = new URL(window.location.href);
+          url.searchParams.set("type", groupKey);
+          ["priceMin", "priceMax", "areaMin", "areaMax", "rooms", "currency"].forEach(function (key) {
+            url.searchParams.delete(key);
+          });
+          window.history.replaceState(null, "", url.pathname + "?" + url.searchParams.toString());
+        } catch (eU) {}
+      }
     }
 
     filters.forEach(function (btn) {
@@ -924,6 +1295,13 @@
         if (!key) return;
         applyFilter(key);
       });
+    });
+
+    initApartmentFilters({
+      groupKey: initial,
+      onSubmit: function () {
+        applyFilter("apartments");
+      },
     });
 
     applyFilter(initial);
@@ -1497,10 +1875,40 @@
     }
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function refreshCatalogForLanguage() {
+    initCatalogSections();
+
+    if (document.querySelector('[data-property-card-group="apartments"] .search-results__grid')) {
+      applyApartmentPageResults();
+    }
+
+    if (document.querySelector("[data-search-results-grid]")) {
+      var activeFilter = document.querySelector("[data-search-filter].is-active");
+      var groupKey = (activeFilter && activeFilter.getAttribute("data-search-filter")) || "apartments";
+      renderSearchResults(groupKey);
+    }
+
+    if (document.querySelector("main[data-nb-catalog-id], main[data-apt-catalog-id]")) {
+      initCatalogDetailPage();
+    }
+  }
+
+  function bootPropertyDescriptions() {
     initCatalogSections();
     initCardInteractions();
     initCatalogDetailPage();
-    initSearchPage();
-  });
+    if (document.querySelector("[data-apartment-filters]") && !document.querySelector("[data-search-results-grid]")) {
+      initApartmentFilters();
+    } else {
+      initSearchPage();
+    }
+  }
+
+  document.addEventListener("realtor:languagechange", refreshCatalogForLanguage);
+
+  if (typeof window !== "undefined" && window.RealtorDescriptions && window.RealtorDescriptions.whenReady) {
+    window.RealtorDescriptions.whenReady(bootPropertyDescriptions);
+  } else {
+    document.addEventListener("DOMContentLoaded", bootPropertyDescriptions);
+  }
 })();

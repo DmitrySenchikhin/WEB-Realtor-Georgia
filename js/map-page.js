@@ -82,6 +82,15 @@
     return iconWrap;
   }
 
+  function objectTitle(obj) {
+    if (!obj) return "Объект";
+    if (window.RealtorI18n && window.RealtorI18n.catalog) {
+      var title = window.RealtorI18n.catalog(obj, "title");
+      if (title) return title;
+    }
+    return obj.id || "Объект";
+  }
+
   function buildMarkerElement(obj) {
     var wrap = document.createElement("div");
     wrap.className = "map-page__marker";
@@ -90,7 +99,7 @@
 
     var label = document.createElement("span");
     label.className = "map-page__marker-label";
-    label.textContent = obj.title || obj.id || "Объект";
+    label.textContent = objectTitle(obj);
 
     wrap.appendChild(iconWrap);
     wrap.appendChild(label);
@@ -100,7 +109,7 @@
       wrap.classList.add("map-page__marker--link");
       wrap.setAttribute("role", "link");
       wrap.setAttribute("tabindex", "0");
-      wrap.setAttribute("title", "Открыть: " + (obj.title || obj.id || ""));
+      wrap.setAttribute("title", "Открыть: " + objectTitle(obj));
       wrap.addEventListener("click", function () {
         window.location.href = url;
       });
@@ -127,40 +136,48 @@
     return;
   }
 
-  mapboxgl.accessToken = token;
+  function initMap() {
+    mapboxgl.accessToken = token;
 
-  var map = new mapboxgl.Map({
-    container: mapEl,
-    style: "mapbox://styles/mapbox/streets-v12",
-    center: BATUMI_CENTER,
-    zoom: BATUMI_ZOOM,
-    attributionControl: true,
-  });
-
-  map.addControl(new mapboxgl.NavigationControl({ showCompass: true }), "top-right");
-
-  var rawItems = collectObjectsWithGeo();
-  var items = jitterDuplicateCoords(rawItems);
-
-  if (items.length === 0) {
-    new mapboxgl.Marker({ element: buildMarkerLogoIcon(), anchor: "center" })
-      .setLngLat(BATUMI_CENTER)
-      .addTo(map);
-  } else {
-    var bounds = new mapboxgl.LngLatBounds();
-    items.forEach(function (item) {
-      var ll = [item.lng, item.lat];
-      bounds.extend(ll);
-      var el = buildMarkerElement(item.obj);
-      new mapboxgl.Marker({ element: el, anchor: "center" }).setLngLat(ll).addTo(map);
+    var map = new mapboxgl.Map({
+      container: mapEl,
+      style: "mapbox://styles/mapbox/streets-v12",
+      center: BATUMI_CENTER,
+      zoom: BATUMI_ZOOM,
+      attributionControl: true,
     });
 
-    if (items.length === 1) {
-      map.jumpTo({ center: [items[0].lng, items[0].lat], zoom: 13.2 });
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: true }), "top-right");
+
+    var rawItems = collectObjectsWithGeo();
+    var items = jitterDuplicateCoords(rawItems);
+
+    if (items.length === 0) {
+      new mapboxgl.Marker({ element: buildMarkerLogoIcon(), anchor: "center" })
+        .setLngLat(BATUMI_CENTER)
+        .addTo(map);
     } else {
-      map.fitBounds(bounds, { padding: { top: 80, bottom: 100, left: 56, right: 56 }, maxZoom: 13.5, duration: 0 });
+      var bounds = new mapboxgl.LngLatBounds();
+      items.forEach(function (item) {
+        var ll = [item.lng, item.lat];
+        bounds.extend(ll);
+        var el = buildMarkerElement(item.obj);
+        new mapboxgl.Marker({ element: el, anchor: "center" }).setLngLat(ll).addTo(map);
+      });
+
+      if (items.length === 1) {
+        map.jumpTo({ center: [items[0].lng, items[0].lat], zoom: 13.2 });
+      } else {
+        map.fitBounds(bounds, { padding: { top: 80, bottom: 100, left: 56, right: 56 }, maxZoom: 13.5, duration: 0 });
+      }
     }
+
+    if (warnEl) warnEl.hidden = true;
   }
 
-  if (warnEl) warnEl.hidden = true;
+  if (window.RealtorDescriptions && window.RealtorDescriptions.whenReady) {
+    window.RealtorDescriptions.whenReady(initMap);
+  } else {
+    initMap();
+  }
 })();
