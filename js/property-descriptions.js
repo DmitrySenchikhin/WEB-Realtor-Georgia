@@ -213,10 +213,10 @@
     if (!obj) return "";
     if (obj.detailHref) return obj.detailHref;
     if (obj.id && String(obj.id).indexOf("nb-") === 0) {
-      if (obj.id === "nb-stay-rent") return "new-building-stay-rent.html";
-      return "new-building.html";
+      if (obj.id === "nb-stay-rent") return "/new-building-stay-rent.html";
+      return "/new-building.html";
     }
-    if (obj.id && String(obj.id).indexOf("apt-") === 0) return "apartment.html";
+    if (obj.id && String(obj.id).indexOf("apt-") === 0) return "/apartment.html";
     return "";
   }
 
@@ -496,13 +496,13 @@
       prev.type = "button";
       prev.className = "card__photo-gallery__btn card__photo-gallery__btn--prev";
       prev.setAttribute("aria-label", "Предыдущее фото");
-      prev.innerHTML = '<img src="images/arrow-left.svg" alt="" width="20" height="20" />';
+      prev.innerHTML = '<img src="/images/arrow-left.svg" alt="" width="20" height="20" />';
 
       var next = document.createElement("button");
       next.type = "button";
       next.className = "card__photo-gallery__btn card__photo-gallery__btn--next";
       next.setAttribute("aria-label", "Следующее фото");
-      next.innerHTML = '<img src="images/arrow-right.svg" alt="" width="20" height="20" />';
+      next.innerHTML = '<img src="/images/arrow-right.svg" alt="" width="20" height="20" />';
 
       counter = document.createElement("span");
       counter.className = "card__photo-gallery__counter";
@@ -592,13 +592,13 @@
     prev.type = "button";
     prev.className = "card__photo-gallery__btn card__photo-gallery__btn--prev";
     prev.setAttribute("aria-label", "Предыдущее фото");
-    prev.innerHTML = '<img src="images/arrow-left.svg" alt="" width="20" height="20" />';
+    prev.innerHTML = '<img src="/images/arrow-left.svg" alt="" width="20" height="20" />';
 
     var next = document.createElement("button");
     next.type = "button";
     next.className = "card__photo-gallery__btn card__photo-gallery__btn--next";
     next.setAttribute("aria-label", "Следующее фото");
-    next.innerHTML = '<img src="images/arrow-right.svg" alt="" width="20" height="20" />';
+    next.innerHTML = '<img src="/images/arrow-right.svg" alt="" width="20" height="20" />';
 
     var counter = document.createElement("span");
     counter.className = "card__photo-gallery__counter";
@@ -847,7 +847,7 @@
     var body = document.createElement("div");
     body.className = "card__body";
     body.innerHTML =
-      '<div class="card__loc"><img src="images/pin.svg" alt="" width="13" height="15" /><span>Батуми</span></div>' +
+      '<div class="card__loc"><img src="/images/pin.svg" alt="" width="13" height="15" /><span>Батуми</span></div>' +
       '<div class="card__meta">' +
       CARD_META_ICONS +
       "</div>" +
@@ -1628,7 +1628,7 @@
     var photos = photoItemsFromObject(obj);
     var img = document.createElement("img");
     img.className = "nb-mini__img";
-    img.src = photos.length ? photos[0].src : "images/property-1.png";
+    img.src = photos.length ? photos[0].src : "/images/property-1.png";
     img.alt = cat(obj, "title") || "Новостройка";
     if (isObj21) {
       img.width = 270;

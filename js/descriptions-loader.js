@@ -2,9 +2,9 @@
   "use strict";
 
   var LANG_FOLDERS = {
-    ru: "description ru",
-    en: "description en",
-    geo: "description geo",
+    ru: "/description ru",
+    en: "/description en",
+    geo: "/description geo",
   };
 
   var LANG_KEYS = ["ru", "en", "geo"];

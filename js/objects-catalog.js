@@ -1,6 +1,6 @@
 /**
  * Группы объектов недвижимости для сайта.
- * Подключите до main.js: <script src="js/objects-catalog.js" defer></script>
+ * Подключите до main.js: <script src="/js/objects-catalog.js" defer></script>
  *
  * Если до этого скрипта уже задан window.REALTOR_OBJECT_GROUPS, данные не затираются:
  * для совпадающих ключей сохраняются ваши массивы (в том числе пустые); отсутствующие
@@ -26,7 +26,7 @@
     "new-building": [
 {
         id: "nb-sport-city",
-        detailHref: "new-building.html",
+        detailHref: "/new-building.html",
         priceGel: 3915,
         priceKind: "per",
         priceFromTotalGel: 121500,
@@ -37,23 +37,23 @@
         },
         areaM2: 32,
         photos: [
-          { name: "Презентация SPORT CITY — 1", src: "images/sport-city/sport-city-01.png" },
-          { name: "Презентация SPORT CITY — 2", src: "images/sport-city/sport-city-02.png" },
-          { name: "Презентация SPORT CITY — 3", src: "images/sport-city/sport-city-03.png" },
-          { name: "Презентация SPORT CITY — 4", src: "images/sport-city/sport-city-04.png" },
-          { name: "Презентация SPORT CITY — 5", src: "images/sport-city/sport-city-05.png" },
-          { name: "Презентация SPORT CITY — 6", src: "images/sport-city/sport-city-06.png" },
-          { name: "Презентация SPORT CITY — 7", src: "images/sport-city/sport-city-07.png" },
-          { name: "Презентация SPORT CITY — 8", src: "images/sport-city/sport-city-08.png" },
-          { name: "Презентация SPORT CITY — 9", src: "images/sport-city/sport-city-09.png" },
-          { name: "Презентация SPORT CITY — 10", src: "images/sport-city/sport-city-10.png" },
-          { name: "Презентация SPORT CITY — 11", src: "images/sport-city/sport-city-11.png" },
-          { name: "Презентация SPORT CITY — 12", src: "images/sport-city/sport-city-12.png" }
+          { name: "Презентация SPORT CITY — 1", src: "/images/sport-city/sport-city-01.png" },
+          { name: "Презентация SPORT CITY — 2", src: "/images/sport-city/sport-city-02.png" },
+          { name: "Презентация SPORT CITY — 3", src: "/images/sport-city/sport-city-03.png" },
+          { name: "Презентация SPORT CITY — 4", src: "/images/sport-city/sport-city-04.png" },
+          { name: "Презентация SPORT CITY — 5", src: "/images/sport-city/sport-city-05.png" },
+          { name: "Презентация SPORT CITY — 6", src: "/images/sport-city/sport-city-06.png" },
+          { name: "Презентация SPORT CITY — 7", src: "/images/sport-city/sport-city-07.png" },
+          { name: "Презентация SPORT CITY — 8", src: "/images/sport-city/sport-city-08.png" },
+          { name: "Презентация SPORT CITY — 9", src: "/images/sport-city/sport-city-09.png" },
+          { name: "Презентация SPORT CITY — 10", src: "/images/sport-city/sport-city-10.png" },
+          { name: "Презентация SPORT CITY — 11", src: "/images/sport-city/sport-city-11.png" },
+          { name: "Презентация SPORT CITY — 12", src: "/images/sport-city/sport-city-12.png" }
         ]
     },
 {
         id: "nb-stay-rent",
-        detailHref: "new-building-stay-rent.html",
+        detailHref: "/new-building-stay-rent.html",
         priceGel: 4598,
         priceKind: "per",
         priceFromTotalGel: 220212,
@@ -64,16 +64,16 @@
         },
         areaM2: 48,
         photos: [
-          { name: "Акция: скидка 6% в ипотеку", src: "images/stay-rent/stay-rent-01.png" },
-          { name: "Планировки и варианты отделки", src: "images/stay-rent/stay-rent-02.png" },
-          { name: "ONE Development — качество и сервис", src: "images/stay-rent/stay-rent-03.png" },
-          { name: "Stay&Rent: локация и образ жизни", src: "images/stay-rent/stay-rent-04.png" },
-          { name: "Комплекс: бассейны и инфраструктура", src: "images/stay-rent/stay-rent-05.png" }
+          { name: "Акция: скидка 6% в ипотеку", src: "/images/stay-rent/stay-rent-01.png" },
+          { name: "Планировки и варианты отделки", src: "/images/stay-rent/stay-rent-02.png" },
+          { name: "ONE Development — качество и сервис", src: "/images/stay-rent/stay-rent-03.png" },
+          { name: "Stay&Rent: локация и образ жизни", src: "/images/stay-rent/stay-rent-04.png" },
+          { name: "Комплекс: бассейны и инфраструктура", src: "/images/stay-rent/stay-rent-05.png" }
         ]
     },
 {
         id: "new-bilding-one",
-        detailHref: "new-building.html",
+        detailHref: "/new-building.html",
         priceGel: 2950,
         priceKind: "per",
         geo: {
@@ -83,16 +83,16 @@
         },
         areaM2: 35,
         photos: [
-          { name: "Жилой дом ONE, бизнес-класс", src: "images/new-bilding-one/one-05.png" },
-          { name: "Инфраструктура: бассейн на крыше", src: "images/new-bilding-one/one-01.png" },
-          { name: "ЖК ONE: проект и условия", src: "images/new-bilding-one/one-02.png" },
-          { name: "Фасад и European Property Awards", src: "images/new-bilding-one/one-03.png" },
-          { name: "Локация: до моря 700 м и сервисы рядом", src: "images/new-bilding-one/one-04.png" }
+          { name: "Жилой дом ONE, бизнес-класс", src: "/images/new-bilding-one/one-05.png" },
+          { name: "Инфраструктура: бассейн на крыше", src: "/images/new-bilding-one/one-01.png" },
+          { name: "ЖК ONE: проект и условия", src: "/images/new-bilding-one/one-02.png" },
+          { name: "Фасад и European Property Awards", src: "/images/new-bilding-one/one-03.png" },
+          { name: "Локация: до моря 700 м и сервисы рядом", src: "/images/new-bilding-one/one-04.png" }
         ]
     },
 {
         id: "nb-ramada-one-development",
-        detailHref: "new-building-2.html",
+        detailHref: "/new-building-2.html",
         priceGel: 3150,
         priceKind: "per",
         geo: {
@@ -102,24 +102,24 @@
         },
         areaM2: 38,
         photos: [
-          { name: "Башня Ramada Residences by Wyndham", src: "images/ramada-one-development/ramada-08.png" },
-          { name: "Тренажёрный зал", src: "images/ramada-one-development/ramada-01.png" },
-          { name: "Управляющая компания River Rock", src: "images/ramada-one-development/ramada-02.png" },
-          { name: "Дизайн резиденций Ramada by Wyndham", src: "images/ramada-one-development/ramada-03.png" },
-          { name: "Бассейн и лаунж-зона", src: "images/ramada-one-development/ramada-04.png" },
-          { name: "Ресторан", src: "images/ramada-one-development/ramada-05.png" },
-          { name: "Ramada Residences: проект и инвестиции", src: "images/ramada-one-development/ramada-06.png" },
-          { name: "Вход RAMADA Residences, паркинг", src: "images/ramada-one-development/ramada-07.png" },
-          { name: "Sky bar на крыше", src: "images/ramada-one-development/ramada-09.png" },
-          { name: "Локация: аллея Героев", src: "images/ramada-one-development/ramada-10.png" },
-          { name: "Туристический центр, ул. Пиросмани 10", src: "images/ramada-one-development/ramada-11.png" }
+          { name: "Башня Ramada Residences by Wyndham", src: "/images/ramada-one-development/ramada-08.png" },
+          { name: "Тренажёрный зал", src: "/images/ramada-one-development/ramada-01.png" },
+          { name: "Управляющая компания River Rock", src: "/images/ramada-one-development/ramada-02.png" },
+          { name: "Дизайн резиденций Ramada by Wyndham", src: "/images/ramada-one-development/ramada-03.png" },
+          { name: "Бассейн и лаунж-зона", src: "/images/ramada-one-development/ramada-04.png" },
+          { name: "Ресторан", src: "/images/ramada-one-development/ramada-05.png" },
+          { name: "Ramada Residences: проект и инвестиции", src: "/images/ramada-one-development/ramada-06.png" },
+          { name: "Вход RAMADA Residences, паркинг", src: "/images/ramada-one-development/ramada-07.png" },
+          { name: "Sky bar на крыше", src: "/images/ramada-one-development/ramada-09.png" },
+          { name: "Локация: аллея Героев", src: "/images/ramada-one-development/ramada-10.png" },
+          { name: "Туристический центр, ул. Пиросмани 10", src: "/images/ramada-one-development/ramada-11.png" }
         ]
     }
     ],
     "apartments": [
 {
         id: "apt-orbi-beach-tower-2201",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 324000,
         priceKind: "fixed",
         geo: {
@@ -129,20 +129,20 @@
         },
         areaM2: 50,
         photos: [
-          { name: "Гостиная с панорамными окнами", src: "images/orbi-beach-tower-2201/orbi-2201-02.png" },
-          { name: "Панорама: первая линия, море и набережная", src: "images/orbi-beach-tower-2201/orbi-2201-01.png" },
-          { name: "Столовая зона, вид на море", src: "images/orbi-beach-tower-2201/orbi-2201-03.png" },
-          { name: "Кухня и гостиная", src: "images/orbi-beach-tower-2201/orbi-2201-04.png" },
-          { name: "Кухня", src: "images/orbi-beach-tower-2201/orbi-2201-05.png" },
-          { name: "Спальня, вид на море", src: "images/orbi-beach-tower-2201/orbi-2201-06.png" },
-          { name: "Санузел", src: "images/orbi-beach-tower-2201/orbi-2201-07.png" },
-          { name: "Лобби ORBI Beach Tower, рецепция", src: "images/orbi-beach-tower-2201/orbi-2201-08.png" }
+          { name: "Гостиная с панорамными окнами", src: "/images/orbi-beach-tower-2201/orbi-2201-02.png" },
+          { name: "Панорама: первая линия, море и набережная", src: "/images/orbi-beach-tower-2201/orbi-2201-01.png" },
+          { name: "Столовая зона, вид на море", src: "/images/orbi-beach-tower-2201/orbi-2201-03.png" },
+          { name: "Кухня и гостиная", src: "/images/orbi-beach-tower-2201/orbi-2201-04.png" },
+          { name: "Кухня", src: "/images/orbi-beach-tower-2201/orbi-2201-05.png" },
+          { name: "Спальня, вид на море", src: "/images/orbi-beach-tower-2201/orbi-2201-06.png" },
+          { name: "Санузел", src: "/images/orbi-beach-tower-2201/orbi-2201-07.png" },
+          { name: "Лобби ORBI Beach Tower, рецепция", src: "/images/orbi-beach-tower-2201/orbi-2201-08.png" }
         ],
         roomsKey: "1+1"
     },
 {
         id: "apt-orbi-beach-tower-3202",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 540000,
         priceKind: "fixed",
         geo: {
@@ -152,21 +152,21 @@
         },
         areaM2: 70,
         photos: [
-          { name: "Вид с балкона: море и парк Качиньских", src: "images/orbi-beach-tower-3202/orbi-3202-01.png" },
-          { name: "Гостиная: планировка 2+1", src: "images/orbi-beach-tower-3202/orbi-3202-02.png" },
-          { name: "Гостиная и обеденная зона", src: "images/orbi-beach-tower-3202/orbi-3202-03.png" },
-          { name: "Кухня и гостиная", src: "images/orbi-beach-tower-3202/orbi-3202-04.png" },
-          { name: "Две спальни и кухня", src: "images/orbi-beach-tower-3202/orbi-3202-05.png" },
-          { name: "Спальня", src: "images/orbi-beach-tower-3202/orbi-3202-06.png" },
-          { name: "Спальня с панорамными окнами", src: "images/orbi-beach-tower-3202/orbi-3202-07.png" },
-          { name: "Санузел", src: "images/orbi-beach-tower-3202/orbi-3202-08.png" },
-          { name: "Прихожая", src: "images/orbi-beach-tower-3202/orbi-3202-09.png" }
+          { name: "Вид с балкона: море и парк Качиньских", src: "/images/orbi-beach-tower-3202/orbi-3202-01.png" },
+          { name: "Гостиная: планировка 2+1", src: "/images/orbi-beach-tower-3202/orbi-3202-02.png" },
+          { name: "Гостиная и обеденная зона", src: "/images/orbi-beach-tower-3202/orbi-3202-03.png" },
+          { name: "Кухня и гостиная", src: "/images/orbi-beach-tower-3202/orbi-3202-04.png" },
+          { name: "Две спальни и кухня", src: "/images/orbi-beach-tower-3202/orbi-3202-05.png" },
+          { name: "Спальня", src: "/images/orbi-beach-tower-3202/orbi-3202-06.png" },
+          { name: "Спальня с панорамными окнами", src: "/images/orbi-beach-tower-3202/orbi-3202-07.png" },
+          { name: "Санузел", src: "/images/orbi-beach-tower-3202/orbi-3202-08.png" },
+          { name: "Прихожая", src: "/images/orbi-beach-tower-3202/orbi-3202-09.png" }
         ],
         roomsKey: "2+1"
     },
 {
         id: "apt-orbi-beach-tower-2912",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 351000,
         priceKind: "fixed",
         geo: {
@@ -176,23 +176,23 @@
         },
         areaM2: 50,
         photos: [
-          { name: "Балкон с видом на море", src: "images/orbi-beach-tower-2912/orbi-beach-01.png" },
-          { name: "Балкон: вид на город и горы", src: "images/orbi-beach-tower-2912/orbi-beach-02.png" },
-          { name: "Спальня", src: "images/orbi-beach-tower-2912/orbi-beach-03.png" },
-          { name: "Гостиная с декоративной стеной", src: "images/orbi-beach-tower-2912/orbi-beach-04.png" },
-          { name: "Гостиная с видом на море, рабочая зона", src: "images/orbi-beach-tower-2912/orbi-beach-05.png" },
-          { name: "Гостиная и проём в спальню", src: "images/orbi-beach-tower-2912/orbi-beach-06.png" },
-          { name: "Прихожая и встроенные шкафы", src: "images/orbi-beach-tower-2912/orbi-beach-07.png" },
-          { name: "Кухня: плита и духовка Gorenje", src: "images/orbi-beach-tower-2912/orbi-beach-08.png" },
-          { name: "Кухня с кофемашиной", src: "images/orbi-beach-tower-2912/orbi-beach-09.png" },
-          { name: "Посудомоечная машина Gorenje", src: "images/orbi-beach-tower-2912/orbi-beach-10.png" },
-          { name: "Рабочее место у окна", src: "images/orbi-beach-tower-2912/orbi-beach-11.png" }
+          { name: "Балкон с видом на море", src: "/images/orbi-beach-tower-2912/orbi-beach-01.png" },
+          { name: "Балкон: вид на город и горы", src: "/images/orbi-beach-tower-2912/orbi-beach-02.png" },
+          { name: "Спальня", src: "/images/orbi-beach-tower-2912/orbi-beach-03.png" },
+          { name: "Гостиная с декоративной стеной", src: "/images/orbi-beach-tower-2912/orbi-beach-04.png" },
+          { name: "Гостиная с видом на море, рабочая зона", src: "/images/orbi-beach-tower-2912/orbi-beach-05.png" },
+          { name: "Гостиная и проём в спальню", src: "/images/orbi-beach-tower-2912/orbi-beach-06.png" },
+          { name: "Прихожая и встроенные шкафы", src: "/images/orbi-beach-tower-2912/orbi-beach-07.png" },
+          { name: "Кухня: плита и духовка Gorenje", src: "/images/orbi-beach-tower-2912/orbi-beach-08.png" },
+          { name: "Кухня с кофемашиной", src: "/images/orbi-beach-tower-2912/orbi-beach-09.png" },
+          { name: "Посудомоечная машина Gorenje", src: "/images/orbi-beach-tower-2912/orbi-beach-10.png" },
+          { name: "Рабочее место у окна", src: "/images/orbi-beach-tower-2912/orbi-beach-11.png" }
         ],
         roomsKey: "1+1"
     },
 {
         id: "apt-avenue-by-orbi-studio",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 86400,
         priceKind: "fixed",
         geo: {
@@ -202,15 +202,15 @@
         },
         areaM2: 32,
         photos: [
-          { name: "AVENUE by ORBI — фасад и набережная", src: "images/avenue-by-orbi/avenue-03.png" },
-          { name: "AVENUE by ORBI — вид на аллею Героев", src: "images/avenue-by-orbi/avenue-01.png" },
-          { name: "AVENUE by ORBI — вечерний вид комплекса", src: "images/avenue-by-orbi/avenue-02.png" }
+          { name: "AVENUE by ORBI — фасад и набережная", src: "/images/avenue-by-orbi/avenue-03.png" },
+          { name: "AVENUE by ORBI — вид на аллею Героев", src: "/images/avenue-by-orbi/avenue-01.png" },
+          { name: "AVENUE by ORBI — вечерний вид комплекса", src: "/images/avenue-by-orbi/avenue-02.png" }
         ],
         roomsKey: "studio"
     },
 {
         id: "apt-raduga-elt-studio",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 105300,
         priceKind: "fixed",
         geo: {
@@ -220,20 +220,20 @@
         },
         areaM2: 32.2,
         photos: [
-          { name: "Вход в ЖК Rainbow (Радуга ЭЛТ Квартал)", src: "images/raduga-elt-quarter/raduga-01.png" },
-          { name: "Лобби с лифтами", src: "images/raduga-elt-quarter/raduga-02.png" },
-          { name: "Холл этажа", src: "images/raduga-elt-quarter/raduga-03.png" },
-          { name: "Планировка студии 32,2 м²", src: "images/raduga-elt-quarter/raduga-04.png" },
-          { name: "Студия: каркас, вид на балкон", src: "images/raduga-elt-quarter/raduga-05.png" },
-          { name: "Студия: каркас, прихожая", src: "images/raduga-elt-quarter/raduga-06.png" },
-          { name: "Балкон, вид на район", src: "images/raduga-elt-quarter/raduga-07.png" },
-          { name: "Вид с высоты на город и море", src: "images/raduga-elt-quarter/raduga-08.png" }
+          { name: "Вход в ЖК Rainbow (Радуга ЭЛТ Квартал)", src: "/images/raduga-elt-quarter/raduga-01.png" },
+          { name: "Лобби с лифтами", src: "/images/raduga-elt-quarter/raduga-02.png" },
+          { name: "Холл этажа", src: "/images/raduga-elt-quarter/raduga-03.png" },
+          { name: "Планировка студии 32,2 м²", src: "/images/raduga-elt-quarter/raduga-04.png" },
+          { name: "Студия: каркас, вид на балкон", src: "/images/raduga-elt-quarter/raduga-05.png" },
+          { name: "Студия: каркас, прихожая", src: "/images/raduga-elt-quarter/raduga-06.png" },
+          { name: "Балкон, вид на район", src: "/images/raduga-elt-quarter/raduga-07.png" },
+          { name: "Вид с высоты на город и море", src: "/images/raduga-elt-quarter/raduga-08.png" }
         ],
         roomsKey: "studio"
     },
 {
         id: "apt-alliance-privilege-studio",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 270000,
         priceKind: "fixed",
         geo: {
@@ -243,23 +243,23 @@
         },
         areaM2: 30,
         photos: [
-          { name: "Alliance Privilege — фасад комплекса", src: "images/alliance-privilege/alliance-facade.png", fit: "contain" },
-          { name: "Alliance Privilege — фасад Marriott", src: "images/alliance-privilege/alliance-00.png" },
-          { name: "Alliance Privilege: вид на море и бульвар", src: "images/alliance-privilege/alliance-01.png" },
-          { name: "Студия: общий вид", src: "images/alliance-privilege/alliance-02.png" },
-          { name: "Спальная зона", src: "images/alliance-privilege/alliance-03.png" },
-          { name: "Рабочая зона и ТВ", src: "images/alliance-privilege/alliance-04.png" },
-          { name: "Кухонная зона", src: "images/alliance-privilege/alliance-05.png" },
-          { name: "Кухня: техника и подсветка", src: "images/alliance-privilege/alliance-06.png" },
-          { name: "Санузел", src: "images/alliance-privilege/alliance-07.png" },
-          { name: "Душевая", src: "images/alliance-privilege/alliance-08.png" },
-          { name: "Прихожая", src: "images/alliance-privilege/alliance-09.png" }
+          { name: "Alliance Privilege — фасад комплекса", src: "/images/alliance-privilege/alliance-facade.png", fit: "contain" },
+          { name: "Alliance Privilege — фасад Marriott", src: "/images/alliance-privilege/alliance-00.png" },
+          { name: "Alliance Privilege: вид на море и бульвар", src: "/images/alliance-privilege/alliance-01.png" },
+          { name: "Студия: общий вид", src: "/images/alliance-privilege/alliance-02.png" },
+          { name: "Спальная зона", src: "/images/alliance-privilege/alliance-03.png" },
+          { name: "Рабочая зона и ТВ", src: "/images/alliance-privilege/alliance-04.png" },
+          { name: "Кухонная зона", src: "/images/alliance-privilege/alliance-05.png" },
+          { name: "Кухня: техника и подсветка", src: "/images/alliance-privilege/alliance-06.png" },
+          { name: "Санузел", src: "/images/alliance-privilege/alliance-07.png" },
+          { name: "Душевая", src: "/images/alliance-privilege/alliance-08.png" },
+          { name: "Прихожая", src: "/images/alliance-privilege/alliance-09.png" }
         ],
         roomsKey: "studio"
     },
 {
         id: "apt-marina-club-1p1",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 156600,
         priceKind: "fixed",
         geo: {
@@ -269,16 +269,16 @@
         },
         areaM2: 47.3,
         photos: [
-          { name: "Marina Club Block C — фасад комплекса", src: "images/marina-club/marina-01.png" },
-          { name: "Marina Club — вид на стройку и море", src: "images/marina-club/marina-02.png" },
-          { name: "Первая линия: вид на море", src: "images/marina-club/marina-03.png" },
-          { name: "Планировка 1+1, 47,3 м²", src: "images/marina-club/marina-04.png" }
+          { name: "Marina Club Block C — фасад комплекса", src: "/images/marina-club/marina-01.png" },
+          { name: "Marina Club — вид на стройку и море", src: "/images/marina-club/marina-02.png" },
+          { name: "Первая линия: вид на море", src: "/images/marina-club/marina-03.png" },
+          { name: "Планировка 1+1, 47,3 м²", src: "/images/marina-club/marina-04.png" }
         ],
         roomsKey: "1+1"
     },
 {
         id: "apt-batumi-view-studio",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 283500,
         priceKind: "fixed",
         geo: {
@@ -288,18 +288,18 @@
         },
         areaM2: 36,
         photos: [
-          { name: "Вид на море с балкона", src: "images/batumi-view/batumi-view-01.png" },
-          { name: "Спальная зона", src: "images/batumi-view/batumi-view-02.png" },
-          { name: "Студия: прихожая и спальня", src: "images/batumi-view/batumi-view-03.png" },
-          { name: "Кухня и прихожая", src: "images/batumi-view/batumi-view-04.png" },
-          { name: "Кухонная зона", src: "images/batumi-view/batumi-view-05.png" },
-          { name: "Гардероб и зона стирки", src: "images/batumi-view/batumi-view-06.png" }
+          { name: "Вид на море с балкона", src: "/images/batumi-view/batumi-view-01.png" },
+          { name: "Спальная зона", src: "/images/batumi-view/batumi-view-02.png" },
+          { name: "Студия: прихожая и спальня", src: "/images/batumi-view/batumi-view-03.png" },
+          { name: "Кухня и прихожая", src: "/images/batumi-view/batumi-view-04.png" },
+          { name: "Кухонная зона", src: "/images/batumi-view/batumi-view-05.png" },
+          { name: "Гардероб и зона стирки", src: "/images/batumi-view/batumi-view-06.png" }
         ],
         roomsKey: "studio"
     },
 {
         id: "apt-steps-batumi-studio",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 164700,
         priceKind: "fixed",
         geo: {
@@ -309,22 +309,22 @@
         },
         areaM2: 31.6,
         photos: [
-          { name: "Steps Batumi — жилой комплекс", src: "images/steps-batumi/steps-apt-01.jpg" },
-          { name: "Спальная зона", src: "images/steps-batumi/steps-apt-02.jpg" },
-          { name: "Гостиная и обеденная зона", src: "images/steps-batumi/steps-apt-03.jpg" },
-          { name: "Кухонная зона", src: "images/steps-batumi/steps-apt-04.jpg" },
-          { name: "Санузел", src: "images/steps-batumi/steps-apt-05.jpg" },
-          { name: "Прихожая", src: "images/steps-batumi/steps-apt-06.jpg" },
-          { name: "Steps Batumi — фасад", src: "images/steps-batumi/steps-02.jpg" },
-          { name: "Steps Batumi — вид на комплекс", src: "images/steps-batumi/steps-03.jpg" },
-          { name: "Steps Batumi Hotel & Suites", src: "images/steps-batumi/steps-04.jpg" },
-          { name: "Steps Batumi — территория", src: "images/steps-batumi/steps-05.jpg" }
+          { name: "Steps Batumi — жилой комплекс", src: "/images/steps-batumi/steps-apt-01.jpg" },
+          { name: "Спальная зона", src: "/images/steps-batumi/steps-apt-02.jpg" },
+          { name: "Гостиная и обеденная зона", src: "/images/steps-batumi/steps-apt-03.jpg" },
+          { name: "Кухонная зона", src: "/images/steps-batumi/steps-apt-04.jpg" },
+          { name: "Санузел", src: "/images/steps-batumi/steps-apt-05.jpg" },
+          { name: "Прихожая", src: "/images/steps-batumi/steps-apt-06.jpg" },
+          { name: "Steps Batumi — фасад", src: "/images/steps-batumi/steps-02.jpg" },
+          { name: "Steps Batumi — вид на комплекс", src: "/images/steps-batumi/steps-03.jpg" },
+          { name: "Steps Batumi Hotel & Suites", src: "/images/steps-batumi/steps-04.jpg" },
+          { name: "Steps Batumi — территория", src: "/images/steps-batumi/steps-05.jpg" }
         ],
         roomsKey: "studio"
     },
 {
         id: "apt-steps-batumi-studio-11",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 135000,
         priceKind: "fixed",
         geo: {
@@ -334,26 +334,26 @@
         },
         areaM2: 24,
         photos: [
-          { name: "Steps Batumi — жилой комплекс", src: "images/steps-batumi/steps-apt-01.jpg" },
-          { name: "Steps Batumi — фасад", src: "images/steps-batumi/steps-02.jpg" },
-          { name: "Steps Batumi — вид на комплекс", src: "images/steps-batumi/steps-03.jpg" },
-          { name: "Steps Batumi Hotel & Suites", src: "images/steps-batumi/steps-04.jpg" },
-          { name: "Steps Batumi — территория", src: "images/steps-batumi/steps-05.jpg" },
-          { name: "Вид с балкона: горы и город", src: "images/steps-batumi-11/steps-11-01.jpg" },
-          { name: "Вид с балкона", src: "images/steps-batumi-11/steps-11-02.jpg" },
-          { name: "Спальная зона", src: "images/steps-batumi-11/steps-11-03.jpg" },
-          { name: "Студия: прихожая и гостиная", src: "images/steps-batumi-11/steps-11-04.jpg" },
-          { name: "Спальня и кухонная зона", src: "images/steps-batumi-11/steps-11-05.jpg" },
-          { name: "Кухня и гостиная", src: "images/steps-batumi-11/steps-11-06.jpg" },
-          { name: "Кухня и обеденная зона", src: "images/steps-batumi-11/steps-11-07.jpg" },
-          { name: "Обеденная зона", src: "images/steps-batumi-11/steps-11-08.jpg" },
-          { name: "Санузел", src: "images/steps-batumi-11/steps-11-09.jpg" }
+          { name: "Steps Batumi — жилой комплекс", src: "/images/steps-batumi/steps-apt-01.jpg" },
+          { name: "Steps Batumi — фасад", src: "/images/steps-batumi/steps-02.jpg" },
+          { name: "Steps Batumi — вид на комплекс", src: "/images/steps-batumi/steps-03.jpg" },
+          { name: "Steps Batumi Hotel & Suites", src: "/images/steps-batumi/steps-04.jpg" },
+          { name: "Steps Batumi — территория", src: "/images/steps-batumi/steps-05.jpg" },
+          { name: "Вид с балкона: горы и город", src: "/images/steps-batumi-11/steps-11-01.jpg" },
+          { name: "Вид с балкона", src: "/images/steps-batumi-11/steps-11-02.jpg" },
+          { name: "Спальная зона", src: "/images/steps-batumi-11/steps-11-03.jpg" },
+          { name: "Студия: прихожая и гостиная", src: "/images/steps-batumi-11/steps-11-04.jpg" },
+          { name: "Спальня и кухонная зона", src: "/images/steps-batumi-11/steps-11-05.jpg" },
+          { name: "Кухня и гостиная", src: "/images/steps-batumi-11/steps-11-06.jpg" },
+          { name: "Кухня и обеденная зона", src: "/images/steps-batumi-11/steps-11-07.jpg" },
+          { name: "Обеденная зона", src: "/images/steps-batumi-11/steps-11-08.jpg" },
+          { name: "Санузел", src: "/images/steps-batumi-11/steps-11-09.jpg" }
         ],
         roomsKey: "studio"
     },
 {
         id: "apt-tropical-garden-studio",
-        detailHref: "apartment.html",
+        detailHref: "/apartment.html",
         priceGel: 189000,
         priceKind: "fixed",
         geo: {
@@ -363,16 +363,16 @@
         },
         areaM2: 35,
         photos: [
-          { name: "Tropical Garden — жилой комплекс", src: "images/tropical-garden/tropical-01.jpg" },
-          { name: "Панорама: море, пляж и Батуми", src: "images/tropical-garden/tropical-10.jpg" },
-          { name: "Вид из окна: море и Ботанический сад", src: "images/tropical-garden/tropical-09.jpg" },
-          { name: "Гостиная, вид на балкон", src: "images/tropical-garden/tropical-02.jpg" },
-          { name: "Обеденная зона и ТВ", src: "images/tropical-garden/tropical-03.jpg" },
-          { name: "Студия: гостиная, кухня, шкаф", src: "images/tropical-garden/tropical-04.jpg" },
-          { name: "Кухня и обеденная зона", src: "images/tropical-garden/tropical-05.jpg" },
-          { name: "Гостиная, панорамные окна", src: "images/tropical-garden/tropical-08.jpg" },
-          { name: "Санузел: душевая", src: "images/tropical-garden/tropical-06.jpg" },
-          { name: "Санузел: раковина", src: "images/tropical-garden/tropical-07.jpg" }
+          { name: "Tropical Garden — жилой комплекс", src: "/images/tropical-garden/tropical-01.jpg" },
+          { name: "Панорама: море, пляж и Батуми", src: "/images/tropical-garden/tropical-10.jpg" },
+          { name: "Вид из окна: море и Ботанический сад", src: "/images/tropical-garden/tropical-09.jpg" },
+          { name: "Гостиная, вид на балкон", src: "/images/tropical-garden/tropical-02.jpg" },
+          { name: "Обеденная зона и ТВ", src: "/images/tropical-garden/tropical-03.jpg" },
+          { name: "Студия: гостиная, кухня, шкаф", src: "/images/tropical-garden/tropical-04.jpg" },
+          { name: "Кухня и обеденная зона", src: "/images/tropical-garden/tropical-05.jpg" },
+          { name: "Гостиная, панорамные окна", src: "/images/tropical-garden/tropical-08.jpg" },
+          { name: "Санузел: душевая", src: "/images/tropical-garden/tropical-06.jpg" },
+          { name: "Санузел: раковина", src: "/images/tropical-garden/tropical-07.jpg" }
         ],
         roomsKey: "studio"
     }

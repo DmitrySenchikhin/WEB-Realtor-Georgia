@@ -19,14 +19,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
   </head>
   <body data-i18n-title="page.search">
     <main class="page page--search">
       <header class="search-top container">
-        <a class="search-top__logo" href="index.html" data-i18n-aria="aria.home" aria-label="REALTOR GEORGIA — на главную">
-          <img src="images/logo.svg" alt="REALTOR GEORGIA" width="153" height="47" />
+        <a class="search-top__logo" href="/" data-i18n-aria="aria.home" aria-label="REALTOR GEORGIA — на главную">
+          <img src="/images/logo.svg" alt="REALTOR GEORGIA" width="153" height="47" />
         </a>
         <div class="search-top__contacts">
           <a class="hero__phone" href="tel:+995598309038">+995598309038</a>
@@ -114,14 +114,14 @@
         </div>
 
         <div class="search-filters__row search-filters__row--actions">
-          <form class="search-filters__actions" data-apartment-search-form action="search.html" method="get">
+          <form class="search-filters__actions" data-apartment-search-form action="/search.html" method="get">
             <input type="hidden" name="type" value="apartments" />
             <button class="btn-search" type="submit">
-              <img src="images/icon-search.svg" alt="" width="24" height="24" />
+              <img src="/images/icon-search.svg" alt="" width="24" height="24" />
               <span data-i18n="btn.search">Поиск</span>
             </button>
-            <a class="btn-map" href="map.html">
-              <img src="images/icon-map.svg" alt="" width="20" height="20" />
+            <a class="btn-map" href="/map.html">
+              <img src="/images/icon-map.svg" alt="" width="20" height="20" />
               <span data-i18n="btn.map">Смотреть на карте</span>
             </a>
           </form>
@@ -130,7 +130,7 @@
 
       <section class="search-toolbar container" data-i18n-aria="aria.sort" aria-label="Сортировка и счётчик">
         <button type="button" class="search-sort">
-          <img class="search-sort__icon" src="images/icon-sort-arrows.svg" alt="" width="20" height="24" />
+          <img class="search-sort__icon" src="/images/icon-sort-arrows.svg" alt="" width="20" height="24" />
           <span class="search-sort__text" data-i18n="sort.recommended">Рекомендуемые</span>
         </button>
         <p class="search-toolbar__count">2000 объявлений</p>
@@ -145,18 +145,18 @@
       <footer class="footer footer--search">
         <div class="container footer__inner">
           <div class="footer__logo">
-            <img src="images/logo-footer.svg" alt="REALTOR GEORGIA" width="153" height="47" loading="lazy" />
+            <img src="/images/logo-footer.svg" alt="REALTOR GEORGIA" width="153" height="47" loading="lazy" />
           </div>
         </div>
       </footer>
     </main>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script src="js/description-ids.js" defer></script>
-    <script src="js/i18n.js" defer></script>
-    <script src="js/objects-catalog.js" defer></script>
-    <script src="js/descriptions-loader.js" defer></script>
-    <script src="js/property-descriptions.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="/js/description-ids.js" defer></script>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/objects-catalog.js" defer></script>
+    <script src="/js/descriptions-loader.js" defer></script>
+    <script src="/js/property-descriptions.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </body>
 </html>

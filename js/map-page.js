@@ -73,7 +73,7 @@
     iconWrap.className = "map-page__marker-icon";
     iconWrap.setAttribute("aria-hidden", "true");
     var img = document.createElement("img");
-    img.src = "images/logo-mark.svg";
+    img.src = "/images/logo-mark.svg";
     img.alt = "";
     img.width = 30;
     img.height = 30;
