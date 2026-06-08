@@ -151,10 +151,7 @@
     var inner = "";
 
     if (code === "ru") {
-      inner =
-        '<rect width="48" height="16" fill="#fff"/>' +
-        '<rect y="16" width="48" height="16" fill="#0039a6"/>' +
-        '<rect y="32" width="48" height="16" fill="#d52b1e"/>';
+      inner = '<rect width="48" height="48" fill="#fff"/>';
     } else if (code === "en") {
       inner =
         '<rect width="48" height="48" fill="#b22234"/>' +

@@ -230,6 +230,12 @@ a {
   user-select: none;
 }
 
+.lang-switch__trigger[data-lang="ru"] .lang-switch__code,
+.lang-switch__option[data-lang="ru"] .lang-switch__code {
+  color: #0039a6;
+  text-shadow: none;
+}
+
 .lang-switch__menu {
   position: absolute;
   top: calc(100% + 8px);
