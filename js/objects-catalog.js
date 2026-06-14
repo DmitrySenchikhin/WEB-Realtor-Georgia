@@ -141,9 +141,34 @@
         roomsKey: "1+1"
     },
 {
+        id: "apt-orbi-beach-tower-2801",
+        detailHref: "/apartment.html",
+        priceGel: 337500,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.630308,
+          lng: 41.602256,
+          mapsUrl: "https://www.google.com/maps?q=41.630308,41.602256"
+        },
+        areaM2: 50,
+        photos: [
+          { name: "Балкон: панорама моря", src: "/images/orbi-beach-tower-2801/orbi-2801-01.png" },
+          { name: "Гостиная-столовая с видом на море", src: "/images/orbi-beach-tower-2801/orbi-2801-02.png" },
+          { name: "Зона отдыха с диваном", src: "/images/orbi-beach-tower-2801/orbi-2801-03.png" },
+          { name: "Кухня и проход в спальню", src: "/images/orbi-beach-tower-2801/orbi-2801-04.png" },
+          { name: "Спальня с видом на море", src: "/images/orbi-beach-tower-2801/orbi-2801-05.png" },
+          { name: "Спальня", src: "/images/orbi-beach-tower-2801/orbi-2801-06.png" },
+          { name: "Прихожая", src: "/images/orbi-beach-tower-2801/orbi-2801-07.png" },
+          { name: "Гардеробная", src: "/images/orbi-beach-tower-2801/orbi-2801-08.png" },
+          { name: "Душевая и стиральная машина", src: "/images/orbi-beach-tower-2801/orbi-2801-09.png" },
+          { name: "Санузел", src: "/images/orbi-beach-tower-2801/orbi-2801-10.png" }
+        ],
+        roomsKey: "1+1"
+    },
+{
         id: "apt-orbi-beach-tower-3202",
         detailHref: "/apartment.html",
-        priceGel: 540000,
+        priceGel: 499500,
         priceKind: "fixed",
         geo: {
           lat: 41.630308,
@@ -161,6 +186,31 @@
           { name: "Спальня с панорамными окнами", src: "/images/orbi-beach-tower-3202/orbi-3202-07.png" },
           { name: "Санузел", src: "/images/orbi-beach-tower-3202/orbi-3202-08.png" },
           { name: "Прихожая", src: "/images/orbi-beach-tower-3202/orbi-3202-09.png" }
+        ],
+        roomsKey: "2+1"
+    },
+{
+        id: "apt-orbi-beach-tower-2902",
+        detailHref: "/apartment.html",
+        priceGel: 499500,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.630308,
+          lng: 41.602256,
+          mapsUrl: "https://www.google.com/maps?q=41.630308,41.602256"
+        },
+        areaM2: 70,
+        photos: [
+          { name: "Вид с высоты: парк и море", src: "/images/orbi-beach-tower-2902/orbi-2902-10.png" },
+          { name: "Гостиная с кухней и обеденной зоной", src: "/images/orbi-beach-tower-2902/orbi-2902-01.png" },
+          { name: "Обеденная зона, ТВ и вид на море", src: "/images/orbi-beach-tower-2902/orbi-2902-02.png" },
+          { name: "Планировка 2+1: две спальни", src: "/images/orbi-beach-tower-2902/orbi-2902-03.png" },
+          { name: "Спальня с видом на море", src: "/images/orbi-beach-tower-2902/orbi-2902-04.png" },
+          { name: "Вторая спальня", src: "/images/orbi-beach-tower-2902/orbi-2902-05.png" },
+          { name: "Балкон: панорама моря", src: "/images/orbi-beach-tower-2902/orbi-2902-06.png" },
+          { name: "Кухня", src: "/images/orbi-beach-tower-2902/orbi-2902-07.png" },
+          { name: "Прихожая", src: "/images/orbi-beach-tower-2902/orbi-2902-08.png" },
+          { name: "Санузел", src: "/images/orbi-beach-tower-2902/orbi-2902-09.png" }
         ],
         roomsKey: "2+1"
     },
