@@ -160,6 +160,21 @@
     return Number.isFinite(n) && n > 0 ? n : 0;
   }
 
+  function reorderListWithLead(list, leadId) {
+    if (!leadId || !list.length) return list.slice();
+    var leadObj = findObjectById(leadId);
+    if (!leadObj) return list.slice();
+    var hasLead = list.some(function (o) {
+      return o && o.id === leadId;
+    });
+    if (!hasLead) return list.slice();
+    var out = list.filter(function (o) {
+      return o && o.id !== leadId;
+    });
+    out.unshift(leadObj);
+    return out;
+  }
+
   function listForGroup(groupKey, count, leadId, autoNewSlots) {
     var out;
     var slots = autoNewSlots || 0;
@@ -171,25 +186,11 @@
       var groupList = getCatalog()[groupKey] || [];
       out = groupList.slice();
       if (!out.length) return out;
-      if (leadId) {
-        var leadObj = findObjectById(leadId);
-        if (leadObj) {
-          out = out.filter(function (o) {
-            return o && o.id !== leadId;
-          });
-          out.unshift(leadObj);
-        }
-      }
+      if (leadId) return reorderListWithLead(out, leadId);
       return out;
     }
     if (groupKey === "mixed" || !leadId) return out;
-    var lead = findObjectById(leadId);
-    if (!lead) return out;
-    out = out.filter(function (o) {
-      return o && o.id !== leadId;
-    });
-    out.unshift(lead);
-    return out.slice(0, count);
+    return reorderListWithLead(out, leadId).slice(0, count);
   }
 
   function syncSectionCardSlots(track, list) {
@@ -1174,9 +1175,13 @@
     var grid = document.querySelector("[data-search-results-grid]");
     if (!grid) return;
 
+    var section = document.querySelector("[data-search-results]");
+    var leadId = section ? section.getAttribute("data-search-lead") || "" : "";
+
     var list = getCatalog()[groupKey] || [];
     if (groupKey === "apartments") {
       list = filterApartmentList(list, getActiveApartmentFilterState());
+      if (leadId) list = reorderListWithLead(list, leadId);
     }
 
     renderApartmentSearchGrid(grid, list, false);
