@@ -118,6 +118,32 @@
     ],
     "apartments": [
 {
+        id: "apt-orbi-beach-tower-2912",
+        detailHref: "/apartment.html",
+        priceGel: 351000,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.630308,
+          lng: 41.602256,
+          mapsUrl: "https://www.google.com/maps?q=41.630308,41.602256"
+        },
+        areaM2: 50,
+        photos: [
+          { name: "Балкон с видом на море", src: "/images/orbi-beach-tower-2912/orbi-beach-01.png" },
+          { name: "Балкон: вид на город и горы", src: "/images/orbi-beach-tower-2912/orbi-beach-02.png" },
+          { name: "Спальня", src: "/images/orbi-beach-tower-2912/orbi-beach-03.png" },
+          { name: "Гостиная с декоративной стеной", src: "/images/orbi-beach-tower-2912/orbi-beach-04.png" },
+          { name: "Гостиная с видом на море, рабочая зона", src: "/images/orbi-beach-tower-2912/orbi-beach-05.png" },
+          { name: "Гостиная и проём в спальню", src: "/images/orbi-beach-tower-2912/orbi-beach-06.png" },
+          { name: "Прихожая и встроенные шкафы", src: "/images/orbi-beach-tower-2912/orbi-beach-07.png" },
+          { name: "Кухня: плита и духовка Gorenje", src: "/images/orbi-beach-tower-2912/orbi-beach-08.png" },
+          { name: "Кухня с кофемашиной", src: "/images/orbi-beach-tower-2912/orbi-beach-09.png" },
+          { name: "Посудомоечная машина Gorenje", src: "/images/orbi-beach-tower-2912/orbi-beach-10.png" },
+          { name: "Рабочее место у окна", src: "/images/orbi-beach-tower-2912/orbi-beach-11.png" }
+        ],
+        roomsKey: "1+1"
+    },
+{
         id: "apt-orbi-beach-tower-2201",
         detailHref: "/apartment.html",
         priceGel: 324000,
@@ -213,32 +239,6 @@
           { name: "Санузел", src: "/images/orbi-beach-tower-2902/orbi-2902-09.png" }
         ],
         roomsKey: "2+1"
-    },
-{
-        id: "apt-orbi-beach-tower-2912",
-        detailHref: "/apartment.html",
-        priceGel: 351000,
-        priceKind: "fixed",
-        geo: {
-          lat: 41.630308,
-          lng: 41.602256,
-          mapsUrl: "https://www.google.com/maps?q=41.630308,41.602256"
-        },
-        areaM2: 50,
-        photos: [
-          { name: "Балкон с видом на море", src: "/images/orbi-beach-tower-2912/orbi-beach-01.png" },
-          { name: "Балкон: вид на город и горы", src: "/images/orbi-beach-tower-2912/orbi-beach-02.png" },
-          { name: "Спальня", src: "/images/orbi-beach-tower-2912/orbi-beach-03.png" },
-          { name: "Гостиная с декоративной стеной", src: "/images/orbi-beach-tower-2912/orbi-beach-04.png" },
-          { name: "Гостиная с видом на море, рабочая зона", src: "/images/orbi-beach-tower-2912/orbi-beach-05.png" },
-          { name: "Гостиная и проём в спальню", src: "/images/orbi-beach-tower-2912/orbi-beach-06.png" },
-          { name: "Прихожая и встроенные шкафы", src: "/images/orbi-beach-tower-2912/orbi-beach-07.png" },
-          { name: "Кухня: плита и духовка Gorenje", src: "/images/orbi-beach-tower-2912/orbi-beach-08.png" },
-          { name: "Кухня с кофемашиной", src: "/images/orbi-beach-tower-2912/orbi-beach-09.png" },
-          { name: "Посудомоечная машина Gorenje", src: "/images/orbi-beach-tower-2912/orbi-beach-10.png" },
-          { name: "Рабочее место у окна", src: "/images/orbi-beach-tower-2912/orbi-beach-11.png" }
-        ],
-        roomsKey: "1+1"
     },
 {
         id: "apt-avenue-by-orbi-studio",
