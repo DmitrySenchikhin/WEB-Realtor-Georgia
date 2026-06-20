@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:catalog": "node scripts/build-catalog.mjs"
+    "build:catalog": "node scripts/build-catalog.mjs",
+    "notify:prices": "node scripts/notify-price-changes.mjs"
   }
 }

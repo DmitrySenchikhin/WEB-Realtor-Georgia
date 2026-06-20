@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,6 +37,12 @@ jobs:
             echo "::error::public/catalog.json is out of date. Run \`npm run build:catalog\` locally and commit."
             exit 1
           fi
+
+      - name: Notify price changes
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: npm run notify:prices
+        env:
+          FCM_SERVICE_ACCOUNT: ${{ secrets.FCM_SERVICE_ACCOUNT }}
 
       - name: Setup Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
