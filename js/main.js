@@ -164,6 +164,9 @@
       getSymbol: getSymbol,
       convertInputValues: convertInputValues,
       renderPriceFromGel: renderPriceFromGel,
+      parseAmount: parseAmount,
+      convertAmount: convertAmount,
+      formatAmount: formatAmount,
     };
   }
 
@@ -249,11 +252,166 @@
     });
   }
 
+  function t(key, fallback) {
+    return window.RealtorI18n ? window.RealtorI18n.t(key) : fallback;
+  }
+
+  function computeMortgage(price, downPercent, termYears, annualRate) {
+    if (!(price > 0) || downPercent < 0 || downPercent >= 100 || !(termYears > 0) || annualRate < 0) {
+      return null;
+    }
+
+    var loanAmount = price * (1 - downPercent / 100);
+    if (!(loanAmount > 0)) {
+      return { loanAmount: 0, monthlyPayment: 0, totalPayment: 0, totalInterest: 0 };
+    }
+
+    var months = termYears * 12;
+    var monthlyRate = annualRate / 100 / 12;
+
+    var monthlyPayment;
+    if (monthlyRate === 0) {
+      monthlyPayment = loanAmount / months;
+    } else {
+      var factor = Math.pow(1 + monthlyRate, months);
+      monthlyPayment = (loanAmount * monthlyRate * factor) / (factor - 1);
+    }
+
+    var totalPayment = monthlyPayment * months;
+    var totalInterest = Math.max(totalPayment - loanAmount, 0);
+
+    return {
+      loanAmount: loanAmount,
+      monthlyPayment: monthlyPayment,
+      totalPayment: totalPayment,
+      totalInterest: totalInterest,
+    };
+  }
+
+  function initMortgageCalculator() {
+    var modal = document.querySelector("[data-calc-modal]");
+    var openBtn = document.querySelector("[data-calc-open]");
+    if (!modal || !openBtn) return;
+
+    var currencyModule = createCurrencyModule();
+    var toggle = modal.querySelector("[data-calc-currency]");
+    var knob = toggle ? toggle.querySelector(".currency-toggle__knob") : null;
+    var suffixes = modal.querySelectorAll("[data-calc-currency-suffix]");
+
+    var priceInput = modal.querySelector("[data-calc-price]");
+    var downInput = modal.querySelector("[data-calc-down]");
+    var termInput = modal.querySelector("[data-calc-term]");
+    var rateInput = modal.querySelector("[data-calc-rate]");
+
+    var resultBox = modal.querySelector("[data-calc-result]");
+    var monthlyEl = modal.querySelector("[data-calc-monthly]");
+    var loanEl = modal.querySelector("[data-calc-loan]");
+    var interestEl = modal.querySelector("[data-calc-interest]");
+    var totalEl = modal.querySelector("[data-calc-total]");
+    var yearsSuffix = modal.querySelector("[data-calc-years-suffix]");
+
+    var currency = "usd";
+    var lastFocused = null;
+
+    function fmt(value) {
+      return currencyModule.getSymbol(currency) + currencyModule.formatAmount(value);
+    }
+
+    function render() {
+      if (yearsSuffix) yearsSuffix.textContent = t("calc.yearsShort", "лет");
+
+      var price = currencyModule.parseAmount(priceInput && priceInput.value);
+      var down = currencyModule.parseAmount(downInput && downInput.value);
+      var term = currencyModule.parseAmount(termInput && termInput.value);
+      var rate = currencyModule.parseAmount(rateInput && rateInput.value);
+
+      var result =
+        price === null || down === null || term === null || rate === null
+          ? null
+          : computeMortgage(price, down, Math.round(term), rate);
+
+      if (!result) {
+        if (resultBox) resultBox.hidden = true;
+        return;
+      }
+
+      if (resultBox) resultBox.hidden = false;
+      if (monthlyEl) monthlyEl.textContent = fmt(result.monthlyPayment);
+      if (loanEl) loanEl.textContent = fmt(result.loanAmount);
+      if (interestEl) interestEl.textContent = fmt(result.totalInterest);
+      if (totalEl) totalEl.textContent = fmt(result.totalPayment);
+    }
+
+    function setCurrency(next, prev) {
+      var isUsd = next === "usd";
+      var symbol = currencyModule.getSymbol(next);
+
+      if (priceInput && prev && prev !== next) {
+        currencyModule.convertInputValues([priceInput], prev, next);
+      }
+
+      currency = next;
+      if (toggle) {
+        toggle.classList.toggle("is-usd", isUsd);
+        toggle.classList.toggle("is-gel", !isUsd);
+        toggle.setAttribute("aria-pressed", String(!isUsd));
+        toggle.setAttribute("aria-label", isUsd ? "Валюта: доллар" : "Валюта: лари");
+      }
+      if (knob) knob.textContent = symbol;
+      suffixes.forEach(function (suffix) {
+        suffix.textContent = symbol;
+      });
+
+      render();
+    }
+
+    function openModal() {
+      lastFocused = document.activeElement;
+      modal.hidden = false;
+      document.body.classList.add("calc-open");
+      render();
+      var firstField = modal.querySelector("[data-calc-price]");
+      if (firstField) firstField.focus();
+    }
+
+    function closeModal() {
+      modal.hidden = true;
+      document.body.classList.remove("calc-open");
+      if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
+    }
+
+    openBtn.addEventListener("click", openModal);
+
+    modal.querySelectorAll("[data-calc-close]").forEach(function (el) {
+      el.addEventListener("click", closeModal);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !modal.hidden) closeModal();
+    });
+
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        var current = toggle.classList.contains("is-usd") ? "usd" : "gel";
+        setCurrency(current === "usd" ? "gel" : "usd", current);
+      });
+    }
+
+    [priceInput, downInput, termInput, rateInput].forEach(function (input) {
+      if (input) input.addEventListener("input", render);
+    });
+
+    document.addEventListener("realtor:languagechange", render);
+
+    setCurrency("usd", "usd");
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initCarousels();
     initSearchForms();
     initLeadForm();
     initCurrencyToggle();
     initNewBuildingCurrencyToggle();
+    initMortgageCalculator();
   });
 })();

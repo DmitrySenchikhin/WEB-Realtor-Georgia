@@ -1224,7 +1224,236 @@ a.filter-type-btn--link {
 
 .search-filters__row--actions {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.btn-calc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 69px;
+  padding: 0 32px;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  color: var(--color-black);
+  font: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.btn-calc:hover {
+  filter: brightness(0.99);
+}
+
+.btn-calc:active {
+  transform: translateY(1px);
+}
+
+.btn-calc__icon {
+  flex-shrink: 0;
+  color: var(--color-orange);
+}
+
+/* —— Калькулятор ипотеки (модальное окно) —— */
+.calc-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.calc-modal[hidden] {
+  display: none;
+}
+
+.calc-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(45, 31, 29, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.calc-modal__dialog {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  max-height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+  background: var(--color-beige);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(45, 31, 29, 0.28);
+  overflow: hidden;
+}
+
+.calc-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 22px 12px;
+}
+
+.calc-modal__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.calc-modal__close {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-black);
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition: filter 0.2s;
+}
+
+.calc-modal__close:hover {
+  filter: brightness(0.96);
+}
+
+.calc-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px 22px 24px;
+  overflow-y: auto;
+}
+
+.calc-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-btn);
+}
+
+.calc-card[hidden] {
+  display: none;
+}
+
+.calc-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.calc-card__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.calc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.calc-field__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(45, 31, 29, 0.6);
+}
+
+.calc-field__control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 14px;
+  background: var(--color-beige);
+  border-radius: 14px;
+  border: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.calc-field__control:focus-within {
+  border-color: rgba(224, 93, 46, 0.45);
+}
+
+.calc-field__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 15px;
+  color: var(--color-black);
+  outline: none;
+}
+
+.calc-field__suffix {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(45, 31, 29, 0.6);
+}
+
+.calc-result__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.calc-result__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(45, 31, 29, 0.6);
+}
+
+.calc-result__value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-black);
+  text-align: right;
+}
+
+.calc-result__row--main .calc-result__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.calc-result__row--main .calc-result__value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+.calc-disclaimer {
+  margin: 0;
+  padding: 0 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(45, 31, 29, 0.6);
+}
+
+body.calc-open {
+  overflow: hidden;
 }
 
 .search-filters__actions {
@@ -1393,7 +1622,14 @@ a.filter-type-btn--link {
   }
 
   .search-filters__row--actions {
+    flex-wrap: wrap;
     justify-content: stretch;
+  }
+
+  .btn-calc {
+    width: 100%;
+    padding: 0 24px;
+    font-size: 18px;
   }
 
   .search-filters__actions {

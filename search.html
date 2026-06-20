@@ -114,6 +114,19 @@
         </div>
 
         <div class="search-filters__row search-filters__row--actions">
+          <button type="button" class="btn-calc" data-calc-open aria-haspopup="dialog">
+            <svg class="btn-calc__icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <rect x="3.5" y="2.5" width="17" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <rect x="6.8" y="5.4" width="10.4" height="3.6" rx="1.2" fill="currentColor" />
+              <circle cx="8.4" cy="12.4" r="1.15" fill="currentColor" />
+              <circle cx="12" cy="12.4" r="1.15" fill="currentColor" />
+              <circle cx="15.6" cy="12.4" r="1.15" fill="currentColor" />
+              <circle cx="8.4" cy="16.2" r="1.15" fill="currentColor" />
+              <circle cx="12" cy="16.2" r="1.15" fill="currentColor" />
+              <rect x="14.6" y="15.05" width="2.3" height="2.3" rx="0.7" fill="currentColor" />
+            </svg>
+            <span data-i18n="calc.open">Калькулятор ипотеки</span>
+          </button>
           <form class="search-filters__actions" data-apartment-search-form action="/search.html" method="get">
             <input type="hidden" name="type" value="apartments" />
             <button class="btn-search" type="submit">
@@ -127,6 +140,91 @@
           </form>
         </div>
       </section>
+
+      <div class="calc-modal" data-calc-modal hidden>
+        <div class="calc-modal__overlay" data-calc-close></div>
+        <div class="calc-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="calc-modal-title">
+          <div class="calc-modal__header">
+            <h2 class="calc-modal__title" id="calc-modal-title" data-i18n="calc.title">Калькулятор ипотеки</h2>
+            <button type="button" class="calc-modal__close" data-calc-close data-i18n-aria="aria.calcClose" aria-label="Закрыть">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="calc-modal__body">
+            <div class="calc-card">
+              <div class="calc-card__head">
+                <span class="calc-card__title" data-i18n="calc.parameters">Параметры</span>
+                <button type="button" class="currency-toggle is-usd" data-calc-currency aria-label="Валюта: доллар" aria-pressed="false">
+                  <span class="currency-toggle__inner">
+                    <span class="currency-toggle__sign currency-toggle__sign--usd" aria-hidden="true">$</span>
+                    <span class="currency-toggle__sign currency-toggle__sign--gel" aria-hidden="true">₾</span>
+                    <span class="currency-toggle__knob" aria-hidden="true">$</span>
+                  </span>
+                </button>
+              </div>
+
+              <label class="calc-field">
+                <span class="calc-field__label" data-i18n="calc.price">Стоимость объекта</span>
+                <span class="calc-field__control">
+                  <input type="text" class="calc-field__input" data-calc-price value="100 000" inputmode="numeric" />
+                  <span class="calc-field__suffix" data-calc-currency-suffix aria-hidden="true">$</span>
+                </span>
+              </label>
+
+              <label class="calc-field">
+                <span class="calc-field__label" data-i18n="calc.downPayment">Первоначальный взнос</span>
+                <span class="calc-field__control">
+                  <input type="text" class="calc-field__input" data-calc-down value="20" inputmode="numeric" />
+                  <span class="calc-field__suffix" aria-hidden="true">%</span>
+                </span>
+              </label>
+
+              <label class="calc-field">
+                <span class="calc-field__label" data-i18n="calc.term">Срок кредита</span>
+                <span class="calc-field__control">
+                  <input type="text" class="calc-field__input" data-calc-term value="10" inputmode="numeric" />
+                  <span class="calc-field__suffix" data-calc-years-suffix aria-hidden="true">лет</span>
+                </span>
+              </label>
+
+              <label class="calc-field">
+                <span class="calc-field__label" data-i18n="calc.rate">Ставка в год</span>
+                <span class="calc-field__control">
+                  <input type="text" class="calc-field__input" data-calc-rate value="10" inputmode="decimal" />
+                  <span class="calc-field__suffix" aria-hidden="true">%</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="calc-card calc-result" data-calc-result hidden>
+              <span class="calc-card__title" data-i18n="calc.result">Расчёт</span>
+              <div class="calc-result__row calc-result__row--main">
+                <span class="calc-result__label" data-i18n="calc.monthly">Ежемесячный платёж</span>
+                <span class="calc-result__value" data-calc-monthly></span>
+              </div>
+              <div class="calc-result__row">
+                <span class="calc-result__label" data-i18n="calc.loanAmount">Сумма кредита</span>
+                <span class="calc-result__value" data-calc-loan></span>
+              </div>
+              <div class="calc-result__row">
+                <span class="calc-result__label" data-i18n="calc.totalInterest">Переплата по процентам</span>
+                <span class="calc-result__value" data-calc-interest></span>
+              </div>
+              <div class="calc-result__row">
+                <span class="calc-result__label" data-i18n="calc.totalPayment">Общая сумма выплат</span>
+                <span class="calc-result__value" data-calc-total></span>
+              </div>
+            </div>
+
+            <p class="calc-disclaimer" data-i18n="calc.disclaimer">
+              Расчёт носит ознакомительный характер и не является офертой.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <section class="search-toolbar container" data-i18n-aria="aria.sort" aria-label="Сортировка и счётчик">
         <button type="button" class="search-sort">
