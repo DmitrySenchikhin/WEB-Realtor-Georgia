@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["UHG964SUQU.UHG964SUQU.RealtorGeorgia-com"],
+        "components": [
+          {
+            "/": "/",
+            "?": { "property": "?*" },
+            "comment": "Open a specific property inside the RealtorGeorgia app"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["UHG964SUQU.UHG964SUQU.RealtorGeorgia-com"]
+  }
+}
