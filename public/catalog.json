@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-19",
+  "version": "2026-06-20",
   "groups": {
     "new-building": [
       {
@@ -847,7 +847,112 @@
         "roomsKey": "studio"
       }
     ],
-    "house": []
+    "house": [
+      {
+        "id": "house-villa-park-next",
+        "detailHref": "/apartment.html",
+        "priceGel": 972000,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.715796,
+          "lng": 41.728982,
+          "mapsUrl": "https://www.google.com/maps?q=41.715796,41.728982"
+        },
+        "areaM2": 145.4,
+        "photos": [
+          {
+            "name": "Villa Park by NEXT — комплекс в Чакви",
+            "src": "/images/villa-park-next/villa-01.png"
+          },
+          {
+            "name": "Закрытый комплекс: бассейн и виллы",
+            "src": "/images/villa-park-next/villa-02.png"
+          },
+          {
+            "name": "Вход в комплекс Villa Park by NEXT",
+            "src": "/images/villa-park-next/villa-03.png"
+          },
+          {
+            "name": "Кухня-гостиная с обеденной зоной",
+            "src": "/images/villa-park-next/villa-04.png"
+          },
+          {
+            "name": "Гостиная с диваном",
+            "src": "/images/villa-park-next/villa-05.png"
+          },
+          {
+            "name": "Спальня",
+            "src": "/images/villa-park-next/villa-06.png"
+          },
+          {
+            "name": "Спальня с выходом в санузел",
+            "src": "/images/villa-park-next/villa-07.png"
+          },
+          {
+            "name": "Санузел с панорамным окном",
+            "src": "/images/villa-park-next/villa-08.png"
+          },
+          {
+            "name": "Детская и спортивная площадка",
+            "src": "/images/villa-park-next/villa-09.png"
+          }
+        ]
+      },
+      {
+        "id": "house-polo-villas-parklane",
+        "detailHref": "/apartment.html",
+        "priceGel": 675000,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.612012,
+          "lng": 41.606074,
+          "mapsUrl": "https://www.google.com/maps?q=41.612012,41.606074"
+        },
+        "areaM2": 118.4,
+        "photos": [
+          {
+            "name": "Polo Villas Parklane — комплекс у Нового бульвара",
+            "src": "/images/polo-villas-parklane/polo-01.png"
+          },
+          {
+            "name": "Закрытая территория: бассейн и таунхаусы",
+            "src": "/images/polo-villas-parklane/polo-02.png"
+          },
+          {
+            "name": "Бассейн и зоны отдыха",
+            "src": "/images/polo-villas-parklane/polo-03.png"
+          },
+          {
+            "name": "Кухня-гостиная с обеденной зоной",
+            "src": "/images/polo-villas-parklane/polo-04.png"
+          },
+          {
+            "name": "Кухня с мраморной отделкой",
+            "src": "/images/polo-villas-parklane/polo-05.png"
+          },
+          {
+            "name": "Спальня",
+            "src": "/images/polo-villas-parklane/polo-06.png"
+          },
+          {
+            "name": "Вторая спальня",
+            "src": "/images/polo-villas-parklane/polo-07.png"
+          },
+          {
+            "name": "Рабочая зона",
+            "src": "/images/polo-villas-parklane/polo-08.png"
+          },
+          {
+            "name": "Санузел с мраморной отделкой",
+            "src": "/images/polo-villas-parklane/polo-09.png"
+          },
+          {
+            "name": "Прачечная: стиральная и сушильная машины",
+            "src": "/images/polo-villas-parklane/polo-10.png"
+          }
+        ]
+      }
+    ]
   },
   "descriptions": {
     "nb-sport-city": {
@@ -1290,6 +1395,58 @@
         "floorsText": "12-ე სართული",
         "completionText": "რემონტი ავეჯით",
         "address": "ბათუმი, მეზდგვაურის ქ. 41 (Tropical Garden, block B, ჩაქვი)"
+      }
+    },
+    "house-villa-park-next": {
+      "ru": {
+        "title": "Таунхаус в Villa Park by NEXT",
+        "description": "Премиальная вилла в закрытом комплексе со своим участком, 6 минут от моря — за $360 000. Дизайнерская отделка и мебель премиум-класса, рядом Ботанический сад. Локация: вилла находится в Чакви — тихом и экологически чистом районе. До моря — 6 минут пешком, до Ботанического сада — 5 минут на авто, до центра Батуми — 17 минут на авто. Удобно для семей с детьми: рядом с комплексом новый детский сад, а в 3 минутах на авто большая школа с русскоязычным сектором. Об объекте: площадь виллы — 145,4 м², 2 этажа. Планировка: просторная кухня-гостиная, две спальни, кабинет, три санузла и терраса. Из окон — потрясающий вид на горы. Участок — 167 м², огорожен живой изгородью, с парковкой на два автомобиля. О комплексе: Villa Park by NEXT — закрытый комплекс премиум-класса из 14 вилл, максимум уединения и тишины. Территория озеленена, есть променад и красивое вечернее освещение, круглосуточная охрана и КПП, бассейн с зонами отдыха. Стоимость: $360 000. Подходит под ВНЖ.",
+        "rooms": "2 спальни + кабинет",
+        "floorsText": "2 этажа",
+        "completionText": "готовая вилла",
+        "address": "Чакви, Villa Park by NEXT"
+      },
+      "en": {
+        "title": "Townhouse at Villa Park by NEXT",
+        "description": "A premium villa in a gated community with its own plot, 6 minutes from the sea — for $360,000. Designer finishing and premium-class furniture, the Botanical Garden is nearby. Location: the villa is in Chakvi — a quiet, ecologically clean area. 6 minutes on foot to the sea, 5 minutes by car to the Botanical Garden, 17 minutes by car to central Batumi. Convenient for families with children: a new kindergarten is next to the community, and a large school with a Russian-language section is 3 minutes away by car. About the property: the villa has an area of 145.4 m² over 2 floors. Layout: a spacious kitchen-living room, two bedrooms, a study, three bathrooms and a terrace. The windows offer a stunning view of the mountains. The plot is 167 m², enclosed by a hedge, with parking for two cars. About the community: Villa Park by NEXT is a premium-class gated community of just 14 villas — maximum privacy and quiet. The grounds are landscaped, with a promenade and beautiful evening lighting, 24/7 security and a checkpoint, and a pool with lounge areas. Price: $360,000. Eligible for a residence permit.",
+        "rooms": "2 bedrooms + study",
+        "floorsText": "2 floors",
+        "completionText": "ready villa",
+        "address": "Chakvi, Villa Park by NEXT"
+      },
+      "geo": {
+        "title": "თაუნჰაუსი Villa Park by NEXT-ში",
+        "description": "პრემიუმ კლასის ვილა დახურულ კომპლექსში საკუთარი ნაკვეთით, ზღვიდან 6 წუთში — $360 000-ად. დიზაინერული მოპირკეთება და პრემიუმ კლასის ავეჯი, ახლოს ბოტანიკური ბაღი. ლოკაცია: ვილა მდებარეობს ჩაქვში — მშვიდ და ეკოლოგიურად სუფთა რაიონში. ზღვამდე — 6 წუთი ფეხით, ბოტანიკურ ბაღამდე — 5 წუთი მანქანით, ბათუმის ცენტრამდე — 17 წუთი მანქანით. მოსახერხებელია ბავშვიანი ოჯახებისთვის: კომპლექსთან ახალი საბავშვო ბაღი, 3 წუთის სავალზე კი დიდი სკოლა რუსულენოვანი სექტორით. ობიექტის შესახებ: ვილის ფართი — 145,4 მ², 2 სართული. გეგმარება: ფართო სამზარეულო-მისაღები, ორი საძინებელი, კაბინეტი, სამი სველი წერტილი და ტერასა. ფანჯრებიდან — მთების შესანიშნავი ხედი. ნაკვეთი — 167 მ², შემოღობილია ცოცხალი ღობით, ორი მანქანის პარკინგით. კომპლექსის შესახებ: Villa Park by NEXT — პრემიუმ კლასის დახურული კომპლექსი სულ 14 ვილისგან — მაქსიმალური განმარტოება და სიმშვიდე. ტერიტორია გამწვანებულია, არის პრომენადი და ლამაზი საღამოს განათება, 24-საათიანი დაცვა და გამშვები პუნქტი, აუზი დასასვენებელი ზონებით. ფასი: $360 000. გამოდგება ბინადრობის ნებართვისთვის.",
+        "rooms": "2 საძინებელი + კაბინეტი",
+        "floorsText": "2 სართული",
+        "completionText": "მზა ვილა",
+        "address": "ჩაქვი, Villa Park by NEXT"
+      }
+    },
+    "house-polo-villas-parklane": {
+      "ru": {
+        "title": "Таунхаус в Polo Villas",
+        "description": "Трёхэтажный таунхаус в Polo Villas Parklane с новым современным ремонтом — за $250 000. Всего в 4 минутах от моря, один из лучших малоэтажных комплексов в Батуми. Локация: клубный комплекс расположен в черте города, в районе Адлия. ТЦ «Metro City» — 6 минут на автомобиле, вся необходимая городская инфраструктура — 8–10 минут на автомобиле, аэропорт — 3 минуты на автомобиле. В 5 минутах — парк «Леха и Марии Качиньских», набережная и море. В самом парке много зелени, вечнозелёные растения, скейт- и велозоны, тренажёры для взрослых. Об объекте: площадь 118,4 м² — 3 спальни, кухня-гостиная, два санузла, удобная терраса и свой зелёный дворик. Сделан новый ремонт с использованием материалов премиум-сегмента, установлен тёплый пол и шумоизоляция в стенах. Остаётся вся мебель и техника. О комплексе: Polo Villas Parklane — один из самых популярных загородных комплексов в Батуми. Территория закрыта, охрана 24/7, большая озеленённая территория. Есть фитнес-зона, коворкинг, сауна и джакузи. Бассейн, лежаки и различные зоны отдыха, настольный теннис, детская и спортивная площадки. На территории — супермаркет и винный погреб. У каждого таунхауса — собственная парковка. Стоимость: $250 000. Возможно приобрести в ипотеку. Подходит под ВНЖ.",
+        "rooms": "3 спальни",
+        "floorsText": "3 этажа",
+        "completionText": "готовый таунхаус",
+        "address": "Батуми, район Адлия, Polo Villas Parklane"
+      },
+      "en": {
+        "title": "Townhouse at Polo Villas",
+        "description": "A three-storey townhouse in Polo Villas Parklane with a new modern renovation — for $250,000. Just 4 minutes from the sea, one of the best low-rise communities in Batumi. Location: the club community is within the city, in the Adlia district. Metro City mall — 6 minutes by car, all essential city infrastructure — 8–10 minutes by car, the airport — 3 minutes by car. 5 minutes away is the Lech and Maria Kaczyński Park, the promenade and the sea. The park has plenty of greenery, evergreen plants, skate and bike zones, and outdoor fitness equipment. About the property: 118.4 m² — 3 bedrooms, a kitchen-living room, two bathrooms, a comfortable terrace and a private green yard. A new renovation has been done using premium-segment materials, with underfloor heating and soundproofing in the walls. All furniture and appliances stay. About the community: Polo Villas Parklane is one of the most popular suburban communities in Batumi. The territory is gated with 24/7 security and large landscaped grounds. There is a fitness area, coworking, sauna and jacuzzi. A pool, sun loungers and various lounge areas, table tennis, children's and sports playgrounds. There is a supermarket and a wine cellar on site. Each townhouse has its own parking. Price: $250,000. Available with a mortgage. Eligible for a residence permit.",
+        "rooms": "3 bedrooms",
+        "floorsText": "3 floors",
+        "completionText": "ready townhouse",
+        "address": "Batumi, Adlia district, Polo Villas Parklane"
+      },
+      "geo": {
+        "title": "თაუნჰაუსი Polo Villas-ში",
+        "description": "სამსართულიანი თაუნჰაუსი Polo Villas Parklane-ში ახალი თანამედროვე რემონტით — $250 000-ად. ზღვიდან სულ 4 წუთში, ბათუმის ერთ-ერთი საუკეთესო დაბალსართულიანი კომპლექსი. ლოკაცია: საკლუბო კომპლექსი მდებარეობს ქალაქის ფარგლებში, ადლიის რაიონში. სავაჭრო ცენტრი «Metro City» — 6 წუთი მანქანით, ყველა საჭირო ქალაქის ინფრასტრუქტურა — 8–10 წუთი მანქანით, აეროპორტი — 3 წუთი მანქანით. 5 წუთში — ლეხ და მარია კაჩინსკების პარკი, ბულვარი და ზღვა. პარკში ბევრი მწვანეა, მარადმწვანე მცენარეები, სკეიტ- და ველო-ზონები, ვარჯიშის ტრენაჟორები. ობიექტის შესახებ: ფართი 118,4 მ² — 3 საძინებელი, სამზარეულო-მისაღები, ორი სველი წერტილი, კომფორტული ტერასა და საკუთარი მწვანე ეზო. გაკეთებულია ახალი რემონტი პრემიუმ სეგმენტის მასალებით, დაყენებულია თბილი იატაკი და კედლების ხმის იზოლაცია. რჩება მთელი ავეჯი და ტექნიკა. კომპლექსის შესახებ: Polo Villas Parklane — ბათუმის ერთ-ერთი ყველაზე პოპულარული საგარეუბნო კომპლექსი. ტერიტორია დახურულია, 24/7 დაცვა, დიდი გამწვანებული ტერიტორია. არის ფიტნეს-ზონა, ქოვორქინგი, საუნა და ჯაკუზი. აუზი, შეზლონგები და სხვადასხვა დასასვენებელი ზონები, მაგიდის ჩოგბურთი, საბავშვო და სპორტული მოედნები. ტერიტორიაზე — სუპერმარკეტი და ღვინის სარდაფი. თითოეულ თაუნჰაუსს აქვს საკუთარი პარკინგი. ფასი: $250 000. შესაძლებელია იპოთეკით შეძენა. გამოდგება ბინადრობის ნებართვისთვის.",
+        "rooms": "3 საძინებელი",
+        "floorsText": "3 სართული",
+        "completionText": "მზა თაუნჰაუსი",
+        "address": "ბათუმი, ადლიის რაიონი, Polo Villas Parklane"
       }
     }
   }

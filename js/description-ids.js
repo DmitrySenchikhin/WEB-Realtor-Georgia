@@ -15,5 +15,7 @@
   "apt-batumi-view-studio",
   "apt-steps-batumi-studio",
   "apt-steps-batumi-studio-11",
-  "apt-tropical-garden-studio"
+  "apt-tropical-garden-studio",
+  "house-villa-park-next",
+  "house-polo-villas-parklane"
 ]; })(typeof window !== "undefined" ? window : globalThis);

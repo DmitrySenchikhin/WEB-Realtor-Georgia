@@ -428,6 +428,53 @@
     }
     ],
     "house": [
+{
+        id: "house-villa-park-next",
+        detailHref: "/apartment.html",
+        priceGel: 972000,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.715796,
+          lng: 41.728982,
+          mapsUrl: "https://www.google.com/maps?q=41.715796,41.728982"
+        },
+        areaM2: 145.4,
+        photos: [
+          { name: "Villa Park by NEXT — комплекс в Чакви", src: "/images/villa-park-next/villa-01.png" },
+          { name: "Закрытый комплекс: бассейн и виллы", src: "/images/villa-park-next/villa-02.png" },
+          { name: "Вход в комплекс Villa Park by NEXT", src: "/images/villa-park-next/villa-03.png" },
+          { name: "Кухня-гостиная с обеденной зоной", src: "/images/villa-park-next/villa-04.png" },
+          { name: "Гостиная с диваном", src: "/images/villa-park-next/villa-05.png" },
+          { name: "Спальня", src: "/images/villa-park-next/villa-06.png" },
+          { name: "Спальня с выходом в санузел", src: "/images/villa-park-next/villa-07.png" },
+          { name: "Санузел с панорамным окном", src: "/images/villa-park-next/villa-08.png" },
+          { name: "Детская и спортивная площадка", src: "/images/villa-park-next/villa-09.png" }
+        ]
+    },
+{
+        id: "house-polo-villas-parklane",
+        detailHref: "/apartment.html",
+        priceGel: 675000,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.612012,
+          lng: 41.606074,
+          mapsUrl: "https://www.google.com/maps?q=41.612012,41.606074"
+        },
+        areaM2: 118.4,
+        photos: [
+          { name: "Polo Villas Parklane — комплекс у Нового бульвара", src: "/images/polo-villas-parklane/polo-01.png" },
+          { name: "Закрытая территория: бассейн и таунхаусы", src: "/images/polo-villas-parklane/polo-02.png" },
+          { name: "Бассейн и зоны отдыха", src: "/images/polo-villas-parklane/polo-03.png" },
+          { name: "Кухня-гостиная с обеденной зоной", src: "/images/polo-villas-parklane/polo-04.png" },
+          { name: "Кухня с мраморной отделкой", src: "/images/polo-villas-parklane/polo-05.png" },
+          { name: "Спальня", src: "/images/polo-villas-parklane/polo-06.png" },
+          { name: "Вторая спальня", src: "/images/polo-villas-parklane/polo-07.png" },
+          { name: "Рабочая зона", src: "/images/polo-villas-parklane/polo-08.png" },
+          { name: "Санузел с мраморной отделкой", src: "/images/polo-villas-parklane/polo-09.png" },
+          { name: "Прачечная: стиральная и сушильная машины", src: "/images/polo-villas-parklane/polo-10.png" }
+        ]
+    }
     ]
   };
 
