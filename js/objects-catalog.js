@@ -474,6 +474,30 @@
           { name: "Санузел с мраморной отделкой", src: "/images/polo-villas-parklane/polo-09.png" },
           { name: "Прачечная: стиральная и сушильная машины", src: "/images/polo-villas-parklane/polo-10.png" }
         ]
+    },
+{
+        id: "house-adlia-townhouse-222",
+        detailHref: "/apartment.html",
+        priceGel: 499500,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.609,
+          lng: 41.6,
+          mapsUrl: "https://www.google.com/maps?q=41.609000,41.600000"
+        },
+        areaM2: 222,
+        photos: [
+          { name: "Parkside Villas — закрытый комплекс таунхаусов", src: "/images/parkside-villas/parkside-01.png" },
+          { name: "Фасады: вентилируемые панели и панорамные окна", src: "/images/parkside-villas/parkside-02.png" },
+          { name: "Архитектура комплекса", src: "/images/parkside-villas/parkside-03.png" },
+          { name: "Внутренний двор и парковка", src: "/images/parkside-villas/parkside-04.png" },
+          { name: "Закрытая территория, озеленение", src: "/images/parkside-villas/parkside-05.png" },
+          { name: "Кухня-гостиная: чёрный каркас", src: "/images/parkside-villas/parkside-06.png" },
+          { name: "Лестница и планировка по этажам", src: "/images/parkside-villas/parkside-07.png" },
+          { name: "Просторные комнаты с панорамными окнами", src: "/images/parkside-villas/parkside-08.png" },
+          { name: "Терраса: вид на горы и зелень", src: "/images/parkside-villas/parkside-09.png" },
+          { name: "Проведённые коммуникации (газ)", src: "/images/parkside-villas/parkside-10.png" }
+        ]
     }
     ]
   };

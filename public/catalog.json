@@ -951,6 +951,60 @@
             "src": "/images/polo-villas-parklane/polo-10.png"
           }
         ]
+      },
+      {
+        "id": "house-adlia-townhouse-222",
+        "detailHref": "/apartment.html",
+        "priceGel": 499500,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.609,
+          "lng": 41.6,
+          "mapsUrl": "https://www.google.com/maps?q=41.609000,41.600000"
+        },
+        "areaM2": 222,
+        "photos": [
+          {
+            "name": "Parkside Villas — закрытый комплекс таунхаусов",
+            "src": "/images/parkside-villas/parkside-01.png"
+          },
+          {
+            "name": "Фасады: вентилируемые панели и панорамные окна",
+            "src": "/images/parkside-villas/parkside-02.png"
+          },
+          {
+            "name": "Архитектура комплекса",
+            "src": "/images/parkside-villas/parkside-03.png"
+          },
+          {
+            "name": "Внутренний двор и парковка",
+            "src": "/images/parkside-villas/parkside-04.png"
+          },
+          {
+            "name": "Закрытая территория, озеленение",
+            "src": "/images/parkside-villas/parkside-05.png"
+          },
+          {
+            "name": "Кухня-гостиная: чёрный каркас",
+            "src": "/images/parkside-villas/parkside-06.png"
+          },
+          {
+            "name": "Лестница и планировка по этажам",
+            "src": "/images/parkside-villas/parkside-07.png"
+          },
+          {
+            "name": "Просторные комнаты с панорамными окнами",
+            "src": "/images/parkside-villas/parkside-08.png"
+          },
+          {
+            "name": "Терраса: вид на горы и зелень",
+            "src": "/images/parkside-villas/parkside-09.png"
+          },
+          {
+            "name": "Проведённые коммуникации (газ)",
+            "src": "/images/parkside-villas/parkside-10.png"
+          }
+        ]
       }
     ]
   },
@@ -1447,6 +1501,32 @@
         "floorsText": "3 სართული",
         "completionText": "მზა თაუნჰაუსი",
         "address": "ბათუმი, ადლიის რაიონი, Polo Villas Parklane"
+      }
+    },
+    "house-adlia-townhouse-222": {
+      "ru": {
+        "title": "Таунхаус 222 м² с террасой и гаражом в Адлии",
+        "description": "Таунхаус 222 м² с террасой и своим гаражом в 4 минутах от моря и парка Качиньских — за $185 000. Комплекс построен, можно приступать к ремонтам. Локация: клубный комплекс расположен в черте города, в районе Адлия. Море и набережная — 4 минуты на авто, инфраструктура ELT-квартала — 3 минуты на авто, ТЦ «Metro City» — 8 минут на авто. В 5 минутах — парк «Леха и Марии Качиньских». Здесь всегда зелено, много мест отдыха и прогулочных дорожек, скейт-парк и велозоны, тренажёры для взрослых — идеальное место, чтобы гулять, дышать и жить в движении. Об объекте: площадь 222 м², 3 этажа и удобная терраса — кухня-гостиная, 4 спальни, 4 санузла, свой гараж и зелёный двор. Находится в состоянии «чёрного каркаса». О комплексе: закрытый комплекс из 10 таунхаусов. Высокое качество строительства — вентилируемые фасады, окна с алюминиевым профилем, керамический кирпич, надёжные двери. Комплекс практически построен, коммуникации проведены — можно приступать к ремонту. У каждого таунхауса свой дворик и гараж. Рядом небольшой парк, детская и спортивная площадки, зоны отдыха. Стоимость: $185 000. Подходит под ВНЖ.",
+        "rooms": "4 спальни",
+        "floorsText": "3 этажа",
+        "completionText": "чёрный каркас",
+        "address": "Батуми, район Адлия"
+      },
+      "en": {
+        "title": "Townhouse 222 m² with a terrace and garage in Adlia",
+        "description": "A 222 m² townhouse with a terrace and its own garage, 4 minutes from the sea and Kaczyński Park — for $185,000. The community is built, renovations can begin. Location: the club community is within the city, in the Adlia district. The sea and promenade — 4 minutes by car, the ELT quarter infrastructure — 3 minutes by car, the Metro City mall — 8 minutes by car. 5 minutes away is the Lech and Maria Kaczyński Park. It is always green here, with plenty of recreation areas and walking paths, a skate park and bike zones, and outdoor fitness equipment — a perfect place to walk, breathe and stay active. About the property: 222 m², 3 floors and a comfortable terrace — a kitchen-living room, 4 bedrooms, 4 bathrooms, a private garage and a green yard. It is in a bare-shell condition. About the community: a gated community of 10 townhouses. High construction quality — ventilated facades, aluminium-profile windows, ceramic brick, sturdy doors. The community is practically finished, utilities are connected — renovations can begin. Each townhouse has its own yard and garage. Nearby there is a small park, children's and sports playgrounds, and lounge areas. Price: $185,000. Eligible for a residence permit.",
+        "rooms": "4 bedrooms",
+        "floorsText": "3 floors",
+        "completionText": "bare shell",
+        "address": "Batumi, Adlia district"
+      },
+      "geo": {
+        "title": "თაუნჰაუსი 222 მ² ტერასით და გარაჟით ადლიაში",
+        "description": "თაუნჰაუსი 222 მ² ტერასით და საკუთარი გარაჟით, ზღვიდან და კაჩინსკების პარკიდან 4 წუთში — $185 000-ად. კომპლექსი აშენებულია, შესაძლებელია რემონტის დაწყება. ლოკაცია: საკლუბო კომპლექსი მდებარეობს ქალაქის ფარგლებში, ადლიის რაიონში. ზღვა და ბულვარი — 4 წუთი მანქანით, ELT-კვარტლის ინფრასტრუქტურა — 3 წუთი მანქანით, სავაჭრო ცენტრი «Metro City» — 8 წუთი მანქანით. 5 წუთში — ლეხ და მარია კაჩინსკების პარკი. აქ ყოველთვის მწვანეა, ბევრი დასასვენებელი ადგილი და სასეირნო ბილიკი, სკეიტ-პარკი და ველო-ზონები, ვარჯიშის ტრენაჟორები — იდეალური ადგილი სასეირნოდ და აქტიური ცხოვრებისთვის. ობიექტის შესახებ: ფართი 222 მ², 3 სართული და კომფორტული ტერასა — სამზარეულო-მისაღები, 4 საძინებელი, 4 სველი წერტილი, საკუთარი გარაჟი და მწვანე ეზო. იმყოფება „შავი კარკასის“ მდგომარეობაში. კომპლექსის შესახებ: დახურული კომპლექსი 10 თაუნჰაუსისგან. მშენებლობის მაღალი ხარისხი — ვენტილირებადი ფასადები, ალუმინის პროფილის ფანჯრები, კერამიკული აგური, საიმედო კარები. კომპლექსი პრაქტიკულად აშენებულია, კომუნიკაციები გაყვანილია — შესაძლებელია რემონტის დაწყება. თითოეულ თაუნჰაუსს აქვს საკუთარი ეზო და გარაჟი. ახლოს — პატარა პარკი, საბავშვო და სპორტული მოედნები, დასასვენებელი ზონები. ფასი: $185 000. გამოდგება ბინადრობის ნებართვისთვის.",
+        "rooms": "4 საძინებელი",
+        "floorsText": "3 სართული",
+        "completionText": "შავი კარკასი",
+        "address": "ბათუმი, ადლიის რაიონი"
       }
     }
   }

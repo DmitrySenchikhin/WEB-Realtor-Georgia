@@ -17,5 +17,6 @@
   "apt-steps-batumi-studio-11",
   "apt-tropical-garden-studio",
   "house-villa-park-next",
-  "house-polo-villas-parklane"
+  "house-polo-villas-parklane",
+  "house-adlia-townhouse-222"
 ]; })(typeof window !== "undefined" ? window : globalThis);
