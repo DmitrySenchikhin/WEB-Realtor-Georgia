@@ -169,7 +169,7 @@
 {
         id: "apt-orbi-beach-tower-2801",
         detailHref: "/apartment.html",
-        priceGel: 337500,
+        priceGel: 351000,
         priceKind: "fixed",
         geo: {
           lat: 41.630308,
@@ -194,7 +194,7 @@
 {
         id: "apt-orbi-beach-tower-3202",
         detailHref: "/apartment.html",
-        priceGel: 499500,
+        priceGel: 513000,
         priceKind: "fixed",
         geo: {
           lat: 41.630308,
@@ -218,7 +218,7 @@
 {
         id: "apt-orbi-beach-tower-2902",
         detailHref: "/apartment.html",
-        priceGel: 499500,
+        priceGel: 513000,
         priceKind: "fixed",
         geo: {
           lat: 41.630308,
@@ -402,6 +402,30 @@
         roomsKey: "studio"
     },
 {
+        id: "apt-steps-batumi-2p1",
+        detailHref: "/apartment.html",
+        priceGel: 378000,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.625707,
+          lng: 41.59986,
+          mapsUrl: "https://www.google.com/maps?q=41.625707,41.599860"
+        },
+        areaM2: 61,
+        photos: [
+          { name: "Кухня-гостиная и обеденная зона", src: "/images/steps-batumi-2p1/steps-2p1-01.png" },
+          { name: "Кухня с мраморной отделкой", src: "/images/steps-batumi-2p1/steps-2p1-02.png" },
+          { name: "Обеденная зона и кухня", src: "/images/steps-batumi-2p1/steps-2p1-03.png" },
+          { name: "Прихожая и вид в кухню-гостиную", src: "/images/steps-batumi-2p1/steps-2p1-04.png" },
+          { name: "Спальня с выходом на балкон", src: "/images/steps-batumi-2p1/steps-2p1-05.png" },
+          { name: "Спальня с панорамными окнами", src: "/images/steps-batumi-2p1/steps-2p1-06.png" },
+          { name: "Спальня со шкафом-купе", src: "/images/steps-batumi-2p1/steps-2p1-07.png" },
+          { name: "Вторая спальня", src: "/images/steps-batumi-2p1/steps-2p1-08.png" },
+          { name: "Санузел", src: "/images/steps-batumi-2p1/steps-2p1-09.png" }
+        ],
+        roomsKey: "2+1"
+    },
+{
         id: "apt-tropical-garden-studio",
         detailHref: "/apartment.html",
         priceGel: 189000,
@@ -497,6 +521,22 @@
           { name: "Просторные комнаты с панорамными окнами", src: "/images/parkside-villas/parkside-08.png" },
           { name: "Терраса: вид на горы и зелень", src: "/images/parkside-villas/parkside-09.png" },
           { name: "Проведённые коммуникации (газ)", src: "/images/parkside-villas/parkside-10.png" }
+        ]
+    },
+{
+        id: "house-kobuleti-sea",
+        detailHref: "/apartment.html",
+        priceGel: 985500,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.8215,
+          lng: 41.775,
+          mapsUrl: "https://www.google.com/maps?q=41.821500,41.775000"
+        },
+        areaM2: 187,
+        photos: [
+          { name: "Дом у моря — Кобулети, современная архитектура", src: "/images/kobuleti-sea/kobuleti-01.png" },
+          { name: "Первая линия: вид на море с участка", src: "/images/kobuleti-sea/kobuleti-02.png" }
         ]
     }
     ]

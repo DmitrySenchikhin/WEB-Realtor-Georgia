@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-20",
+  "version": "2026-06-21",
   "groups": {
     "new-building": [
       {
@@ -303,7 +303,7 @@
       {
         "id": "apt-orbi-beach-tower-2801",
         "detailHref": "/apartment.html",
-        "priceGel": 337500,
+        "priceGel": 351000,
         "priceKind": "fixed",
         "geo": {
           "lat": 41.630308,
@@ -358,7 +358,7 @@
       {
         "id": "apt-orbi-beach-tower-3202",
         "detailHref": "/apartment.html",
-        "priceGel": 499500,
+        "priceGel": 513000,
         "priceKind": "fixed",
         "geo": {
           "lat": 41.630308,
@@ -409,7 +409,7 @@
       {
         "id": "apt-orbi-beach-tower-2902",
         "detailHref": "/apartment.html",
-        "priceGel": 499500,
+        "priceGel": 513000,
         "priceKind": "fixed",
         "geo": {
           "lat": 41.630308,
@@ -792,6 +792,57 @@
         "roomsKey": "studio"
       },
       {
+        "id": "apt-steps-batumi-2p1",
+        "detailHref": "/apartment.html",
+        "priceGel": 378000,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.625707,
+          "lng": 41.59986,
+          "mapsUrl": "https://www.google.com/maps?q=41.625707,41.599860"
+        },
+        "areaM2": 61,
+        "photos": [
+          {
+            "name": "Кухня-гостиная и обеденная зона",
+            "src": "/images/steps-batumi-2p1/steps-2p1-01.png"
+          },
+          {
+            "name": "Кухня с мраморной отделкой",
+            "src": "/images/steps-batumi-2p1/steps-2p1-02.png"
+          },
+          {
+            "name": "Обеденная зона и кухня",
+            "src": "/images/steps-batumi-2p1/steps-2p1-03.png"
+          },
+          {
+            "name": "Прихожая и вид в кухню-гостиную",
+            "src": "/images/steps-batumi-2p1/steps-2p1-04.png"
+          },
+          {
+            "name": "Спальня с выходом на балкон",
+            "src": "/images/steps-batumi-2p1/steps-2p1-05.png"
+          },
+          {
+            "name": "Спальня с панорамными окнами",
+            "src": "/images/steps-batumi-2p1/steps-2p1-06.png"
+          },
+          {
+            "name": "Спальня со шкафом-купе",
+            "src": "/images/steps-batumi-2p1/steps-2p1-07.png"
+          },
+          {
+            "name": "Вторая спальня",
+            "src": "/images/steps-batumi-2p1/steps-2p1-08.png"
+          },
+          {
+            "name": "Санузел",
+            "src": "/images/steps-batumi-2p1/steps-2p1-09.png"
+          }
+        ],
+        "roomsKey": "2+1"
+      },
+      {
         "id": "apt-tropical-garden-studio",
         "detailHref": "/apartment.html",
         "priceGel": 189000,
@@ -1005,6 +1056,28 @@
             "src": "/images/parkside-villas/parkside-10.png"
           }
         ]
+      },
+      {
+        "id": "house-kobuleti-sea",
+        "detailHref": "/apartment.html",
+        "priceGel": 985500,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.8215,
+          "lng": 41.775,
+          "mapsUrl": "https://www.google.com/maps?q=41.821500,41.775000"
+        },
+        "areaM2": 187,
+        "photos": [
+          {
+            "name": "Дом у моря — Кобулети, современная архитектура",
+            "src": "/images/kobuleti-sea/kobuleti-01.png"
+          },
+          {
+            "name": "Первая линия: вид на море с участка",
+            "src": "/images/kobuleti-sea/kobuleti-02.png"
+          }
+        ]
       }
     ]
   },
@@ -1142,7 +1215,7 @@
     "apt-orbi-beach-tower-2801": {
       "ru": {
         "title": "ORBI BEACH TOWER 2801",
-        "description": "ORBI BEACH TOWER — 1+1 панорама. Батуми, ул. Шерифа Химшиашвили, 57. 28 этаж, 50 м². Первая линия моря, прямой вид на море, гарантированная панорама. Отлично подходит для жизни и для сдачи в аренду. Квартира со свежим ремонтом, ранее не сдавалась: панорамные окна, светлые комнаты, высокий арендный спрос. В доме — ресепция, лифты, охрана. Развитая инфраструктура: торговый центр, сетевые магазины, SPA и фитнес, парк имени Лех и Марии Качиньских, набережная, кафе и рестораны, прогулочная зона. Цена $125 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "description": "ORBI BEACH TOWER — 1+1 панорама. Батуми, ул. Шерифа Химшиашвили, 57. 28 этаж, 50 м². Первая линия моря, прямой вид на море, гарантированная панорама. Отлично подходит для жизни и для сдачи в аренду. Квартира со свежим ремонтом, ранее не сдавалась: панорамные окна, светлые комнаты, высокий арендный спрос. В доме — ресепция, лифты, охрана. Развитая инфраструктура: торговый центр, сетевые магазины, SPA и фитнес, парк имени Лех и Марии Качиньских, набережная, кафе и рестораны, прогулочная зона. Цена $130 000 — уточняйте актуальность и условия сделки у менеджера.",
         "rooms": "1+1",
         "floorsText": "28 этаж",
         "completionText": "свежий ремонт",
@@ -1150,7 +1223,7 @@
       },
       "en": {
         "title": "ORBI BEACH TOWER 2801",
-        "description": "ORBI BEACH TOWER — 1+1 with panorama. Batumi, 57 Sherif Khimshiashvili St. 28th floor, 50 m². First sea line, direct sea view, guaranteed panorama. Excellent for living and rental. Freshly renovated apartment, never rented before: panoramic windows, bright rooms, high rental demand. Building: reception, lifts, security. Developed infrastructure: shopping centre, chain stores, SPA and fitness, Lech and Maria Kaczyński Park, promenade, cafés and restaurants, walking area. Price $125,000 — confirm current price and deal terms with your manager.",
+        "description": "ORBI BEACH TOWER — 1+1 with panorama. Batumi, 57 Sherif Khimshiashvili St. 28th floor, 50 m². First sea line, direct sea view, guaranteed panorama. Excellent for living and rental. Freshly renovated apartment, never rented before: panoramic windows, bright rooms, high rental demand. Building: reception, lifts, security. Developed infrastructure: shopping centre, chain stores, SPA and fitness, Lech and Maria Kaczyński Park, promenade, cafés and restaurants, walking area. Price $130,000 — confirm current price and deal terms with your manager.",
         "rooms": "1+1",
         "floorsText": "28th floor",
         "completionText": "fresh renovation",
@@ -1158,7 +1231,7 @@
       },
       "geo": {
         "title": "ORBI BEACH TOWER 2801",
-        "description": "ORBI BEACH TOWER — 1+1 პანორამით. ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 28-ე სართული, 50 მ². პირველი ზღვის ხაზი, პირდაპირი ხედი ზღვაზე, გარანტირებული პანორამა. შესანიშნავია საცხოვრებლად და არენდისთვის. ახალგარემონტებული ბინა, ადრე არ ქირავდებოდა: პანორამული ფანჯრები, ნათელი ოთახები, მაღალი მოთხოვნა არენდაზე. სახლში — რეცეფცია, ლიფტები, დაცვა. განვითარებული ინფრასტრუქტურა: სავაჭრო ცენტრი, ქსელური მაღაზიები, SPA და ფიტნესი, ლეხი და მარია კაჩინსკების პარკი, ნაპირი, კაფეები და რესტორნები, სასეირნო ზონა. ფასი $125 000 — დაზუსტება მენეჯერთან.",
+        "description": "ORBI BEACH TOWER — 1+1 პანორამით. ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 28-ე სართული, 50 მ². პირველი ზღვის ხაზი, პირდაპირი ხედი ზღვაზე, გარანტირებული პანორამა. შესანიშნავია საცხოვრებლად და არენდისთვის. ახალგარემონტებული ბინა, ადრე არ ქირავდებოდა: პანორამული ფანჯრები, ნათელი ოთახები, მაღალი მოთხოვნა არენდაზე. სახლში — რეცეფცია, ლიფტები, დაცვა. განვითარებული ინფრასტრუქტურა: სავაჭრო ცენტრი, ქსელური მაღაზიები, SPA და ფიტნესი, ლეხი და მარია კაჩინსკების პარკი, ნაპირი, კაფეები და რესტორნები, სასეირნო ზონა. ფასი $130 000 — დაზუსტება მენეჯერთან.",
         "rooms": "1+1",
         "floorsText": "28-ე სართული",
         "completionText": "ახალი რემონტი",
@@ -1168,7 +1241,7 @@
     "apt-orbi-beach-tower-3202": {
       "ru": {
         "title": "Orbi Beach Tower 2+1",
-        "description": "Апартаменты 2+1 в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 32 этаж, 70 м². Солнечная сторона с видом на море и парк имени Лех и Марии Качиньских. Качественный ремонт с современным дизайном. Престижный апарт-отель: первая береговая линия — около 50 м до моря, ресепшн и круглосуточная охрана. Развитая инфраструктура: казино Eclipse, ресторан G.Garden, ТРЦ Metro City, супермаркет Carrefour, кафе, бассейн, фитнес-центр, спортивные и детские площадки. Подходит для жизни и для сдачи в аренду. Просторная полностью укомплектованная квартира, светлые комнаты с панорамными окнами, вид на море с балкона. Цена $185 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "description": "Апартаменты 2+1 в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 32 этаж, 70 м². Солнечная сторона с видом на море и парк имени Лех и Марии Качиньских. Качественный ремонт с современным дизайном. Престижный апарт-отель: первая береговая линия — около 50 м до моря, ресепшн и круглосуточная охрана. Развитая инфраструктура: казино Eclipse, ресторан G.Garden, ТРЦ Metro City, супермаркет Carrefour, кафе, бассейн, фитнес-центр, спортивные и детские площадки. Подходит для жизни и для сдачи в аренду. Просторная полностью укомплектованная квартира, светлые комнаты с панорамными окнами, вид на море с балкона. Цена $190 000 — уточняйте актуальность и условия сделки у менеджера.",
         "rooms": "2+1",
         "floorsText": "32 этаж",
         "completionText": "ремонт с мебелью",
@@ -1176,7 +1249,7 @@
       },
       "en": {
         "title": "Orbi Beach Tower 2+1",
-        "description": "2+1 apartment in Orbi Beach Tower. Address: Batumi, 57 Sherif Khimshiashvili St. 32nd floor, 70 m². Sunny side with sea view and Lech and Maria Kaczyński Park. Quality renovation with modern design. Prestigious apart-hotel: first coastline — about 50 m to the sea, reception and 24/7 security. Developed infrastructure: Eclipse casino, G.Garden restaurant, Metro City mall, Carrefour supermarket, cafés, pool, fitness centre, sports and children's playgrounds. Suitable for living and rental. Spacious fully furnished apartment, bright rooms with panoramic windows, sea view from the balcony. Price $185,000 — confirm current price and deal terms with your manager.",
+        "description": "2+1 apartment in Orbi Beach Tower. Address: Batumi, 57 Sherif Khimshiashvili St. 32nd floor, 70 m². Sunny side with sea view and Lech and Maria Kaczyński Park. Quality renovation with modern design. Prestigious apart-hotel: first coastline — about 50 m to the sea, reception and 24/7 security. Developed infrastructure: Eclipse casino, G.Garden restaurant, Metro City mall, Carrefour supermarket, cafés, pool, fitness centre, sports and children's playgrounds. Suitable for living and rental. Spacious fully furnished apartment, bright rooms with panoramic windows, sea view from the balcony. Price $190,000 — confirm current price and deal terms with your manager.",
         "rooms": "2+1",
         "floorsText": "32nd floor",
         "completionText": "renovated with furniture",
@@ -1184,7 +1257,7 @@
       },
       "geo": {
         "title": "Orbi Beach Tower 2+1",
-        "description": "2+1 აპარტამენტები Orbi Beach Tower-ში. მისამართი: ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 32-ე სართული, 70 მ². მზიანი მხარე ხედით ზღვაზე და ლეხი და მარია კაჩინსკების პარკზე. ხარისხიანი რემონტი თანამედროვე დიზაინით. პრესტიჟული აპარტ-სასტუმრო: პირველი სანაპირო ხაზი — ზღვამდე დაახლოებით 50 მ, რეცეფშენი და მორიგე დაცვა 24/7. ინფრასტრუქტურა: კაზინო Eclipse, რესტორანი G.Garden, ტრც Metro City, Carrefour, კაფეები, აუზი, ფიტნეს-ცენტრი, სპორტული და საბავშვო ფლოტაციები. შესაფერისია საცხოვრებლად და არენდისთვის. ფართო სრულად აღჭურვილი ბინა, ნათელი ოთახები პანორამული ფანჯრებით, ხედი ზღვაზე აივნიდან. ფასი $185 000 — დაზუსტება მენეჯერთან.",
+        "description": "2+1 აპარტამენტები Orbi Beach Tower-ში. მისამართი: ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 32-ე სართული, 70 მ². მზიანი მხარე ხედით ზღვაზე და ლეხი და მარია კაჩინსკების პარკზე. ხარისხიანი რემონტი თანამედროვე დიზაინით. პრესტიჟული აპარტ-სასტუმრო: პირველი სანაპირო ხაზი — ზღვამდე დაახლოებით 50 მ, რეცეფშენი და მორიგე დაცვა 24/7. ინფრასტრუქტურა: კაზინო Eclipse, რესტორანი G.Garden, ტრც Metro City, Carrefour, კაფეები, აუზი, ფიტნეს-ცენტრი, სპორტული და საბავშვო ფლოტაციები. შესაფერისია საცხოვრებლად და არენდისთვის. ფართო სრულად აღჭურვილი ბინა, ნათელი ოთახები პანორამული ფანჯრებით, ხედი ზღვაზე აივნიდან. ფასი $190 000 — დაზუსტება მენეჯერთან.",
         "rooms": "2+1",
         "floorsText": "32-ე სართული",
         "completionText": "რემონტი ავეჯით",
@@ -1194,7 +1267,7 @@
     "apt-orbi-beach-tower-2902": {
       "ru": {
         "title": "Orbi Beach Tower 2+1",
-        "description": "Апартаменты 2+1 в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 29 этаж, 70 м². Солнечная сторона с видом на море и парк имени Лех и Марии Качиньских. Качественный ремонт с современным дизайном. Престижный апарт-отель: первая береговая линия — около 50 м до моря, ресепшн и круглосуточная охрана. Развитая инфраструктура: казино Eclipse, ресторан G.Garden, ТРЦ Metro City, супермаркет Carrefour, кафе, бассейн, фитнес-центр, спортивные и детские площадки. Подходит для жизни и для сдачи в аренду. Просторная полностью укомплектованная квартира, светлые комнаты с панорамными окнами, вид на море с балкона. Цена $185 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "description": "Апартаменты 2+1 в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 29 этаж, 70 м². Солнечная сторона с видом на море и парк имени Лех и Марии Качиньских. Качественный ремонт с современным дизайном. Престижный апарт-отель: первая береговая линия — около 50 м до моря, ресепшн и круглосуточная охрана. Развитая инфраструктура: казино Eclipse, ресторан G.Garden, ТРЦ Metro City, супермаркет Carrefour, кафе, бассейн, фитнес-центр, спортивные и детские площадки. Подходит для жизни и для сдачи в аренду. Просторная полностью укомплектованная квартира, светлые комнаты с панорамными окнами, вид на море с балкона. Цена $190 000 — уточняйте актуальность и условия сделки у менеджера.",
         "rooms": "2+1",
         "floorsText": "29 этаж",
         "completionText": "ремонт с мебелью",
@@ -1202,7 +1275,7 @@
       },
       "en": {
         "title": "Orbi Beach Tower 2+1",
-        "description": "2+1 apartment in Orbi Beach Tower. Address: Batumi, 57 Sherif Khimshiashvili St. 29th floor, 70 m². Sunny side with sea view and Lech and Maria Kaczyński Park. Quality renovation with modern design. Prestigious apart-hotel: first coastline — about 50 m to the sea, reception and 24/7 security. Developed infrastructure: Eclipse casino, G.Garden restaurant, Metro City mall, Carrefour supermarket, cafés, pool, fitness centre, sports and children's playgrounds. Suitable for living and rental. Spacious fully furnished apartment, bright rooms with panoramic windows, sea view from the balcony. Price $185,000 — confirm current price and deal terms with your manager.",
+        "description": "2+1 apartment in Orbi Beach Tower. Address: Batumi, 57 Sherif Khimshiashvili St. 29th floor, 70 m². Sunny side with sea view and Lech and Maria Kaczyński Park. Quality renovation with modern design. Prestigious apart-hotel: first coastline — about 50 m to the sea, reception and 24/7 security. Developed infrastructure: Eclipse casino, G.Garden restaurant, Metro City mall, Carrefour supermarket, cafés, pool, fitness centre, sports and children's playgrounds. Suitable for living and rental. Spacious fully furnished apartment, bright rooms with panoramic windows, sea view from the balcony. Price $190,000 — confirm current price and deal terms with your manager.",
         "rooms": "2+1",
         "floorsText": "29th floor",
         "completionText": "renovated with furniture",
@@ -1210,7 +1283,7 @@
       },
       "geo": {
         "title": "Orbi Beach Tower 2+1",
-        "description": "2+1 აპარტამენტები Orbi Beach Tower-ში. მისამართი: ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 29-ე სართული, 70 მ². მზიანი მხარე ხედით ზღვაზე და ლეხი და მარია კაჩინსკების პარკზე. ხარისხიანი რემონტი თანამედროვე დიზაინით. პრესტიჟული აპარტ-სასტუმრო: პირველი სანაპირო ხაზი — ზღვამდე დაახლოებით 50 მ, რეცეფშენი და მორიგე დაცვა 24/7. ინფრასტრუქტურა: კაზინო Eclipse, რესტორანი G.Garden, ტრც Metro City, Carrefour, კაფეები, აუზი, ფიტნეს-ცენტრი, სპორტული და საბავშვო ფლოტაციები. შესაფერისია საცხოვრებლად და არენდისთვის. ფართო სრულად აღჭურვილი ბინა, ნათელი ოთახები პანორამული ფანჯრებით, ხედი ზღვაზე აივნიდან. ფასი $185 000 — დაზუსტება მენეჯერთან.",
+        "description": "2+1 აპარტამენტები Orbi Beach Tower-ში. მისამართი: ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 29-ე სართული, 70 მ². მზიანი მხარე ხედით ზღვაზე და ლეხი და მარია კაჩინსკების პარკზე. ხარისხიანი რემონტი თანამედროვე დიზაინით. პრესტიჟული აპარტ-სასტუმრო: პირველი სანაპირო ხაზი — ზღვამდე დაახლოებით 50 მ, რეცეფშენი და მორიგე დაცვა 24/7. ინფრასტრუქტურა: კაზინო Eclipse, რესტორანი G.Garden, ტრც Metro City, Carrefour, კაფეები, აუზი, ფიტნეს-ცენტრი, სპორტული და საბავშვო ფლოტაციები. შესაფერისია საცხოვრებლად და არენდისთვის. ფართო სრულად აღჭურვილი ბინა, ნათელი ოთახები პანორამული ფანჯრებით, ხედი ზღვაზე აივნიდან. ფასი $190 000 — დაზუსტება მენეჯერთან.",
         "rooms": "2+1",
         "floorsText": "29-ე სართული",
         "completionText": "რემონტი ავეჯით",
@@ -1425,6 +1498,32 @@
         "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
       }
     },
+    "apt-steps-batumi-2p1": {
+      "ru": {
+        "title": "Апартаменты 2+1 — Steps Batumi",
+        "description": "Апартаменты 2+1 в жилом комплексе Steps Batumi. С управлением от Steps до ноября 2026. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 10 этаж, 61 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Хорошо подходит как для проживания, так и для сдачи в аренду. Шикарные апартаменты с хорошим ремонтом, мебелью и техникой. Стильный дизайн, светлая квартира. Две спальни, просторная кухня-гостиная. Три балкона на три стороны. Стоимость: $140 000 (было $145 000).",
+        "rooms": "2+1",
+        "floorsText": "10 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
+      },
+      "en": {
+        "title": "Apartments 2+1 — Steps Batumi",
+        "description": "2+1 apartments in the Steps Batumi residential complex. Managed by Steps until November 2026. Address: Batumi, 2b Grigol Lortkipanidze St. 10th floor, 61 m². New Boulevard: near the Lech and Maria Kaczyński Park and Metro City mall. A new business-class residential complex with reception and 24/7 security. Amenities include a botanical garden, business centre, restaurant, hotel, parking, children's playground, pool, sauna, hammam, café and gym. About 150 m to the sea, 4 high-speed lifts with backup power, fire safety rooms with oxygen supply. Well suited for living or rental income. Excellent apartments with quality renovation, furniture and appliances. Stylish design, bright layout. Two bedrooms, a spacious kitchen-living room. Three balconies on three sides. Price: $140,000 (was $145,000).",
+        "rooms": "2+1",
+        "floorsText": "10th floor",
+        "completionText": "renovated with furniture",
+        "address": "Batumi, 2b Grigol Lortkipanidze St. (Steps Batumi)"
+      },
+      "geo": {
+        "title": "აპარტამენტები 2+1 — Steps Batumi",
+        "description": "აპარტამენტები 2+1 Steps Batumi საცხოვრებელ კომპლექსში. Steps-ის მართვით 2026 წლის ნოემბრამდე. მის: ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ. 10-ე სართული, 61 მ². ახალი ბულვარი: ახლოს ლეხ და მარია კაჩინსკების პარკი, Metro City. ახალი ბიზნეს-კლასის საცხოვრებელი კომპლექსი — რეცეპცია და 24/7 დაცვა. ინფრასტრუქტურა: ბოტანიკური ბაღი, ბიზნეს-ცენტრი, რესტორნი, სასტუმრო, პარკინგი, საბავშვო მოედანი, აუზი, საუნა, ჰამამი, კაფე, ფიტნეს-დარბაზი. ზღვამდე დაახლოებით 150 მ, 4 სწრაფი ლიფტი ავტონომიური კვებით, ხანძრის უსაფრთხოების ოთახები ჟანგბადის მიწოდებით. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. შესანიშნავი აპარტამენტები ხარისხიანი რემონტით, ავეჯით და ტექნიკით. სტილური დიზაინი, ნათელი ბინა. ორი საძინებელი, ფართო სამზარეულო-მისაღები. სამი აივანი სამ მხარეს. ფასი: $140 000 (იყო $145 000).",
+        "rooms": "2+1",
+        "floorsText": "10-ე სართული",
+        "completionText": "რემონტი ავეჯით",
+        "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
+      }
+    },
     "apt-tropical-garden-studio": {
       "ru": {
         "title": "Студия Tropical Garden",
@@ -1527,6 +1626,32 @@
         "floorsText": "3 სართული",
         "completionText": "შავი კარკასი",
         "address": "ბათუმი, ადლიის რაიონი"
+      }
+    },
+    "house-kobuleti-sea": {
+      "ru": {
+        "title": "Дом у моря — Кобулети",
+        "description": "Дом у моря в Кобулети, первая линия — за $365 000. Дом 187 м², участок 308 м². Построен по европейским стандартам, выполнен качественный ремонт, без мебели и техники. Подключены газ, вода и электричество. Панорамные окна от пола до потолка, стеклянный балкон 26 м² по периметру второго этажа, просторная терраса на третьем этаже. 1 этаж: просторный зал с камином, кухня-гостиная, санузел. 2 этаж: 3 просторные спальни, санузел, стеклянный балкон 26 м² с видом на море. 3 этаж: просторная терраса с панорамным видом на море, возможность обустройства зоны отдыха, установки открытого бассейна, зона барбекю. Первая линия моря, современная архитектура, качественное строительство, максимум естественного света благодаря панорамному остеклению. Отличный вариант для постоянного проживания, отдыха или инвестиций. Стоимость: $365 000.",
+        "rooms": "3 спальни",
+        "floorsText": "3 этажа",
+        "completionText": "готовый дом с ремонтом",
+        "address": "Кобулети, первая линия моря"
+      },
+      "en": {
+        "title": "House by the sea — Kobuleti",
+        "description": "A house by the sea in Kobuleti, first line — for $365,000. House 187 m², plot 308 m². Built to European standards with a high-quality renovation, without furniture or appliances. Gas, water and electricity are connected. Floor-to-ceiling panoramic windows, a 26 m² glass balcony around the second floor, and a spacious terrace on the third floor. 1st floor: a spacious hall with a fireplace, kitchen-living room, bathroom. 2nd floor: 3 spacious bedrooms, bathroom, 26 m² glass balcony with sea view. 3rd floor: a spacious terrace with a panoramic sea view, space for a lounge area, option to install an outdoor pool, barbecue area. First line to the sea, modern architecture, quality construction, maximum natural light thanks to panoramic glazing. An excellent option for permanent living, holidays or investment. Price: $365,000.",
+        "rooms": "3 bedrooms",
+        "floorsText": "3 floors",
+        "completionText": "ready house with renovation",
+        "address": "Kobuleti, first line to the sea"
+      },
+      "geo": {
+        "title": "სახლი ზღვასთან — კობულეთი",
+        "description": "სახლი ზღვასთან კობულეთში, პირველი ხაზი — $365 000-ად. სახლი 187 მ², ნაკვეთი 308 მ². აშენებულია ევროპული სტანდარტებით, გაკეთებულია ხარისხიანი რემონტი, ავეჯისა და ტექნიკის გარეშე. შეერთებულია გაზი, წყალი და ელექტროობა. იატაკიდან ჭერამდე პანორამული ფანჯრები, მეორე სართულის პერიმეტრზე 26 მ² მინის აივანი, მესამე სართულზე ფართო ტერასა. 1 სართული: ფართო დარბაზი ბუხრით, სამზარეულო-მისაღები, სველი წერტილი. 2 სართული: 3 ფართო საძინებელი, სველი წერტილი, 26 მ² მინის აივანი ზღვის ხედით. 3 სართული: ფართო ტერასა პანორამული ხედით ზღვაზე, დასასვენებელი ზონის მოწყობის შესაძლებლობა, ღია აუზის დაყენების შესაძლებლობა, ბარბეკიუს ზონა. პირველი ხაზი ზღვასთან, თანამედროვე არქიტექტურა, ხარისხიანი მშენებლობა, მაქსიმალური ბუნებრივი სინათლე პანორამული მინის გამო. შესანიშნავი ვარიანტი მუდმივი ცხოვრების, დასვენების ან ინვესტიციისთვის. ფასი: $365 000.",
+        "rooms": "3 საძინებელი",
+        "floorsText": "3 სართული",
+        "completionText": "მზა სახლი რემონტით",
+        "address": "კობულეთი, პირველი ხაზი ზღვასთან"
       }
     }
   }

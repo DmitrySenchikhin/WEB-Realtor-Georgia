@@ -15,8 +15,10 @@
   "apt-batumi-view-studio",
   "apt-steps-batumi-studio",
   "apt-steps-batumi-studio-11",
+  "apt-steps-batumi-2p1",
   "apt-tropical-garden-studio",
   "house-villa-park-next",
   "house-polo-villas-parklane",
-  "house-adlia-townhouse-222"
+  "house-adlia-townhouse-222",
+  "house-kobuleti-sea"
 ]; })(typeof window !== "undefined" ? window : globalThis);
