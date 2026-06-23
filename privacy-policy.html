@@ -3,14 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — REALTOR GEORGIA iOS App</title>
-  <link rel="canonical" href="https://realtorgeorgia.com/privacy-policy.html">
-  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Privacy Policy — Realtor Georgia</title>
   <style>
     :root {
+      color-scheme: light dark;
       --bg: #fef6ee;
       --text: #2d1f1d;
       --muted: #6b5a57;
@@ -19,11 +15,21 @@
       --border: rgba(45, 31, 29, 0.12);
     }
 
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1413;
+        --text: #f7efe8;
+        --muted: #c4b5b0;
+        --card: #241b19;
+        --border: rgba(247, 239, 232, 0.12);
+      }
+    }
+
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -33,24 +39,6 @@
       max-width: 760px;
       margin: 0 auto;
       padding: 32px 20px 64px;
-    }
-
-    .top-bar {
-      margin-bottom: 24px;
-    }
-
-    .top-bar a {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      color: inherit;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .top-bar img {
-      width: 153px;
-      height: auto;
     }
 
     header {
@@ -125,18 +113,12 @@
 </head>
 <body>
   <main>
-    <div class="top-bar">
-      <a href="/">
-        <img src="/images/logo.svg" alt="REALTOR GEORGIA" width="153" height="47">
-      </a>
-    </div>
-
     <header>
       <h1>Privacy Policy / Политика конфиденциальности</h1>
       <p class="meta">
-        iOS App: <strong>Realtor Georgia</strong><br>
+        App: <strong>Realtor Georgia</strong><br>
         Developer: <strong>Dmitry Senchikhin</strong><br>
-        Last updated: <strong>June 16, 2026</strong>
+        Last updated: <strong>June 23, 2026</strong>
       </p>
       <nav>
         <a href="#ru">Русский</a>
@@ -197,9 +179,12 @@
 
       <h3>4. Карта в приложении</h3>
       <p>
-        Экран карты отображает координаты объектов недвижимости.
-        Приложение <strong>не запрашивает и не отслеживает</strong> ваше
-        текущее местоположение.
+        Экран карты отображает координаты объектов недвижимости. При вашем
+        явном действии (кнопка «Моё местоположение» или режим «Рядом»)
+        приложение может запросить доступ к геолокации
+        (<strong>только при использовании приложения</strong>) — чтобы показать
+        вашу позицию на карте и объекты рядом. Координаты не передаются на наши
+        серверы и не используются для отслеживания в фоне.
       </p>
 
       <h3>5. Аналитика</h3>
@@ -221,8 +206,7 @@
       <h3>7. Изменения политики</h3>
       <p>
         Мы можем обновлять эту Политику. Актуальная версия всегда доступна
-        по адресу <a href="https://realtorgeorgia.com/privacy-policy.html">realtorgeorgia.com/privacy-policy.html</a>.
-        Дата последнего обновления указана в начале документа.
+        по этому URL. Дата последнего обновления указана в начале документа.
       </p>
 
       <h3>8. Контакты</h3>
@@ -281,8 +265,11 @@
 
       <h3>4. In-app map</h3>
       <p>
-        The map screen shows property coordinates. The App
-        <strong>does not request or track</strong> your current location.
+        The map screen shows property coordinates. When you tap
+        <strong>My location</strong> or enable <strong>Nearby</strong> mode,
+        the App may request <strong>while-in-use</strong> location access to show
+        your position and nearby listings. Location is processed on your device,
+        is not sent to our servers, and is not tracked in the background.
       </p>
 
       <h3>5. Analytics</h3>
@@ -304,8 +291,7 @@
       <h3>7. Changes</h3>
       <p>
         We may update this Policy. The current version is always available at
-        <a href="https://realtorgeorgia.com/privacy-policy.html">realtorgeorgia.com/privacy-policy.html</a>.
-        The last updated date is shown at the top.
+        this URL. The last updated date is shown at the top.
       </p>
 
       <h3>8. Contact</h3>
@@ -351,10 +337,14 @@
         <li><strong>Apple Maps</strong> — ობიექტის მდებარეობის სანახავად.</li>
       </ul>
 
-      <h3>4. რუკა</h3>
+      <h3>4. რუკა აპში</h3>
       <p>
-        აპი <strong>არ ითხოვს და არ თვალყურს ადევნებს</strong> თქვენს მიმდინარე
-        მდებარეობას.
+        რუკის ეკრანი აჩვენებს უძრავი ქონების ობიექტების კოორდინატებს. თქვენი
+        ცალსახე მოქმედებისას («ჩემი მდებარეობა» ან «ახლოს» რეჟიმი) აპი შეიძლება
+        მოითხოვოს გეოლოკაციის ნებართვა
+        (<strong>მხოლოდ აპის გამოყენებისას</strong>) — რუკაზე თქვენი პოზიციის
+        და ახლომდებარე ობიექტების ჩვენებისთვის. კოორდინატები არ გადაეცემა ჩვენს
+        სერვერზე და ფონში არ გამოიყენება თვალყურის დევნებისთვის.
       </p>
 
       <h3>5. ანალიტიკა</h3>
@@ -373,7 +363,7 @@
     </section>
 
     <footer>
-      © 2026 Dmitry Senchikhin · REALTOR GEORGIA
+      © 2026 Dmitry Senchikhin · Realtor Georgia
     </footer>
   </main>
 </body>
