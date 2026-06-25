@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-23",
+  "version": "2026-06-25",
   "groups": {
     "new-building": [
       {
@@ -460,6 +460,49 @@
           }
         ],
         "roomsKey": "2+1"
+      },
+      {
+        "id": "apt-orbi-city-d1-1p1",
+        "detailHref": "/apartment.html",
+        "priceGel": 310500,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.639761,
+          "lng": 41.614545,
+          "mapsUrl": "https://www.google.com/maps?q=41.639761,41.614545"
+        },
+        "areaM2": 65,
+        "photos": [
+          {
+            "name": "Гостиная: панорама на море с балкона",
+            "src": "/images/orbi-city-d1/orbi-city-01.png"
+          },
+          {
+            "name": "Гостиная с диваном и видом на море",
+            "src": "/images/orbi-city-d1/orbi-city-02.png"
+          },
+          {
+            "name": "Гостиная и обеденная зона",
+            "src": "/images/orbi-city-d1/orbi-city-03.png"
+          },
+          {
+            "name": "Обеденная зона у панорамных окон",
+            "src": "/images/orbi-city-d1/orbi-city-04.png"
+          },
+          {
+            "name": "Спальня с видом на море",
+            "src": "/images/orbi-city-d1/orbi-city-05.png"
+          },
+          {
+            "name": "Вид с 40 этажа: море и город",
+            "src": "/images/orbi-city-d1/orbi-city-06.png"
+          },
+          {
+            "name": "Санузел с мраморной отделкой",
+            "src": "/images/orbi-city-d1/orbi-city-07.png"
+          }
+        ],
+        "roomsKey": "1+1"
       },
       {
         "id": "apt-avenue-by-orbi-studio",
@@ -1314,6 +1357,32 @@
         "floorsText": "29-ე სართული",
         "completionText": "მეორეული ფონდი",
         "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
+      }
+    },
+    "apt-orbi-city-d1-1p1": {
+      "ru": {
+        "title": "ПАНОРАМА 1+1 — Orbi City D1",
+        "description": "Апартаменты 1+1 в Orbi City D1. Адрес: Батуми, аллея Героев, ул. Шерифа Химшиашвили, 7б. 40 этаж, 65 м². Панорамный вид на море и город. Высокий этаж — максимум света и пространства. Первая линия, до моря 1–2 минуты. Состояние «как новая». Полностью укомплектованы техникой: 2 телевизора, 2 кондиционера, холодильник, стиральная машина. Готовы к проживанию или сдаче. Срочная продажа — быстрый выход на сделку. Отличный вариант для жизни и инвестиций. Стоимость: $115 000.",
+        "rooms": "1+1",
+        "floorsText": "40 этаж",
+        "completionText": "как новая, с техникой",
+        "address": "Батуми, аллея Героев, ул. Шерифа Химшиашвили, 7б (Orbi City D1)"
+      },
+      "en": {
+        "title": "PANORAMA 1+1 — Orbi City D1",
+        "description": "1+1 apartments in Orbi City D1. Address: Batumi, Heroes Alley, 7B Sherif Khimshiashvili St. 40th floor, 65 m². Panoramic sea and city view. High floor — maximum light and space. First line, 1–2 minutes to the sea. Like-new condition. Fully equipped with appliances: 2 TVs, 2 air conditioners, fridge, washing machine. Ready to move in or rent out. Urgent sale — quick closing. An excellent option for living and investment. Price: $115,000.",
+        "rooms": "1+1",
+        "floorsText": "40th floor",
+        "completionText": "like new, with appliances",
+        "address": "Batumi, Heroes Alley, 7B Sherif Khimshiashvili St. (Orbi City D1)"
+      },
+      "geo": {
+        "title": "პანორამა 1+1 — Orbi City D1",
+        "description": "აპარტამენტები 1+1 Orbi City D1-ში. მის: ბათუმი, გმირების ალეა, შერიფ ხიმშიაშვილის ქ. 7ბ. 40-ე სართული, 65 მ². პანორამული ხედი ზღვაზე და ქალაქზე. მაღალი სართული — მაქსიმალური სინათლე და სივრცე. პირველი ხაზი, ზღვამდე 1–2 წუთი. მდგომარეობა „როგორც ახალი“. სრულად აღჭურვილი ტექნიკით: 2 ტელევიზორი, 2 კონდიციონერი, მაცივალი, სარეცხი მანქანა. მზადაა საცხოვრებლად ან გაქირავებისთვის. სასწრაფო გაყიდვა — სწრაფი გარიგება. შესანიშნავი ვარიანტი ცხოვრებისა და ინვესტიციისთვის. ფასი: $115 000.",
+        "rooms": "1+1",
+        "floorsText": "40-ე სართული",
+        "completionText": "როგორც ახალი, ტექნიკით",
+        "address": "ბათუმი, გმირების ალეა, შერიფ ხიმშიაშვილის ქ. 7ბ (Orbi City D1)"
       }
     },
     "apt-avenue-by-orbi-studio": {

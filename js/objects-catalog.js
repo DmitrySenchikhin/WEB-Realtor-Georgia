@@ -241,6 +241,28 @@
         roomsKey: "2+1"
     },
 {
+        id: "apt-orbi-city-d1-1p1",
+        detailHref: "/apartment.html",
+        priceGel: 310500,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.639761,
+          lng: 41.614545,
+          mapsUrl: "https://www.google.com/maps?q=41.639761,41.614545"
+        },
+        areaM2: 65,
+        photos: [
+          { name: "Гостиная: панорама на море с балкона", src: "/images/orbi-city-d1/orbi-city-01.png" },
+          { name: "Гостиная с диваном и видом на море", src: "/images/orbi-city-d1/orbi-city-02.png" },
+          { name: "Гостиная и обеденная зона", src: "/images/orbi-city-d1/orbi-city-03.png" },
+          { name: "Обеденная зона у панорамных окон", src: "/images/orbi-city-d1/orbi-city-04.png" },
+          { name: "Спальня с видом на море", src: "/images/orbi-city-d1/orbi-city-05.png" },
+          { name: "Вид с 40 этажа: море и город", src: "/images/orbi-city-d1/orbi-city-06.png" },
+          { name: "Санузел с мраморной отделкой", src: "/images/orbi-city-d1/orbi-city-07.png" }
+        ],
+        roomsKey: "1+1"
+    },
+{
         id: "apt-avenue-by-orbi-studio",
         detailHref: "/apartment.html",
         priceGel: 86400,
