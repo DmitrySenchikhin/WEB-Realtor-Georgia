@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-25",
+  "version": "2026-06-27",
   "groups": {
     "new-building": [
       {
@@ -252,6 +252,53 @@
           }
         ],
         "roomsKey": "1+1"
+      },
+      {
+        "id": "apt-orbi-beach-tower-studio",
+        "detailHref": "/apartment.html",
+        "priceGel": 159300,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.630308,
+          "lng": 41.602256,
+          "mapsUrl": "https://www.google.com/maps?q=41.630308,41.602256"
+        },
+        "areaM2": 32,
+        "photos": [
+          {
+            "name": "Студия: кухня, гостиная и спальная зона",
+            "src": "/images/orbi-beach-tower-studio/studio-01.png"
+          },
+          {
+            "name": "Гостиная с ТВ и обеденной зоной",
+            "src": "/images/orbi-beach-tower-studio/studio-02.png"
+          },
+          {
+            "name": "Обеденная зона и спальное место",
+            "src": "/images/orbi-beach-tower-studio/studio-03.png"
+          },
+          {
+            "name": "Спальная зона",
+            "src": "/images/orbi-beach-tower-studio/studio-04.png"
+          },
+          {
+            "name": "ТВ-зона и шкаф",
+            "src": "/images/orbi-beach-tower-studio/studio-05.png"
+          },
+          {
+            "name": "Кухня с техникой",
+            "src": "/images/orbi-beach-tower-studio/studio-06.png"
+          },
+          {
+            "name": "Прихожая",
+            "src": "/images/orbi-beach-tower-studio/studio-07.png"
+          },
+          {
+            "name": "Вид на море и набережную",
+            "src": "/images/orbi-beach-tower-studio/studio-08.png"
+          }
+        ],
+        "roomsKey": "studio"
       },
       {
         "id": "apt-orbi-beach-tower-2201",
@@ -709,6 +756,57 @@
         "roomsKey": "studio"
       },
       {
+        "id": "apt-bluesky-tower-b-studio",
+        "detailHref": "/apartment.html",
+        "priceGel": 180900,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.637875,
+          "lng": 41.61898,
+          "mapsUrl": "https://www.google.com/maps?q=41.637875,41.618980"
+        },
+        "areaM2": 35,
+        "photos": [
+          {
+            "name": "BlueSky Tower — фасад комплекса",
+            "src": "/images/bluesky-tower-b/bluesky-01.png"
+          },
+          {
+            "name": "BlueSky Tower — вход и коммерческая зона",
+            "src": "/images/bluesky-tower-b/bluesky-02.png"
+          },
+          {
+            "name": "Лобби BlueSky Tower",
+            "src": "/images/bluesky-tower-b/bluesky-03.png"
+          },
+          {
+            "name": "Ресепшн и зона отдыха",
+            "src": "/images/bluesky-tower-b/bluesky-04.png"
+          },
+          {
+            "name": "Холл с лифтами",
+            "src": "/images/bluesky-tower-b/bluesky-05.png"
+          },
+          {
+            "name": "Студия: гостиная с видом на аллею Героев",
+            "src": "/images/bluesky-tower-b/bluesky-06.png"
+          },
+          {
+            "name": "Кухня и обеденная зона",
+            "src": "/images/bluesky-tower-b/bluesky-07.png"
+          },
+          {
+            "name": "Прихожая и встроенный шкаф",
+            "src": "/images/bluesky-tower-b/bluesky-08.png"
+          },
+          {
+            "name": "Санузел с душевой",
+            "src": "/images/bluesky-tower-b/bluesky-09.png"
+          }
+        ],
+        "roomsKey": "studio"
+      },
+      {
         "id": "apt-steps-batumi-studio",
         "detailHref": "/apartment.html",
         "priceGel": 164700,
@@ -881,6 +979,96 @@
           {
             "name": "Санузел",
             "src": "/images/steps-batumi-2p1/steps-2p1-09.png"
+          }
+        ],
+        "roomsKey": "2+1"
+      },
+      {
+        "id": "apt-steps-batumi-studio-17",
+        "detailHref": "/apartment.html",
+        "priceGel": 186300,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.625707,
+          "lng": 41.59986,
+          "mapsUrl": "https://www.google.com/maps?q=41.625707,41.599860"
+        },
+        "areaM2": 37,
+        "photos": [
+          {
+            "name": "Студия: гостиная и спальная зона",
+            "src": "/images/steps-batumi-studio-17/steps-17-01.png"
+          },
+          {
+            "name": "Спальная зона",
+            "src": "/images/steps-batumi-studio-17/steps-17-02.png"
+          },
+          {
+            "name": "Студия: кухня и обеденная зона",
+            "src": "/images/steps-batumi-studio-17/steps-17-03.png"
+          },
+          {
+            "name": "Кухня с техникой",
+            "src": "/images/steps-batumi-studio-17/steps-17-04.png"
+          },
+          {
+            "name": "Санузел",
+            "src": "/images/steps-batumi-studio-17/steps-17-05.png"
+          },
+          {
+            "name": "Санузел: душевая",
+            "src": "/images/steps-batumi-studio-17/steps-17-06.png"
+          },
+          {
+            "name": "Гардеробная",
+            "src": "/images/steps-batumi-studio-17/steps-17-07.png"
+          },
+          {
+            "name": "Вид на море с балкона",
+            "src": "/images/steps-batumi-studio-17/steps-17-08.png"
+          }
+        ],
+        "roomsKey": "studio"
+      },
+      {
+        "id": "apt-intourist-residence-2p1",
+        "detailHref": "/apartment.html",
+        "priceGel": 507600,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.640129,
+          "lng": 41.617582,
+          "mapsUrl": "https://www.google.com/maps?q=41.640129,41.617582"
+        },
+        "areaM2": 73,
+        "photos": [
+          {
+            "name": "Гостиная",
+            "src": "/images/intourist-residence-2p1/intourist-01.png"
+          },
+          {
+            "name": "Кухня и обеденная зона",
+            "src": "/images/intourist-residence-2p1/intourist-02.png"
+          },
+          {
+            "name": "Спальня",
+            "src": "/images/intourist-residence-2p1/intourist-03.png"
+          },
+          {
+            "name": "Вторая спальня",
+            "src": "/images/intourist-residence-2p1/intourist-04.png"
+          },
+          {
+            "name": "Санузел",
+            "src": "/images/intourist-residence-2p1/intourist-05.png"
+          },
+          {
+            "name": "Вид с балкона: город",
+            "src": "/images/intourist-residence-2p1/intourist-06.png"
+          },
+          {
+            "name": "Вид с балкона: город и горы",
+            "src": "/images/intourist-residence-2p1/intourist-07.png"
           }
         ],
         "roomsKey": "2+1"
@@ -1359,6 +1547,32 @@
         "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
       }
     },
+    "apt-orbi-beach-tower-studio": {
+      "ru": {
+        "title": "Квартира-студия — Orbi Beach Tower",
+        "description": "Квартира-студия в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 4 этаж, 32 м². Новый бульвар, первая линия моря. Полностью укомплектована мебелью и техникой. Квартира в отличном состоянии. До моря менее 100 м. Современный жилой комплекс с ресепшеном и охраной. Хорошо подходит как для проживания, так и для сдачи в аренду. Светлая и уютная студия. Продаётся под ключ. Видовая квартира в востребованной локации. Стоимость: $59 000.",
+        "rooms": "студия",
+        "floorsText": "4 этаж",
+        "completionText": "под ключ, с мебелью",
+        "address": "Батуми, ул. Шерифа Химшиашвили, 57 (Orbi Beach Tower)"
+      },
+      "en": {
+        "title": "Studio apartment — Orbi Beach Tower",
+        "description": "Studio apartment in Orbi Beach Tower. Address: Batumi, 57 Sherif Khimshiashvili St. 4th floor, 32 m². New Boulevard, first line to the sea. Fully furnished with furniture and appliances. Apartment in excellent condition. Less than 100 m to the sea. Modern residential complex with reception and security. Well suited for living and rental income. Bright and cozy studio. Turnkey sale. A view apartment in a sought-after location. Price: $59,000.",
+        "rooms": "studio",
+        "floorsText": "4th floor",
+        "completionText": "turnkey, furnished",
+        "address": "Batumi, 57 Sherif Khimshiashvili St. (Orbi Beach Tower)"
+      },
+      "geo": {
+        "title": "სტუდია — Orbi Beach Tower",
+        "description": "სტუდია Orbi Beach Tower-ში. მის: ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 4-ე სართული, 32 მ². ახალი ბულვარი, პირველი ხაზი ზღვასთან. სრულად აღჭურვილი ავეჯითა და ტექნიკით. ბინა შესანიშნავ მდგომარეობაში. ზღვამდე 100 მ-ზე ნაკლები. თანამედროვე საცხოვრებელი კომპლექსი რეცეპციითა და დაცვით. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. ნათელი და მყუდრო სტუდია. იყიდება „გასაღებით“. ხედიანი ბინა მოთხოვნად ლოკაციაში. ფასი: $59 000.",
+        "rooms": "სტუდია",
+        "floorsText": "4-ე სართული",
+        "completionText": "გასაღებით, ავეჯით",
+        "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57 (Orbi Beach Tower)"
+      }
+    },
     "apt-orbi-city-d1-1p1": {
       "ru": {
         "title": "ПАНОРАМА 1+1 — Orbi City D1",
@@ -1515,6 +1729,32 @@
         "address": "ბათუმი, ლეხ და მარია კაჩინსკების ქ. 8 (Batumi View, block B)"
       }
     },
+    "apt-bluesky-tower-b-studio": {
+      "ru": {
+        "title": "Студия — BlueSky Tower, блок B",
+        "description": "Квартира-студия в BlueSky Tower, блок B. Адрес: Батуми, ул. Тбел Абусеридзе, 13. 4 этаж, 35 м². Аллея Героев: рядом Carrefour, кафе, рестораны, магазины, казино, стадион и др. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура Holiday Inn: СПА, бассейн, рестораны, торговый центр. До моря 700 м. 6 скоростных лифтов. Газ, центральное отопление. Хорошо подходит как для проживания, так и для сдачи в аренду. Квартира с ремонтом, мебелью и техникой. Вид на аллею Героев. Стоимость: $67 000.",
+        "rooms": "студия",
+        "floorsText": "4 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Тбел Абусеридзе, 13 (BlueSky Tower, блок B)"
+      },
+      "en": {
+        "title": "Studio — BlueSky Tower, block B",
+        "description": "Studio apartment in BlueSky Tower, block B. Address: Batumi, 13 Tbel Abuseridze St. 4th floor, 35 m². Heroes Alley: Carrefour, cafés, restaurants, shops, casino, stadium and more nearby. New business-class residential complex with reception and 24/7 security. Holiday Inn infrastructure: SPA, pool, restaurants, shopping centre. 700 m to the sea. 6 high-speed lifts. Gas, central heating. Well suited for living and rental income. Apartment with renovation, furniture and appliances. View of Heroes Alley. Price: $67,000.",
+        "rooms": "studio",
+        "floorsText": "4th floor",
+        "completionText": "renovated with furniture",
+        "address": "Batumi, 13 Tbel Abuseridze St. (BlueSky Tower, block B)"
+      },
+      "geo": {
+        "title": "სტუდია — BlueSky Tower, ბლოკი B",
+        "description": "სტუდია BlueSky Tower-ში, ბლოკი B. მის: ბათუმი, თბელ აბუსერიძის ქ. 13. 4-ე სართული, 35 მ². გმირების ალეა: ახლოს Carrefour, კაფეები, რესტორნები, მაღაზიები, კაზინო, სტადიონი და სხვა. ახალი ბიზნეს-კლასის საცხოვრებელი კომპლექსი — რეცეპცია და 24/7 დაცვა. Holiday Inn ინფრასტრუქტურა: SPA, აუზი, რესტორნები, სავაჭრო ცენტრი. ზღვამდე 700 მ. 6 სწრაფი ლიფტი. გაზი, ცენტრალური გათბობა. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. ბინა რემონტით, ავეჯითა და ტექნიკით. ხედი გმირების ალეაზე. ფასი: $67 000.",
+        "rooms": "სტუდია",
+        "floorsText": "4-ე სართული",
+        "completionText": "რემონტი ავეჯით",
+        "address": "ბათუმი, თბელ აბუსერიძის ქ. 13 (BlueSky Tower, ბლოკი B)"
+      }
+    },
     "apt-steps-batumi-studio": {
       "ru": {
         "title": "Студия в STEPS",
@@ -1591,6 +1831,58 @@
         "floorsText": "10-ე სართული",
         "completionText": "რემონტი ავეჯით",
         "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
+      }
+    },
+    "apt-steps-batumi-studio-17": {
+      "ru": {
+        "title": "Студия — Steps Batumi",
+        "description": "Квартира-студия в жилом комплексе Steps Batumi. С управлением от Steps до ноября 2026 года. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 17 этаж, 37 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Хорошо подходит как для проживания, так и для сдачи в аренду. Просторная и светлая квартира с хорошим ремонтом и качественной мебелью и техникой. Вид на море. Стоимость: $69 000.",
+        "rooms": "студия",
+        "floorsText": "17 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
+      },
+      "en": {
+        "title": "Studio — Steps Batumi",
+        "description": "Studio apartment in the Steps Batumi residential complex. Managed by Steps until November 2026. Address: Batumi, 2b Grigol Lortkipanidze St. 17th floor, 37 m². New Boulevard: near the Lech and Maria Kaczyński Park and Metro City mall. New business-class residential complex with reception and 24/7 security. Amenities include a botanical garden, business centre, restaurant, hotel, parking, children's playground, pool, sauna, hammam, café and gym. About 150 m to the sea, 4 high-speed lifts with backup power, fire safety rooms with oxygen supply. Well suited for living and rental income. Spacious and bright apartment with quality renovation, furniture and appliances. Sea view. Price: $69,000.",
+        "rooms": "studio",
+        "floorsText": "17th floor",
+        "completionText": "renovated with furniture",
+        "address": "Batumi, 2b Grigol Lortkipanidze St. (Steps Batumi)"
+      },
+      "geo": {
+        "title": "სტუდია — Steps Batumi",
+        "description": "სტუდია Steps Batumi საცხოვრებელ კომპლექსში. Steps-ის მართვით 2026 წლის ნოემბრამდე. მის: ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ. 17-ე სართული, 37 მ². ახალი ბულვარი: ახლოს ლეხ და მარია კაჩინსკების პარკი, Metro City. ახალი ბიზნეს-კლასის საცხოვრებელი კომპლექსი — რეცეპცია და 24/7 დაცვა. ინფრასტრუქტურა: ბოტანიკური ბაღი, ბიზნეს-ცენტრი, რესტორნი, სასტუმრო, პარკინგი, საბავშვო მოედანი, აუზი, საუნა, ჰამამი, კაფე, ფიტნეს-დარბაზი. ზღვამდე დაახლოებით 150 მ, 4 სწრაფი ლიფტი ავტონომიური კვებით, ხანძრის უსაფრთხოების ოთახები ჟანგბადის მიწოდებით. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. ფართო და ნათელი ბინა ხარისხიანი რემონტით, ავეჯითა და ტექნიკით. ხედი ზღვაზე. ფასი: $69 000.",
+        "rooms": "სტუდია",
+        "floorsText": "17-ე სართული",
+        "completionText": "რემონტი ავეჯით",
+        "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
+      }
+    },
+    "apt-intourist-residence-2p1": {
+      "ru": {
+        "title": "Уютная квартира 2+1 — Intourist Residence",
+        "description": "Уютная квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17. 11 этаж, 73 м². Удобное расположение в центре города, до моря около 5 минут — 250 м. Развитая инфраструктура района: магазины, рестораны, аптеки, транспорт, казино и др. Центральное отопление, газ. Хорошо подходит как для проживания, так и для сдачи в аренду. Полностью укомплектована мебелью и техникой. Система «умный дом», сигнализация, видеонаблюдение. Автономное питание и отопление — до 10 часов при отключении. Два балкона с видом на море, город и горы. Стоимость: $188 000.",
+        "rooms": "2+1",
+        "floorsText": "11 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Пиросмани, 17 (Intourist Residence)"
+      },
+      "en": {
+        "title": "Cozy 2+1 apartment — Intourist Residence",
+        "description": "Cozy 2+1 apartment in the Intourist Residence residential complex. Address: Batumi, 17 Pirosmani St. 11th floor, 73 m². Convenient central location, about 5 minutes to the sea — 250 m. Well-developed neighbourhood infrastructure: shops, restaurants, pharmacies, transport, casinos and more. Central heating, gas. Well suited for living and rental income. Fully furnished with furniture and appliances. Smart home system, alarm and video surveillance. Backup power and heating for up to 10 hours during outages. Two balconies with views of the sea, city and mountains. Price: $188,000.",
+        "rooms": "2+1",
+        "floorsText": "11th floor",
+        "completionText": "renovated with furniture",
+        "address": "Batumi, 17 Pirosmani St. (Intourist Residence)"
+      },
+      "geo": {
+        "title": "მოსახლე ბინა 2+1 — Intourist Residence",
+        "description": "მოსახლე ბინა 2+1 Intourist Residence საცხოვრებელ კომპლექსში. მის: ბათუმი, ნიკო ფიროსმანის ქ. 17. 11-ე სართული, 73 მ². მოსახერხებელი მდებარეობა ქალაქის ცენტრში, ზღვამდე დაახლოებით 5 წუთი — 250 მ. განვითარებული ინფრასტრუქტურა: მაღაზიები, რესტორნები, აფთიაქები, ტრანსპორტი, კაზინო და სხვა. ცენტრალური გათბობა, აირი. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. სრულად აღჭურვილი ავეჯითა და ტექნიკით. «ჭკვიანი სახლის» სისტემა, სიგნალიზაცია, ვიდეოდაკვირვება. ავტონომიური კვება და გათბობა — გათიშვისას 10 საათამდე. ორი აივანი ხედით ზღვაზე, ქალაქსა და მთებზე. ფასი: $188 000.",
+        "rooms": "2+1",
+        "floorsText": "11-ე სართული",
+        "completionText": "რემონტი ავეჯით",
+        "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17 (Intourist Residence)"
       }
     },
     "apt-tropical-garden-studio": {

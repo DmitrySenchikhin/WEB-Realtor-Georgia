@@ -144,6 +144,29 @@
         roomsKey: "1+1"
     },
 {
+        id: "apt-orbi-beach-tower-studio",
+        detailHref: "/apartment.html",
+        priceGel: 159300,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.630308,
+          lng: 41.602256,
+          mapsUrl: "https://www.google.com/maps?q=41.630308,41.602256"
+        },
+        areaM2: 32,
+        photos: [
+          { name: "Студия: кухня, гостиная и спальная зона", src: "/images/orbi-beach-tower-studio/studio-01.png" },
+          { name: "Гостиная с ТВ и обеденной зоной", src: "/images/orbi-beach-tower-studio/studio-02.png" },
+          { name: "Обеденная зона и спальное место", src: "/images/orbi-beach-tower-studio/studio-03.png" },
+          { name: "Спальная зона", src: "/images/orbi-beach-tower-studio/studio-04.png" },
+          { name: "ТВ-зона и шкаф", src: "/images/orbi-beach-tower-studio/studio-05.png" },
+          { name: "Кухня с техникой", src: "/images/orbi-beach-tower-studio/studio-06.png" },
+          { name: "Прихожая", src: "/images/orbi-beach-tower-studio/studio-07.png" },
+          { name: "Вид на море и набережную", src: "/images/orbi-beach-tower-studio/studio-08.png" }
+        ],
+        roomsKey: "studio"
+    },
+{
         id: "apt-orbi-beach-tower-2201",
         detailHref: "/apartment.html",
         priceGel: 324000,
@@ -370,6 +393,30 @@
         roomsKey: "studio"
     },
 {
+        id: "apt-bluesky-tower-b-studio",
+        detailHref: "/apartment.html",
+        priceGel: 180900,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.637875,
+          lng: 41.61898,
+          mapsUrl: "https://www.google.com/maps?q=41.637875,41.618980"
+        },
+        areaM2: 35,
+        photos: [
+          { name: "BlueSky Tower — фасад комплекса", src: "/images/bluesky-tower-b/bluesky-01.png" },
+          { name: "BlueSky Tower — вход и коммерческая зона", src: "/images/bluesky-tower-b/bluesky-02.png" },
+          { name: "Лобби BlueSky Tower", src: "/images/bluesky-tower-b/bluesky-03.png" },
+          { name: "Ресепшн и зона отдыха", src: "/images/bluesky-tower-b/bluesky-04.png" },
+          { name: "Холл с лифтами", src: "/images/bluesky-tower-b/bluesky-05.png" },
+          { name: "Студия: гостиная с видом на аллею Героев", src: "/images/bluesky-tower-b/bluesky-06.png" },
+          { name: "Кухня и обеденная зона", src: "/images/bluesky-tower-b/bluesky-07.png" },
+          { name: "Прихожая и встроенный шкаф", src: "/images/bluesky-tower-b/bluesky-08.png" },
+          { name: "Санузел с душевой", src: "/images/bluesky-tower-b/bluesky-09.png" }
+        ],
+        roomsKey: "studio"
+    },
+{
         id: "apt-steps-batumi-studio",
         detailHref: "/apartment.html",
         priceGel: 164700,
@@ -444,6 +491,51 @@
           { name: "Спальня со шкафом-купе", src: "/images/steps-batumi-2p1/steps-2p1-07.png" },
           { name: "Вторая спальня", src: "/images/steps-batumi-2p1/steps-2p1-08.png" },
           { name: "Санузел", src: "/images/steps-batumi-2p1/steps-2p1-09.png" }
+        ],
+        roomsKey: "2+1"
+    },
+{
+        id: "apt-steps-batumi-studio-17",
+        detailHref: "/apartment.html",
+        priceGel: 186300,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.625707,
+          lng: 41.59986,
+          mapsUrl: "https://www.google.com/maps?q=41.625707,41.599860"
+        },
+        areaM2: 37,
+        photos: [
+          { name: "Студия: гостиная и спальная зона", src: "/images/steps-batumi-studio-17/steps-17-01.png" },
+          { name: "Спальная зона", src: "/images/steps-batumi-studio-17/steps-17-02.png" },
+          { name: "Студия: кухня и обеденная зона", src: "/images/steps-batumi-studio-17/steps-17-03.png" },
+          { name: "Кухня с техникой", src: "/images/steps-batumi-studio-17/steps-17-04.png" },
+          { name: "Санузел", src: "/images/steps-batumi-studio-17/steps-17-05.png" },
+          { name: "Санузел: душевая", src: "/images/steps-batumi-studio-17/steps-17-06.png" },
+          { name: "Гардеробная", src: "/images/steps-batumi-studio-17/steps-17-07.png" },
+          { name: "Вид на море с балкона", src: "/images/steps-batumi-studio-17/steps-17-08.png" }
+        ],
+        roomsKey: "studio"
+    },
+{
+        id: "apt-intourist-residence-2p1",
+        detailHref: "/apartment.html",
+        priceGel: 507600,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.640129,
+          lng: 41.617582,
+          mapsUrl: "https://www.google.com/maps?q=41.640129,41.617582"
+        },
+        areaM2: 73,
+        photos: [
+          { name: "Гостиная", src: "/images/intourist-residence-2p1/intourist-01.png" },
+          { name: "Кухня и обеденная зона", src: "/images/intourist-residence-2p1/intourist-02.png" },
+          { name: "Спальня", src: "/images/intourist-residence-2p1/intourist-03.png" },
+          { name: "Вторая спальня", src: "/images/intourist-residence-2p1/intourist-04.png" },
+          { name: "Санузел", src: "/images/intourist-residence-2p1/intourist-05.png" },
+          { name: "Вид с балкона: город", src: "/images/intourist-residence-2p1/intourist-06.png" },
+          { name: "Вид с балкона: город и горы", src: "/images/intourist-residence-2p1/intourist-07.png" }
         ],
         roomsKey: "2+1"
     },
