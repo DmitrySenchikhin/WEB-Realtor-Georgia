@@ -1,19 +1,24 @@
 {
   "applinks": {
+    "apps": [],
     "details": [
       {
-        "appIDs": ["UHG964SUQU.UHG964SUQU.RealtorGeorgia-com"],
+        "appIDs": ["UHG964SUQU.RealtorGeorgia-com"],
         "components": [
+          {
+            "/": "/property/*",
+            "comment": "Property share pages open in the RealtorGeorgia app"
+          },
           {
             "/": "/",
             "?": { "property": "?*" },
-            "comment": "Open a specific property inside the RealtorGeorgia app"
+            "comment": "Legacy share query parameter"
           }
         ]
       }
     ]
   },
   "webcredentials": {
-    "apps": ["UHG964SUQU.UHG964SUQU.RealtorGeorgia-com"]
+    "apps": ["UHG964SUQU.RealtorGeorgia-com"]
   }
 }

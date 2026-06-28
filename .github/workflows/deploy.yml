@@ -31,6 +31,9 @@ jobs:
       - name: Build catalog.json
         run: npm run build:catalog
 
+      - name: Generate property share pages (Open Graph)
+        run: python3 scripts/generate-property-pages.py
+
       - name: Verify catalog.json is committed
         run: |
           if ! git diff --exit-code public/catalog.json; then

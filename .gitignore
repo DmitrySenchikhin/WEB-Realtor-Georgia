@@ -25,3 +25,6 @@ dist-ssr
 
 # CodeGraph local index
 .codegraph/
+
+# Generated at build time (see scripts/generate-property-pages.py)
+property/
