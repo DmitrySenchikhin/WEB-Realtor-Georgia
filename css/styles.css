@@ -430,6 +430,28 @@ a {
   flex-shrink: 0;
 }
 
+.app-store-badge {
+  display: inline-flex;
+  flex-shrink: 0;
+  line-height: 0;
+  transition: opacity 0.2s;
+}
+
+.app-store-badge:hover {
+  opacity: 0.88;
+}
+
+.app-store-badge img {
+  display: block;
+  height: 52px;
+  width: auto;
+}
+
+.search-row--hero .app-store-badge img,
+.search-row--bottom .app-store-badge img {
+  height: 56px;
+}
+
 /* —— Listings —— Figma: контент с y=808, отступ от hero 60px; между секциями 90px */
 .listings {
   margin-top: 60px;
