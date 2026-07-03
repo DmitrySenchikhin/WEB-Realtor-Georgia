@@ -514,13 +514,7 @@
           mapsUrl: "https://www.google.com/maps?q=41.625497,41.602739"
         },
         areaM2: 81.7,
-        photos: [
-          { name: "Вид с балкона на море", src: "/images/real-palace-blue/rpb-01.jpg" },
-          { name: "Панорама: город, парк и море", src: "/images/real-palace-blue/rpb-02.jpg" },
-          { name: "Интерьер — белый каркас", src: "/images/real-palace-blue/rpb-03.jpg" },
-          { name: "Гостиная с панорамными окнами", src: "/images/real-palace-blue/rpb-04.jpg" },
-          { name: "Панорамные окна и вид на город", src: "/images/real-palace-blue/rpb-05.jpg" }
-        ],
+        photos: [],
         roomsKey: "2+1"
     },
 {

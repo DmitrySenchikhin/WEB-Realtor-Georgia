@@ -119,6 +119,11 @@
 
 Формат записи: **`ГГГГ-ММ-ДД` — краткий заголовок** → файлы, суть.
 
+### 2026-07-03 — Real Palace Blue: объект без фото
+
+- **Файлы:** `js/objects-catalog.js`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** для **`apt-real-palace-blue-2p1`** массив **`photos`** очищен — объект сохранён в каталоге без снимков (заглушка на карточке — **`property-1.png`**); фото можно добавить позже.
+
 ### 2026-07-03 — Real Palace Blue: фото квартиры
 
 - **Файлы:** `js/objects-catalog.js`, `images/real-palace-blue/rpb-01.jpg` … `rpb-05.jpg`, `public/catalog.json`, `CODE_DESCRIPTION.md`
