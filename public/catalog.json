@@ -1030,7 +1030,24 @@
           "mapsUrl": "https://www.google.com/maps?q=41.625497,41.602739"
         },
         "areaM2": 81.7,
-        "photos": [],
+        "photos": [
+          {
+            "name": "Real Palace Blue — фасад комплекса",
+            "src": "/images/real-palace-blue/rpb-01.webp"
+          },
+          {
+            "name": "Real Palace Blue — панорамный вид",
+            "src": "/images/real-palace-blue/rpb-02.webp"
+          },
+          {
+            "name": "Real Palace Blue — локация у моря",
+            "src": "/images/real-palace-blue/rpb-03.webp"
+          },
+          {
+            "name": "Real Palace Blue — проект",
+            "src": "/images/real-palace-blue/rpb-04.webp"
+          }
+        ],
         "roomsKey": "2+1"
       },
       {
