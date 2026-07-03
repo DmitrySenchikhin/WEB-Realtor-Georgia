@@ -19,6 +19,7 @@
   "apt-steps-batumi-studio",
   "apt-steps-batumi-studio-11",
   "apt-steps-batumi-2p1",
+  "apt-real-palace-blue-2p1",
   "apt-steps-batumi-studio-17",
   "apt-intourist-residence-2p1",
   "apt-tropical-garden-studio",

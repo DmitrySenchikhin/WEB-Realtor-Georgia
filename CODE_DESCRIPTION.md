@@ -32,6 +32,7 @@
 | `images/new-bilding-one/` | Материалы **ЖК ONE** (`new-bilding-one`, карточка вместо бывшего Orbi Sea Towers) |
 | `images/realtor-personal-avatar.png` | Фото в блоке «Ваш персональный риелтор» на страницах объекта (`nb-realtor-cta`) |
 | `images/ramada-one-development/` | Материалы **RAMADA by One Development** (`nb-ramada-one-development`), страница **`new-building-2.html`** |
+| `images/real-palace-blue/` | Презентационные WebP для квартиры **`apt-real-palace-blue-2p1`** (Real Palace Blue) |
 
 ---
 
@@ -117,6 +118,11 @@
 ## Журнал изменений
 
 Формат записи: **`ГГГГ-ММ-ДД` — краткий заголовок** → файлы, суть.
+
+### 2026-07-03 — Каталог: квартира Real Palace Blue (2+1, 81,7 м²)
+
+- **Файлы:** `js/objects-catalog.js`, `js/description-ids.js`, `description ru/apt-real-palace-blue-2p1.json`, `description en/apt-real-palace-blue-2p1.json`, `description geo/apt-real-palace-blue-2p1.json`, `images/real-palace-blue/rpb-01.webp` … `rpb-04.webp`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** в группе **`apartments`** добавлен объект **`apt-real-palace-blue-2p1`** (Real Palace Blue, 2+1, 81,7 м², жилая 61,7 м², **$140 000** / **378 000** лари, **`priceKind: fixed`**); в описании зафиксированы условия рассрочки: ПВ **$70 000**, до августа 2026 без платежей, остаток **$70 000** до **15.02.2027**; координаты ул. Ангиса, 95; **4** фото комплекса в **`images/real-palace-blue/`**.
 
 ### 2026-05-14 — Блок «персональный риелтор» на всех страницах объекта
 

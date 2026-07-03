@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-28",
+  "version": "2026-07-03",
   "groups": {
     "new-building": [
       {
@@ -1020,6 +1020,37 @@
         "roomsKey": "2+1"
       },
       {
+        "id": "apt-real-palace-blue-2p1",
+        "detailHref": "/apartment.html",
+        "priceGel": 378000,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.626246,
+          "lng": 41.601942,
+          "mapsUrl": "https://www.google.com/maps?q=41.626246,41.601942"
+        },
+        "areaM2": 81.7,
+        "photos": [
+          {
+            "name": "Real Palace Blue — фасад комплекса",
+            "src": "/images/real-palace-blue/rpb-01.webp"
+          },
+          {
+            "name": "Real Palace Blue — панорамный вид",
+            "src": "/images/real-palace-blue/rpb-02.webp"
+          },
+          {
+            "name": "Real Palace Blue — локация у моря",
+            "src": "/images/real-palace-blue/rpb-03.webp"
+          },
+          {
+            "name": "Real Palace Blue — проект",
+            "src": "/images/real-palace-blue/rpb-04.webp"
+          }
+        ],
+        "roomsKey": "2+1"
+      },
+      {
         "id": "apt-steps-batumi-studio-17",
         "detailHref": "/apartment.html",
         "priceGel": 186300,
@@ -1867,6 +1898,32 @@
         "floorsText": "10-ე სართული",
         "completionText": "რემონტი ავეჯით",
         "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
+      }
+    },
+    "apt-real-palace-blue-2p1": {
+      "ru": {
+        "title": "Real Palace Blue — квартира 2+1",
+        "description": "Продаётся квартира в жилом комплексе Real Palace Blue (премиум-класс, 29 этажей, Новый бульвар, ~170 м от моря). Общая площадь — 81,7 м², жилая — 61,7 м². Стоимость — $140 000. Условия покупки: первоначальный взнос $70 000; до августа 2026 дополнительных платежей не требуется; остаток $70 000 — с августа до 15 февраля 2027. Комплекс Real Palace Blue: панорамные виды на море, горы и город; паркинг, коммерция на первом этаже; рядом Metrocity и парк имени Леха и Марии Качиньских.",
+        "rooms": "2+1",
+        "floorsText": "29-этажный комплекс",
+        "completionText": "сдача — 2026",
+        "address": "Батуми, ул. Ангиса, 95 (Real Palace Blue)"
+      },
+      "en": {
+        "title": "Real Palace Blue — 2+1 apartment",
+        "description": "Apartment for sale in the Real Palace Blue residential complex (premium class, 29 floors, New Boulevard, ~170 m from the sea). Total area — 81.7 m², living area — 61.7 m². Price — $140,000. Payment terms: down payment $70,000; no additional payments required until August 2026; remaining $70,000 from August until 15 February 2027. Real Palace Blue: panoramic sea, mountain and city views; parking, ground-floor retail; near Metro City and Lech and Maria Kaczyński Park.",
+        "rooms": "2+1",
+        "floorsText": "29-floor complex",
+        "completionText": "completion — 2026",
+        "address": "Batumi, 95 Angisa St. (Real Palace Blue)"
+      },
+      "geo": {
+        "title": "Real Palace Blue — ბინა 2+1",
+        "description": "იყიდება ბინა საცხოვრებელ კომპლექს Real Palace Blue-ში (პრემიუმ კლასი, 29 სართული, ახალი ბულვარი, ზღვიდან ~170 მ). საერთო ფართობი — 81,7 მ², საცხოვრებელი — 61,7 მ². ფასი — $140 000. შეძენის პირობები: საწყისი შენატანი $70 000; 2026 წლის აგვისტომდე დამატებითი გადახდა არ სჭირდება; დარჩენილი $70 000 — აგვისტიდან 2027 წლის 15 თებერვლამდე. Real Palace Blue: პანორამული ხედები ზღვაზე, მთებსა და ქალაქზე; პარკინგი, კომერციული სივრცეები პირველ სართულზე; ახლოს Metro City და ლეხ და მარია კაჩინსკების პარკი.",
+        "rooms": "2+1",
+        "floorsText": "29-სართულიანი კომპლექსი",
+        "completionText": "ჩაბარება — 2026",
+        "address": "ბათუმი, ანგისის ქ. 95 (Real Palace Blue)"
       }
     },
     "apt-steps-batumi-studio-17": {
