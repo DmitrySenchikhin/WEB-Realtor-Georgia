@@ -119,6 +119,11 @@
 
 Формат записи: **`ГГГГ-ММ-ДД` — краткий заголовок** → файлы, суть.
 
+### 2026-07-03 — Real Palace Blue: уточнение координат
+
+- **Файлы:** `js/objects-catalog.js`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** для **`apt-real-palace-blue-2p1`** обновлены **`geo`**: **41.625497**, **41.602739** (и ссылка Google Maps).
+
 ### 2026-07-03 — Каталог: квартира Real Palace Blue (2+1, 81,7 м²)
 
 - **Файлы:** `js/objects-catalog.js`, `js/description-ids.js`, `description ru/apt-real-palace-blue-2p1.json`, `description en/apt-real-palace-blue-2p1.json`, `description geo/apt-real-palace-blue-2p1.json`, `images/real-palace-blue/rpb-01.webp` … `rpb-04.webp`, `public/catalog.json`, `CODE_DESCRIPTION.md`
