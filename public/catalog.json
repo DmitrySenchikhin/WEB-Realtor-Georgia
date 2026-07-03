@@ -1032,20 +1032,24 @@
         "areaM2": 81.7,
         "photos": [
           {
-            "name": "Real Palace Blue — фасад комплекса",
-            "src": "/images/real-palace-blue/rpb-01.webp"
+            "name": "Вид с балкона на море",
+            "src": "/images/real-palace-blue/rpb-01.jpg"
           },
           {
-            "name": "Real Palace Blue — панорамный вид",
-            "src": "/images/real-palace-blue/rpb-02.webp"
+            "name": "Панорама: город, парк и море",
+            "src": "/images/real-palace-blue/rpb-02.jpg"
           },
           {
-            "name": "Real Palace Blue — локация у моря",
-            "src": "/images/real-palace-blue/rpb-03.webp"
+            "name": "Интерьер — белый каркас",
+            "src": "/images/real-palace-blue/rpb-03.jpg"
           },
           {
-            "name": "Real Palace Blue — проект",
-            "src": "/images/real-palace-blue/rpb-04.webp"
+            "name": "Гостиная с панорамными окнами",
+            "src": "/images/real-palace-blue/rpb-04.jpg"
+          },
+          {
+            "name": "Панорамные окна и вид на город",
+            "src": "/images/real-palace-blue/rpb-05.jpg"
           }
         ],
         "roomsKey": "2+1"
