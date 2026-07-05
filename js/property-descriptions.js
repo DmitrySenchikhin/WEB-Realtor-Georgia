@@ -1911,6 +1911,12 @@
 
   document.addEventListener("realtor:languagechange", refreshCatalogForLanguage);
 
+  document.addEventListener("realtor:descriptionsready", function () {
+    if (document.querySelector("main[data-nb-catalog-id], main[data-apt-catalog-id]")) {
+      initCatalogDetailPage();
+    }
+  });
+
   if (typeof window !== "undefined" && window.RealtorDescriptions && window.RealtorDescriptions.whenReady) {
     window.RealtorDescriptions.whenReady(bootPropertyDescriptions);
   } else {

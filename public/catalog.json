@@ -63,7 +63,39 @@
             "name": "Презентация SPORT CITY — 12",
             "src": "/images/sport-city/sport-city-12.png"
           }
-        ]
+        ],
+        "localized": {
+          "ru": {
+            "title": "SPORT CITY",
+            "description": "SPORT CITY — многофункциональный жилой комплекс на Новом бульваре Батуми (ONE Development): спорт, отельный сервис и городская инфраструктура в одном проекте. Цены: от $45 000 за лот, от $1 450 за м² (ориентир для старта продаж; уточняйте у менеджера). Планировки от студии до крупных квартир, благоустроенная территория, спортивные зоны и семейный отдых. Подходит для жизни, удалённой работы и инвестиций.",
+            "rooms": "студия — 3+1",
+            "floorsText": "жилые корпуса и спортивная инфраструктура",
+            "completionText": "срок сдачи — у застройщика ONE Development",
+            "address": "Батуми, Новый бульвар"
+          },
+          "en": {
+            "title": "SPORT CITY",
+            "description": "SPORT CITY is a multifunctional residential complex on Batumi's New Boulevard (ONE Development): sport, hotel-style service and urban infrastructure in one project. Prices: from $45,000 per lot, from $1,450 per m² (indicative for launch sales; confirm with your manager). Layouts from studio to large apartments, landscaped grounds, sports zones and family recreation. Suitable for living, remote work and investment.",
+            "rooms": "studio — 3+1",
+            "floorsText": "residential blocks and sports infrastructure",
+            "completionText": "handover date — ONE Development",
+            "address": "Batumi, New Boulevard"
+          },
+          "geo": {
+            "title": "SPORT CITY",
+            "description": "SPORT CITY — მრავალფუნქციური საცხოვრებელი კომპლექსი ბათუმის ახალ ბულვარზე (ONE Development): სპორტი, სასტუმროს სერვისი და ქალაქის ინფრასტრუქტურა ერთ პროექტში. ფასები: $45 000-დან ლოტზე, $1 450/მ²-დან (ორიენტირი გაყიდვების დასაწყისისთვის; დაზუსტება მენეჯერთან). გეგმარებები სტუდიოდან დიდ ბინებამდე, ლანდშაფტური ტერიტორია, სპორტული ზონები და ოჯახური დასვენება. შესაფერისია საცხოვრებლად, დისტანციური მუშაობისა და ინვესტიციისთვის.",
+            "rooms": "სტუდიო — 3+1",
+            "floorsText": "საცხოვრებელი კორპუსები და სპორტული ინფრასტრუქტურა",
+            "completionText": "ჩაბარების ვადა — ONE Development",
+            "address": "ბათუმი, ახალი ბულვარი"
+          }
+        },
+        "title": "SPORT CITY",
+        "description": "SPORT CITY — многофункциональный жилой комплекс на Новом бульваре Батуми (ONE Development): спорт, отельный сервис и городская инфраструктура в одном проекте. Цены: от $45 000 за лот, от $1 450 за м² (ориентир для старта продаж; уточняйте у менеджера). Планировки от студии до крупных квартир, благоустроенная территория, спортивные зоны и семейный отдых. Подходит для жизни, удалённой работы и инвестиций.",
+        "rooms": "студия — 3+1",
+        "floorsText": "жилые корпуса и спортивная инфраструктура",
+        "completionText": "срок сдачи — у застройщика ONE Development",
+        "address": "Батуми, Новый бульвар"
       },
       {
         "id": "nb-stay-rent",
@@ -98,7 +130,39 @@
             "name": "Комплекс: бассейны и инфраструктура",
             "src": "/images/stay-rent/stay-rent-05.png"
           }
-        ]
+        ],
+        "localized": {
+          "ru": {
+            "title": "Stay&Rent",
+            "description": "Stay&Rent (ONE Development) — комплекс на Новом бульваре в Батуми для жизни и аренды: удобная локация у парка имени Леха и Марии Качинских и Metrocity, до моря и набережной — около 10 минут пешком. Подходит для постоянного проживания и для доходной сдачи — отельная инфраструктура, коворкинг, бассейны на крыше и с подогревом, фитнес, SPA, кафе, детская площадка, паркинг с зарядками для электромобилей; закрытая территория, охрана и видеонаблюдение 24/7. 420 квартир, 21 жилой этаж плюс коммерческий уровень, панорамные окна и высокие потолки, сдача — II квартал 2027. Варианты отделки — от «белого каркаса» до «под ключ» с мебелью (доплаты за м² — у застройщика). Акция: скидка 6% в ипотеку (срок акции в материалах — до 10.06.2026; уточняйте актуальность). Ориентир по примеру 1+1 ~48 м² под ключ: от ~$81 560 и от ~$1 703/м²; лоты, условия аренды и ипотеки — в отделе продаж.",
+            "rooms": "студия — 2+1",
+            "floorsText": "21 жилой этаж + 1 коммерческий",
+            "completionText": "II кв. 2027",
+            "address": "Батуми, Новый бульвар"
+          },
+          "en": {
+            "title": "Stay&Rent",
+            "description": "Stay&Rent (ONE Development) is a complex on Batumi's New Boulevard for living and rental: convenient location near Lech and Maria Kaczyński Park and Metrocity, about 10 minutes on foot to the sea and promenade. Suitable for permanent residence and income-generating rentals — hotel infrastructure, coworking, rooftop and heated pools, fitness, SPA, café, children's playground, parking with EV charging; gated territory, security and 24/7 video surveillance. 420 apartments, 21 residential floors plus a commercial level, panoramic windows and high ceilings, handover — Q2 2027. Finish options from white frame to turnkey with furniture (per m² surcharges — from the developer). Promotion: 6% mortgage discount (promo period in materials — until 10.06.2026; confirm current terms). Indicative example for 1+1 ~48 m² turnkey: from ~$81,560 and from ~$1,703/m²; lots, rental and mortgage terms — sales department.",
+            "rooms": "studio — 2+1",
+            "floorsText": "21 residential floors + 1 commercial",
+            "completionText": "Q2 2027",
+            "address": "Batumi, New Boulevard"
+          },
+          "geo": {
+            "title": "Stay&Rent",
+            "description": "Stay&Rent (ONE Development) — კომპლექსი ბათუმის ახალ ბულვარზე საცხოვრებლად და არენდისთვის: მოსახერხებელი ლოკაცია ლეხი და მარია კაჩინსკების პარკთან და Metrocity-თან, ზღვამდე და ნაპირზე დაახლოებით 10 წუთი ფეხით. შესაფერისია მუდმივი საცხოვრებლისა და შემოსავლიანი არენდისთვის — სასტუმროს ინფრასტრუქტურა, კოვორკინგი, სახურავისა და გათბობილი აუზები, ფიტნესი, SPA, კაფე, საბავშვო ფლოტაცია, პარკინგი ელექტრომობილების დამტენებით; დახურული ტერიტორია, დაცვა და ვიდეოდაკვირვება 24/7. 420 ბინა, 21 საცხოვრებელი სართული + 1 კომერციული, პანორამული ფანჯრები და მაღალი ჭერები, ჩაბარება — II კვ. 2027. დასრულების ვარიანტები „თეთრი კარკასიდან“ „გასაღებამდე“ ავეჯით (დამატებითი გადასახადი მ²-ზე — დეველოპერთან). აქცია: 6% ფასდაკლება იპოთეკაში (აქციის ვადა მასალებში — 10.06.2026-მდე; დაზუსტება). ორიენტირი 1+1 ~48 მ² გასაღებამდე: ~$81 560-დან და ~$1 703/მ²-დან; ლოტები, არენდისა და იპოთეკის პირობები — გაყიდვების განყოფილება.",
+            "rooms": "სტუდიო — 2+1",
+            "floorsText": "21 საცხოვრებელი სართული + 1 კომერციული",
+            "completionText": "II კვ. 2027",
+            "address": "ბათუმი, ახალი ბულვარი"
+          }
+        },
+        "title": "Stay&Rent",
+        "description": "Stay&Rent (ONE Development) — комплекс на Новом бульваре в Батуми для жизни и аренды: удобная локация у парка имени Леха и Марии Качинских и Metrocity, до моря и набережной — около 10 минут пешком. Подходит для постоянного проживания и для доходной сдачи — отельная инфраструктура, коворкинг, бассейны на крыше и с подогревом, фитнес, SPA, кафе, детская площадка, паркинг с зарядками для электромобилей; закрытая территория, охрана и видеонаблюдение 24/7. 420 квартир, 21 жилой этаж плюс коммерческий уровень, панорамные окна и высокие потолки, сдача — II квартал 2027. Варианты отделки — от «белого каркаса» до «под ключ» с мебелью (доплаты за м² — у застройщика). Акция: скидка 6% в ипотеку (срок акции в материалах — до 10.06.2026; уточняйте актуальность). Ориентир по примеру 1+1 ~48 м² под ключ: от ~$81 560 и от ~$1 703/м²; лоты, условия аренды и ипотеки — в отделе продаж.",
+        "rooms": "студия — 2+1",
+        "floorsText": "21 жилой этаж + 1 коммерческий",
+        "completionText": "II кв. 2027",
+        "address": "Батуми, Новый бульвар"
       },
       {
         "id": "new-bilding-one",
@@ -168,7 +232,39 @@
             "name": "Локация: сервисы рядом",
             "src": "/images/new-bilding-one/one-04.png"
           }
-        ]
+        ],
+        "localized": {
+          "ru": {
+            "title": "Жилой комплекс ONE",
+            "description": "Жилой комплекс ONE (ONE Development) — жилой дом бизнес-класса в уютном районе улицы Инасаридзе в центре Батуми: сочетание спокойной атмосферы спального квартала и динамики нового центра. Ориентир адреса: ул. Тбели Абусеридзе, 29А; до моря около 700 м. Рядом — школы и детские сады, ТРЦ Grand Mall и Black Sea Mall, гипермаркет Carrefour, фитнес и салоны, магазины со свежими продуктами, кофейни, аллея Героев, стадион Adjarabet Arena, пляж и набережная. Проект — реновация по программе муниципалитета «Батуми без аварийных зданий»; строительство профинансировано TBC, доступна ипотека до 10 лет (уточняйте условия в банке). Награда European Property Awards 2025–2026 (Georgia). Завершение строительства — IV квартал 2027. На материалах застройщика указаны ориентиры по доходности долгосрочной аренды и росту стоимости — не являются гарантией; детали — у отдела продаж и на onedev.ge.",
+            "rooms": "студия — 3+1",
+            "floorsText": "высотный корпус, зелёные фасады",
+            "completionText": "сдача — IV кв. 2027",
+            "address": "Батуми, ул. Тбели Абусеридзе, 29А (район Инасаридзе)"
+          },
+          "en": {
+            "title": "ONE Residential Complex",
+            "description": "ONE residential complex (ONE Development) is a business-class building in the quiet Inasaridze Street area in central Batumi: a blend of a calm residential quarter and the energy of the new city centre. Address reference: 29A Tbeli Abuseridze St.; about 700 m to the sea. Nearby — schools and kindergartens, Grand Mall and Black Sea Mall, Carrefour hypermarket, fitness and salons, fresh produce shops, cafés, Heroes Alley, Adjarabet Arena stadium, beach and promenade. The project is a renovation under the municipal programme \"Batumi without hazardous buildings\"; construction financed by TBC, mortgages up to 10 years available (confirm terms with the bank). European Property Awards 2025–2026 (Georgia). Completion — Q4 2027. Developer materials cite indicative long-term rental yields and value growth — not guaranteed; details from sales and onedev.ge.",
+            "rooms": "studio — 3+1",
+            "floorsText": "high-rise tower, green façades",
+            "completionText": "handover — Q4 2027",
+            "address": "Batumi, 29A Tbeli Abuseridze St. (Inasaridze area)"
+          },
+          "geo": {
+            "title": "საცხოვრებელი კომპლექსი ONE",
+            "description": "საცხოვრებელი კომპლექსი ONE (ONE Development) — ბიზნეს-კლასის საცხოვრებელი სახლი მშვიდ რაიონში ინასარიძის ქუჩაზე ბათუმის ცენტრში: საცხოვრებელი კვარტლის მშვიდი ატმოსფერო და ახალი ცენტრის დინამიკა. მისამართის ორიენტირი: თბელი აბუსერიძის ქ. 29ა; ზღვამდე დაახლოებით 700 მ. ახლოს — სკოლები და ბაგები, ტრც Grand Mall და Black Sea Mall, Carrefour, ფიტნესი და სალონები, სასურსათო მაღაზიები, კაფეები, გმირთა ალლეა, Adjarabet Arena, პლაჟი და ნაპირი. პროექტი — რენოვაცია მუნიციპალური პროგრამით „ბათუმი ავარიული შენობების გარეშე“; მშენებლობა დაფინანსებულია TBC-ს მიერ, იპოთეკა 10 წლამდე (პირობები ბანკში). European Property Awards 2025–2026 (Georgia). მშენებლობის დასრულება — IV კვ. 2027. დეველოპერის მასალებში მითითებულია ორიენტირები გრძელვადიანი არენდის შემოსავლისა და ღირებულების ზრდის შესახებ — გარანტია არ არის; დეტალები გაყიდვებში და onedev.ge.",
+            "rooms": "სტუდიო — 3+1",
+            "floorsText": "მაღლირი კორპუსი, მწვანე ფასადები",
+            "completionText": "ჩაბარება — IV კვ. 2027",
+            "address": "ბათუმი, თბელი აბუსერიძის ქ. 29ა (ინასარიძის რაიონი)"
+          }
+        },
+        "title": "Жилой комплекс ONE",
+        "description": "Жилой комплекс ONE (ONE Development) — жилой дом бизнес-класса в уютном районе улицы Инасаридзе в центре Батуми: сочетание спокойной атмосферы спального квартала и динамики нового центра. Ориентир адреса: ул. Тбели Абусеридзе, 29А; до моря около 700 м. Рядом — школы и детские сады, ТРЦ Grand Mall и Black Sea Mall, гипермаркет Carrefour, фитнес и салоны, магазины со свежими продуктами, кофейни, аллея Героев, стадион Adjarabet Arena, пляж и набережная. Проект — реновация по программе муниципалитета «Батуми без аварийных зданий»; строительство профинансировано TBC, доступна ипотека до 10 лет (уточняйте условия в банке). Награда European Property Awards 2025–2026 (Georgia). Завершение строительства — IV квартал 2027. На материалах застройщика указаны ориентиры по доходности долгосрочной аренды и росту стоимости — не являются гарантией; детали — у отдела продаж и на onedev.ge.",
+        "rooms": "студия — 3+1",
+        "floorsText": "высотный корпус, зелёные фасады",
+        "completionText": "сдача — IV кв. 2027",
+        "address": "Батуми, ул. Тбели Абусеридзе, 29А (район Инасаридзе)"
       },
       {
         "id": "nb-ramada-one-development",
@@ -226,7 +322,39 @@
             "name": "Туристический центр, ул. Пиросмани 10",
             "src": "/images/ramada-one-development/ramada-11.png"
           }
-        ]
+        ],
+        "localized": {
+          "ru": {
+            "title": "RAMADA by One Development",
+            "description": "RAMADA by One Development — брендированные резиденции Ramada Residences by Wyndham Batumi (One Development): первый проект такого формата в туристическом центре города, аллея Героев; ориентир адреса — ул. Пиросмани, 10 (до моря около 435 м по материалам застройщика). Премиальный сервис и управление — River Rock Hotels & Resorts (опыт в управлении недвижимостью и арендой). На площадке заявлены бассейн и лаунж, ресторан, тренажёрный зал, sky bar, паркинг (в т.ч. до 5 уровней), дизайн интерьеров по стандартам Ramada by Wyndham. Сдача — IV квартал 2029 (по рекламным материалам). На брошюрах указаны ориентиры по доходности краткосрочной аренды и росту стоимости — не являются гарантией; актуальные условия, цены и документы — у отдела продаж и на onedev.ge.",
+            "rooms": "студия — 3+1",
+            "floorsText": "высотная башня, sky bar",
+            "completionText": "сдача — IV кв. 2029",
+            "address": "Батуми, ул. Пиросмани, 10 (аллея Героев)"
+          },
+          "en": {
+            "title": "RAMADA by One Development",
+            "description": "RAMADA by One Development — branded residences Ramada Residences by Wyndham Batumi (One Development): the first project of this format in the city's tourist centre, Heroes Alley; address reference — 10 Pirosmani St. (about 435 m to the sea per developer materials). Premium service and management — River Rock Hotels & Resorts (experience in property and rental management). On-site: pool and lounge, restaurant, gym, sky bar, parking (including up to 5 levels), interiors to Ramada by Wyndham standards. Handover — Q4 2029 (per promotional materials). Brochures cite indicative short-term rental yields and value growth — not guaranteed; current terms, prices and documents — sales department and onedev.ge.",
+            "rooms": "studio — 3+1",
+            "floorsText": "high-rise tower, sky bar",
+            "completionText": "handover — Q4 2029",
+            "address": "Batumi, 10 Pirosmani St. (Heroes Alley)"
+          },
+          "geo": {
+            "title": "RAMADA by One Development",
+            "description": "RAMADA by One Development — ბრენდირებული რეზიდენციები Ramada Residences by Wyndham Batumi (One Development): პირველი ასეთი ფორმატის პროექტი ქალაქის ტურისტულ ცენტრში, გმირთა ალლეა; მისამართის ორიენტირი — პიროსმანის ქ. 10 (ზღვამდე დაახლოებით 435 მ დეველოპერის მასალებით). პრემიუმ სერვისი და მართვა — River Rock Hotels & Resorts. ტერიტორიაზე: აუზი და ლაუნჯი, რესტორანი, ტრენაჟორის დარბაზი, sky bar, პარკინგი (5 სართულამდე), ინტერიერი Ramada by Wyndham სტანდარტებით. ჩაბარება — IV კვ. 2029 (სარეკლამო მასალებით). ბროშურებში მითითებულია ორიენტირები მოკლევადიანი არენდის შემოსავლისა და ღირებულების ზრდის შესახებ — გარანტია არ არის; აქტუალური პირობები, ფასები და დოკუმენტები — გაყიდვების განყოფილება და onedev.ge.",
+            "rooms": "სტუდიო — 3+1",
+            "floorsText": "მაღლირი კოშკი, sky bar",
+            "completionText": "ჩაბარება — IV კვ. 2029",
+            "address": "ბათუმი, პიროსმანის ქ. 10 (გმირთა ალლეა)"
+          }
+        },
+        "title": "RAMADA by One Development",
+        "description": "RAMADA by One Development — брендированные резиденции Ramada Residences by Wyndham Batumi (One Development): первый проект такого формата в туристическом центре города, аллея Героев; ориентир адреса — ул. Пиросмани, 10 (до моря около 435 м по материалам застройщика). Премиальный сервис и управление — River Rock Hotels & Resorts (опыт в управлении недвижимостью и арендой). На площадке заявлены бассейн и лаунж, ресторан, тренажёрный зал, sky bar, паркинг (в т.ч. до 5 уровней), дизайн интерьеров по стандартам Ramada by Wyndham. Сдача — IV квартал 2029 (по рекламным материалам). На брошюрах указаны ориентиры по доходности краткосрочной аренды и росту стоимости — не являются гарантией; актуальные условия, цены и документы — у отдела продаж и на onedev.ge.",
+        "rooms": "студия — 3+1",
+        "floorsText": "высотная башня, sky bar",
+        "completionText": "сдача — IV кв. 2029",
+        "address": "Батуми, ул. Пиросмани, 10 (аллея Героев)"
       }
     ],
     "apartments": [
@@ -287,7 +415,39 @@
             "src": "/images/orbi-beach-tower-2912/orbi-beach-11.png"
           }
         ],
-        "roomsKey": "1+1"
+        "roomsKey": "1+1",
+        "localized": {
+          "ru": {
+            "title": "ORBI BEACH TOWER — 1+1 с видом на парк и море",
+            "description": "Квартира в ORBI BEACH TOWER на ул. Шерифа Химшиашвили, 57, 29 этаж: планировка 1+1, 50 м². По всей квартире тёплые полы (три контура). Отличный балкон с видом на парк и море, панорамные окна, солнечная сторона с видом на Турцию и самолёты. Техника и мебель: духовка Bosch, встроенная микроволновка Gorenje, посудомоечная машина Gorenje, большой холодильник Samsung, телевизор Samsung 65\", мебель на балконе Nardi (Италия), стол и стулья в гостиной из натурального дуба (Беларусь), стиральная машина Samsung, встроенные шкафы — много мест для хранения. Прямо перед домом парк Качинских, рядом Metrocity, рестораны и фитнес-клуб; через дорогу набережная и пляж. Цена ориентировочно $130 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "1+1",
+            "floorsText": "29 этаж",
+            "completionText": "вторичный фонд",
+            "address": "Батуми, ул. Шерифа Химшиашвили, 57"
+          },
+          "en": {
+            "title": "ORBI BEACH TOWER — 1+1 with park and sea view",
+            "description": "Apartment in ORBI BEACH TOWER at 57 Sherif Khimshiashvili St., 29th floor: 1+1 layout, 50 m². Underfloor heating throughout (three circuits). Excellent balcony with park and sea view, panoramic windows, sunny side with view towards Turkey and aircraft. Appliances and furniture: Bosch oven, built-in Gorenje microwave, Gorenje dishwasher, large Samsung fridge, Samsung 65\" TV, Nardi balcony furniture (Italy), solid oak dining table and chairs (Belarus), Samsung washing machine, built-in wardrobes — ample storage. Kaczyński Park directly in front, Metrocity, restaurants and fitness nearby; promenade and beach across the road. Price approximately $130,000 — confirm current price and deal terms with your manager.",
+            "rooms": "1+1",
+            "floorsText": "29th floor",
+            "completionText": "resale",
+            "address": "Batumi, 57 Sherif Khimshiashvili St."
+          },
+          "geo": {
+            "title": "ORBI BEACH TOWER — 1+1 ხედით პარკსა და ზღვაზე",
+            "description": "ბინა ORBI BEACH TOWER-ში შერიფ ხიმშიაშვილის ქ. 57, 29-ე სართული: გეგმარება 1+1, 50 მ². მთელ ბინაში თბი იატაკი (სამი კონტური). შესანიშნავი აივანი ხედით პარკსა და ზღვაზე, პანორამული ფანჯრები, მზიანი მხარე ხედით თურქეთისა და თვითმფრინავებისკენ. ტექნიკა და ავეჯი: Bosch ღუმელი, ჩაშენებული Gorenje მიკროტალღური, Gorenje ჭურჭლის სარეცხი, დიდი Samsung მაცივალი, Samsung 65\" ტელევიზორი, Nardi ავეჯი აივანზე (იტალია), მაგიდა და სკამები ნატურალური მუხის (ბელარუსი), Samsung სარეცხი, ჩაშენებული კარადები — ბევრი საცავი. პარკი კაჩინსკების წინ, Metrocity, რესტორნები და ფიტნესი ახლოს; გზის გაღმიდან ნაპირი და პლაჟი. ფასი დაახლოებით $130 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "1+1",
+            "floorsText": "29-ე სართული",
+            "completionText": "მეორეული ფონდი",
+            "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
+          }
+        },
+        "title": "ORBI BEACH TOWER — 1+1 с видом на парк и море",
+        "description": "Квартира в ORBI BEACH TOWER на ул. Шерифа Химшиашвили, 57, 29 этаж: планировка 1+1, 50 м². По всей квартире тёплые полы (три контура). Отличный балкон с видом на парк и море, панорамные окна, солнечная сторона с видом на Турцию и самолёты. Техника и мебель: духовка Bosch, встроенная микроволновка Gorenje, посудомоечная машина Gorenje, большой холодильник Samsung, телевизор Samsung 65\", мебель на балконе Nardi (Италия), стол и стулья в гостиной из натурального дуба (Беларусь), стиральная машина Samsung, встроенные шкафы — много мест для хранения. Прямо перед домом парк Качинских, рядом Metrocity, рестораны и фитнес-клуб; через дорогу набережная и пляж. Цена ориентировочно $130 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "1+1",
+        "floorsText": "29 этаж",
+        "completionText": "вторичный фонд",
+        "address": "Батуми, ул. Шерифа Химшиашвили, 57"
       },
       {
         "id": "apt-orbi-beach-tower-studio",
@@ -334,7 +494,39 @@
             "src": "/images/orbi-beach-tower-studio/studio-08.png"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Квартира-студия — Orbi Beach Tower",
+            "description": "Квартира-студия в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 4 этаж, 32 м². Новый бульвар, первая линия моря. Полностью укомплектована мебелью и техникой. Квартира в отличном состоянии. До моря менее 100 м. Современный жилой комплекс с ресепшеном и охраной. Хорошо подходит как для проживания, так и для сдачи в аренду. Светлая и уютная студия. Продаётся под ключ. Видовая квартира в востребованной локации. Стоимость: $59 000.",
+            "rooms": "студия",
+            "floorsText": "4 этаж",
+            "completionText": "под ключ, с мебелью",
+            "address": "Батуми, ул. Шерифа Химшиашвили, 57 (Orbi Beach Tower)"
+          },
+          "en": {
+            "title": "Studio apartment — Orbi Beach Tower",
+            "description": "Studio apartment in Orbi Beach Tower. Address: Batumi, 57 Sherif Khimshiashvili St. 4th floor, 32 m². New Boulevard, first line to the sea. Fully furnished with furniture and appliances. Apartment in excellent condition. Less than 100 m to the sea. Modern residential complex with reception and security. Well suited for living and rental income. Bright and cozy studio. Turnkey sale. A view apartment in a sought-after location. Price: $59,000.",
+            "rooms": "studio",
+            "floorsText": "4th floor",
+            "completionText": "turnkey, furnished",
+            "address": "Batumi, 57 Sherif Khimshiashvili St. (Orbi Beach Tower)"
+          },
+          "geo": {
+            "title": "სტუდია — Orbi Beach Tower",
+            "description": "სტუდია Orbi Beach Tower-ში. მის: ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 4-ე სართული, 32 მ². ახალი ბულვარი, პირველი ხაზი ზღვასთან. სრულად აღჭურვილი ავეჯითა და ტექნიკით. ბინა შესანიშნავ მდგომარეობაში. ზღვამდე 100 მ-ზე ნაკლები. თანამედროვე საცხოვრებელი კომპლექსი რეცეპციითა და დაცვით. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. ნათელი და მყუდრო სტუდია. იყიდება „გასაღებით“. ხედიანი ბინა მოთხოვნად ლოკაციაში. ფასი: $59 000.",
+            "rooms": "სტუდია",
+            "floorsText": "4-ე სართული",
+            "completionText": "გასაღებით, ავეჯით",
+            "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57 (Orbi Beach Tower)"
+          }
+        },
+        "title": "Квартира-студия — Orbi Beach Tower",
+        "description": "Квартира-студия в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 4 этаж, 32 м². Новый бульвар, первая линия моря. Полностью укомплектована мебелью и техникой. Квартира в отличном состоянии. До моря менее 100 м. Современный жилой комплекс с ресепшеном и охраной. Хорошо подходит как для проживания, так и для сдачи в аренду. Светлая и уютная студия. Продаётся под ключ. Видовая квартира в востребованной локации. Стоимость: $59 000.",
+        "rooms": "студия",
+        "floorsText": "4 этаж",
+        "completionText": "под ключ, с мебелью",
+        "address": "Батуми, ул. Шерифа Химшиашвили, 57 (Orbi Beach Tower)"
       },
       {
         "id": "apt-orbi-beach-tower-2201",
@@ -381,7 +573,39 @@
             "src": "/images/orbi-beach-tower-2201/orbi-2201-08.png"
           }
         ],
-        "roomsKey": "1+1"
+        "roomsKey": "1+1",
+        "localized": {
+          "ru": {
+            "title": "ORBI BEACH TOWER 2201",
+            "description": "ORBI BEACH TOWER — 1+1 панорама. Батуми, ул. Шерифа Химшиашвили, 57. 14 этаж, 50 м². Первая линия моря, прямой вид на море, гарантированная панорама. Отлично подходит для жизни и для сдачи в аренду. Квартира со свежим ремонтом, ранее не сдавалась: панорамные окна, светлые комнаты, высокий арендный спрос. В доме — ресепция, лифты, охрана. Развитая инфраструктура: торговый центр, сетевые магазины, SPA и фитнес, парк имени Лех и Марии Качиньских, набережная, кафе и рестораны, прогулочная зона. Цена $120 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "1+1",
+            "floorsText": "14 этаж",
+            "completionText": "свежий ремонт",
+            "address": "Батуми, ул. Шерифа Химшиашвили, 57"
+          },
+          "en": {
+            "title": "ORBI BEACH TOWER 2201",
+            "description": "ORBI BEACH TOWER — 1+1 with panorama. Batumi, 57 Sherif Khimshiashvili St. 14th floor, 50 m². First sea line, direct sea view, guaranteed panorama. Excellent for living and rental. Freshly renovated apartment, never rented before: panoramic windows, bright rooms, high rental demand. Building: reception, lifts, security. Developed infrastructure: shopping centre, chain stores, SPA and fitness, Lech and Maria Kaczyński Park, promenade, cafés and restaurants, walking area. Price $120,000 — confirm current price and deal terms with your manager.",
+            "rooms": "1+1",
+            "floorsText": "14th floor",
+            "completionText": "fresh renovation",
+            "address": "Batumi, 57 Sherif Khimshiashvili St."
+          },
+          "geo": {
+            "title": "ORBI BEACH TOWER 2201",
+            "description": "ORBI BEACH TOWER — 1+1 პანორამით. ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 14-ე სართული, 50 მ². პირველი ზღვის ხაზი, პირდაპირი ხედი ზღვაზე, გარანტირებული პანორამა. შესანიშნავია საცხოვრებლად და არენდისთვის. ახალგარემონტებული ბინა, ადრე არ ქირავდებოდა: პანორამული ფანჯრები, ნათელი ოთახები, მაღალი მოთხოვნა არენდაზე. სახლში — რეცეფცია, ლიფტები, დაცვა. განვითარებული ინფრასტრუქტურა: სავაჭრო ცენტრი, ქსელური მაღაზიები, SPA და ფიტნესი, ლეხი და მარია კაჩინსკების პარკი, ნაპირი, კაფეები და რესტორნები, სასეირნო ზონა. ფასი $120 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "1+1",
+            "floorsText": "14-ე სართული",
+            "completionText": "ახალი რემონტი",
+            "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
+          }
+        },
+        "title": "ORBI BEACH TOWER 2201",
+        "description": "ORBI BEACH TOWER — 1+1 панорама. Батуми, ул. Шерифа Химшиашвили, 57. 14 этаж, 50 м². Первая линия моря, прямой вид на море, гарантированная панорама. Отлично подходит для жизни и для сдачи в аренду. Квартира со свежим ремонтом, ранее не сдавалась: панорамные окна, светлые комнаты, высокий арендный спрос. В доме — ресепция, лифты, охрана. Развитая инфраструктура: торговый центр, сетевые магазины, SPA и фитнес, парк имени Лех и Марии Качиньских, набережная, кафе и рестораны, прогулочная зона. Цена $120 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "1+1",
+        "floorsText": "14 этаж",
+        "completionText": "свежий ремонт",
+        "address": "Батуми, ул. Шерифа Химшиашвили, 57"
       },
       {
         "id": "apt-orbi-beach-tower-2801",
@@ -436,7 +660,39 @@
             "src": "/images/orbi-beach-tower-2801/orbi-2801-10.png"
           }
         ],
-        "roomsKey": "1+1"
+        "roomsKey": "1+1",
+        "localized": {
+          "ru": {
+            "title": "ORBI BEACH TOWER 2801",
+            "description": "ORBI BEACH TOWER — 1+1 панорама. Батуми, ул. Шерифа Химшиашвили, 57. 28 этаж, 50 м². Первая линия моря, прямой вид на море, гарантированная панорама. Отлично подходит для жизни и для сдачи в аренду. Квартира со свежим ремонтом, ранее не сдавалась: панорамные окна, светлые комнаты, высокий арендный спрос. В доме — ресепция, лифты, охрана. Развитая инфраструктура: торговый центр, сетевые магазины, SPA и фитнес, парк имени Лех и Марии Качиньских, набережная, кафе и рестораны, прогулочная зона. Цена $130 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "1+1",
+            "floorsText": "28 этаж",
+            "completionText": "свежий ремонт",
+            "address": "Батуми, ул. Шерифа Химшиашвили, 57"
+          },
+          "en": {
+            "title": "ORBI BEACH TOWER 2801",
+            "description": "ORBI BEACH TOWER — 1+1 with panorama. Batumi, 57 Sherif Khimshiashvili St. 28th floor, 50 m². First sea line, direct sea view, guaranteed panorama. Excellent for living and rental. Freshly renovated apartment, never rented before: panoramic windows, bright rooms, high rental demand. Building: reception, lifts, security. Developed infrastructure: shopping centre, chain stores, SPA and fitness, Lech and Maria Kaczyński Park, promenade, cafés and restaurants, walking area. Price $130,000 — confirm current price and deal terms with your manager.",
+            "rooms": "1+1",
+            "floorsText": "28th floor",
+            "completionText": "fresh renovation",
+            "address": "Batumi, 57 Sherif Khimshiashvili St."
+          },
+          "geo": {
+            "title": "ORBI BEACH TOWER 2801",
+            "description": "ORBI BEACH TOWER — 1+1 პანორამით. ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 28-ე სართული, 50 მ². პირველი ზღვის ხაზი, პირდაპირი ხედი ზღვაზე, გარანტირებული პანორამა. შესანიშნავია საცხოვრებლად და არენდისთვის. ახალგარემონტებული ბინა, ადრე არ ქირავდებოდა: პანორამული ფანჯრები, ნათელი ოთახები, მაღალი მოთხოვნა არენდაზე. სახლში — რეცეფცია, ლიფტები, დაცვა. განვითარებული ინფრასტრუქტურა: სავაჭრო ცენტრი, ქსელური მაღაზიები, SPA და ფიტნესი, ლეხი და მარია კაჩინსკების პარკი, ნაპირი, კაფეები და რესტორნები, სასეირნო ზონა. ფასი $130 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "1+1",
+            "floorsText": "28-ე სართული",
+            "completionText": "ახალი რემონტი",
+            "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
+          }
+        },
+        "title": "ORBI BEACH TOWER 2801",
+        "description": "ORBI BEACH TOWER — 1+1 панорама. Батуми, ул. Шерифа Химшиашвили, 57. 28 этаж, 50 м². Первая линия моря, прямой вид на море, гарантированная панорама. Отлично подходит для жизни и для сдачи в аренду. Квартира со свежим ремонтом, ранее не сдавалась: панорамные окна, светлые комнаты, высокий арендный спрос. В доме — ресепция, лифты, охрана. Развитая инфраструктура: торговый центр, сетевые магазины, SPA и фитнес, парк имени Лех и Марии Качиньских, набережная, кафе и рестораны, прогулочная зона. Цена $130 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "1+1",
+        "floorsText": "28 этаж",
+        "completionText": "свежий ремонт",
+        "address": "Батуми, ул. Шерифа Химшиашвили, 57"
       },
       {
         "id": "apt-orbi-beach-tower-3202",
@@ -487,7 +743,39 @@
             "src": "/images/orbi-beach-tower-3202/orbi-3202-09.png"
           }
         ],
-        "roomsKey": "2+1"
+        "roomsKey": "2+1",
+        "localized": {
+          "ru": {
+            "title": "Orbi Beach Tower 2+1",
+            "description": "Апартаменты 2+1 в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 32 этаж, 70 м². Солнечная сторона с видом на море и парк имени Лех и Марии Качиньских. Качественный ремонт с современным дизайном. Престижный апарт-отель: первая береговая линия — около 50 м до моря, ресепшн и круглосуточная охрана. Развитая инфраструктура: казино Eclipse, ресторан G.Garden, ТРЦ Metro City, супермаркет Carrefour, кафе, бассейн, фитнес-центр, спортивные и детские площадки. Подходит для жизни и для сдачи в аренду. Просторная полностью укомплектованная квартира, светлые комнаты с панорамными окнами, вид на море с балкона. Цена $190 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "2+1",
+            "floorsText": "32 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Шерифа Химшиашвили, 57"
+          },
+          "en": {
+            "title": "Orbi Beach Tower 2+1",
+            "description": "2+1 apartment in Orbi Beach Tower. Address: Batumi, 57 Sherif Khimshiashvili St. 32nd floor, 70 m². Sunny side with sea view and Lech and Maria Kaczyński Park. Quality renovation with modern design. Prestigious apart-hotel: first coastline — about 50 m to the sea, reception and 24/7 security. Developed infrastructure: Eclipse casino, G.Garden restaurant, Metro City mall, Carrefour supermarket, cafés, pool, fitness centre, sports and children's playgrounds. Suitable for living and rental. Spacious fully furnished apartment, bright rooms with panoramic windows, sea view from the balcony. Price $190,000 — confirm current price and deal terms with your manager.",
+            "rooms": "2+1",
+            "floorsText": "32nd floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 57 Sherif Khimshiashvili St."
+          },
+          "geo": {
+            "title": "Orbi Beach Tower 2+1",
+            "description": "2+1 აპარტამენტები Orbi Beach Tower-ში. მისამართი: ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 32-ე სართული, 70 მ². მზიანი მხარე ხედით ზღვაზე და ლეხი და მარია კაჩინსკების პარკზე. ხარისხიანი რემონტი თანამედროვე დიზაინით. პრესტიჟული აპარტ-სასტუმრო: პირველი სანაპირო ხაზი — ზღვამდე დაახლოებით 50 მ, რეცეფშენი და მორიგე დაცვა 24/7. ინფრასტრუქტურა: კაზინო Eclipse, რესტორანი G.Garden, ტრც Metro City, Carrefour, კაფეები, აუზი, ფიტნეს-ცენტრი, სპორტული და საბავშვო ფლოტაციები. შესაფერისია საცხოვრებლად და არენდისთვის. ფართო სრულად აღჭურვილი ბინა, ნათელი ოთახები პანორამული ფანჯრებით, ხედი ზღვაზე აივნიდან. ფასი $190 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "2+1",
+            "floorsText": "32-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
+          }
+        },
+        "title": "Orbi Beach Tower 2+1",
+        "description": "Апартаменты 2+1 в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 32 этаж, 70 м². Солнечная сторона с видом на море и парк имени Лех и Марии Качиньских. Качественный ремонт с современным дизайном. Престижный апарт-отель: первая береговая линия — около 50 м до моря, ресепшн и круглосуточная охрана. Развитая инфраструктура: казино Eclipse, ресторан G.Garden, ТРЦ Metro City, супермаркет Carrefour, кафе, бассейн, фитнес-центр, спортивные и детские площадки. Подходит для жизни и для сдачи в аренду. Просторная полностью укомплектованная квартира, светлые комнаты с панорамными окнами, вид на море с балкона. Цена $190 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "2+1",
+        "floorsText": "32 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Шерифа Химшиашвили, 57"
       },
       {
         "id": "apt-orbi-beach-tower-2902",
@@ -542,7 +830,39 @@
             "src": "/images/orbi-beach-tower-2902/orbi-2902-09.png"
           }
         ],
-        "roomsKey": "2+1"
+        "roomsKey": "2+1",
+        "localized": {
+          "ru": {
+            "title": "Orbi Beach Tower 2+1",
+            "description": "Апартаменты 2+1 в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 29 этаж, 70 м². Солнечная сторона с видом на море и парк имени Лех и Марии Качиньских. Качественный ремонт с современным дизайном. Престижный апарт-отель: первая береговая линия — около 50 м до моря, ресепшн и круглосуточная охрана. Развитая инфраструктура: казино Eclipse, ресторан G.Garden, ТРЦ Metro City, супермаркет Carrefour, кафе, бассейн, фитнес-центр, спортивные и детские площадки. Подходит для жизни и для сдачи в аренду. Просторная полностью укомплектованная квартира, светлые комнаты с панорамными окнами, вид на море с балкона. Цена $190 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "2+1",
+            "floorsText": "29 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Шерифа Химшиашвили, 57"
+          },
+          "en": {
+            "title": "Orbi Beach Tower 2+1",
+            "description": "2+1 apartment in Orbi Beach Tower. Address: Batumi, 57 Sherif Khimshiashvili St. 29th floor, 70 m². Sunny side with sea view and Lech and Maria Kaczyński Park. Quality renovation with modern design. Prestigious apart-hotel: first coastline — about 50 m to the sea, reception and 24/7 security. Developed infrastructure: Eclipse casino, G.Garden restaurant, Metro City mall, Carrefour supermarket, cafés, pool, fitness centre, sports and children's playgrounds. Suitable for living and rental. Spacious fully furnished apartment, bright rooms with panoramic windows, sea view from the balcony. Price $190,000 — confirm current price and deal terms with your manager.",
+            "rooms": "2+1",
+            "floorsText": "29th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 57 Sherif Khimshiashvili St."
+          },
+          "geo": {
+            "title": "Orbi Beach Tower 2+1",
+            "description": "2+1 აპარტამენტები Orbi Beach Tower-ში. მისამართი: ბათუმი, შერიფ ხიმშიაშვილის ქ. 57. 29-ე სართული, 70 მ². მზიანი მხარე ხედით ზღვაზე და ლეხი და მარია კაჩინსკების პარკზე. ხარისხიანი რემონტი თანამედროვე დიზაინით. პრესტიჟული აპარტ-სასტუმრო: პირველი სანაპირო ხაზი — ზღვამდე დაახლოებით 50 მ, რეცეფშენი და მორიგე დაცვა 24/7. ინფრასტრუქტურა: კაზინო Eclipse, რესტორანი G.Garden, ტრც Metro City, Carrefour, კაფეები, აუზი, ფიტნეს-ცენტრი, სპორტული და საბავშვო ფლოტაციები. შესაფერისია საცხოვრებლად და არენდისთვის. ფართო სრულად აღჭურვილი ბინა, ნათელი ოთახები პანორამული ფანჯრებით, ხედი ზღვაზე აივნიდან. ფასი $190 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "2+1",
+            "floorsText": "29-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
+          }
+        },
+        "title": "Orbi Beach Tower 2+1",
+        "description": "Апартаменты 2+1 в Orbi Beach Tower. Адрес: Батуми, ул. Шерифа Химшиашвили, 57. 29 этаж, 70 м². Солнечная сторона с видом на море и парк имени Лех и Марии Качиньских. Качественный ремонт с современным дизайном. Престижный апарт-отель: первая береговая линия — около 50 м до моря, ресепшн и круглосуточная охрана. Развитая инфраструктура: казино Eclipse, ресторан G.Garden, ТРЦ Metro City, супермаркет Carrefour, кафе, бассейн, фитнес-центр, спортивные и детские площадки. Подходит для жизни и для сдачи в аренду. Просторная полностью укомплектованная квартира, светлые комнаты с панорамными окнами, вид на море с балкона. Цена $190 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "2+1",
+        "floorsText": "29 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Шерифа Химшиашвили, 57"
       },
       {
         "id": "apt-orbi-city-d1-1p1",
@@ -585,7 +905,39 @@
             "src": "/images/orbi-city-d1/orbi-city-07.png"
           }
         ],
-        "roomsKey": "1+1"
+        "roomsKey": "1+1",
+        "localized": {
+          "ru": {
+            "title": "ПАНОРАМА 1+1 — Orbi City D1",
+            "description": "Апартаменты 1+1 в Orbi City D1. Адрес: Батуми, аллея Героев, ул. Шерифа Химшиашвили, 7б. 40 этаж, 65 м². Панорамный вид на море и город. Высокий этаж — максимум света и пространства. Первая линия, до моря 1–2 минуты. Состояние «как новая». Полностью укомплектованы техникой: 2 телевизора, 2 кондиционера, холодильник, стиральная машина. Готовы к проживанию или сдаче. Срочная продажа — быстрый выход на сделку. Отличный вариант для жизни и инвестиций. Стоимость: $115 000.",
+            "rooms": "1+1",
+            "floorsText": "40 этаж",
+            "completionText": "как новая, с техникой",
+            "address": "Батуми, аллея Героев, ул. Шерифа Химшиашвили, 7б (Orbi City D1)"
+          },
+          "en": {
+            "title": "PANORAMA 1+1 — Orbi City D1",
+            "description": "1+1 apartments in Orbi City D1. Address: Batumi, Heroes Alley, 7B Sherif Khimshiashvili St. 40th floor, 65 m². Panoramic sea and city view. High floor — maximum light and space. First line, 1–2 minutes to the sea. Like-new condition. Fully equipped with appliances: 2 TVs, 2 air conditioners, fridge, washing machine. Ready to move in or rent out. Urgent sale — quick closing. An excellent option for living and investment. Price: $115,000.",
+            "rooms": "1+1",
+            "floorsText": "40th floor",
+            "completionText": "like new, with appliances",
+            "address": "Batumi, Heroes Alley, 7B Sherif Khimshiashvili St. (Orbi City D1)"
+          },
+          "geo": {
+            "title": "პანორამა 1+1 — Orbi City D1",
+            "description": "აპარტამენტები 1+1 Orbi City D1-ში. მის: ბათუმი, გმირების ალეა, შერიფ ხიმშიაშვილის ქ. 7ბ. 40-ე სართული, 65 მ². პანორამული ხედი ზღვაზე და ქალაქზე. მაღალი სართული — მაქსიმალური სინათლე და სივრცე. პირველი ხაზი, ზღვამდე 1–2 წუთი. მდგომარეობა „როგორც ახალი“. სრულად აღჭურვილი ტექნიკით: 2 ტელევიზორი, 2 კონდიციონერი, მაცივალი, სარეცხი მანქანა. მზადაა საცხოვრებლად ან გაქირავებისთვის. სასწრაფო გაყიდვა — სწრაფი გარიგება. შესანიშნავი ვარიანტი ცხოვრებისა და ინვესტიციისთვის. ფასი: $115 000.",
+            "rooms": "1+1",
+            "floorsText": "40-ე სართული",
+            "completionText": "როგორც ახალი, ტექნიკით",
+            "address": "ბათუმი, გმირების ალეა, შერიფ ხიმშიაშვილის ქ. 7ბ (Orbi City D1)"
+          }
+        },
+        "title": "ПАНОРАМА 1+1 — Orbi City D1",
+        "description": "Апартаменты 1+1 в Orbi City D1. Адрес: Батуми, аллея Героев, ул. Шерифа Химшиашвили, 7б. 40 этаж, 65 м². Панорамный вид на море и город. Высокий этаж — максимум света и пространства. Первая линия, до моря 1–2 минуты. Состояние «как новая». Полностью укомплектованы техникой: 2 телевизора, 2 кондиционера, холодильник, стиральная машина. Готовы к проживанию или сдаче. Срочная продажа — быстрый выход на сделку. Отличный вариант для жизни и инвестиций. Стоимость: $115 000.",
+        "rooms": "1+1",
+        "floorsText": "40 этаж",
+        "completionText": "как новая, с техникой",
+        "address": "Батуми, аллея Героев, ул. Шерифа Химшиашвили, 7б (Orbi City D1)"
       },
       {
         "id": "apt-avenue-by-orbi-studio",
@@ -612,7 +964,39 @@
             "src": "/images/avenue-by-orbi/avenue-02.png"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "AVENUE by ORBI студия 32м2 в новом жилом комплексе на Аллее Героев",
+            "description": "AVENUE by ORBI — студия 32 м² в новом жилом комплексе на аллее Героев (пр. Жиули Шартавы, 24). Высокий этаж, состояние белый каркас: удобная база под отделку под себя или под сдачу. Башня ORBI с панорамной архитектурой, развитая инфраструктура района, пешая доступность до моря и туристического центра. Подходит для инвестиции в строящийся премиальный комплекс. Актуальную цену, этаж, вид из окон и условия сделки уточняйте у менеджера.",
+            "rooms": "студия",
+            "floorsText": "высокий этаж",
+            "completionText": "белый каркас",
+            "address": "Батуми, пр. Жиули Шартавы, 24 (аллея Героев, AVENUE by ORBI)"
+          },
+          "en": {
+            "title": "AVENUE by ORBI studio 32 m² in new complex on Heroes Alley",
+            "description": "AVENUE by ORBI — 32 m² studio in a new residential complex on Heroes Alley (24 Zhuli Shartava Ave.). High floor, white-frame condition: a convenient base for your own finish or rental setup. ORBI tower with panoramic architecture, developed district infrastructure, walking distance to the sea and tourist centre. Suitable for investment in a premium complex under construction. Confirm current price, floor, view and deal terms with your manager.",
+            "rooms": "studio",
+            "floorsText": "high floor",
+            "completionText": "white frame",
+            "address": "Batumi, 24 Zhuli Shartava Ave. (Heroes Alley, AVENUE by ORBI)"
+          },
+          "geo": {
+            "title": "AVENUE by ORBI სტუდიო 32მ² ახალ საცხოვრებელ კომპლექსში გმირთა ალლეაზე",
+            "description": "AVENUE by ORBI — 32 მ² სტუდიო ახალ საცხოვრებელ კომპლექსში გმირთა ალლეაზე (ჟიული შარტავას გამზ. 24). მაღალი სართული, თეთრი კარკასის მდგომარეობა: მოსახერხებელი საფუძვე საკუთარი დასრულებისთვის ან არენდისთვის. ORBI კოშკი პანორამული არქიტექტურით, განვითარებული ინფრასტრუქტურა, ზღვამდე და ტურისტულ ცენტრმდე ფეხით. შესაფერისია ინვესტიციისთვის მშენებარე პრემიუმ კომპლექსში. აქტუალური ფასი, სართული, ხედი და პირობები — მენეჯერთან.",
+            "rooms": "სტუდიო",
+            "floorsText": "მაღალი სართული",
+            "completionText": "თეთრი კარკასი",
+            "address": "ბათუმი, ჟიული შარტავას გამზ. 24 (გმირთა ალლეა, AVENUE by ORBI)"
+          }
+        },
+        "title": "AVENUE by ORBI студия 32м2 в новом жилом комплексе на Аллее Героев",
+        "description": "AVENUE by ORBI — студия 32 м² в новом жилом комплексе на аллее Героев (пр. Жиули Шартавы, 24). Высокий этаж, состояние белый каркас: удобная база под отделку под себя или под сдачу. Башня ORBI с панорамной архитектурой, развитая инфраструктура района, пешая доступность до моря и туристического центра. Подходит для инвестиции в строящийся премиальный комплекс. Актуальную цену, этаж, вид из окон и условия сделки уточняйте у менеджера.",
+        "rooms": "студия",
+        "floorsText": "высокий этаж",
+        "completionText": "белый каркас",
+        "address": "Батуми, пр. Жиули Шартавы, 24 (аллея Героев, AVENUE by ORBI)"
       },
       {
         "id": "apt-raduga-elt-studio",
@@ -659,7 +1043,39 @@
             "src": "/images/raduga-elt-quarter/raduga-08.png"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Студия в Радуге ЭЛТ Квартал",
+            "description": "Продаётся квартира-студия в жилом комплексе ELT RAINBOW (Радуга, ЭЛТ Квартал). Адрес: ул. Адлия, 2, Батуми. 12 этаж, 32,2 м². Рядом парк Лех и Марии Качинских и ТРЦ Metro City; до моря около 150 м. Хорошо подходит как для проживания, так и для сдачи в аренду. Чёрный каркас, газ, дом сдан — готова к ремонту. Дизайн-проект в подарок и скидка на ремонтные работы (условия уточняйте у менеджера). Развитая инфраструктура ELT квартала: кинотеатр, кафе и рестораны, аптеки, круглосуточные магазины, тренажёрный зал. Цена $39 000 (США). Юридическое сопровождение сделки — через агентство.",
+            "rooms": "студия",
+            "floorsText": "12 этаж",
+            "completionText": "чёрный каркас, газ",
+            "address": "Батуми, ул. Адлия, 2 (Радуга ЭЛТ Квартал)"
+          },
+          "en": {
+            "title": "Studio in Rainbow ELT Quarter",
+            "description": "Studio apartment for sale in ELT RAINBOW residential complex (Rainbow, ELT Quarter). Address: 2 Adlia St., Batumi. 12th floor, 32.2 m². Near Lech and Maria Kaczyński Park and Metro City mall; about 150 m to the sea. Well suited for living and rental. Black frame, gas, building completed — ready for renovation. Design project as a gift and discount on renovation works (confirm terms with your manager). Developed ELT Quarter infrastructure: cinema, cafés and restaurants, pharmacies, 24-hour shops, gym. Price $39,000 (USD). Legal support for the transaction through the agency.",
+            "rooms": "studio",
+            "floorsText": "12th floor",
+            "completionText": "black frame, gas",
+            "address": "Batumi, 2 Adlia St. (Rainbow ELT Quarter)"
+          },
+          "geo": {
+            "title": "სტუდიო რადუგა ელტ კვარტალში",
+            "description": "იყიდება სტუდიო ბინა ELT RAINBOW (რადუგა, ელტ კვარტალი) საცხოვრებელ კომპლექსში. მისამართი: ადლიას ქ. 2, ბათუმი. 12-ე სართული, 32,2 მ². ახლოს ლეხი და მარია კაჩინსკების პარკი და ტრც Metro City; ზღვამდე დაახლოებით 150 მ. კარგია საცხოვრებლისა და არენდისთვის. შავი კარკასი, გაზი, სახლი ჩაბარებულია — მზადაა რემონტისთვის. დიზაინ-პროექტი საჩუქრად და ფასდაკლება სარემონტო სამუშაოებზე (პირობები მენეჯერთან). ELT კვარტალის ინფრასტრუქტურა: კინოთეატრი, კაფეები და რესტორნები, აფთიაქები, მაღაზიები 24 საათი, ტრენაჟორის დარბაზი. ფასი $39 000 (USD). იურიდიული თანხლება გარიგებაში სააგენტოს მეშვეობით.",
+            "rooms": "სტუდიო",
+            "floorsText": "12-ე სართული",
+            "completionText": "შავი კარკასი, გაზი",
+            "address": "ბათუმი, ადლიას ქ. 2 (რადუგა ელტ კვარტალი)"
+          }
+        },
+        "title": "Студия в Радуге ЭЛТ Квартал",
+        "description": "Продаётся квартира-студия в жилом комплексе ELT RAINBOW (Радуга, ЭЛТ Квартал). Адрес: ул. Адлия, 2, Батуми. 12 этаж, 32,2 м². Рядом парк Лех и Марии Качинских и ТРЦ Metro City; до моря около 150 м. Хорошо подходит как для проживания, так и для сдачи в аренду. Чёрный каркас, газ, дом сдан — готова к ремонту. Дизайн-проект в подарок и скидка на ремонтные работы (условия уточняйте у менеджера). Развитая инфраструктура ELT квартала: кинотеатр, кафе и рестораны, аптеки, круглосуточные магазины, тренажёрный зал. Цена $39 000 (США). Юридическое сопровождение сделки — через агентство.",
+        "rooms": "студия",
+        "floorsText": "12 этаж",
+        "completionText": "чёрный каркас, газ",
+        "address": "Батуми, ул. Адлия, 2 (Радуга ЭЛТ Квартал)"
       },
       {
         "id": "apt-alliance-privilege-studio",
@@ -719,7 +1135,39 @@
             "src": "/images/alliance-privilege/alliance-09.png"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Студия в Alliance Privilege",
+            "description": "Продаются апартаменты-студия в Alliance Privilege. Адрес: проспект Руставели, 42, Батуми. 30 м², 13 этаж. Элитный жилой комплекс с управлением от McInerney Hospitality International — партнёра Marriott International. Уникальное расположение на Батумском бульваре: рядом дельфинарий, парк с озером, пляж и Старый город. Инфраструктура премиум-уровня по стандартам Marriott International: бассейн с морской водой, СПА-комплекс, фитнес-центр, рестораны и кафе, крупнейшее казино в регионе, двухуровневый подземный паркинг на 120 мест, детский развлекательный центр, конференц-залы и пространства для мероприятий, ресепшн, консьерж, охрана, видеонаблюдение. Идеальный выбор для жизни и инвестиций. Шикарный дизайн и ремонт с мебелью и техникой; светлая, сухая и тёплая квартира; панорамный вид на море и город в сторону Турции. Актуальную цену и условия сделки уточняйте у менеджера.",
+            "rooms": "студия",
+            "floorsText": "13 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, проспект Руставели, 42 (Alliance Privilege)"
+          },
+          "en": {
+            "title": "Studio in Alliance Privilege",
+            "description": "Studio apartment for sale in Alliance Privilege. Address: 42 Rustaveli Ave., Batumi. 30 m², 13th floor. Elite residential complex managed by McInerney Hospitality International — Marriott International partner. Unique location on Batumi Boulevard: near the dolphinarium, park with lake, beach and Old Town. Premium infrastructure to Marriott International standards: seawater pool, SPA complex, fitness centre, restaurants and cafés, the region's largest casino, two-level underground parking for 120 spaces, children's entertainment centre, conference and event spaces, reception, concierge, security, video surveillance. Ideal for living and investment. Superb design and renovation with furniture and appliances; bright, dry and warm apartment; panoramic sea and city view towards Turkey. Confirm current price and deal terms with your manager.",
+            "rooms": "studio",
+            "floorsText": "13th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 42 Rustaveli Ave. (Alliance Privilege)"
+          },
+          "geo": {
+            "title": "სტუდიო Alliance Privilege-ში",
+            "description": "იყიდება სტუდიო აპარტამენტები Alliance Privilege-ში. მისამართი: რუსთაველის გამზ. 42, ბათუმი. 30 მ², 13-ე სართული. ელიტური საცხოვრებელი კომპლექსი McInerney Hospitality International-ის მართვით — Marriott International-ის პარტნიორი. უნიკალური მდებარეობა ბათუმის ბულვარზე: დელფინარიუმთან, პარკი ტბით, პლაჟი და ძველი ქალაქი. პრემიუმ ინფრასტრუქტურა Marriott International სტანდარტებით: აუზი ზღვის წყლით, SPA, ფიტნეს-ცენტრი, რესტორნები და კაფეები, რეგიონის უდიდესი კაზინო, ორსართულიანი ქვედა პარკინგი 120 ადგილით, საბავშვო გასართობი ცენტრი, კონფერენც-დარბაზები, რეცეფცია, კონსიერჟი, დაცვა, ვიდეოდაკვირვება. იდეალურია საცხოვრებლისა და ინვესტიციისთვის. შესანიშნავი დიზაინი და რემონტი ავეჯითა და ტექნიკით; ნათელი, მშრალი და თბილი ბინა; პანორამული ხედი ზღვასა და ქალაქზე თურქეთისკენ. ფასი და პირობები — მენეჯერთან.",
+            "rooms": "სტუდიო",
+            "floorsText": "13-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, რუსთაველის გამზ. 42 (Alliance Privilege)"
+          }
+        },
+        "title": "Студия в Alliance Privilege",
+        "description": "Продаются апартаменты-студия в Alliance Privilege. Адрес: проспект Руставели, 42, Батуми. 30 м², 13 этаж. Элитный жилой комплекс с управлением от McInerney Hospitality International — партнёра Marriott International. Уникальное расположение на Батумском бульваре: рядом дельфинарий, парк с озером, пляж и Старый город. Инфраструктура премиум-уровня по стандартам Marriott International: бассейн с морской водой, СПА-комплекс, фитнес-центр, рестораны и кафе, крупнейшее казино в регионе, двухуровневый подземный паркинг на 120 мест, детский развлекательный центр, конференц-залы и пространства для мероприятий, ресепшн, консьерж, охрана, видеонаблюдение. Идеальный выбор для жизни и инвестиций. Шикарный дизайн и ремонт с мебелью и техникой; светлая, сухая и тёплая квартира; панорамный вид на море и город в сторону Турции. Актуальную цену и условия сделки уточняйте у менеджера.",
+        "rooms": "студия",
+        "floorsText": "13 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, проспект Руставели, 42 (Alliance Privilege)"
       },
       {
         "id": "apt-marina-club-1p1",
@@ -750,7 +1198,39 @@
             "src": "/images/marina-club/marina-04.png"
           }
         ],
-        "roomsKey": "1+1"
+        "roomsKey": "1+1",
+        "localized": {
+          "ru": {
+            "title": "Marina Club 1+1",
+            "description": "Апартаменты 1+1 в Marina Club Block C. Адрес: Батуми, ул. Лех и Марии Качиньских, 19/1. 9 этаж, 47,3 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City, магазины, аптеки, кафе, рестораны, казино, аэропорт. Премиальный жилой комплекс — благоустроенная зелёная территория, открытый и закрытый бассейны, кинотеатр, общая терраса на крыше, ресторан, кафе, бар, SPA и фитнес-центр, лифты Kone, детская и спортивная площадки, круглосуточная охрана и видеонаблюдение, управляющая компания, вестибюль, ресепшн, консьерж, коммерческие и офисные помещения. Первая береговая линия от моря. Сдача — IV квартал 2025. Подходит для жизни и для сдачи в аренду. Квартира в белом каркасе, панорамные окна, качественная отделка, вид на горы и город. Цена $58 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "1+1",
+            "floorsText": "9 этаж",
+            "completionText": "белый каркас, IV кв. 2025",
+            "address": "Батуми, ул. Лех и Марии Качиньских, 19/1 (Marina Club Block C)"
+          },
+          "en": {
+            "title": "Marina Club 1+1",
+            "description": "1+1 apartment in Marina Club Block C. Address: Batumi, 19/1 Lech and Maria Kaczyński St. 9th floor, 47.3 m². New Boulevard: near Lech and Maria Kaczyński Park, Metro City mall, shops, pharmacies, cafés, restaurants, casino, airport. Premium residential complex — landscaped green territory, outdoor and indoor pools, cinema, shared rooftop terrace, restaurant, café, bar, SPA and fitness centre, Kone lifts, children's and sports playgrounds, 24/7 security and video surveillance, management company, lobby, reception, concierge, commercial and office space. First coastline from the sea. Handover — Q4 2025. Suitable for living and rental. White-frame apartment, panoramic windows, quality finish, mountain and city view. Price $58,000 — confirm current price and deal terms with your manager.",
+            "rooms": "1+1",
+            "floorsText": "9th floor",
+            "completionText": "white frame, Q4 2025",
+            "address": "Batumi, 19/1 Lech and Maria Kaczyński St. (Marina Club Block C)"
+          },
+          "geo": {
+            "title": "Marina Club 1+1",
+            "description": "1+1 აპარტამენტები Marina Club Block C-ში. მისამართი: ბათუმი, ლეხ და მარია კაჩინსკების ქ. 19/1. 9-ე სართული, 47,3 მ². ახალი ბულვარი: ლეხი და მარია კაჩინსკების პარკი, ტრც Metro City, მაღაზიები, აფთიაქები, კაფეები, რესტორნები, კაზინო, აეროპორტი. პრემიუმ საცხოვრებელი კომპლექსი — ლანდშაფტური მწვანე ტერიტორია, ღია და დახურული აუზები, კინოთეატრი, საერთო ტერასა სახურავზე, რესტორანი, კაფე, ბარი, SPA და ფიტნეს-ცენტრი, Kone ლიფტები, საბავშვო და სპორტული ფლოტაციები, დაცვა და ვიდეოდაკვირვება 24/7, სამართავი კომპანია, ვესტიბიული, რეცეფცია, კონსიერჟი, კომერციული და ოფისური ფართები. პირველი სანაპირო ხაზი ზღვიდან. ჩაბარება — IV კვ. 2025. შესაფერისია საცხოვრებლისა და არენდისთვის. ბინა თეთრ კარკასში, პანორამული ფანჯრები, ხარისხიანი დასრულება, ხედი მთებსა და ქალაქზე. ფასი $58 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "1+1",
+            "floorsText": "9-ე სართული",
+            "completionText": "თეთრი კარკასი, IV კვ. 2025",
+            "address": "ბათუმი, ლეხ და მარია კაჩინსკების ქ. 19/1 (Marina Club Block C)"
+          }
+        },
+        "title": "Marina Club 1+1",
+        "description": "Апартаменты 1+1 в Marina Club Block C. Адрес: Батуми, ул. Лех и Марии Качиньских, 19/1. 9 этаж, 47,3 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City, магазины, аптеки, кафе, рестораны, казино, аэропорт. Премиальный жилой комплекс — благоустроенная зелёная территория, открытый и закрытый бассейны, кинотеатр, общая терраса на крыше, ресторан, кафе, бар, SPA и фитнес-центр, лифты Kone, детская и спортивная площадки, круглосуточная охрана и видеонаблюдение, управляющая компания, вестибюль, ресепшн, консьерж, коммерческие и офисные помещения. Первая береговая линия от моря. Сдача — IV квартал 2025. Подходит для жизни и для сдачи в аренду. Квартира в белом каркасе, панорамные окна, качественная отделка, вид на горы и город. Цена $58 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "1+1",
+        "floorsText": "9 этаж",
+        "completionText": "белый каркас, IV кв. 2025",
+        "address": "Батуми, ул. Лех и Марии Качиньских, 19/1 (Marina Club Block C)"
       },
       {
         "id": "apt-batumi-view-studio",
@@ -789,7 +1269,39 @@
             "src": "/images/batumi-view/batumi-view-06.png"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Batumi View студия",
+            "description": "Просторная студия в жилом комплексе Batumi View, block B. Адрес: Батуми, ул. Лех и Марии Качиньских, 8. 4 этаж, 36 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс премиум-класса — ресепшн и круглосуточная охрана, закрытая территория, коммерческие объекты, магазины, рестораны, спортивный зал, игровые площадки. До моря около 50 м, скоростные лифты, подземный и наземный паркинг. Подходит для проживания и для сдачи в аренду. Студия с качественным ремонтом, мебелью и техникой, вид на море. Цена $105 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "студия",
+            "floorsText": "4 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Лех и Марии Качиньских, 8 (Batumi View, block B)"
+          },
+          "en": {
+            "title": "Batumi View studio",
+            "description": "Spacious studio in Batumi View residential complex, block B. Address: Batumi, 8 Lech and Maria Kaczyński St. 4th floor, 36 m². New Boulevard: near Lech and Maria Kaczyński Park, Metro City mall. New premium-class complex — reception and 24/7 security, gated territory, retail, shops, restaurants, gym, playgrounds. About 50 m to the sea, high-speed lifts, underground and surface parking. Suitable for living and rental. Studio with quality renovation, furniture and appliances, sea view. Price $105,000 — confirm current price and deal terms with your manager.",
+            "rooms": "studio",
+            "floorsText": "4th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 8 Lech and Maria Kaczyński St. (Batumi View, block B)"
+          },
+          "geo": {
+            "title": "Batumi View სტუდიო",
+            "description": "ფართო სტუდიო Batumi View საცხოვრებელ კომპლექსში, block B. მისამართი: ბათუმი, ლეხ და მარია კაჩინსკების ქ. 8. 4-ე სართული, 36 მ². ახალი ბულვარი: ლეხი და მარია კაჩინსკების პარკი, ტრც Metro City. ახალი პრემიუმ-კლასის კომპლექსი — რეცეფცია და დაცვა 24/7, დახურული ტერიტორია, კომერციული ობიექტები, მაღაზიები, რესტორნები, სპორტდარბაზი, ფლოტაციები. ზღვამდე დაახლოებით 50 მ, სწრაფი ლიფტები, ქვედა და მიწის პარკინგი. შესაფერისია საცხოვრებლისა და არენდისთვის. სტუდიო ხარისხიანი რემონტით, ავეჯითა და ტექნიკით, ხედი ზღვაზე. ფასი $105 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "სტუდიო",
+            "floorsText": "4-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, ლეხ და მარია კაჩინსკების ქ. 8 (Batumi View, block B)"
+          }
+        },
+        "title": "Batumi View студия",
+        "description": "Просторная студия в жилом комплексе Batumi View, block B. Адрес: Батуми, ул. Лех и Марии Качиньских, 8. 4 этаж, 36 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс премиум-класса — ресепшн и круглосуточная охрана, закрытая территория, коммерческие объекты, магазины, рестораны, спортивный зал, игровые площадки. До моря около 50 м, скоростные лифты, подземный и наземный паркинг. Подходит для проживания и для сдачи в аренду. Студия с качественным ремонтом, мебелью и техникой, вид на море. Цена $105 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "студия",
+        "floorsText": "4 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Лех и Марии Качиньских, 8 (Batumi View, block B)"
       },
       {
         "id": "apt-bluesky-tower-b-studio",
@@ -840,7 +1352,39 @@
             "src": "/images/bluesky-tower-b/bluesky-09.png"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Студия — BlueSky Tower, блок B",
+            "description": "Квартира-студия в BlueSky Tower, блок B. Адрес: Батуми, ул. Тбел Абусеридзе, 13. 4 этаж, 35 м². Аллея Героев: рядом Carrefour, кафе, рестораны, магазины, казино, стадион и др. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура Holiday Inn: СПА, бассейн, рестораны, торговый центр. До моря 700 м. 6 скоростных лифтов. Газ, центральное отопление. Хорошо подходит как для проживания, так и для сдачи в аренду. Квартира с ремонтом, мебелью и техникой. Вид на аллею Героев. Стоимость: $67 000.",
+            "rooms": "студия",
+            "floorsText": "4 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Тбел Абусеридзе, 13 (BlueSky Tower, блок B)"
+          },
+          "en": {
+            "title": "Studio — BlueSky Tower, block B",
+            "description": "Studio apartment in BlueSky Tower, block B. Address: Batumi, 13 Tbel Abuseridze St. 4th floor, 35 m². Heroes Alley: Carrefour, cafés, restaurants, shops, casino, stadium and more nearby. New business-class residential complex with reception and 24/7 security. Holiday Inn infrastructure: SPA, pool, restaurants, shopping centre. 700 m to the sea. 6 high-speed lifts. Gas, central heating. Well suited for living and rental income. Apartment with renovation, furniture and appliances. View of Heroes Alley. Price: $67,000.",
+            "rooms": "studio",
+            "floorsText": "4th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 13 Tbel Abuseridze St. (BlueSky Tower, block B)"
+          },
+          "geo": {
+            "title": "სტუდია — BlueSky Tower, ბლოკი B",
+            "description": "სტუდია BlueSky Tower-ში, ბლოკი B. მის: ბათუმი, თბელ აბუსერიძის ქ. 13. 4-ე სართული, 35 მ². გმირების ალეა: ახლოს Carrefour, კაფეები, რესტორნები, მაღაზიები, კაზინო, სტადიონი და სხვა. ახალი ბიზნეს-კლასის საცხოვრებელი კომპლექსი — რეცეპცია და 24/7 დაცვა. Holiday Inn ინფრასტრუქტურა: SPA, აუზი, რესტორნები, სავაჭრო ცენტრი. ზღვამდე 700 მ. 6 სწრაფი ლიფტი. გაზი, ცენტრალური გათბობა. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. ბინა რემონტით, ავეჯითა და ტექნიკით. ხედი გმირების ალეაზე. ფასი: $67 000.",
+            "rooms": "სტუდია",
+            "floorsText": "4-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, თბელ აბუსერიძის ქ. 13 (BlueSky Tower, ბლოკი B)"
+          }
+        },
+        "title": "Студия — BlueSky Tower, блок B",
+        "description": "Квартира-студия в BlueSky Tower, блок B. Адрес: Батуми, ул. Тбел Абусеридзе, 13. 4 этаж, 35 м². Аллея Героев: рядом Carrefour, кафе, рестораны, магазины, казино, стадион и др. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура Holiday Inn: СПА, бассейн, рестораны, торговый центр. До моря 700 м. 6 скоростных лифтов. Газ, центральное отопление. Хорошо подходит как для проживания, так и для сдачи в аренду. Квартира с ремонтом, мебелью и техникой. Вид на аллею Героев. Стоимость: $67 000.",
+        "rooms": "студия",
+        "floorsText": "4 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Тбел Абусеридзе, 13 (BlueSky Tower, блок B)"
       },
       {
         "id": "apt-steps-batumi-studio",
@@ -895,7 +1439,39 @@
             "src": "/images/steps-batumi/steps-05.jpg"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Студия в STEPS",
+            "description": "Квартира-студия в жилом комплексе Steps Batumi. Без управления от Steps. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 23 этаж, 31,6 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Подходит для проживания и для сдачи в аренду. Просторная светлая студия с качественным ремонтом, мебелью и техникой, вид на горы и город, солнечная сторона. Цена $61 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "студия",
+            "floorsText": "23 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
+          },
+          "en": {
+            "title": "Studio in STEPS",
+            "description": "Studio apartment in Steps Batumi residential complex. Without Steps management. Address: Batumi, 2b Grigol Lortkipanidze St. 23rd floor, 31.6 m². New Boulevard: near Lech and Maria Kaczyński Park, Metro City mall. New business-class complex — reception and 24/7 security. Infrastructure: botanical garden, business centre, restaurant, hotel, parking, playground, pool, sauna, hammam, café, gym. About 150 m to the sea, 4 high-speed lifts with backup power, fire-safe rooms with oxygen supply. Suitable for living and rental. Spacious bright studio with quality renovation, furniture and appliances, mountain and city view, sunny side. Price $61,000 — confirm current price and deal terms with your manager.",
+            "rooms": "studio",
+            "floorsText": "23rd floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 2b Grigol Lortkipanidze St. (Steps Batumi)"
+          },
+          "geo": {
+            "title": "სტუდიო STEPS-ში",
+            "description": "სტუდიო ბინა Steps Batumi საცხოვრებელ კომპლექსში. Steps-ის მართვის გარეშე. მისამართი: ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ. 23-ე სართული, 31,6 მ². ახალი ბულვარი: ლეხი და მარია კაჩინსკების პარკი, ტრც Metro City. ახალი ბიზნეს-კლასის კომპლექსი — რეცეფცია და დაცვა 24/7. ინფრასტრუქტურა: ბოტანიკური ბაღი, ბიზნეს-ცენტრი, რესტორანი, სასტუმრო, პარკინგი, საბავშვო ფლოტაცია, აუზი, საუნა, ჰამამი, კაფე, ტრენაჟორის დარბაზი. ზღვამდე დაახლოებით 150 მ, 4 სწრაფი ლიფტი ავტონომიური კვებით, საპირწყებო უსაფრთხო ოთახები ჟანგბადის მიწოდებით. შესაფერისია საცხოვრებლისა და არენდისთვის. ფართო ნათელი სტუდიო ხარისხიანი რემონტით, ავეჯითა და ტექნიკით, ხედი მთებსა და ქალაქზე, მზიანი მხარე. ფასი $61 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "სტუდიო",
+            "floorsText": "23-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
+          }
+        },
+        "title": "Студия в STEPS",
+        "description": "Квартира-студия в жилом комплексе Steps Batumi. Без управления от Steps. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 23 этаж, 31,6 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Подходит для проживания и для сдачи в аренду. Просторная светлая студия с качественным ремонтом, мебелью и техникой, вид на горы и город, солнечная сторона. Цена $61 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "студия",
+        "floorsText": "23 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
       },
       {
         "id": "apt-steps-batumi-studio-11",
@@ -966,7 +1542,39 @@
             "src": "/images/steps-batumi-11/steps-11-09.jpg"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Студия в STEPS",
+            "description": "Квартира-студия в жилом комплексе Steps Batumi. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 11 этаж, 24 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Подходит для проживания и для сдачи в аренду. Просторная светлая студия с качественным ремонтом, мебелью и техникой, вид на горы и город в сторону Турции, солнечная сторона. Цена $50 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "студия",
+            "floorsText": "11 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
+          },
+          "en": {
+            "title": "Studio in STEPS",
+            "description": "Studio apartment in Steps Batumi residential complex. Address: Batumi, 2b Grigol Lortkipanidze St. 11th floor, 24 m². New Boulevard: near Lech and Maria Kaczyński Park, Metro City mall. New business-class complex — reception and 24/7 security. Infrastructure: botanical garden, business centre, restaurant, hotel, parking, playground, pool, sauna, hammam, café, gym. About 150 m to the sea, 4 high-speed lifts with backup power, fire-safe rooms with oxygen supply. Suitable for living and rental. Spacious bright studio with quality renovation, furniture and appliances, mountain and city view towards Turkey, sunny side. Price $50,000 — confirm current price and deal terms with your manager.",
+            "rooms": "studio",
+            "floorsText": "11th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 2b Grigol Lortkipanidze St. (Steps Batumi)"
+          },
+          "geo": {
+            "title": "სტუდიო STEPS-ში",
+            "description": "სტუდიო ბინა Steps Batumi საცხოვრებელ კომპლექსში. მისამართი: ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ. 11-ე სართული, 24 მ². ახალი ბულვარი: ლეხი და მარია კაჩინსკების პარკი, ტრც Metro City. ახალი ბიზნეს-კლასის კომპლექსი — რეცეფცია და დაცვა 24/7. ინფრასტრუქტურა: ბოტანიკური ბაღი, ბიზნეს-ცენტრი, რესტორანი, სასტუმრო, პარკინგი, საბავშვო ფლოტაცია, აუზი, საუნა, ჰამამი, კაფე, ტრენაჟორის დარბაზი. ზღვამდე დაახლოებით 150 მ, 4 სწრაფი ლიფტი ავტონომიური კვებით, საპირწყებო უსაფრთხო ოთახები ჟანგბადის მიწოდებით. შესაფერისია საცხოვრებლისა და არენდისთვის. ფართო ნათელი სტუდიო ხარისხიანი რემონტით, ავეჯითა და ტექნიკით, ხედი მთებსა და ქალაქზე თურქეთისკენ, მზიანი მხარე. ფასი $50 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "სტუდიო",
+            "floorsText": "11-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
+          }
+        },
+        "title": "Студия в STEPS",
+        "description": "Квартира-студия в жилом комплексе Steps Batumi. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 11 этаж, 24 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Подходит для проживания и для сдачи в аренду. Просторная светлая студия с качественным ремонтом, мебелью и техникой, вид на горы и город в сторону Турции, солнечная сторона. Цена $50 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "студия",
+        "floorsText": "11 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
       },
       {
         "id": "apt-steps-batumi-2p1",
@@ -1017,7 +1625,39 @@
             "src": "/images/steps-batumi-2p1/steps-2p1-09.png"
           }
         ],
-        "roomsKey": "2+1"
+        "roomsKey": "2+1",
+        "localized": {
+          "ru": {
+            "title": "Апартаменты 2+1 — Steps Batumi",
+            "description": "Апартаменты 2+1 в жилом комплексе Steps Batumi. С управлением от Steps до ноября 2026. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 10 этаж, 61 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Хорошо подходит как для проживания, так и для сдачи в аренду. Шикарные апартаменты с хорошим ремонтом, мебелью и техникой. Стильный дизайн, светлая квартира. Две спальни, просторная кухня-гостиная. Три балкона на три стороны. Стоимость: $140 000 (было $145 000).",
+            "rooms": "2+1",
+            "floorsText": "10 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
+          },
+          "en": {
+            "title": "Apartments 2+1 — Steps Batumi",
+            "description": "2+1 apartments in the Steps Batumi residential complex. Managed by Steps until November 2026. Address: Batumi, 2b Grigol Lortkipanidze St. 10th floor, 61 m². New Boulevard: near the Lech and Maria Kaczyński Park and Metro City mall. A new business-class residential complex with reception and 24/7 security. Amenities include a botanical garden, business centre, restaurant, hotel, parking, children's playground, pool, sauna, hammam, café and gym. About 150 m to the sea, 4 high-speed lifts with backup power, fire safety rooms with oxygen supply. Well suited for living or rental income. Excellent apartments with quality renovation, furniture and appliances. Stylish design, bright layout. Two bedrooms, a spacious kitchen-living room. Three balconies on three sides. Price: $140,000 (was $145,000).",
+            "rooms": "2+1",
+            "floorsText": "10th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 2b Grigol Lortkipanidze St. (Steps Batumi)"
+          },
+          "geo": {
+            "title": "აპარტამენტები 2+1 — Steps Batumi",
+            "description": "აპარტამენტები 2+1 Steps Batumi საცხოვრებელ კომპლექსში. Steps-ის მართვით 2026 წლის ნოემბრამდე. მის: ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ. 10-ე სართული, 61 მ². ახალი ბულვარი: ახლოს ლეხ და მარია კაჩინსკების პარკი, Metro City. ახალი ბიზნეს-კლასის საცხოვრებელი კომპლექსი — რეცეპცია და 24/7 დაცვა. ინფრასტრუქტურა: ბოტანიკური ბაღი, ბიზნეს-ცენტრი, რესტორნი, სასტუმრო, პარკინგი, საბავშვო მოედანი, აუზი, საუნა, ჰამამი, კაფე, ფიტნეს-დარბაზი. ზღვამდე დაახლოებით 150 მ, 4 სწრაფი ლიფტი ავტონომიური კვებით, ხანძრის უსაფრთხოების ოთახები ჟანგბადის მიწოდებით. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. შესანიშნავი აპარტამენტები ხარისხიანი რემონტით, ავეჯით და ტექნიკით. სტილური დიზაინი, ნათელი ბინა. ორი საძინებელი, ფართო სამზარეულო-მისაღები. სამი აივანი სამ მხარეს. ფასი: $140 000 (იყო $145 000).",
+            "rooms": "2+1",
+            "floorsText": "10-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
+          }
+        },
+        "title": "Апартаменты 2+1 — Steps Batumi",
+        "description": "Апартаменты 2+1 в жилом комплексе Steps Batumi. С управлением от Steps до ноября 2026. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 10 этаж, 61 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Хорошо подходит как для проживания, так и для сдачи в аренду. Шикарные апартаменты с хорошим ремонтом, мебелью и техникой. Стильный дизайн, светлая квартира. Две спальни, просторная кухня-гостиная. Три балкона на три стороны. Стоимость: $140 000 (было $145 000).",
+        "rooms": "2+1",
+        "floorsText": "10 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
       },
       {
         "id": "apt-real-palace-blue-2p1",
@@ -1048,7 +1688,39 @@
             "src": "/images/real-palace-blue/rpb-04.webp"
           }
         ],
-        "roomsKey": "2+1"
+        "roomsKey": "2+1",
+        "localized": {
+          "ru": {
+            "title": "Real Palace Blue — квартира 2+1",
+            "description": "Продаётся квартира в жилом комплексе Real Palace Blue (премиум-класс, 29 этажей, Новый бульвар, ~170 м от моря). Общая площадь — 81,7 м², жилая — 61,7 м². Стоимость — $140 000. Условия покупки: первоначальный взнос $70 000; до августа 2026 дополнительных платежей не требуется; остаток $70 000 — с августа до 15 февраля 2027. Комплекс Real Palace Blue: панорамные виды на море, горы и город; паркинг, коммерция на первом этаже; рядом Metrocity и парк имени Леха и Марии Качиньских.",
+            "rooms": "2+1",
+            "floorsText": "29-этажный комплекс",
+            "completionText": "сдача — 2026",
+            "address": "Батуми, ул. Ангиса, 95 (Real Palace Blue)"
+          },
+          "en": {
+            "title": "Real Palace Blue — 2+1 apartment",
+            "description": "Apartment for sale in the Real Palace Blue residential complex (premium class, 29 floors, New Boulevard, ~170 m from the sea). Total area — 81.7 m², living area — 61.7 m². Price — $140,000. Payment terms: down payment $70,000; no additional payments required until August 2026; remaining $70,000 from August until 15 February 2027. Real Palace Blue: panoramic sea, mountain and city views; parking, ground-floor retail; near Metro City and Lech and Maria Kaczyński Park.",
+            "rooms": "2+1",
+            "floorsText": "29-floor complex",
+            "completionText": "completion — 2026",
+            "address": "Batumi, 95 Angisa St. (Real Palace Blue)"
+          },
+          "geo": {
+            "title": "Real Palace Blue — ბინა 2+1",
+            "description": "იყიდება ბინა საცხოვრებელ კომპლექს Real Palace Blue-ში (პრემიუმ კლასი, 29 სართული, ახალი ბულვარი, ზღვიდან ~170 მ). საერთო ფართობი — 81,7 მ², საცხოვრებელი — 61,7 მ². ფასი — $140 000. შეძენის პირობები: საწყისი შენატანი $70 000; 2026 წლის აგვისტომდე დამატებითი გადახდა არ სჭირდება; დარჩენილი $70 000 — აგვისტიდან 2027 წლის 15 თებერვლამდე. Real Palace Blue: პანორამული ხედები ზღვაზე, მთებსა და ქალაქზე; პარკინგი, კომერციული სივრცეები პირველ სართულზე; ახლოს Metro City და ლეხ და მარია კაჩინსკების პარკი.",
+            "rooms": "2+1",
+            "floorsText": "29-სართულიანი კომპლექსი",
+            "completionText": "ჩაბარება — 2026",
+            "address": "ბათუმი, ანგისის ქ. 95 (Real Palace Blue)"
+          }
+        },
+        "title": "Real Palace Blue — квартира 2+1",
+        "description": "Продаётся квартира в жилом комплексе Real Palace Blue (премиум-класс, 29 этажей, Новый бульвар, ~170 м от моря). Общая площадь — 81,7 м², жилая — 61,7 м². Стоимость — $140 000. Условия покупки: первоначальный взнос $70 000; до августа 2026 дополнительных платежей не требуется; остаток $70 000 — с августа до 15 февраля 2027. Комплекс Real Palace Blue: панорамные виды на море, горы и город; паркинг, коммерция на первом этаже; рядом Metrocity и парк имени Леха и Марии Качиньских.",
+        "rooms": "2+1",
+        "floorsText": "29-этажный комплекс",
+        "completionText": "сдача — 2026",
+        "address": "Батуми, ул. Ангиса, 95 (Real Palace Blue)"
       },
       {
         "id": "apt-steps-batumi-studio-17",
@@ -1095,7 +1767,39 @@
             "src": "/images/steps-batumi-studio-17/steps-17-08.png"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Студия — Steps Batumi",
+            "description": "Квартира-студия в жилом комплексе Steps Batumi. С управлением от Steps до ноября 2026 года. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 17 этаж, 37 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Хорошо подходит как для проживания, так и для сдачи в аренду. Просторная и светлая квартира с хорошим ремонтом и качественной мебелью и техникой. Вид на море. Стоимость: $69 000.",
+            "rooms": "студия",
+            "floorsText": "17 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
+          },
+          "en": {
+            "title": "Studio — Steps Batumi",
+            "description": "Studio apartment in the Steps Batumi residential complex. Managed by Steps until November 2026. Address: Batumi, 2b Grigol Lortkipanidze St. 17th floor, 37 m². New Boulevard: near the Lech and Maria Kaczyński Park and Metro City mall. New business-class residential complex with reception and 24/7 security. Amenities include a botanical garden, business centre, restaurant, hotel, parking, children's playground, pool, sauna, hammam, café and gym. About 150 m to the sea, 4 high-speed lifts with backup power, fire safety rooms with oxygen supply. Well suited for living and rental income. Spacious and bright apartment with quality renovation, furniture and appliances. Sea view. Price: $69,000.",
+            "rooms": "studio",
+            "floorsText": "17th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 2b Grigol Lortkipanidze St. (Steps Batumi)"
+          },
+          "geo": {
+            "title": "სტუდია — Steps Batumi",
+            "description": "სტუდია Steps Batumi საცხოვრებელ კომპლექსში. Steps-ის მართვით 2026 წლის ნოემბრამდე. მის: ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ. 17-ე სართული, 37 მ². ახალი ბულვარი: ახლოს ლეხ და მარია კაჩინსკების პარკი, Metro City. ახალი ბიზნეს-კლასის საცხოვრებელი კომპლექსი — რეცეპცია და 24/7 დაცვა. ინფრასტრუქტურა: ბოტანიკური ბაღი, ბიზნეს-ცენტრი, რესტორნი, სასტუმრო, პარკინგი, საბავშვო მოედანი, აუზი, საუნა, ჰამამი, კაფე, ფიტნეს-დარბაზი. ზღვამდე დაახლოებით 150 მ, 4 სწრაფი ლიფტი ავტონომიური კვებით, ხანძრის უსაფრთხოების ოთახები ჟანგბადის მიწოდებით. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. ფართო და ნათელი ბინა ხარისხიანი რემონტით, ავეჯითა და ტექნიკით. ხედი ზღვაზე. ფასი: $69 000.",
+            "rooms": "სტუდია",
+            "floorsText": "17-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, გრიგოლ ლორთქიფანიძის ქ. 2ბ (Steps Batumi)"
+          }
+        },
+        "title": "Студия — Steps Batumi",
+        "description": "Квартира-студия в жилом комплексе Steps Batumi. С управлением от Steps до ноября 2026 года. Адрес: Батуми, ул. Григола Лорткипанидзе, 2б. 17 этаж, 37 м². Новый бульвар: рядом парк имени Лех и Марии Качиньских, ТРЦ Metro City. Новый жилой комплекс бизнес-класса — ресепшн и круглосуточная охрана. Инфраструктура: ботанический сад, бизнес-центр, ресторан, гостиница, парковка, детская площадка, бассейн, сауна, хаммам, кафе, тренажёрный зал. До моря около 150 м, 4 скоростных лифта с автономным питанием, противопожарные комнаты безопасности с подачей кислорода. Хорошо подходит как для проживания, так и для сдачи в аренду. Просторная и светлая квартира с хорошим ремонтом и качественной мебелью и техникой. Вид на море. Стоимость: $69 000.",
+        "rooms": "студия",
+        "floorsText": "17 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Григола Лорткипанидзе, 2б (Steps Batumi)"
       },
       {
         "id": "apt-intourist-residence-2p1",
@@ -1138,7 +1842,39 @@
             "src": "/images/intourist-residence-2p1/intourist-07.png"
           }
         ],
-        "roomsKey": "2+1"
+        "roomsKey": "2+1",
+        "localized": {
+          "ru": {
+            "title": "Уютная квартира 2+1 — Intourist Residence",
+            "description": "Уютная квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17. 11 этаж, 73 м². Удобное расположение в центре города, до моря около 5 минут — 250 м. Развитая инфраструктура района: магазины, рестораны, аптеки, транспорт, казино и др. Центральное отопление, газ. Хорошо подходит как для проживания, так и для сдачи в аренду. Полностью укомплектована мебелью и техникой. Система «умный дом», сигнализация, видеонаблюдение. Автономное питание и отопление — до 10 часов при отключении. Два балкона с видом на море, город и горы. Стоимость: $188 000.",
+            "rooms": "2+1",
+            "floorsText": "11 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Пиросмани, 17 (Intourist Residence)"
+          },
+          "en": {
+            "title": "Cozy 2+1 apartment — Intourist Residence",
+            "description": "Cozy 2+1 apartment in the Intourist Residence residential complex. Address: Batumi, 17 Pirosmani St. 11th floor, 73 m². Convenient central location, about 5 minutes to the sea — 250 m. Well-developed neighbourhood infrastructure: shops, restaurants, pharmacies, transport, casinos and more. Central heating, gas. Well suited for living and rental income. Fully furnished with furniture and appliances. Smart home system, alarm and video surveillance. Backup power and heating for up to 10 hours during outages. Two balconies with views of the sea, city and mountains. Price: $188,000.",
+            "rooms": "2+1",
+            "floorsText": "11th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 17 Pirosmani St. (Intourist Residence)"
+          },
+          "geo": {
+            "title": "მოსახლე ბინა 2+1 — Intourist Residence",
+            "description": "მოსახლე ბინა 2+1 Intourist Residence საცხოვრებელ კომპლექსში. მის: ბათუმი, ნიკო ფიროსმანის ქ. 17. 11-ე სართული, 73 მ². მოსახერხებელი მდებარეობა ქალაქის ცენტრში, ზღვამდე დაახლოებით 5 წუთი — 250 მ. განვითარებული ინფრასტრუქტურა: მაღაზიები, რესტორნები, აფთიაქები, ტრანსპორტი, კაზინო და სხვა. ცენტრალური გათბობა, აირი. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. სრულად აღჭურვილი ავეჯითა და ტექნიკით. «ჭკვიანი სახლის» სისტემა, სიგნალიზაცია, ვიდეოდაკვირვება. ავტონომიური კვება და გათბობა — გათიშვისას 10 საათამდე. ორი აივანი ხედით ზღვაზე, ქალაქსა და მთებზე. ფასი: $188 000.",
+            "rooms": "2+1",
+            "floorsText": "11-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17 (Intourist Residence)"
+          }
+        },
+        "title": "Уютная квартира 2+1 — Intourist Residence",
+        "description": "Уютная квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17. 11 этаж, 73 м². Удобное расположение в центре города, до моря около 5 минут — 250 м. Развитая инфраструктура района: магазины, рестораны, аптеки, транспорт, казино и др. Центральное отопление, газ. Хорошо подходит как для проживания, так и для сдачи в аренду. Полностью укомплектована мебелью и техникой. Система «умный дом», сигнализация, видеонаблюдение. Автономное питание и отопление — до 10 часов при отключении. Два балкона с видом на море, город и горы. Стоимость: $188 000.",
+        "rooms": "2+1",
+        "floorsText": "11 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Пиросмани, 17 (Intourist Residence)"
       },
       {
         "id": "apt-tropical-garden-studio",
@@ -1193,7 +1929,39 @@
             "src": "/images/tropical-garden/tropical-07.jpg"
           }
         ],
-        "roomsKey": "studio"
+        "roomsKey": "studio",
+        "localized": {
+          "ru": {
+            "title": "Студия Tropical Garden",
+            "description": "Квартира-студия в жилом комплексе Tropical Garden, block B (Чакви). Адрес: Батуми, ул. Мездгваура, 41. 12 этаж, 35 м². Чакви, первая линия моря. Новый жилой дом: ухоженная территория, спортивная и детская площадки, сад, бассейн, SPA; в доме магазин и кафе. Надёжный застройщик, дом газифицирован, около 20 минут от центра Батуми, прописка в Батуми. Подходит для проживания и для сдачи в аренду. Полностью укомплектованная квартира с мебелью и техникой, хороший ремонт. Развитая инфраструктура: рядом детский сад, школа с русским сектором, парки, Ботанический сад, магазины. Охрана и противопожарная система, вид на море и Ботанический сад. Цена $70 000 — уточняйте актуальность и условия сделки у менеджера.",
+            "rooms": "студия",
+            "floorsText": "12 этаж",
+            "completionText": "ремонт с мебелью",
+            "address": "Батуми, ул. Мездгваура, 41 (Tropical Garden, block B, Чакви)"
+          },
+          "en": {
+            "title": "Tropical Garden studio",
+            "description": "Studio apartment in Tropical Garden residential complex, block B (Chakvi). Address: Batumi, 41 Mezdgvaura St. 12th floor, 35 m². Chakvi, first sea line. New building: well-maintained grounds, sports and children's playgrounds, garden, pool, SPA; shop and café in the building. Reliable developer, gas-connected, about 20 minutes from central Batumi, Batumi registration. Suitable for living and rental. Fully furnished apartment with furniture and appliances, good renovation. Developed infrastructure: kindergarten nearby, school with Russian sector, parks, Botanical Garden, shops. Security and fire protection system, view of the sea and Botanical Garden. Price $70,000 — confirm current price and deal terms with your manager.",
+            "rooms": "studio",
+            "floorsText": "12th floor",
+            "completionText": "renovated with furniture",
+            "address": "Batumi, 41 Mezdgvaura St. (Tropical Garden, block B, Chakvi)"
+          },
+          "geo": {
+            "title": "სტუდიო Tropical Garden",
+            "description": "სტუდიო ბინა Tropical Garden საცხოვრებელ კომპლექსში, block B (ჩაქვი). მისამართი: ბათუმი, მეზდგვაურის ქ. 41. 12-ე სართული, 35 მ². ჩაქვი, პირველი ზღვის ხაზი. ახალი საცხოვრებელი სახლი: მოვლილი ტერიტორია, სპორტული და საბავშვო ფლოტაციები, ბაღი, აუზი, SPA; სახლში მაღაზია და კაფე. სანდო დეველოპერი, გაზიფიცირებული, ბათუმის ცენტრიდან დაახლოებით 20 წუთი, პროპისკა ბათუმში. შესაფერისია საცხოვრებლისა და არენდისთვის. სრულად აღჭურვილი ბინა ავეჯითა და ტექნიკით, კარგი რემონტი. ინფრასტრუქტურა: ახლოს ბაგა, სკოლა რუსული სექტორით, პარკები, ბოტანიკური ბაღი, მაღაზიები. დაცვა და საპირწყებო სისტემა, ხედი ზღვასა და ბოტანიკურ ბაღზე. ფასი $70 000 — დაზუსტება მენეჯერთან.",
+            "rooms": "სტუდიო",
+            "floorsText": "12-ე სართული",
+            "completionText": "რემონტი ავეჯით",
+            "address": "ბათუმი, მეზდგვაურის ქ. 41 (Tropical Garden, block B, ჩაქვი)"
+          }
+        },
+        "title": "Студия Tropical Garden",
+        "description": "Квартира-студия в жилом комплексе Tropical Garden, block B (Чакви). Адрес: Батуми, ул. Мездгваура, 41. 12 этаж, 35 м². Чакви, первая линия моря. Новый жилой дом: ухоженная территория, спортивная и детская площадки, сад, бассейн, SPA; в доме магазин и кафе. Надёжный застройщик, дом газифицирован, около 20 минут от центра Батуми, прописка в Батуми. Подходит для проживания и для сдачи в аренду. Полностью укомплектованная квартира с мебелью и техникой, хороший ремонт. Развитая инфраструктура: рядом детский сад, школа с русским сектором, парки, Ботанический сад, магазины. Охрана и противопожарная система, вид на море и Ботанический сад. Цена $70 000 — уточняйте актуальность и условия сделки у менеджера.",
+        "rooms": "студия",
+        "floorsText": "12 этаж",
+        "completionText": "ремонт с мебелью",
+        "address": "Батуми, ул. Мездгваура, 41 (Tropical Garden, block B, Чакви)"
       }
     ],
     "house": [
@@ -1245,7 +2013,39 @@
             "name": "Детская и спортивная площадка",
             "src": "/images/villa-park-next/villa-09.png"
           }
-        ]
+        ],
+        "localized": {
+          "ru": {
+            "title": "Таунхаус в Villa Park by NEXT",
+            "description": "Премиальная вилла в закрытом комплексе со своим участком, 6 минут от моря — за $360 000. Дизайнерская отделка и мебель премиум-класса, рядом Ботанический сад. Локация: вилла находится в Чакви — тихом и экологически чистом районе. До моря — 6 минут пешком, до Ботанического сада — 5 минут на авто, до центра Батуми — 17 минут на авто. Удобно для семей с детьми: рядом с комплексом новый детский сад, а в 3 минутах на авто большая школа с русскоязычным сектором. Об объекте: площадь виллы — 145,4 м², 2 этажа. Планировка: просторная кухня-гостиная, две спальни, кабинет, три санузла и терраса. Из окон — потрясающий вид на горы. Участок — 167 м², огорожен живой изгородью, с парковкой на два автомобиля. О комплексе: Villa Park by NEXT — закрытый комплекс премиум-класса из 14 вилл, максимум уединения и тишины. Территория озеленена, есть променад и красивое вечернее освещение, круглосуточная охрана и КПП, бассейн с зонами отдыха. Стоимость: $360 000. Подходит под ВНЖ.",
+            "rooms": "2 спальни + кабинет",
+            "floorsText": "2 этажа",
+            "completionText": "готовая вилла",
+            "address": "Чакви, Villa Park by NEXT"
+          },
+          "en": {
+            "title": "Townhouse at Villa Park by NEXT",
+            "description": "A premium villa in a gated community with its own plot, 6 minutes from the sea — for $360,000. Designer finishing and premium-class furniture, the Botanical Garden is nearby. Location: the villa is in Chakvi — a quiet, ecologically clean area. 6 minutes on foot to the sea, 5 minutes by car to the Botanical Garden, 17 minutes by car to central Batumi. Convenient for families with children: a new kindergarten is next to the community, and a large school with a Russian-language section is 3 minutes away by car. About the property: the villa has an area of 145.4 m² over 2 floors. Layout: a spacious kitchen-living room, two bedrooms, a study, three bathrooms and a terrace. The windows offer a stunning view of the mountains. The plot is 167 m², enclosed by a hedge, with parking for two cars. About the community: Villa Park by NEXT is a premium-class gated community of just 14 villas — maximum privacy and quiet. The grounds are landscaped, with a promenade and beautiful evening lighting, 24/7 security and a checkpoint, and a pool with lounge areas. Price: $360,000. Eligible for a residence permit.",
+            "rooms": "2 bedrooms + study",
+            "floorsText": "2 floors",
+            "completionText": "ready villa",
+            "address": "Chakvi, Villa Park by NEXT"
+          },
+          "geo": {
+            "title": "თაუნჰაუსი Villa Park by NEXT-ში",
+            "description": "პრემიუმ კლასის ვილა დახურულ კომპლექსში საკუთარი ნაკვეთით, ზღვიდან 6 წუთში — $360 000-ად. დიზაინერული მოპირკეთება და პრემიუმ კლასის ავეჯი, ახლოს ბოტანიკური ბაღი. ლოკაცია: ვილა მდებარეობს ჩაქვში — მშვიდ და ეკოლოგიურად სუფთა რაიონში. ზღვამდე — 6 წუთი ფეხით, ბოტანიკურ ბაღამდე — 5 წუთი მანქანით, ბათუმის ცენტრამდე — 17 წუთი მანქანით. მოსახერხებელია ბავშვიანი ოჯახებისთვის: კომპლექსთან ახალი საბავშვო ბაღი, 3 წუთის სავალზე კი დიდი სკოლა რუსულენოვანი სექტორით. ობიექტის შესახებ: ვილის ფართი — 145,4 მ², 2 სართული. გეგმარება: ფართო სამზარეულო-მისაღები, ორი საძინებელი, კაბინეტი, სამი სველი წერტილი და ტერასა. ფანჯრებიდან — მთების შესანიშნავი ხედი. ნაკვეთი — 167 მ², შემოღობილია ცოცხალი ღობით, ორი მანქანის პარკინგით. კომპლექსის შესახებ: Villa Park by NEXT — პრემიუმ კლასის დახურული კომპლექსი სულ 14 ვილისგან — მაქსიმალური განმარტოება და სიმშვიდე. ტერიტორია გამწვანებულია, არის პრომენადი და ლამაზი საღამოს განათება, 24-საათიანი დაცვა და გამშვები პუნქტი, აუზი დასასვენებელი ზონებით. ფასი: $360 000. გამოდგება ბინადრობის ნებართვისთვის.",
+            "rooms": "2 საძინებელი + კაბინეტი",
+            "floorsText": "2 სართული",
+            "completionText": "მზა ვილა",
+            "address": "ჩაქვი, Villa Park by NEXT"
+          }
+        },
+        "title": "Таунхаус в Villa Park by NEXT",
+        "description": "Премиальная вилла в закрытом комплексе со своим участком, 6 минут от моря — за $360 000. Дизайнерская отделка и мебель премиум-класса, рядом Ботанический сад. Локация: вилла находится в Чакви — тихом и экологически чистом районе. До моря — 6 минут пешком, до Ботанического сада — 5 минут на авто, до центра Батуми — 17 минут на авто. Удобно для семей с детьми: рядом с комплексом новый детский сад, а в 3 минутах на авто большая школа с русскоязычным сектором. Об объекте: площадь виллы — 145,4 м², 2 этажа. Планировка: просторная кухня-гостиная, две спальни, кабинет, три санузла и терраса. Из окон — потрясающий вид на горы. Участок — 167 м², огорожен живой изгородью, с парковкой на два автомобиля. О комплексе: Villa Park by NEXT — закрытый комплекс премиум-класса из 14 вилл, максимум уединения и тишины. Территория озеленена, есть променад и красивое вечернее освещение, круглосуточная охрана и КПП, бассейн с зонами отдыха. Стоимость: $360 000. Подходит под ВНЖ.",
+        "rooms": "2 спальни + кабинет",
+        "floorsText": "2 этажа",
+        "completionText": "готовая вилла",
+        "address": "Чакви, Villa Park by NEXT"
       },
       {
         "id": "house-polo-villas-parklane",
@@ -1299,7 +2099,39 @@
             "name": "Прачечная: стиральная и сушильная машины",
             "src": "/images/polo-villas-parklane/polo-10.png"
           }
-        ]
+        ],
+        "localized": {
+          "ru": {
+            "title": "Таунхаус в Polo Villas",
+            "description": "Трёхэтажный таунхаус в Polo Villas Parklane с новым современным ремонтом — за $250 000. Всего в 4 минутах от моря, один из лучших малоэтажных комплексов в Батуми. Локация: клубный комплекс расположен в черте города, в районе Адлия. ТЦ «Metro City» — 6 минут на автомобиле, вся необходимая городская инфраструктура — 8–10 минут на автомобиле, аэропорт — 3 минуты на автомобиле. В 5 минутах — парк «Леха и Марии Качиньских», набережная и море. В самом парке много зелени, вечнозелёные растения, скейт- и велозоны, тренажёры для взрослых. Об объекте: площадь 118,4 м² — 3 спальни, кухня-гостиная, два санузла, удобная терраса и свой зелёный дворик. Сделан новый ремонт с использованием материалов премиум-сегмента, установлен тёплый пол и шумоизоляция в стенах. Остаётся вся мебель и техника. О комплексе: Polo Villas Parklane — один из самых популярных загородных комплексов в Батуми. Территория закрыта, охрана 24/7, большая озеленённая территория. Есть фитнес-зона, коворкинг, сауна и джакузи. Бассейн, лежаки и различные зоны отдыха, настольный теннис, детская и спортивная площадки. На территории — супермаркет и винный погреб. У каждого таунхауса — собственная парковка. Стоимость: $250 000. Возможно приобрести в ипотеку. Подходит под ВНЖ.",
+            "rooms": "3 спальни",
+            "floorsText": "3 этажа",
+            "completionText": "готовый таунхаус",
+            "address": "Батуми, район Адлия, Polo Villas Parklane"
+          },
+          "en": {
+            "title": "Townhouse at Polo Villas",
+            "description": "A three-storey townhouse in Polo Villas Parklane with a new modern renovation — for $250,000. Just 4 minutes from the sea, one of the best low-rise communities in Batumi. Location: the club community is within the city, in the Adlia district. Metro City mall — 6 minutes by car, all essential city infrastructure — 8–10 minutes by car, the airport — 3 minutes by car. 5 minutes away is the Lech and Maria Kaczyński Park, the promenade and the sea. The park has plenty of greenery, evergreen plants, skate and bike zones, and outdoor fitness equipment. About the property: 118.4 m² — 3 bedrooms, a kitchen-living room, two bathrooms, a comfortable terrace and a private green yard. A new renovation has been done using premium-segment materials, with underfloor heating and soundproofing in the walls. All furniture and appliances stay. About the community: Polo Villas Parklane is one of the most popular suburban communities in Batumi. The territory is gated with 24/7 security and large landscaped grounds. There is a fitness area, coworking, sauna and jacuzzi. A pool, sun loungers and various lounge areas, table tennis, children's and sports playgrounds. There is a supermarket and a wine cellar on site. Each townhouse has its own parking. Price: $250,000. Available with a mortgage. Eligible for a residence permit.",
+            "rooms": "3 bedrooms",
+            "floorsText": "3 floors",
+            "completionText": "ready townhouse",
+            "address": "Batumi, Adlia district, Polo Villas Parklane"
+          },
+          "geo": {
+            "title": "თაუნჰაუსი Polo Villas-ში",
+            "description": "სამსართულიანი თაუნჰაუსი Polo Villas Parklane-ში ახალი თანამედროვე რემონტით — $250 000-ად. ზღვიდან სულ 4 წუთში, ბათუმის ერთ-ერთი საუკეთესო დაბალსართულიანი კომპლექსი. ლოკაცია: საკლუბო კომპლექსი მდებარეობს ქალაქის ფარგლებში, ადლიის რაიონში. სავაჭრო ცენტრი «Metro City» — 6 წუთი მანქანით, ყველა საჭირო ქალაქის ინფრასტრუქტურა — 8–10 წუთი მანქანით, აეროპორტი — 3 წუთი მანქანით. 5 წუთში — ლეხ და მარია კაჩინსკების პარკი, ბულვარი და ზღვა. პარკში ბევრი მწვანეა, მარადმწვანე მცენარეები, სკეიტ- და ველო-ზონები, ვარჯიშის ტრენაჟორები. ობიექტის შესახებ: ფართი 118,4 მ² — 3 საძინებელი, სამზარეულო-მისაღები, ორი სველი წერტილი, კომფორტული ტერასა და საკუთარი მწვანე ეზო. გაკეთებულია ახალი რემონტი პრემიუმ სეგმენტის მასალებით, დაყენებულია თბილი იატაკი და კედლების ხმის იზოლაცია. რჩება მთელი ავეჯი და ტექნიკა. კომპლექსის შესახებ: Polo Villas Parklane — ბათუმის ერთ-ერთი ყველაზე პოპულარული საგარეუბნო კომპლექსი. ტერიტორია დახურულია, 24/7 დაცვა, დიდი გამწვანებული ტერიტორია. არის ფიტნეს-ზონა, ქოვორქინგი, საუნა და ჯაკუზი. აუზი, შეზლონგები და სხვადასხვა დასასვენებელი ზონები, მაგიდის ჩოგბურთი, საბავშვო და სპორტული მოედნები. ტერიტორიაზე — სუპერმარკეტი და ღვინის სარდაფი. თითოეულ თაუნჰაუსს აქვს საკუთარი პარკინგი. ფასი: $250 000. შესაძლებელია იპოთეკით შეძენა. გამოდგება ბინადრობის ნებართვისთვის.",
+            "rooms": "3 საძინებელი",
+            "floorsText": "3 სართული",
+            "completionText": "მზა თაუნჰაუსი",
+            "address": "ბათუმი, ადლიის რაიონი, Polo Villas Parklane"
+          }
+        },
+        "title": "Таунхаус в Polo Villas",
+        "description": "Трёхэтажный таунхаус в Polo Villas Parklane с новым современным ремонтом — за $250 000. Всего в 4 минутах от моря, один из лучших малоэтажных комплексов в Батуми. Локация: клубный комплекс расположен в черте города, в районе Адлия. ТЦ «Metro City» — 6 минут на автомобиле, вся необходимая городская инфраструктура — 8–10 минут на автомобиле, аэропорт — 3 минуты на автомобиле. В 5 минутах — парк «Леха и Марии Качиньских», набережная и море. В самом парке много зелени, вечнозелёные растения, скейт- и велозоны, тренажёры для взрослых. Об объекте: площадь 118,4 м² — 3 спальни, кухня-гостиная, два санузла, удобная терраса и свой зелёный дворик. Сделан новый ремонт с использованием материалов премиум-сегмента, установлен тёплый пол и шумоизоляция в стенах. Остаётся вся мебель и техника. О комплексе: Polo Villas Parklane — один из самых популярных загородных комплексов в Батуми. Территория закрыта, охрана 24/7, большая озеленённая территория. Есть фитнес-зона, коворкинг, сауна и джакузи. Бассейн, лежаки и различные зоны отдыха, настольный теннис, детская и спортивная площадки. На территории — супермаркет и винный погреб. У каждого таунхауса — собственная парковка. Стоимость: $250 000. Возможно приобрести в ипотеку. Подходит под ВНЖ.",
+        "rooms": "3 спальни",
+        "floorsText": "3 этажа",
+        "completionText": "готовый таунхаус",
+        "address": "Батуми, район Адлия, Polo Villas Parklane"
       },
       {
         "id": "house-adlia-townhouse-222",
@@ -1353,7 +2185,39 @@
             "name": "Проведённые коммуникации (газ)",
             "src": "/images/parkside-villas/parkside-10.png"
           }
-        ]
+        ],
+        "localized": {
+          "ru": {
+            "title": "Таунхаус 222 м² с террасой и гаражом в Адлии",
+            "description": "Таунхаус 222 м² с террасой и своим гаражом в 4 минутах от моря и парка Качиньских — за $185 000. Комплекс построен, можно приступать к ремонтам. Локация: клубный комплекс расположен в черте города, в районе Адлия. Море и набережная — 4 минуты на авто, инфраструктура ELT-квартала — 3 минуты на авто, ТЦ «Metro City» — 8 минут на авто. В 5 минутах — парк «Леха и Марии Качиньских». Здесь всегда зелено, много мест отдыха и прогулочных дорожек, скейт-парк и велозоны, тренажёры для взрослых — идеальное место, чтобы гулять, дышать и жить в движении. Об объекте: площадь 222 м², 3 этажа и удобная терраса — кухня-гостиная, 4 спальни, 4 санузла, свой гараж и зелёный двор. Находится в состоянии «чёрного каркаса». О комплексе: закрытый комплекс из 10 таунхаусов. Высокое качество строительства — вентилируемые фасады, окна с алюминиевым профилем, керамический кирпич, надёжные двери. Комплекс практически построен, коммуникации проведены — можно приступать к ремонту. У каждого таунхауса свой дворик и гараж. Рядом небольшой парк, детская и спортивная площадки, зоны отдыха. Стоимость: $185 000. Подходит под ВНЖ.",
+            "rooms": "4 спальни",
+            "floorsText": "3 этажа",
+            "completionText": "чёрный каркас",
+            "address": "Батуми, район Адлия"
+          },
+          "en": {
+            "title": "Townhouse 222 m² with a terrace and garage in Adlia",
+            "description": "A 222 m² townhouse with a terrace and its own garage, 4 minutes from the sea and Kaczyński Park — for $185,000. The community is built, renovations can begin. Location: the club community is within the city, in the Adlia district. The sea and promenade — 4 minutes by car, the ELT quarter infrastructure — 3 minutes by car, the Metro City mall — 8 minutes by car. 5 minutes away is the Lech and Maria Kaczyński Park. It is always green here, with plenty of recreation areas and walking paths, a skate park and bike zones, and outdoor fitness equipment — a perfect place to walk, breathe and stay active. About the property: 222 m², 3 floors and a comfortable terrace — a kitchen-living room, 4 bedrooms, 4 bathrooms, a private garage and a green yard. It is in a bare-shell condition. About the community: a gated community of 10 townhouses. High construction quality — ventilated facades, aluminium-profile windows, ceramic brick, sturdy doors. The community is practically finished, utilities are connected — renovations can begin. Each townhouse has its own yard and garage. Nearby there is a small park, children's and sports playgrounds, and lounge areas. Price: $185,000. Eligible for a residence permit.",
+            "rooms": "4 bedrooms",
+            "floorsText": "3 floors",
+            "completionText": "bare shell",
+            "address": "Batumi, Adlia district"
+          },
+          "geo": {
+            "title": "თაუნჰაუსი 222 მ² ტერასით და გარაჟით ადლიაში",
+            "description": "თაუნჰაუსი 222 მ² ტერასით და საკუთარი გარაჟით, ზღვიდან და კაჩინსკების პარკიდან 4 წუთში — $185 000-ად. კომპლექსი აშენებულია, შესაძლებელია რემონტის დაწყება. ლოკაცია: საკლუბო კომპლექსი მდებარეობს ქალაქის ფარგლებში, ადლიის რაიონში. ზღვა და ბულვარი — 4 წუთი მანქანით, ELT-კვარტლის ინფრასტრუქტურა — 3 წუთი მანქანით, სავაჭრო ცენტრი «Metro City» — 8 წუთი მანქანით. 5 წუთში — ლეხ და მარია კაჩინსკების პარკი. აქ ყოველთვის მწვანეა, ბევრი დასასვენებელი ადგილი და სასეირნო ბილიკი, სკეიტ-პარკი და ველო-ზონები, ვარჯიშის ტრენაჟორები — იდეალური ადგილი სასეირნოდ და აქტიური ცხოვრებისთვის. ობიექტის შესახებ: ფართი 222 მ², 3 სართული და კომფორტული ტერასა — სამზარეულო-მისაღები, 4 საძინებელი, 4 სველი წერტილი, საკუთარი გარაჟი და მწვანე ეზო. იმყოფება „შავი კარკასის“ მდგომარეობაში. კომპლექსის შესახებ: დახურული კომპლექსი 10 თაუნჰაუსისგან. მშენებლობის მაღალი ხარისხი — ვენტილირებადი ფასადები, ალუმინის პროფილის ფანჯრები, კერამიკული აგური, საიმედო კარები. კომპლექსი პრაქტიკულად აშენებულია, კომუნიკაციები გაყვანილია — შესაძლებელია რემონტის დაწყება. თითოეულ თაუნჰაუსს აქვს საკუთარი ეზო და გარაჟი. ახლოს — პატარა პარკი, საბავშვო და სპორტული მოედნები, დასასვენებელი ზონები. ფასი: $185 000. გამოდგება ბინადრობის ნებართვისთვის.",
+            "rooms": "4 საძინებელი",
+            "floorsText": "3 სართული",
+            "completionText": "შავი კარკასი",
+            "address": "ბათუმი, ადლიის რაიონი"
+          }
+        },
+        "title": "Таунхаус 222 м² с террасой и гаражом в Адлии",
+        "description": "Таунхаус 222 м² с террасой и своим гаражом в 4 минутах от моря и парка Качиньских — за $185 000. Комплекс построен, можно приступать к ремонтам. Локация: клубный комплекс расположен в черте города, в районе Адлия. Море и набережная — 4 минуты на авто, инфраструктура ELT-квартала — 3 минуты на авто, ТЦ «Metro City» — 8 минут на авто. В 5 минутах — парк «Леха и Марии Качиньских». Здесь всегда зелено, много мест отдыха и прогулочных дорожек, скейт-парк и велозоны, тренажёры для взрослых — идеальное место, чтобы гулять, дышать и жить в движении. Об объекте: площадь 222 м², 3 этажа и удобная терраса — кухня-гостиная, 4 спальни, 4 санузла, свой гараж и зелёный двор. Находится в состоянии «чёрного каркаса». О комплексе: закрытый комплекс из 10 таунхаусов. Высокое качество строительства — вентилируемые фасады, окна с алюминиевым профилем, керамический кирпич, надёжные двери. Комплекс практически построен, коммуникации проведены — можно приступать к ремонту. У каждого таунхауса свой дворик и гараж. Рядом небольшой парк, детская и спортивная площадки, зоны отдыха. Стоимость: $185 000. Подходит под ВНЖ.",
+        "rooms": "4 спальни",
+        "floorsText": "3 этажа",
+        "completionText": "чёрный каркас",
+        "address": "Батуми, район Адлия"
       },
       {
         "id": "house-kobuleti-sea",
@@ -1375,7 +2239,39 @@
             "name": "Первая линия: вид на море с участка",
             "src": "/images/kobuleti-sea/kobuleti-02.png"
           }
-        ]
+        ],
+        "localized": {
+          "ru": {
+            "title": "Дом у моря — Кобулети",
+            "description": "Дом у моря в Кобулети, первая линия — за $365 000. Дом 187 м², участок 308 м². Построен по европейским стандартам, выполнен качественный ремонт, без мебели и техники. Подключены газ, вода и электричество. Панорамные окна от пола до потолка, стеклянный балкон 26 м² по периметру второго этажа, просторная терраса на третьем этаже. 1 этаж: просторный зал с камином, кухня-гостиная, санузел. 2 этаж: 3 просторные спальни, санузел, стеклянный балкон 26 м² с видом на море. 3 этаж: просторная терраса с панорамным видом на море, возможность обустройства зоны отдыха, установки открытого бассейна, зона барбекю. Первая линия моря, современная архитектура, качественное строительство, максимум естественного света благодаря панорамному остеклению. Отличный вариант для постоянного проживания, отдыха или инвестиций. Стоимость: $365 000.",
+            "rooms": "3 спальни",
+            "floorsText": "3 этажа",
+            "completionText": "готовый дом с ремонтом",
+            "address": "Кобулети, первая линия моря"
+          },
+          "en": {
+            "title": "House by the sea — Kobuleti",
+            "description": "A house by the sea in Kobuleti, first line — for $365,000. House 187 m², plot 308 m². Built to European standards with a high-quality renovation, without furniture or appliances. Gas, water and electricity are connected. Floor-to-ceiling panoramic windows, a 26 m² glass balcony around the second floor, and a spacious terrace on the third floor. 1st floor: a spacious hall with a fireplace, kitchen-living room, bathroom. 2nd floor: 3 spacious bedrooms, bathroom, 26 m² glass balcony with sea view. 3rd floor: a spacious terrace with a panoramic sea view, space for a lounge area, option to install an outdoor pool, barbecue area. First line to the sea, modern architecture, quality construction, maximum natural light thanks to panoramic glazing. An excellent option for permanent living, holidays or investment. Price: $365,000.",
+            "rooms": "3 bedrooms",
+            "floorsText": "3 floors",
+            "completionText": "ready house with renovation",
+            "address": "Kobuleti, first line to the sea"
+          },
+          "geo": {
+            "title": "სახლი ზღვასთან — კობულეთი",
+            "description": "სახლი ზღვასთან კობულეთში, პირველი ხაზი — $365 000-ად. სახლი 187 მ², ნაკვეთი 308 მ². აშენებულია ევროპული სტანდარტებით, გაკეთებულია ხარისხიანი რემონტი, ავეჯისა და ტექნიკის გარეშე. შეერთებულია გაზი, წყალი და ელექტროობა. იატაკიდან ჭერამდე პანორამული ფანჯრები, მეორე სართულის პერიმეტრზე 26 მ² მინის აივანი, მესამე სართულზე ფართო ტერასა. 1 სართული: ფართო დარბაზი ბუხრით, სამზარეულო-მისაღები, სველი წერტილი. 2 სართული: 3 ფართო საძინებელი, სველი წერტილი, 26 მ² მინის აივანი ზღვის ხედით. 3 სართული: ფართო ტერასა პანორამული ხედით ზღვაზე, დასასვენებელი ზონის მოწყობის შესაძლებლობა, ღია აუზის დაყენების შესაძლებლობა, ბარბეკიუს ზონა. პირველი ხაზი ზღვასთან, თანამედროვე არქიტექტურა, ხარისხიანი მშენებლობა, მაქსიმალური ბუნებრივი სინათლე პანორამული მინის გამო. შესანიშნავი ვარიანტი მუდმივი ცხოვრების, დასვენების ან ინვესტიციისთვის. ფასი: $365 000.",
+            "rooms": "3 საძინებელი",
+            "floorsText": "3 სართული",
+            "completionText": "მზა სახლი რემონტით",
+            "address": "კობულეთი, პირველი ხაზი ზღვასთან"
+          }
+        },
+        "title": "Дом у моря — Кобулети",
+        "description": "Дом у моря в Кобулети, первая линия — за $365 000. Дом 187 м², участок 308 м². Построен по европейским стандартам, выполнен качественный ремонт, без мебели и техники. Подключены газ, вода и электричество. Панорамные окна от пола до потолка, стеклянный балкон 26 м² по периметру второго этажа, просторная терраса на третьем этаже. 1 этаж: просторный зал с камином, кухня-гостиная, санузел. 2 этаж: 3 просторные спальни, санузел, стеклянный балкон 26 м² с видом на море. 3 этаж: просторная терраса с панорамным видом на море, возможность обустройства зоны отдыха, установки открытого бассейна, зона барбекю. Первая линия моря, современная архитектура, качественное строительство, максимум естественного света благодаря панорамному остеклению. Отличный вариант для постоянного проживания, отдыха или инвестиций. Стоимость: $365 000.",
+        "rooms": "3 спальни",
+        "floorsText": "3 этажа",
+        "completionText": "готовый дом с ремонтом",
+        "address": "Кобулети, первая линия моря"
       }
     ]
   },

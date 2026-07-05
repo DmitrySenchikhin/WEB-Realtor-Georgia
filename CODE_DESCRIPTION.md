@@ -119,6 +119,11 @@
 
 Формат записи: **`ГГГГ-ММ-ДД` — краткий заголовок** → файлы, суть.
 
+### 2026-07-05 — Описание на детальном экране (iOS / catalog.json)
+
+- **Файлы:** `scripts/build-catalog.mjs`, `js/property-descriptions.js`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** в **`catalog.json`** тексты описаний денормализуются в каждый объект **`groups`** (поля **`title`**, **`description`**, **`rooms`** и др. + **`localized`** по языкам). Раньше они были только в **`descriptions[id]`** — превью в iOS их подхватывало, а детальный экран, читающий объект из **`groups`**, оставался без текста. На вебе добавлен повторный вызов **`initCatalogDetailPage`** по событию **`realtor:descriptionsready`**.
+
 ### 2026-07-05 — CI: актуализирован public/catalog.json
 
 - **Файлы:** `public/catalog.json`, `CODE_DESCRIPTION.md`
