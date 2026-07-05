@@ -24,6 +24,86 @@
     return obj[field] != null ? String(obj[field]) : "";
   }
 
+  var DESC_LANG_FOLDERS = {
+    ru: "/description ru",
+    en: "/description en",
+    geo: "/description geo",
+  };
+
+  function readStashedCardDescription(id) {
+    if (!id) return null;
+    try {
+      var raw = sessionStorage.getItem("realtor:card-desc:" + id);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e0) {
+      return null;
+    }
+  }
+
+  function stashCardDescriptionForNav(card, href) {
+    if (!card || !href) return;
+    try {
+      var url = new URL(href, window.location.href);
+      var id = url.searchParams.get("id");
+      if (!id) return;
+      var description = card.getAttribute("data-desc-text") || "";
+      if (!description) return;
+      sessionStorage.setItem(
+        "realtor:card-desc:" + id,
+        JSON.stringify({
+          title: card.getAttribute("data-desc-title") || "",
+          description: description,
+        })
+      );
+    } catch (e1) {}
+  }
+
+  function resolveDescriptionText(obj, id) {
+    var fromCat = obj ? String(cat(obj, "description")).trim() : "";
+    if (fromCat) return fromCat;
+
+    var stashed = readStashedCardDescription(id);
+    if (stashed && stashed.description) return String(stashed.description).trim();
+
+    if (typeof window !== "undefined" && window.RealtorDescriptions && id) {
+      var lang = window.RealtorI18n && window.RealtorI18n.getLang ? window.RealtorI18n.getLang() : "ru";
+      return String(window.RealtorDescriptions.get(id, lang, "description") || "").trim();
+    }
+    return "";
+  }
+
+  function resolveTitle(obj, id) {
+    var fromCat = obj ? String(cat(obj, "title")).trim() : "";
+    if (fromCat) return fromCat;
+    var stashed = readStashedCardDescription(id);
+    if (stashed && stashed.title) return String(stashed.title).trim();
+    return "Описание";
+  }
+
+  function fetchMissingDescription(id) {
+    if (!id || typeof fetch !== "function") return Promise.resolve(false);
+
+    var lang = window.RealtorI18n && window.RealtorI18n.getLang ? window.RealtorI18n.getLang() : "ru";
+    if (lang === "ka") lang = "geo";
+    var folder = DESC_LANG_FOLDERS[lang] || DESC_LANG_FOLDERS.ru;
+    var store = window.REALTOR_DESCRIPTIONS || (window.REALTOR_DESCRIPTIONS = {});
+    if (store[id] && store[id][lang] && store[id][lang].description) return Promise.resolve(true);
+
+    return fetch(encodeURI(folder + "/" + id + ".json"))
+      .then(function (response) {
+        return response.ok ? response.json() : null;
+      })
+      .then(function (data) {
+        if (!data) return false;
+        store[id] = store[id] || {};
+        store[id][lang] = data;
+        return true;
+      })
+      .catch(function () {
+        return false;
+      });
+  }
+
   function formatAmount(value) {
     return Math.round(value).toLocaleString("ru-RU");
   }
@@ -1420,6 +1500,18 @@
     document.addEventListener(
       "click",
       function (e) {
+        var link = e.target.closest("a.card__body-link, a.card__photo-overlay");
+        if (link) {
+          var linkedCard = link.closest(".card[data-desc-text]");
+          if (linkedCard) {
+            stashCardDescriptionForNav(
+              linkedCard,
+              link.getAttribute("href") || linkedCard.getAttribute("data-desc-href") || ""
+            );
+          }
+          return;
+        }
+
         var card = e.target.closest(".card[data-desc-text]");
         if (!card) return;
         if (e.target.closest(".card__photo-gallery__btn")) return;
@@ -1433,6 +1525,7 @@
           }
           e.preventDefault();
           e.stopPropagation();
+          stashCardDescriptionForNav(card, href);
           window.location.assign(href);
           return;
         }
@@ -1740,8 +1833,8 @@
 
     root.setAttribute("data-current-catalog-id", id);
 
-    if (cat(obj, "title")) {
-      document.title = cat(obj, "title") + " — Батуми — REALTOR GEORGIA";
+    if (resolveTitle(obj, id) !== "Описание") {
+      document.title = resolveTitle(obj, id) + " — Батуми — REALTOR GEORGIA";
     }
 
     var mainPrice = root.querySelector(".nb-price__main, .nb-obj21__price-main");
@@ -1838,8 +1931,8 @@
       statTexts[3].textContent = String(cat(obj, "completionText")).trim().replace(/-/g, "–");
     }
 
-    var text = String(cat(obj, "description")).trim();
-    var title = cat(obj, "title") || "Описание";
+    var text = resolveDescriptionText(obj, id);
+    var title = resolveTitle(obj, id);
 
     var textEl = root.querySelector(".nb-desc__text");
     if (textEl && text) {
@@ -1851,7 +1944,7 @@
     }
 
     var toolbarTitle = root.querySelector(".nb-obj21__toolbar-title");
-    if (toolbarTitle && cat(obj, "title")) toolbarTitle.textContent = cat(obj, "title");
+    if (toolbarTitle && title && title !== "Описание") toolbarTitle.textContent = title;
 
     if (!root.hasAttribute("data-nb-modal-bound")) {
       root.setAttribute("data-nb-modal-bound", "1");
@@ -1864,8 +1957,8 @@
         var current = findObjectById(currentId);
         if (!current) return;
         openModal(
-          cat(current, "title") || "Описание",
-          String(cat(current, "description")).trim(),
+          resolveTitle(current, currentId),
+          resolveDescriptionText(current, currentId),
           detailHrefFor(current)
         );
       }
@@ -1876,6 +1969,23 @@
       }
       if (textEl) {
         textEl.addEventListener("click", openNbModal);
+      }
+    }
+
+    if (textEl && !text) {
+      var retry = function () {
+        if (resolveDescriptionText(obj, id)) {
+          initCatalogDetailPage();
+          return;
+        }
+        if (window.REALTOR_DESCRIPTIONS_READY) {
+          fetchMissingDescription(id).then(function (ok) {
+            if (ok) initCatalogDetailPage();
+          });
+        }
+      };
+      if (window.REALTOR_DESCRIPTIONS_READY) {
+        retry();
       }
     }
   }
