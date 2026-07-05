@@ -119,6 +119,11 @@
 
 Формат записи: **`ГГГГ-ММ-ДД` — краткий заголовок** → файлы, суть.
 
+### 2026-07-05 — CI: актуализирован public/catalog.json
+
+- **Файлы:** `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** пересобран каталог (`npm run build:catalog`), **`version`** → **2026-07-05** — исправление проверки в GitHub Actions.
+
 ### 2026-07-03 — Real Palace Blue: добавлены фото комплекса
 
 - **Файлы:** `js/objects-catalog.js`, `images/real-palace-blue/rpb-01.webp` … `rpb-04.webp`, `public/catalog.json`, `CODE_DESCRIPTION.md`
