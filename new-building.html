@@ -44,11 +44,12 @@
         <div class="nb-hero">
           <img
             class="nb-hero__img"
-            src="/images/nb-hero.png"
             alt="Фасад новостройки"
             width="362"
             height="316"
+            decoding="async"
           />
+          <script src="/js/detail-hero-inline.js"></script>
           <div class="nb-hero__dots" aria-hidden="true">
             <span></span><span class="is-active"></span><span></span><span></span><span></span><span></span
             ><span></span>
@@ -124,6 +125,21 @@
           </div>
         </section>
 
+        <section class="nb-card nb-desc" aria-labelledby="nb-desc-title">
+          <h2 id="nb-desc-title" class="nb-desc__label">Описание</h2>
+          <p class="nb-desc__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat...
+          </p>
+          <button type="button" class="nb-desc__more">
+            Развернуть
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+              <path d="M1 1.5L6 6l5-4.5" stroke="#2d1f1d" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+        </section>
+
         <section class="nb-card nb-location" aria-labelledby="nb-loc-title">
           <h2 id="nb-loc-title" class="nb-location__label">Расположение</h2>
           <p class="nb-location__address">ул. 3-й тупик Андрея Первозванного, 3</p>
@@ -141,21 +157,6 @@
               </svg>
             </span>
           </div>
-        </section>
-
-        <section class="nb-card nb-desc" aria-labelledby="nb-desc-title">
-          <h2 id="nb-desc-title" class="nb-desc__label">Описание</h2>
-          <p class="nb-desc__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat...
-          </p>
-          <button type="button" class="nb-desc__more">
-            Развернуть
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
-              <path d="M1 1.5L6 6l5-4.5" stroke="#2d1f1d" stroke-width="1.5" stroke-linecap="round" />
-            </svg>
-          </button>
         </section>
 
         <div class="nb-obj21__cta-card nb-realtor-cta" aria-label="Контакт риелтора">

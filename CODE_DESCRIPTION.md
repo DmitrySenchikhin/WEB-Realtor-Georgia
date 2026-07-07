@@ -32,6 +32,7 @@
 | `images/new-bilding-one/` | Материалы **ЖК ONE** (`new-bilding-one`, карточка вместо бывшего Orbi Sea Towers) |
 | `images/realtor-personal-avatar.png` | Фото в блоке «Ваш персональный риелтор» на страницах объекта (`nb-realtor-cta`) |
 | `images/ramada-one-development/` | Материалы **RAMADA by One Development** (`nb-ramada-one-development`), страница **`new-building-2.html`** |
+| `images/real-palace-blue/` | Презентационные WebP для квартиры **`apt-real-palace-blue-2p1`** (Real Palace Blue) |
 
 ---
 
@@ -117,6 +118,56 @@
 ## Журнал изменений
 
 Формат записи: **`ГГГГ-ММ-ДД` — краткий заголовок** → файлы, суть.
+
+### 2026-07-07 — Веб: без вспышки заглушки фото на странице объекта
+
+- **Файлы:** `js/detail-hero-inline.js`, `js/property-descriptions.js`, `apartment.html`, `new-building.html`, `new-building-stay-rent.html`, `new-building-2.html`, `CODE_DESCRIPTION.md`
+- **Суть:** при переходе с карточки сначала мелькала заглушка (`property-1.png` / `nb-hero.png`), затем фото из каталога. Убраны жёсткие `src` в герое; при клике по карточке первое фото сохраняется в **`sessionStorage`** и сразу подставляется синхронным **`detail-hero-inline.js`** (до основного JS).
+
+### 2026-07-05 — Веб: описание видно на мобильном (порядок секций)
+
+- **Файлы:** `apartment.html`, `new-building.html`, `new-building-stay-rent.html`, `new-building-2.html`, `CODE_DESCRIPTION.md`
+- **Суть:** блок **«Описание»** перенесён **выше** блока **«Расположение»** (карта ~370 px). На телефоне описание оказывалось под картой за пределами экрана — казалось, что текста нет.
+
+### 2026-07-05 — Веб: описание на детальной странице после тапа по карточке
+
+- **Файлы:** `js/property-descriptions.js`, `CODE_DESCRIPTION.md`
+- **Суть:** при переходе с карточки на страницу объекта описание могло не появляться: на карточке текст уже был (из `data-desc-text`), а на `apartment.html` / `new-building*.html` страница ждала повторной загрузки JSON. Теперь текст сохраняется в **`sessionStorage`** при клике по ссылке карточки и сразу подставляется в блок **`.nb-desc__text`**; если JSON ещё не загружен — догружается точечно; повторная инициализация по **`realtor:descriptionsready`**.
+
+### 2026-07-05 — Описание на детальном экране (iOS / catalog.json)
+
+- **Файлы:** `scripts/build-catalog.mjs`, `js/property-descriptions.js`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** в **`catalog.json`** тексты описаний денормализуются в каждый объект **`groups`** (поля **`title`**, **`description`**, **`rooms`** и др. + **`localized`** по языкам). Раньше они были только в **`descriptions[id]`** — превью в iOS их подхватывало, а детальный экран, читающий объект из **`groups`**, оставался без текста. На вебе добавлен повторный вызов **`initCatalogDetailPage`** по событию **`realtor:descriptionsready`**.
+
+### 2026-07-05 — CI: актуализирован public/catalog.json
+
+- **Файлы:** `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** пересобран каталог (`npm run build:catalog`), **`version`** → **2026-07-05** — исправление проверки в GitHub Actions.
+
+### 2026-07-03 — Real Palace Blue: добавлены фото комплекса
+
+- **Файлы:** `js/objects-catalog.js`, `images/real-palace-blue/rpb-01.webp` … `rpb-04.webp`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** для **`apt-real-palace-blue-2p1`** в **`photos`** добавлены **4** презентационных снимка комплекса (пока нет фото самой квартиры).
+
+### 2026-07-03 — Real Palace Blue: объект без фото
+
+- **Файлы:** `js/objects-catalog.js`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** для **`apt-real-palace-blue-2p1`** массив **`photos`** очищен — объект сохранён в каталоге без снимков (заглушка на карточке — **`property-1.png`**); фото можно добавить позже.
+
+### 2026-07-03 — Real Palace Blue: фото квартиры
+
+- **Файлы:** `js/objects-catalog.js`, `images/real-palace-blue/rpb-01.jpg` … `rpb-05.jpg`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** для **`apt-real-palace-blue-2p1`** заменены презентационные снимки комплекса на **5** фото квартиры: вид с балкона, панорама, интерьер в состоянии «белый каркас», гостиная с панорамными окнами.
+
+### 2026-07-03 — Real Palace Blue: уточнение координат
+
+- **Файлы:** `js/objects-catalog.js`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** для **`apt-real-palace-blue-2p1`** обновлены **`geo`**: **41.625497**, **41.602739** (и ссылка Google Maps).
+
+### 2026-07-03 — Каталог: квартира Real Palace Blue (2+1, 81,7 м²)
+
+- **Файлы:** `js/objects-catalog.js`, `js/description-ids.js`, `description ru/apt-real-palace-blue-2p1.json`, `description en/apt-real-palace-blue-2p1.json`, `description geo/apt-real-palace-blue-2p1.json`, `images/real-palace-blue/rpb-01.webp` … `rpb-04.webp`, `public/catalog.json`, `CODE_DESCRIPTION.md`
+- **Суть:** в группе **`apartments`** добавлен объект **`apt-real-palace-blue-2p1`** (Real Palace Blue, 2+1, 81,7 м², жилая 61,7 м², **$140 000** / **378 000** лари, **`priceKind: fixed`**); в описании зафиксированы условия рассрочки: ПВ **$70 000**, до августа 2026 без платежей, остаток **$70 000** до **15.02.2027**; координаты ул. Ангиса, 95; **4** фото комплекса в **`images/real-palace-blue/`**.
 
 ### 2026-05-14 — Блок «персональный риелтор» на всех страницах объекта
 

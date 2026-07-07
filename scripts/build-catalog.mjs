@@ -91,6 +91,39 @@ function collectGroupIds(groups) {
   return ids;
 }
 
+const TEXT_FIELDS = ["title", "description", "rooms", "floorsText", "completionText", "address"];
+
+/**
+ * Копирует тексты описаний в каждый объект groups.
+ * iOS-приложение читает превью из catalog.descriptions[id], а детальный экран — из объекта в groups;
+ * без денормализации на детали description пустой.
+ */
+function enrichGroupsWithDescriptions(groups, descriptions) {
+  const enriched = {};
+  for (const [groupKey, items] of Object.entries(groups)) {
+    if (!Array.isArray(items)) {
+      enriched[groupKey] = items;
+      continue;
+    }
+    enriched[groupKey] = items.map(function (item) {
+      if (!item || !item.id) return item;
+      const byLang = descriptions[item.id];
+      if (!byLang) return item;
+
+      const copy = Object.assign({}, item);
+      copy.localized = byLang;
+
+      const fallback = byLang.ru || byLang.en || byLang.geo || {};
+      TEXT_FIELDS.forEach(function (field) {
+        if (fallback[field] != null) copy[field] = fallback[field];
+      });
+
+      return copy;
+    });
+  }
+  return enriched;
+}
+
 function main() {
   const groups = readObjectGroups();
   const descriptionIds = readDescriptionIds();
@@ -109,9 +142,11 @@ function main() {
     }
   });
 
+  const enrichedGroups = enrichGroupsWithDescriptions(groups, descriptions);
+
   const catalog = {
     version: new Date().toISOString().slice(0, 10),
-    groups,
+    groups: enrichedGroups,
     descriptions,
   };
 

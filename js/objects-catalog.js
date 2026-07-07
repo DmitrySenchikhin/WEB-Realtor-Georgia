@@ -504,6 +504,25 @@
         roomsKey: "2+1"
     },
 {
+        id: "apt-real-palace-blue-2p1",
+        detailHref: "/apartment.html",
+        priceGel: 378000,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.625497,
+          lng: 41.602739,
+          mapsUrl: "https://www.google.com/maps?q=41.625497,41.602739"
+        },
+        areaM2: 81.7,
+        photos: [
+          { name: "Real Palace Blue — фасад комплекса", src: "/images/real-palace-blue/rpb-01.webp" },
+          { name: "Real Palace Blue — панорамный вид", src: "/images/real-palace-blue/rpb-02.webp" },
+          { name: "Real Palace Blue — локация у моря", src: "/images/real-palace-blue/rpb-03.webp" },
+          { name: "Real Palace Blue — проект", src: "/images/real-palace-blue/rpb-04.webp" }
+        ],
+        roomsKey: "2+1"
+    },
+{
         id: "apt-steps-batumi-studio-17",
         detailHref: "/apartment.html",
         priceGel: 186300,

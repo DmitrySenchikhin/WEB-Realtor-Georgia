@@ -24,6 +24,143 @@
     return obj[field] != null ? String(obj[field]) : "";
   }
 
+  var DESC_LANG_FOLDERS = {
+    ru: "/description ru",
+    en: "/description en",
+    geo: "/description geo",
+  };
+
+  function readStashedCardDescription(id) {
+    if (!id) return null;
+    try {
+      var raw = sessionStorage.getItem("realtor:card-desc:" + id);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e0) {
+      return null;
+    }
+  }
+
+  function stashCardDescriptionForNav(card, href) {
+    if (!card || !href) return;
+    try {
+      var url = new URL(href, window.location.href);
+      var id = url.searchParams.get("id");
+      if (!id) return;
+      var description = card.getAttribute("data-desc-text") || "";
+      if (!description) return;
+      sessionStorage.setItem(
+        "realtor:card-desc:" + id,
+        JSON.stringify({
+          title: card.getAttribute("data-desc-title") || "",
+          description: description,
+        })
+      );
+    } catch (e1) {}
+  }
+
+  function getCardHeroPhoto(card) {
+    if (!card) return null;
+
+    var src = card.getAttribute("data-hero-photo-src");
+    if (src) {
+      return {
+        src: src,
+        alt: card.getAttribute("data-hero-photo-alt") || "",
+        fit: card.getAttribute("data-hero-photo-fit") || "",
+      };
+    }
+
+    var box = card.querySelector(".card__photo");
+    if (!box) return null;
+
+    var live =
+      box.querySelector("img.card__photo-gallery__live") ||
+      box.querySelector("img:not(.card__img-layer)");
+    if (!live) return null;
+
+    var liveSrc = live.getAttribute("src") || live.src || "";
+    if (!liveSrc || liveSrc.indexOf("property-1.png") >= 0 || liveSrc.indexOf("property-2.png") >= 0) {
+      return null;
+    }
+
+    return {
+      src: liveSrc,
+      alt: live.getAttribute("alt") || "",
+      fit: live.classList.contains("property-photo--contain") ? "contain" : "",
+    };
+  }
+
+  function stashCardPhotoForNav(card, href) {
+    if (!card || !href) return;
+    try {
+      var url = new URL(href, window.location.href);
+      var id = url.searchParams.get("id");
+      if (!id) return;
+
+      var photo = getCardHeroPhoto(card);
+      if (!photo || !photo.src) return;
+
+      sessionStorage.setItem("realtor:card-photo:" + id, JSON.stringify(photo));
+
+      var preload = document.createElement("link");
+      preload.rel = "preload";
+      preload.as = "image";
+      preload.href = photo.src;
+      document.head.appendChild(preload);
+    } catch (e2) {}
+  }
+
+  function stashCardNavForNav(card, href) {
+    stashCardDescriptionForNav(card, href);
+    stashCardPhotoForNav(card, href);
+  }
+
+  function resolveDescriptionText(obj, id) {
+    var fromCat = obj ? String(cat(obj, "description")).trim() : "";
+    if (fromCat) return fromCat;
+
+    var stashed = readStashedCardDescription(id);
+    if (stashed && stashed.description) return String(stashed.description).trim();
+
+    if (typeof window !== "undefined" && window.RealtorDescriptions && id) {
+      var lang = window.RealtorI18n && window.RealtorI18n.getLang ? window.RealtorI18n.getLang() : "ru";
+      return String(window.RealtorDescriptions.get(id, lang, "description") || "").trim();
+    }
+    return "";
+  }
+
+  function resolveTitle(obj, id) {
+    var fromCat = obj ? String(cat(obj, "title")).trim() : "";
+    if (fromCat) return fromCat;
+    var stashed = readStashedCardDescription(id);
+    if (stashed && stashed.title) return String(stashed.title).trim();
+    return "Описание";
+  }
+
+  function fetchMissingDescription(id) {
+    if (!id || typeof fetch !== "function") return Promise.resolve(false);
+
+    var lang = window.RealtorI18n && window.RealtorI18n.getLang ? window.RealtorI18n.getLang() : "ru";
+    if (lang === "ka") lang = "geo";
+    var folder = DESC_LANG_FOLDERS[lang] || DESC_LANG_FOLDERS.ru;
+    var store = window.REALTOR_DESCRIPTIONS || (window.REALTOR_DESCRIPTIONS = {});
+    if (store[id] && store[id][lang] && store[id][lang].description) return Promise.resolve(true);
+
+    return fetch(encodeURI(folder + "/" + id + ".json"))
+      .then(function (response) {
+        return response.ok ? response.json() : null;
+      })
+      .then(function (data) {
+        if (!data) return false;
+        store[id] = store[id] || {};
+        store[id][lang] = data;
+        return true;
+      })
+      .catch(function () {
+        return false;
+      });
+  }
+
   function formatAmount(value) {
     return Math.round(value).toLocaleString("ru-RU");
   }
@@ -685,6 +822,11 @@
     var second = items[1] || first;
     var altBase = cat(obj, "title") || "Фото объекта";
     var layers = box.querySelectorAll("img.card__img-layer");
+
+    card.setAttribute("data-hero-photo-src", first.src);
+    card.setAttribute("data-hero-photo-alt", first.name || altBase);
+    if (first.fit === "contain") card.setAttribute("data-hero-photo-fit", "contain");
+    else card.removeAttribute("data-hero-photo-fit");
 
     if (items.length >= 2) {
       box.classList.add("card__photo--gallery");
@@ -1420,6 +1562,18 @@
     document.addEventListener(
       "click",
       function (e) {
+        var link = e.target.closest("a.card__body-link, a.card__photo-overlay");
+        if (link) {
+          var linkedCard = link.closest(".card[data-desc-text]");
+          if (linkedCard) {
+            stashCardNavForNav(
+              linkedCard,
+              link.getAttribute("href") || linkedCard.getAttribute("data-desc-href") || ""
+            );
+          }
+          return;
+        }
+
         var card = e.target.closest(".card[data-desc-text]");
         if (!card) return;
         if (e.target.closest(".card__photo-gallery__btn")) return;
@@ -1433,6 +1587,7 @@
           }
           e.preventDefault();
           e.stopPropagation();
+          stashCardNavForNav(card, href);
           window.location.assign(href);
           return;
         }
@@ -1740,8 +1895,8 @@
 
     root.setAttribute("data-current-catalog-id", id);
 
-    if (cat(obj, "title")) {
-      document.title = cat(obj, "title") + " — Батуми — REALTOR GEORGIA";
+    if (resolveTitle(obj, id) !== "Описание") {
+      document.title = resolveTitle(obj, id) + " — Батуми — REALTOR GEORGIA";
     }
 
     var mainPrice = root.querySelector(".nb-price__main, .nb-obj21__price-main");
@@ -1838,8 +1993,8 @@
       statTexts[3].textContent = String(cat(obj, "completionText")).trim().replace(/-/g, "–");
     }
 
-    var text = String(cat(obj, "description")).trim();
-    var title = cat(obj, "title") || "Описание";
+    var text = resolveDescriptionText(obj, id);
+    var title = resolveTitle(obj, id);
 
     var textEl = root.querySelector(".nb-desc__text");
     if (textEl && text) {
@@ -1851,7 +2006,7 @@
     }
 
     var toolbarTitle = root.querySelector(".nb-obj21__toolbar-title");
-    if (toolbarTitle && cat(obj, "title")) toolbarTitle.textContent = cat(obj, "title");
+    if (toolbarTitle && title && title !== "Описание") toolbarTitle.textContent = title;
 
     if (!root.hasAttribute("data-nb-modal-bound")) {
       root.setAttribute("data-nb-modal-bound", "1");
@@ -1864,8 +2019,8 @@
         var current = findObjectById(currentId);
         if (!current) return;
         openModal(
-          cat(current, "title") || "Описание",
-          String(cat(current, "description")).trim(),
+          resolveTitle(current, currentId),
+          resolveDescriptionText(current, currentId),
           detailHrefFor(current)
         );
       }
@@ -1876,6 +2031,23 @@
       }
       if (textEl) {
         textEl.addEventListener("click", openNbModal);
+      }
+    }
+
+    if (textEl && !text) {
+      var retry = function () {
+        if (resolveDescriptionText(obj, id)) {
+          initCatalogDetailPage();
+          return;
+        }
+        if (window.REALTOR_DESCRIPTIONS_READY) {
+          fetchMissingDescription(id).then(function (ok) {
+            if (ok) initCatalogDetailPage();
+          });
+        }
+      };
+      if (window.REALTOR_DESCRIPTIONS_READY) {
+        retry();
       }
     }
   }
@@ -1910,6 +2082,12 @@
   }
 
   document.addEventListener("realtor:languagechange", refreshCatalogForLanguage);
+
+  document.addEventListener("realtor:descriptionsready", function () {
+    if (document.querySelector("main[data-nb-catalog-id], main[data-apt-catalog-id]")) {
+      initCatalogDetailPage();
+    }
+  });
 
   if (typeof window !== "undefined" && window.RealtorDescriptions && window.RealtorDescriptions.whenReady) {
     window.RealtorDescriptions.whenReady(bootPropertyDescriptions);
