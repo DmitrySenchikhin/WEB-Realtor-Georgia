@@ -119,6 +119,11 @@
 
 Формат записи: **`ГГГГ-ММ-ДД` — краткий заголовок** → файлы, суть.
 
+### 2026-07-07 — Веб: без вспышки заглушки фото на странице объекта
+
+- **Файлы:** `js/detail-hero-inline.js`, `js/property-descriptions.js`, `apartment.html`, `new-building.html`, `new-building-stay-rent.html`, `new-building-2.html`, `CODE_DESCRIPTION.md`
+- **Суть:** при переходе с карточки сначала мелькала заглушка (`property-1.png` / `nb-hero.png`), затем фото из каталога. Убраны жёсткие `src` в герое; при клике по карточке первое фото сохраняется в **`sessionStorage`** и сразу подставляется синхронным **`detail-hero-inline.js`** (до основного JS).
+
 ### 2026-07-05 — Веб: описание видно на мобильном (порядок секций)
 
 - **Файлы:** `apartment.html`, `new-building.html`, `new-building-stay-rent.html`, `new-building-2.html`, `CODE_DESCRIPTION.md`

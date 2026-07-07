@@ -58,6 +58,63 @@
     } catch (e1) {}
   }
 
+  function getCardHeroPhoto(card) {
+    if (!card) return null;
+
+    var src = card.getAttribute("data-hero-photo-src");
+    if (src) {
+      return {
+        src: src,
+        alt: card.getAttribute("data-hero-photo-alt") || "",
+        fit: card.getAttribute("data-hero-photo-fit") || "",
+      };
+    }
+
+    var box = card.querySelector(".card__photo");
+    if (!box) return null;
+
+    var live =
+      box.querySelector("img.card__photo-gallery__live") ||
+      box.querySelector("img:not(.card__img-layer)");
+    if (!live) return null;
+
+    var liveSrc = live.getAttribute("src") || live.src || "";
+    if (!liveSrc || liveSrc.indexOf("property-1.png") >= 0 || liveSrc.indexOf("property-2.png") >= 0) {
+      return null;
+    }
+
+    return {
+      src: liveSrc,
+      alt: live.getAttribute("alt") || "",
+      fit: live.classList.contains("property-photo--contain") ? "contain" : "",
+    };
+  }
+
+  function stashCardPhotoForNav(card, href) {
+    if (!card || !href) return;
+    try {
+      var url = new URL(href, window.location.href);
+      var id = url.searchParams.get("id");
+      if (!id) return;
+
+      var photo = getCardHeroPhoto(card);
+      if (!photo || !photo.src) return;
+
+      sessionStorage.setItem("realtor:card-photo:" + id, JSON.stringify(photo));
+
+      var preload = document.createElement("link");
+      preload.rel = "preload";
+      preload.as = "image";
+      preload.href = photo.src;
+      document.head.appendChild(preload);
+    } catch (e2) {}
+  }
+
+  function stashCardNavForNav(card, href) {
+    stashCardDescriptionForNav(card, href);
+    stashCardPhotoForNav(card, href);
+  }
+
   function resolveDescriptionText(obj, id) {
     var fromCat = obj ? String(cat(obj, "description")).trim() : "";
     if (fromCat) return fromCat;
@@ -765,6 +822,11 @@
     var second = items[1] || first;
     var altBase = cat(obj, "title") || "Фото объекта";
     var layers = box.querySelectorAll("img.card__img-layer");
+
+    card.setAttribute("data-hero-photo-src", first.src);
+    card.setAttribute("data-hero-photo-alt", first.name || altBase);
+    if (first.fit === "contain") card.setAttribute("data-hero-photo-fit", "contain");
+    else card.removeAttribute("data-hero-photo-fit");
 
     if (items.length >= 2) {
       box.classList.add("card__photo--gallery");
@@ -1504,7 +1566,7 @@
         if (link) {
           var linkedCard = link.closest(".card[data-desc-text]");
           if (linkedCard) {
-            stashCardDescriptionForNav(
+            stashCardNavForNav(
               linkedCard,
               link.getAttribute("href") || linkedCard.getAttribute("data-desc-href") || ""
             );
@@ -1525,7 +1587,7 @@
           }
           e.preventDefault();
           e.stopPropagation();
-          stashCardDescriptionForNav(card, href);
+          stashCardNavForNav(card, href);
           window.location.assign(href);
           return;
         }
