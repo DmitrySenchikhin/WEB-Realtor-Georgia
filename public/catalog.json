@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-07",
+  "version": "2026-07-10",
   "groups": {
     "new-building": [
       {
@@ -358,97 +358,6 @@
       }
     ],
     "apartments": [
-      {
-        "id": "apt-orbi-beach-tower-2912",
-        "detailHref": "/apartment.html",
-        "priceGel": 351000,
-        "priceKind": "fixed",
-        "geo": {
-          "lat": 41.630308,
-          "lng": 41.602256,
-          "mapsUrl": "https://www.google.com/maps?q=41.630308,41.602256"
-        },
-        "areaM2": 50,
-        "photos": [
-          {
-            "name": "Балкон с видом на море",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-01.png"
-          },
-          {
-            "name": "Балкон: вид на город и горы",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-02.png"
-          },
-          {
-            "name": "Спальня",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-03.png"
-          },
-          {
-            "name": "Гостиная с декоративной стеной",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-04.png"
-          },
-          {
-            "name": "Гостиная с видом на море, рабочая зона",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-05.png"
-          },
-          {
-            "name": "Гостиная и проём в спальню",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-06.png"
-          },
-          {
-            "name": "Прихожая и встроенные шкафы",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-07.png"
-          },
-          {
-            "name": "Кухня: плита и духовка Gorenje",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-08.png"
-          },
-          {
-            "name": "Кухня с кофемашиной",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-09.png"
-          },
-          {
-            "name": "Посудомоечная машина Gorenje",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-10.png"
-          },
-          {
-            "name": "Рабочее место у окна",
-            "src": "/images/orbi-beach-tower-2912/orbi-beach-11.png"
-          }
-        ],
-        "roomsKey": "1+1",
-        "localized": {
-          "ru": {
-            "title": "ORBI BEACH TOWER — 1+1 с видом на парк и море",
-            "description": "Квартира в ORBI BEACH TOWER на ул. Шерифа Химшиашвили, 57, 29 этаж: планировка 1+1, 50 м². По всей квартире тёплые полы (три контура). Отличный балкон с видом на парк и море, панорамные окна, солнечная сторона с видом на Турцию и самолёты. Техника и мебель: духовка Bosch, встроенная микроволновка Gorenje, посудомоечная машина Gorenje, большой холодильник Samsung, телевизор Samsung 65\", мебель на балконе Nardi (Италия), стол и стулья в гостиной из натурального дуба (Беларусь), стиральная машина Samsung, встроенные шкафы — много мест для хранения. Прямо перед домом парк Качинских, рядом Metrocity, рестораны и фитнес-клуб; через дорогу набережная и пляж. Цена ориентировочно $130 000 — уточняйте актуальность и условия сделки у менеджера.",
-            "rooms": "1+1",
-            "floorsText": "29 этаж",
-            "completionText": "вторичный фонд",
-            "address": "Батуми, ул. Шерифа Химшиашвили, 57"
-          },
-          "en": {
-            "title": "ORBI BEACH TOWER — 1+1 with park and sea view",
-            "description": "Apartment in ORBI BEACH TOWER at 57 Sherif Khimshiashvili St., 29th floor: 1+1 layout, 50 m². Underfloor heating throughout (three circuits). Excellent balcony with park and sea view, panoramic windows, sunny side with view towards Turkey and aircraft. Appliances and furniture: Bosch oven, built-in Gorenje microwave, Gorenje dishwasher, large Samsung fridge, Samsung 65\" TV, Nardi balcony furniture (Italy), solid oak dining table and chairs (Belarus), Samsung washing machine, built-in wardrobes — ample storage. Kaczyński Park directly in front, Metrocity, restaurants and fitness nearby; promenade and beach across the road. Price approximately $130,000 — confirm current price and deal terms with your manager.",
-            "rooms": "1+1",
-            "floorsText": "29th floor",
-            "completionText": "resale",
-            "address": "Batumi, 57 Sherif Khimshiashvili St."
-          },
-          "geo": {
-            "title": "ORBI BEACH TOWER — 1+1 ხედით პარკსა და ზღვაზე",
-            "description": "ბინა ORBI BEACH TOWER-ში შერიფ ხიმშიაშვილის ქ. 57, 29-ე სართული: გეგმარება 1+1, 50 მ². მთელ ბინაში თბი იატაკი (სამი კონტური). შესანიშნავი აივანი ხედით პარკსა და ზღვაზე, პანორამული ფანჯრები, მზიანი მხარე ხედით თურქეთისა და თვითმფრინავებისკენ. ტექნიკა და ავეჯი: Bosch ღუმელი, ჩაშენებული Gorenje მიკროტალღური, Gorenje ჭურჭლის სარეცხი, დიდი Samsung მაცივალი, Samsung 65\" ტელევიზორი, Nardi ავეჯი აივანზე (იტალია), მაგიდა და სკამები ნატურალური მუხის (ბელარუსი), Samsung სარეცხი, ჩაშენებული კარადები — ბევრი საცავი. პარკი კაჩინსკების წინ, Metrocity, რესტორნები და ფიტნესი ახლოს; გზის გაღმიდან ნაპირი და პლაჟი. ფასი დაახლოებით $130 000 — დაზუსტება მენეჯერთან.",
-            "rooms": "1+1",
-            "floorsText": "29-ე სართული",
-            "completionText": "მეორეული ფონდი",
-            "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
-          }
-        },
-        "title": "ORBI BEACH TOWER — 1+1 с видом на парк и море",
-        "description": "Квартира в ORBI BEACH TOWER на ул. Шерифа Химшиашвили, 57, 29 этаж: планировка 1+1, 50 м². По всей квартире тёплые полы (три контура). Отличный балкон с видом на парк и море, панорамные окна, солнечная сторона с видом на Турцию и самолёты. Техника и мебель: духовка Bosch, встроенная микроволновка Gorenje, посудомоечная машина Gorenje, большой холодильник Samsung, телевизор Samsung 65\", мебель на балконе Nardi (Италия), стол и стулья в гостиной из натурального дуба (Беларусь), стиральная машина Samsung, встроенные шкафы — много мест для хранения. Прямо перед домом парк Качинских, рядом Metrocity, рестораны и фитнес-клуб; через дорогу набережная и пляж. Цена ориентировочно $130 000 — уточняйте актуальность и условия сделки у менеджера.",
-        "rooms": "1+1",
-        "floorsText": "29 этаж",
-        "completionText": "вторичный фонд",
-        "address": "Батуми, ул. Шерифа Химшиашвили, 57"
-      },
       {
         "id": "apt-orbi-beach-tower-studio",
         "detailHref": "/apartment.html",
@@ -2481,32 +2390,6 @@
         "rooms": "2+1",
         "floorsText": "29-ე სართული",
         "completionText": "რემონტი ავეჯით",
-        "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
-      }
-    },
-    "apt-orbi-beach-tower-2912": {
-      "ru": {
-        "title": "ORBI BEACH TOWER — 1+1 с видом на парк и море",
-        "description": "Квартира в ORBI BEACH TOWER на ул. Шерифа Химшиашвили, 57, 29 этаж: планировка 1+1, 50 м². По всей квартире тёплые полы (три контура). Отличный балкон с видом на парк и море, панорамные окна, солнечная сторона с видом на Турцию и самолёты. Техника и мебель: духовка Bosch, встроенная микроволновка Gorenje, посудомоечная машина Gorenje, большой холодильник Samsung, телевизор Samsung 65\", мебель на балконе Nardi (Италия), стол и стулья в гостиной из натурального дуба (Беларусь), стиральная машина Samsung, встроенные шкафы — много мест для хранения. Прямо перед домом парк Качинских, рядом Metrocity, рестораны и фитнес-клуб; через дорогу набережная и пляж. Цена ориентировочно $130 000 — уточняйте актуальность и условия сделки у менеджера.",
-        "rooms": "1+1",
-        "floorsText": "29 этаж",
-        "completionText": "вторичный фонд",
-        "address": "Батуми, ул. Шерифа Химшиашвили, 57"
-      },
-      "en": {
-        "title": "ORBI BEACH TOWER — 1+1 with park and sea view",
-        "description": "Apartment in ORBI BEACH TOWER at 57 Sherif Khimshiashvili St., 29th floor: 1+1 layout, 50 m². Underfloor heating throughout (three circuits). Excellent balcony with park and sea view, panoramic windows, sunny side with view towards Turkey and aircraft. Appliances and furniture: Bosch oven, built-in Gorenje microwave, Gorenje dishwasher, large Samsung fridge, Samsung 65\" TV, Nardi balcony furniture (Italy), solid oak dining table and chairs (Belarus), Samsung washing machine, built-in wardrobes — ample storage. Kaczyński Park directly in front, Metrocity, restaurants and fitness nearby; promenade and beach across the road. Price approximately $130,000 — confirm current price and deal terms with your manager.",
-        "rooms": "1+1",
-        "floorsText": "29th floor",
-        "completionText": "resale",
-        "address": "Batumi, 57 Sherif Khimshiashvili St."
-      },
-      "geo": {
-        "title": "ORBI BEACH TOWER — 1+1 ხედით პარკსა და ზღვაზე",
-        "description": "ბინა ORBI BEACH TOWER-ში შერიფ ხიმშიაშვილის ქ. 57, 29-ე სართული: გეგმარება 1+1, 50 მ². მთელ ბინაში თბი იატაკი (სამი კონტური). შესანიშნავი აივანი ხედით პარკსა და ზღვაზე, პანორამული ფანჯრები, მზიანი მხარე ხედით თურქეთისა და თვითმფრინავებისკენ. ტექნიკა და ავეჯი: Bosch ღუმელი, ჩაშენებული Gorenje მიკროტალღური, Gorenje ჭურჭლის სარეცხი, დიდი Samsung მაცივალი, Samsung 65\" ტელევიზორი, Nardi ავეჯი აივანზე (იტალია), მაგიდა და სკამები ნატურალური მუხის (ბელარუსი), Samsung სარეცხი, ჩაშენებული კარადები — ბევრი საცავი. პარკი კაჩინსკების წინ, Metrocity, რესტორნები და ფიტნესი ახლოს; გზის გაღმიდან ნაპირი და პლაჟი. ფასი დაახლოებით $130 000 — დაზუსტება მენეჯერთან.",
-        "rooms": "1+1",
-        "floorsText": "29-ე სართული",
-        "completionText": "მეორეული ფონდი",
         "address": "ბათუმი, შერიფ ხიმშიაშვილის ქ. 57"
       }
     },

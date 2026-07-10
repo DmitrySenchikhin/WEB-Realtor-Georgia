@@ -7,7 +7,6 @@
   "apt-orbi-beach-tower-2801",
   "apt-orbi-beach-tower-3202",
   "apt-orbi-beach-tower-2902",
-  "apt-orbi-beach-tower-2912",
   "apt-orbi-beach-tower-studio",
   "apt-orbi-city-d1-1p1",
   "apt-avenue-by-orbi-studio",
