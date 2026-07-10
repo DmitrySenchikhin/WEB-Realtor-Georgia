@@ -551,9 +551,9 @@
         priceGel: 540000,
         priceKind: "fixed",
         geo: {
-          lat: 41.640129,
-          lng: 41.617582,
-          mapsUrl: "https://www.google.com/maps?q=41.640129,41.617582"
+          lat: 41.640038,
+          lng: 41.617733,
+          mapsUrl: "https://www.google.com/maps?q=41.640038,41.617733"
         },
         areaM2: 81.2,
         photos: [
