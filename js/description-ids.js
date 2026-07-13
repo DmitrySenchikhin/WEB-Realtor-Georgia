@@ -21,6 +21,7 @@
   "apt-real-palace-blue-2p1",
   "apt-steps-batumi-studio-17",
   "apt-intourist-residence-2p1",
+  "apt-intourist-residence-block-b-2p1",
   "apt-tropical-garden-studio",
   "house-villa-park-next",
   "house-polo-villas-parklane",

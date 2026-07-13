@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-10",
+  "version": "2026-07-13",
   "groups": {
     "new-building": [
       {
@@ -1786,6 +1786,97 @@
         "address": "Батуми, ул. Пиросмани, 17 (Intourist Residence)"
       },
       {
+        "id": "apt-intourist-residence-block-b-2p1",
+        "detailHref": "/apartment.html",
+        "priceGel": 540000,
+        "priceKind": "fixed",
+        "geo": {
+          "lat": 41.640038,
+          "lng": 41.617733,
+          "mapsUrl": "https://www.google.com/maps?q=41.640038,41.617733"
+        },
+        "areaM2": 81.2,
+        "photos": [
+          {
+            "name": "Intourist Residence — фасад комплекса",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-01.jpg"
+          },
+          {
+            "name": "Балкон: прямой вид на море",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-02.jpg"
+          },
+          {
+            "name": "Закат с балкона",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-03.jpg"
+          },
+          {
+            "name": "Гостиная с ТВ и выходом на балкон",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-04.jpg"
+          },
+          {
+            "name": "Гостиная: диван и панорамные окна",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-05.jpg"
+          },
+          {
+            "name": "Кухня и барная стойка: Bosch, Samsung",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-06.jpg"
+          },
+          {
+            "name": "Обеденная зона",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-07.jpg"
+          },
+          {
+            "name": "Кухня и столовая: общий вид",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-08.jpg"
+          },
+          {
+            "name": "Санузел: ванна, душевая, мраморная плитка",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-09.jpg"
+          },
+          {
+            "name": "Санузел: Bosch стиральная и сушильная",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-10.jpg"
+          },
+          {
+            "name": "Гостиная и столовая: кондиционер Wi-Fi",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-11.jpg"
+          }
+        ],
+        "roomsKey": "2+1",
+        "localized": {
+          "ru": {
+            "title": "Intourist Residence — квартира 2+1, блок B",
+            "description": "Квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17, блок B. 11 этаж, 81,2 м². Прямой вид на море, три выхода на балкон, до моря 100 м. Аллея Героев, рестораны, кафе, супермаркеты, аптеки — в шаговой доступности. Новый дизайнерский ремонт — никто не жил. Тёплый пол с индивидуальными Wi-Fi терморегуляторами, сенсорные выключатели Wi-Fi. Подпотолочная система вентиляции с выводами в коридор, гардеробную и на балкон. Установлен мощный компрессор, усиливающий вытяжку над варочной поверхностью. Кондиционеры Wi-Fi в каждой комнате. Полностью укомплектована премиальной техникой Samsung и Bosch: посудомоечная машина Samsung, стиральная и сушильная машины Bosch, большой холодильник Samsung, варочная панель и духовой шкаф Bosch. Ванная и отдельная душевая. Стоимость: $200 000.",
+            "rooms": "2+1",
+            "floorsText": "11 этаж",
+            "completionText": "новый дизайнерский ремонт",
+            "address": "Батуми, ул. Пиросмани, 17, блок B (Intourist Residence)"
+          },
+          "en": {
+            "title": "Intourist Residence — 2+1 apartment, block B",
+            "description": "2+1 apartment in the Intourist Residence residential complex. Address: Batumi, 17 Pirosmani St., block B. 11th floor, 81.2 m². Direct sea view, three balcony exits, 100 m to the sea. Heroes Alley, restaurants, cafés, supermarkets and pharmacies within walking distance. New designer renovation — never lived in. Underfloor heating with individual Wi-Fi thermostats, Wi-Fi touch switches. Ceiling ventilation system with outlets to the corridor, walk-in closet and balcony. Powerful compressor boosting extraction above the cooktop. Wi-Fi air conditioners in every room. Fully equipped with premium Samsung and Bosch appliances: Samsung dishwasher, Bosch washer and dryer, large Samsung fridge, Bosch cooktop and oven. Bathtub and separate shower. Price: $200,000.",
+            "rooms": "2+1",
+            "floorsText": "11th floor",
+            "completionText": "new designer renovation",
+            "address": "Batumi, 17 Pirosmani St., block B (Intourist Residence)"
+          },
+          "geo": {
+            "title": "Intourist Residence — ბინა 2+1, ბლოკი B",
+            "description": "ბინა 2+1 Intourist Residence საცხოვრებელ კომპლექსში. მის: ბათუმი, ნიკო ფიროსმანის ქ. 17, ბლოკი B. 11-ე სართული, 81,2 მ². პირდაპირი ხედი ზღვაზე, სამი გასასვლელი აივანზე, ზღვამდე 100 მ. გმირების ალეა, რესტორნები, კაფეები, სუპერმარკეტები, აფთიაქები — ფეხით მისაწვდომ მანძილზე. ახალი დიზაინერული რემონტი — არავინ ცხოვრობდა. თბი იატაკი ინდივიდუალური Wi-Fi თერმორეგულატორებით, Wi-Fi სენსორული გადამრთველები. ჭერის ქვეშ ვენტილაციის სისტემა გამოტანებით კორიდორში, გარდერობში და აივანზე. დაყენებულია მძლავრი კომპრესორი, რომელიც აძლიერებს გამონაბოლქვს ვარაულის ზემოთ. Wi-Fi კონდიციონერები ყველა ოთახში. სრულად აღჭურვილი პრემიუმ Samsung და Bosch ტექნიკით: Samsung ჭურჭლის სარეცხი, Bosch სარეცხი და საშრობი, დიდი Samsung მაცივალი, Bosch ვარაული და ღუმელი. აბაზანა და ცალკე საშხაპე. ფასი: $200 000.",
+            "rooms": "2+1",
+            "floorsText": "11-ე სართული",
+            "completionText": "ახალი დიზაინერული რემონტი",
+            "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17, ბლოკი B (Intourist Residence)"
+          }
+        },
+        "title": "Intourist Residence — квартира 2+1, блок B",
+        "description": "Квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17, блок B. 11 этаж, 81,2 м². Прямой вид на море, три выхода на балкон, до моря 100 м. Аллея Героев, рестораны, кафе, супермаркеты, аптеки — в шаговой доступности. Новый дизайнерский ремонт — никто не жил. Тёплый пол с индивидуальными Wi-Fi терморегуляторами, сенсорные выключатели Wi-Fi. Подпотолочная система вентиляции с выводами в коридор, гардеробную и на балкон. Установлен мощный компрессор, усиливающий вытяжку над варочной поверхностью. Кондиционеры Wi-Fi в каждой комнате. Полностью укомплектована премиальной техникой Samsung и Bosch: посудомоечная машина Samsung, стиральная и сушильная машины Bosch, большой холодильник Samsung, варочная панель и духовой шкаф Bosch. Ванная и отдельная душевая. Стоимость: $200 000.",
+        "rooms": "2+1",
+        "floorsText": "11 этаж",
+        "completionText": "новый дизайнерский ремонт",
+        "address": "Батуми, ул. Пиросмани, 17, блок B (Intourist Residence)"
+      },
+      {
         "id": "apt-tropical-garden-studio",
         "detailHref": "/apartment.html",
         "priceGel": 189000,
@@ -2755,6 +2846,32 @@
         "floorsText": "11-ე სართული",
         "completionText": "რემონტი ავეჯით",
         "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17 (Intourist Residence)"
+      }
+    },
+    "apt-intourist-residence-block-b-2p1": {
+      "ru": {
+        "title": "Intourist Residence — квартира 2+1, блок B",
+        "description": "Квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17, блок B. 11 этаж, 81,2 м². Прямой вид на море, три выхода на балкон, до моря 100 м. Аллея Героев, рестораны, кафе, супермаркеты, аптеки — в шаговой доступности. Новый дизайнерский ремонт — никто не жил. Тёплый пол с индивидуальными Wi-Fi терморегуляторами, сенсорные выключатели Wi-Fi. Подпотолочная система вентиляции с выводами в коридор, гардеробную и на балкон. Установлен мощный компрессор, усиливающий вытяжку над варочной поверхностью. Кондиционеры Wi-Fi в каждой комнате. Полностью укомплектована премиальной техникой Samsung и Bosch: посудомоечная машина Samsung, стиральная и сушильная машины Bosch, большой холодильник Samsung, варочная панель и духовой шкаф Bosch. Ванная и отдельная душевая. Стоимость: $200 000.",
+        "rooms": "2+1",
+        "floorsText": "11 этаж",
+        "completionText": "новый дизайнерский ремонт",
+        "address": "Батуми, ул. Пиросмани, 17, блок B (Intourist Residence)"
+      },
+      "en": {
+        "title": "Intourist Residence — 2+1 apartment, block B",
+        "description": "2+1 apartment in the Intourist Residence residential complex. Address: Batumi, 17 Pirosmani St., block B. 11th floor, 81.2 m². Direct sea view, three balcony exits, 100 m to the sea. Heroes Alley, restaurants, cafés, supermarkets and pharmacies within walking distance. New designer renovation — never lived in. Underfloor heating with individual Wi-Fi thermostats, Wi-Fi touch switches. Ceiling ventilation system with outlets to the corridor, walk-in closet and balcony. Powerful compressor boosting extraction above the cooktop. Wi-Fi air conditioners in every room. Fully equipped with premium Samsung and Bosch appliances: Samsung dishwasher, Bosch washer and dryer, large Samsung fridge, Bosch cooktop and oven. Bathtub and separate shower. Price: $200,000.",
+        "rooms": "2+1",
+        "floorsText": "11th floor",
+        "completionText": "new designer renovation",
+        "address": "Batumi, 17 Pirosmani St., block B (Intourist Residence)"
+      },
+      "geo": {
+        "title": "Intourist Residence — ბინა 2+1, ბლოკი B",
+        "description": "ბინა 2+1 Intourist Residence საცხოვრებელ კომპლექსში. მის: ბათუმი, ნიკო ფიროსმანის ქ. 17, ბლოკი B. 11-ე სართული, 81,2 მ². პირდაპირი ხედი ზღვაზე, სამი გასასვლელი აივანზე, ზღვამდე 100 მ. გმირების ალეა, რესტორნები, კაფეები, სუპერმარკეტები, აფთიაქები — ფეხით მისაწვდომ მანძილზე. ახალი დიზაინერული რემონტი — არავინ ცხოვრობდა. თბი იატაკი ინდივიდუალური Wi-Fi თერმორეგულატორებით, Wi-Fi სენსორული გადამრთველები. ჭერის ქვეშ ვენტილაციის სისტემა გამოტანებით კორიდორში, გარდერობში და აივანზე. დაყენებულია მძლავრი კომპრესორი, რომელიც აძლიერებს გამონაბოლქვს ვარაულის ზემოთ. Wi-Fi კონდიციონერები ყველა ოთახში. სრულად აღჭურვილი პრემიუმ Samsung და Bosch ტექნიკით: Samsung ჭურჭლის სარეცხი, Bosch სარეცხი და საშრობი, დიდი Samsung მაცივალი, Bosch ვარაული და ღუმელი. აბაზანა და ცალკე საშხაპე. ფასი: $200 000.",
+        "rooms": "2+1",
+        "floorsText": "11-ე სართული",
+        "completionText": "ახალი დიზაინერული რემონტი",
+        "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17, ბლოკი B (Intourist Residence)"
       }
     },
     "apt-tropical-garden-studio": {
