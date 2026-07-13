@@ -542,6 +542,20 @@
         roomsKey: "2+1"
     },
 {
+        id: "apt-intourist-residence-block-b-2p1",
+        detailHref: "/apartment.html",
+        priceGel: 540000,
+        priceKind: "fixed",
+        geo: {
+          lat: 41.640038,
+          lng: 41.617733,
+          mapsUrl: "https://www.google.com/maps?q=41.640038,41.617733"
+        },
+        areaM2: 81.2,
+        photos: [],
+        roomsKey: "2+1"
+    },
+{
         id: "apt-tropical-garden-studio",
         detailHref: "/apartment.html",
         priceGel: 189000,
