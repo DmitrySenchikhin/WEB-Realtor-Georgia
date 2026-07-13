@@ -1713,21 +1713,21 @@
       {
         "id": "apt-intourist-residence-2p1",
         "detailHref": "/apartment.html",
-        "priceGel": 507600,
+        "priceGel": 540000,
         "priceKind": "fixed",
         "geo": {
-          "lat": 41.640129,
-          "lng": 41.617582,
-          "mapsUrl": "https://www.google.com/maps?q=41.640129,41.617582"
+          "lat": 41.640038,
+          "lng": 41.617733,
+          "mapsUrl": "https://www.google.com/maps?q=41.640038,41.617733"
         },
-        "areaM2": 73,
+        "areaM2": 81.2,
         "photos": [
           {
-            "name": "Гостиная",
+            "name": "Гостиная с видом на море",
             "src": "/images/intourist-residence-2p1/intourist-01.png"
           },
           {
-            "name": "Кухня и обеденная зона",
+            "name": "Кухня: Bosch, Samsung",
             "src": "/images/intourist-residence-2p1/intourist-02.png"
           },
           {
@@ -1739,51 +1739,51 @@
             "src": "/images/intourist-residence-2p1/intourist-04.png"
           },
           {
-            "name": "Санузел",
+            "name": "Ванная и отдельная душевая",
             "src": "/images/intourist-residence-2p1/intourist-05.png"
           },
           {
-            "name": "Вид с балкона: город",
+            "name": "Прямой вид на море с балкона",
             "src": "/images/intourist-residence-2p1/intourist-06.png"
           },
           {
-            "name": "Вид с балкона: город и горы",
+            "name": "Вид с балкона: море и город",
             "src": "/images/intourist-residence-2p1/intourist-07.png"
           }
         ],
         "roomsKey": "2+1",
         "localized": {
           "ru": {
-            "title": "Уютная квартира 2+1 — Intourist Residence",
-            "description": "Уютная квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17. 11 этаж, 73 м². Удобное расположение в центре города, до моря около 5 минут — 250 м. Развитая инфраструктура района: магазины, рестораны, аптеки, транспорт, казино и др. Центральное отопление, газ. Хорошо подходит как для проживания, так и для сдачи в аренду. Полностью укомплектована мебелью и техникой. Система «умный дом», сигнализация, видеонаблюдение. Автономное питание и отопление — до 10 часов при отключении. Два балкона с видом на море, город и горы. Стоимость: $188 000.",
+            "title": "Intourist Residence — квартира 2+1",
+            "description": "Квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17, блок B. 11 этаж, 81,2 м². Прямой вид на море, три выхода на балкон, до моря 100 м. Аллея Героев, рестораны, кафе, супермаркеты, аптеки — в шаговой доступности. Новый дизайнерский ремонт — никто не жил. Тёплый пол с индивидуальными Wi-Fi терморегуляторами, сенсорные выключатели Wi-Fi. Подпотолочная система вентиляции с выводами в коридор, гардеробную и на балкон. Установлен мощный компрессор, усиливающий вытяжку над варочной поверхностью. Кондиционеры Wi-Fi в каждой комнате. Полностью укомплектована премиальной техникой Samsung и Bosch: посудомоечная машина Samsung, стиральная и сушильная машины Bosch, большой холодильник Samsung, варочная панель и духовой шкаф Bosch. Ванная и отдельная душевая. Стоимость: $200 000.",
             "rooms": "2+1",
             "floorsText": "11 этаж",
-            "completionText": "ремонт с мебелью",
-            "address": "Батуми, ул. Пиросмани, 17 (Intourist Residence)"
+            "completionText": "новый дизайнерский ремонт",
+            "address": "Батуми, ул. Пиросмани, 17, блок B (Intourist Residence)"
           },
           "en": {
-            "title": "Cozy 2+1 apartment — Intourist Residence",
-            "description": "Cozy 2+1 apartment in the Intourist Residence residential complex. Address: Batumi, 17 Pirosmani St. 11th floor, 73 m². Convenient central location, about 5 minutes to the sea — 250 m. Well-developed neighbourhood infrastructure: shops, restaurants, pharmacies, transport, casinos and more. Central heating, gas. Well suited for living and rental income. Fully furnished with furniture and appliances. Smart home system, alarm and video surveillance. Backup power and heating for up to 10 hours during outages. Two balconies with views of the sea, city and mountains. Price: $188,000.",
+            "title": "Intourist Residence — 2+1 apartment",
+            "description": "2+1 apartment in the Intourist Residence residential complex. Address: Batumi, 17 Pirosmani St., block B. 11th floor, 81.2 m². Direct sea view, three balcony exits, 100 m to the sea. Heroes Alley, restaurants, cafés, supermarkets and pharmacies within walking distance. New designer renovation — never lived in. Underfloor heating with individual Wi-Fi thermostats, Wi-Fi touch switches. Ceiling ventilation system with outlets to the corridor, walk-in closet and balcony. Powerful compressor boosting extraction above the cooktop. Wi-Fi air conditioners in every room. Fully equipped with premium Samsung and Bosch appliances: Samsung dishwasher, Bosch washer and dryer, large Samsung fridge, Bosch cooktop and oven. Bathtub and separate shower. Price: $200,000.",
             "rooms": "2+1",
             "floorsText": "11th floor",
-            "completionText": "renovated with furniture",
-            "address": "Batumi, 17 Pirosmani St. (Intourist Residence)"
+            "completionText": "new designer renovation",
+            "address": "Batumi, 17 Pirosmani St., block B (Intourist Residence)"
           },
           "geo": {
-            "title": "მოსახლე ბინა 2+1 — Intourist Residence",
-            "description": "მოსახლე ბინა 2+1 Intourist Residence საცხოვრებელ კომპლექსში. მის: ბათუმი, ნიკო ფიროსმანის ქ. 17. 11-ე სართული, 73 მ². მოსახერხებელი მდებარეობა ქალაქის ცენტრში, ზღვამდე დაახლოებით 5 წუთი — 250 მ. განვითარებული ინფრასტრუქტურა: მაღაზიები, რესტორნები, აფთიაქები, ტრანსპორტი, კაზინო და სხვა. ცენტრალური გათბობა, აირი. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. სრულად აღჭურვილი ავეჯითა და ტექნიკით. «ჭკვიანი სახლის» სისტემა, სიგნალიზაცია, ვიდეოდაკვირვება. ავტონომიური კვება და გათბობა — გათიშვისას 10 საათამდე. ორი აივანი ხედით ზღვაზე, ქალაქსა და მთებზე. ფასი: $188 000.",
+            "title": "Intourist Residence — ბინა 2+1",
+            "description": "ბინა 2+1 Intourist Residence საცხოვრებელ კომპლექსში. მის: ბათუმი, ნიკო ფიროსმანის ქ. 17, ბლოკი B. 11-ე სართული, 81,2 მ². პირდაპირი ხედი ზღვაზე, სამი გასასვლელი აივანზე, ზღვამდე 100 მ. გმირების ალეა, რესტორნები, კაფეები, სუპერმარკეტები, აფთიაქები — ფეხით მისაწვდომ მანძილზე. ახალი დიზაინერული რემონტი — არავინ ცხოვრობდა. თბი იატაკი ინდივიდუალური Wi-Fi თერმორეგულატორებით, Wi-Fi სენსორული გადამრთველები. ჭერის ქვეშ ვენტილაციის სისტემა გამოტანებით კორიდორში, გარდერობში და აივანზე. დაყენებულია მძლავრი კომპრესორი, რომელიც აძლიერებს გამონაბოლქვს ვარაულის ზემოთ. Wi-Fi კონდიციონერები ყველა ოთახში. სრულად აღჭურვილი პრემიუმ Samsung და Bosch ტექნიკით: Samsung ჭურჭლის სარეცხი, Bosch სარეცხი და საშრობი, დიდი Samsung მაცივალი, Bosch ვარაული და ღუმელი. აბაზანა და ცალკე საშხაპე. ფასი: $200 000.",
             "rooms": "2+1",
             "floorsText": "11-ე სართული",
-            "completionText": "რემონტი ავეჯით",
-            "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17 (Intourist Residence)"
+            "completionText": "ახალი დიზაინერული რემონტი",
+            "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17, ბლოკი B (Intourist Residence)"
           }
         },
-        "title": "Уютная квартира 2+1 — Intourist Residence",
-        "description": "Уютная квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17. 11 этаж, 73 м². Удобное расположение в центре города, до моря около 5 минут — 250 м. Развитая инфраструктура района: магазины, рестораны, аптеки, транспорт, казино и др. Центральное отопление, газ. Хорошо подходит как для проживания, так и для сдачи в аренду. Полностью укомплектована мебелью и техникой. Система «умный дом», сигнализация, видеонаблюдение. Автономное питание и отопление — до 10 часов при отключении. Два балкона с видом на море, город и горы. Стоимость: $188 000.",
+        "title": "Intourist Residence — квартира 2+1",
+        "description": "Квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17, блок B. 11 этаж, 81,2 м². Прямой вид на море, три выхода на балкон, до моря 100 м. Аллея Героев, рестораны, кафе, супермаркеты, аптеки — в шаговой доступности. Новый дизайнерский ремонт — никто не жил. Тёплый пол с индивидуальными Wi-Fi терморегуляторами, сенсорные выключатели Wi-Fi. Подпотолочная система вентиляции с выводами в коридор, гардеробную и на балкон. Установлен мощный компрессор, усиливающий вытяжку над варочной поверхностью. Кондиционеры Wi-Fi в каждой комнате. Полностью укомплектована премиальной техникой Samsung и Bosch: посудомоечная машина Samsung, стиральная и сушильная машины Bosch, большой холодильник Samsung, варочная панель и духовой шкаф Bosch. Ванная и отдельная душевая. Стоимость: $200 000.",
         "rooms": "2+1",
         "floorsText": "11 этаж",
-        "completionText": "ремонт с мебелью",
-        "address": "Батуми, ул. Пиросмани, 17 (Intourist Residence)"
+        "completionText": "новый дизайнерский ремонт",
+        "address": "Батуми, ул. Пиросмани, 17, блок B (Intourist Residence)"
       },
       {
         "id": "apt-tropical-garden-studio",
@@ -2733,28 +2733,28 @@
     },
     "apt-intourist-residence-2p1": {
       "ru": {
-        "title": "Уютная квартира 2+1 — Intourist Residence",
-        "description": "Уютная квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17. 11 этаж, 73 м². Удобное расположение в центре города, до моря около 5 минут — 250 м. Развитая инфраструктура района: магазины, рестораны, аптеки, транспорт, казино и др. Центральное отопление, газ. Хорошо подходит как для проживания, так и для сдачи в аренду. Полностью укомплектована мебелью и техникой. Система «умный дом», сигнализация, видеонаблюдение. Автономное питание и отопление — до 10 часов при отключении. Два балкона с видом на море, город и горы. Стоимость: $188 000.",
+        "title": "Intourist Residence — квартира 2+1",
+        "description": "Квартира 2+1 в жилом комплексе Intourist Residence. Адрес: Батуми, ул. Пиросмани, 17, блок B. 11 этаж, 81,2 м². Прямой вид на море, три выхода на балкон, до моря 100 м. Аллея Героев, рестораны, кафе, супермаркеты, аптеки — в шаговой доступности. Новый дизайнерский ремонт — никто не жил. Тёплый пол с индивидуальными Wi-Fi терморегуляторами, сенсорные выключатели Wi-Fi. Подпотолочная система вентиляции с выводами в коридор, гардеробную и на балкон. Установлен мощный компрессор, усиливающий вытяжку над варочной поверхностью. Кондиционеры Wi-Fi в каждой комнате. Полностью укомплектована премиальной техникой Samsung и Bosch: посудомоечная машина Samsung, стиральная и сушильная машины Bosch, большой холодильник Samsung, варочная панель и духовой шкаф Bosch. Ванная и отдельная душевая. Стоимость: $200 000.",
         "rooms": "2+1",
         "floorsText": "11 этаж",
-        "completionText": "ремонт с мебелью",
-        "address": "Батуми, ул. Пиросмани, 17 (Intourist Residence)"
+        "completionText": "новый дизайнерский ремонт",
+        "address": "Батуми, ул. Пиросмани, 17, блок B (Intourist Residence)"
       },
       "en": {
-        "title": "Cozy 2+1 apartment — Intourist Residence",
-        "description": "Cozy 2+1 apartment in the Intourist Residence residential complex. Address: Batumi, 17 Pirosmani St. 11th floor, 73 m². Convenient central location, about 5 minutes to the sea — 250 m. Well-developed neighbourhood infrastructure: shops, restaurants, pharmacies, transport, casinos and more. Central heating, gas. Well suited for living and rental income. Fully furnished with furniture and appliances. Smart home system, alarm and video surveillance. Backup power and heating for up to 10 hours during outages. Two balconies with views of the sea, city and mountains. Price: $188,000.",
+        "title": "Intourist Residence — 2+1 apartment",
+        "description": "2+1 apartment in the Intourist Residence residential complex. Address: Batumi, 17 Pirosmani St., block B. 11th floor, 81.2 m². Direct sea view, three balcony exits, 100 m to the sea. Heroes Alley, restaurants, cafés, supermarkets and pharmacies within walking distance. New designer renovation — never lived in. Underfloor heating with individual Wi-Fi thermostats, Wi-Fi touch switches. Ceiling ventilation system with outlets to the corridor, walk-in closet and balcony. Powerful compressor boosting extraction above the cooktop. Wi-Fi air conditioners in every room. Fully equipped with premium Samsung and Bosch appliances: Samsung dishwasher, Bosch washer and dryer, large Samsung fridge, Bosch cooktop and oven. Bathtub and separate shower. Price: $200,000.",
         "rooms": "2+1",
         "floorsText": "11th floor",
-        "completionText": "renovated with furniture",
-        "address": "Batumi, 17 Pirosmani St. (Intourist Residence)"
+        "completionText": "new designer renovation",
+        "address": "Batumi, 17 Pirosmani St., block B (Intourist Residence)"
       },
       "geo": {
-        "title": "მოსახლე ბინა 2+1 — Intourist Residence",
-        "description": "მოსახლე ბინა 2+1 Intourist Residence საცხოვრებელ კომპლექსში. მის: ბათუმი, ნიკო ფიროსმანის ქ. 17. 11-ე სართული, 73 მ². მოსახერხებელი მდებარეობა ქალაქის ცენტრში, ზღვამდე დაახლოებით 5 წუთი — 250 მ. განვითარებული ინფრასტრუქტურა: მაღაზიები, რესტორნები, აფთიაქები, ტრანსპორტი, კაზინო და სხვა. ცენტრალური გათბობა, აირი. კარგად გამოდგება როგორც საცხოვრებლად, ისე გაქირავებისთვის. სრულად აღჭურვილი ავეჯითა და ტექნიკით. «ჭკვიანი სახლის» სისტემა, სიგნალიზაცია, ვიდეოდაკვირვება. ავტონომიური კვება და გათბობა — გათიშვისას 10 საათამდე. ორი აივანი ხედით ზღვაზე, ქალაქსა და მთებზე. ფასი: $188 000.",
+        "title": "Intourist Residence — ბინა 2+1",
+        "description": "ბინა 2+1 Intourist Residence საცხოვრებელ კომპლექსში. მის: ბათუმი, ნიკო ფიროსმანის ქ. 17, ბლოკი B. 11-ე სართული, 81,2 მ². პირდაპირი ხედი ზღვაზე, სამი გასასვლელი აივანზე, ზღვამდე 100 მ. გმირების ალეა, რესტორნები, კაფეები, სუპერმარკეტები, აფთიაქები — ფეხით მისაწვდომ მანძილზე. ახალი დიზაინერული რემონტი — არავინ ცხოვრობდა. თბი იატაკი ინდივიდუალური Wi-Fi თერმორეგულატორებით, Wi-Fi სენსორული გადამრთველები. ჭერის ქვეშ ვენტილაციის სისტემა გამოტანებით კორიდორში, გარდერობში და აივანზე. დაყენებულია მძლავრი კომპრესორი, რომელიც აძლიერებს გამონაბოლქვს ვარაულის ზემოთ. Wi-Fi კონდიციონერები ყველა ოთახში. სრულად აღჭურვილი პრემიუმ Samsung და Bosch ტექნიკით: Samsung ჭურჭლის სარეცხი, Bosch სარეცხი და საშრობი, დიდი Samsung მაცივალი, Bosch ვარაული და ღუმელი. აბაზანა და ცალკე საშხაპე. ფასი: $200 000.",
         "rooms": "2+1",
         "floorsText": "11-ე სართული",
-        "completionText": "რემონტი ავეჯით",
-        "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17 (Intourist Residence)"
+        "completionText": "ახალი დიზაინერული რემონტი",
+        "address": "ბათუმი, ნიკო ფიროსმანის ქ. 17, ბლოკი B (Intourist Residence)"
       }
     },
     "apt-tropical-garden-studio": {

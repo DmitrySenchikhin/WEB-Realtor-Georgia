@@ -522,22 +522,22 @@
 {
         id: "apt-intourist-residence-2p1",
         detailHref: "/apartment.html",
-        priceGel: 507600,
+        priceGel: 540000,
         priceKind: "fixed",
         geo: {
-          lat: 41.640129,
-          lng: 41.617582,
-          mapsUrl: "https://www.google.com/maps?q=41.640129,41.617582"
+          lat: 41.640038,
+          lng: 41.617733,
+          mapsUrl: "https://www.google.com/maps?q=41.640038,41.617733"
         },
-        areaM2: 73,
+        areaM2: 81.2,
         photos: [
-          { name: "Гостиная", src: "/images/intourist-residence-2p1/intourist-01.png" },
-          { name: "Кухня и обеденная зона", src: "/images/intourist-residence-2p1/intourist-02.png" },
+          { name: "Гостиная с видом на море", src: "/images/intourist-residence-2p1/intourist-01.png" },
+          { name: "Кухня: Bosch, Samsung", src: "/images/intourist-residence-2p1/intourist-02.png" },
           { name: "Спальня", src: "/images/intourist-residence-2p1/intourist-03.png" },
           { name: "Вторая спальня", src: "/images/intourist-residence-2p1/intourist-04.png" },
-          { name: "Санузел", src: "/images/intourist-residence-2p1/intourist-05.png" },
-          { name: "Вид с балкона: город", src: "/images/intourist-residence-2p1/intourist-06.png" },
-          { name: "Вид с балкона: город и горы", src: "/images/intourist-residence-2p1/intourist-07.png" }
+          { name: "Ванная и отдельная душевая", src: "/images/intourist-residence-2p1/intourist-05.png" },
+          { name: "Прямой вид на море с балкона", src: "/images/intourist-residence-2p1/intourist-06.png" },
+          { name: "Вид с балкона: море и город", src: "/images/intourist-residence-2p1/intourist-07.png" }
         ],
         roomsKey: "2+1"
     },
