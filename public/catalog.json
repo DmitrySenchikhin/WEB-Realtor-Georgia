@@ -1796,7 +1796,52 @@
           "mapsUrl": "https://www.google.com/maps?q=41.640038,41.617733"
         },
         "areaM2": 81.2,
-        "photos": [],
+        "photos": [
+          {
+            "name": "Intourist Residence — фасад комплекса",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-01.jpg"
+          },
+          {
+            "name": "Балкон: прямой вид на море",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-02.jpg"
+          },
+          {
+            "name": "Закат с балкона",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-03.jpg"
+          },
+          {
+            "name": "Гостиная с ТВ и выходом на балкон",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-04.jpg"
+          },
+          {
+            "name": "Гостиная: диван и панорамные окна",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-05.jpg"
+          },
+          {
+            "name": "Кухня и барная стойка: Bosch, Samsung",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-06.jpg"
+          },
+          {
+            "name": "Обеденная зона",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-07.jpg"
+          },
+          {
+            "name": "Кухня и столовая: общий вид",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-08.jpg"
+          },
+          {
+            "name": "Санузел: ванна, душевая, мраморная плитка",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-09.jpg"
+          },
+          {
+            "name": "Санузел: Bosch стиральная и сушильная",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-10.jpg"
+          },
+          {
+            "name": "Гостиная и столовая: кондиционер Wi-Fi",
+            "src": "/images/intourist-residence-block-b-2p1/intourist-b-11.jpg"
+          }
+        ],
         "roomsKey": "2+1",
         "localized": {
           "ru": {
