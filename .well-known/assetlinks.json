@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.realtorgeorgia.android",
+      "sha256_cert_fingerprints": [
+        "04:9D:5C:6C:DE:DE:61:26:A2:9A:9A:FE:D0:CE:65:48:A1:79:05:A2:3D:79:5F:3B:81:E3:EA:45:9F:F3:B5:8A",
+        "1A:E7:47:B7:72:3C:F5:44:C7:42:2E:B1:CF:0A:A2:D4:DF:ED:10:B3:22:2F:F6:2B:B3:5C:27:57:92:85:A8:60"
+      ]
+    }
+  }
+]

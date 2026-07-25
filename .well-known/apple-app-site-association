@@ -5,6 +5,10 @@
         "appIDs": ["UHG964SUQU.UHG964SUQU.RealtorGeorgia-com"],
         "components": [
           {
+            "/": "/property/*",
+            "comment": "Open property OG landing pages in the app"
+          },
+          {
             "/": "/",
             "?": { "property": "?*" },
             "comment": "Open a specific property inside the RealtorGeorgia app"
